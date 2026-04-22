@@ -22,15 +22,19 @@ local function tinmr()
 		if v ~= lp then
 			local tchar = v.Character
 			if not tchar then return end
-			local troot = tchar:FindFirstChild("HumanoidRootPart")
-			if not troot then return end
-			local tpos = troot.Position
-			local screenpos = cam:WorldToScreenPoint(tpos)
-			if get2dDistance (mpos, screenpos) <= radius + 15 then
-				color = Color3.new(1, 0, 0)
-				name = v.Name
-				spos = screenpos
-				worldpos = tpos
+			local root = tchar:FindFirstChild("HumanoidRootPart").Position
+			for _, parts in pairs(tchar:GetChildren()) do
+				if parts:IsA("BasePart") then
+					local tpos = parts.Position
+					local screenpos = cam:WorldToScreenPoint(tpos)
+					local screenpos2 = cam:WorldToScreenPoint(root)
+					if get2dDistance(mpos, screenpos) <= radius + 10 then
+						color = Color3.new(1, 0, 0)
+						name = v.Name
+						spos = screenpos2
+						worldpos = root
+					end
+				end
 			end
 		end
 	end
@@ -38,6 +42,7 @@ local function tinmr()
 end
 
 RunService.Render:Connect(function()
+	
 	local color, name, spos, worldpos = tinmr()
 	DrawingImmediate.Circle(
 		mousepos(), 
