@@ -1,3 +1,4 @@
+--!optimize 2
 local RunService = game:GetService("RunService")
 local uis = game:GetService("UserInputService")
 local players = game:GetService("Players")
