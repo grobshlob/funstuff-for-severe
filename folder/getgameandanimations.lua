@@ -31,7 +31,7 @@ function tinmr()
     for _, v in pairs(players:GetChildren()) do
         if v ~= lp then
             local tchar = v.Character
-            if not tchar then return end
+            if not tchar then continue end
             local root = tchar:FindFirstChild("HumanoidRootPart")
             if root then
                 local rpos = root.Position
@@ -163,7 +163,10 @@ task.spawn(function()
                         if tchar then
                             local hum = tchar:FindFirstChildOfClass("Humanoid")
                             if hum then
-                                _G.targetAnimator = hum:FindFirstChildOfClass("Animator")
+                                local anim = hum:FindFirstChildOfClass("Animator")
+                                if anim then
+                                    _G.targetAnimator = anim
+                                end
                             end
                         end
                         break
