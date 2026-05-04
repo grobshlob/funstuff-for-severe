@@ -50,16 +50,16 @@ end
 
 local function getPlayingAnimationTracks(animator)
     local tracks = {}
-    local ok, head = pcall(memory.readu64, animator, 0x868)
+    local ok, topguy = pcall(memory.readu64, animator, 0x868)
     if not ok or head == 0 then return tracks end
 
-    local ok2, node = pcall(memory.readu64, head)
+    local ok2, bottomguys = pcall(memory.readu64, topguy)
     if not ok2 then return tracks end
 
     local count = 0
-    while node ~= 0 and node ~= head and count < 100 do
+    while bottomguys ~= 0 and bottomguys ~= head and count < 100 do
         count += 1
-        local ok3, track = pcall(memory.readu64, node + 0x10)
+        local ok3, track = pcall(memory.readu64, bottomguys + 0x10)
         if ok3 and track ~= 0 then
             local ok4, isPlaying = pcall(memory.readu8, track, 0xa18)
             if ok4 and isPlaying == 1 then
@@ -70,9 +70,9 @@ local function getPlayingAnimationTracks(animator)
                 })
             end
         end
-        local ok6, next = pcall(memory.readu64, node)
+        local ok6, next = pcall(memory.readu64, bottomguys)
         if not ok6 then break end
-        node = next
+        bottomguys = next
     end
     return tracks
 end
