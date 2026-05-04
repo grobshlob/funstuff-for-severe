@@ -84,20 +84,27 @@ local function getPlayingAnimationTracks(animator)
     return tracks
 end
 
-local ignore = { 
-    ["rbxassetid://180435571"] = true,
-    ["rbxassetid://4639817538"] = true,
-    ["rbxassetid://6786106507"] = true,
-    ["rbxassetid://6789165310"] = true,
-    ["rbxassetid://6789231619"] = true,
-    ["rbxassetid://8799308611"] = true,
-    ["rbxassetid://0"] = true,
-    ["rbxassetid://6820400023"] = true,
-    ["rbxassetid://8799576671"] = true,
-    ["rbxassetid://9279203398"] = true,
-    ["rbxassetid://7479225627"] = true
-}
 
+local ignore = {}
+
+local success, response = pcall(function()
+    return http.get("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/animidsBROKILLMEAIWONTSORTTHISOUT.json")
+end)
+
+if success then
+    local decodedJSON = crypt.json.decode(response)
+    
+    for name, id in pairs(decodedJSON) do
+        local fullId = "rbxassetid://" .. tostring(id)
+    
+        if name:find("Equip") or name:find("Finish") or name:find("Flourish") or name:find("Idle") or name:find("Parry") or name:find("CoreIdle") or name:find("CoreTransition") or name:find("GkVictim") or name:find("GkExecutor")  then
+            ignore[fullId] = true
+        end
+    end
+    print("Successfully loaded and filtered animation JSON")
+else
+    warn("Failed to fetch animation JSON: " .. tostring(response))
+end
 -- lock target on left click
 local lastClick = false
 task.spawn(function()
