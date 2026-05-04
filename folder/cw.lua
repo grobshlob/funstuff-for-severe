@@ -34,23 +34,25 @@ task.spawn(function()
 
         local root = char:FindFirstChild("HumanoidRootPart")
         if not root or not worldpos then continue end
-        local rpos = root.Position
-        if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 7.5 then
-            _G.swingPtr = foundSwingPtr
-            if _G.swingPtr ~= nil then
-                print(_G.target.Name .. " swing stopped!")
-            end
-            if foundSwingPtr ~= nil then
-                print(_G.target.Name .. " swing started!")
-                keyrelease(0x46)
-                task.wait(0.085)
-                keypress(0x46)
-                task.wait(0.1)
-                keyrelease(0x46)
-            end
-            if _G.swingPtr == foundSwingPtr then
-                _G.swingPtr = nil
-            end
+        local rpos = root.Position         
+        if _G.swingPtr ~= nil then
+            print(_G.target.Name .. " swing stopped!")
+            _G.swingPtr = nil
+        end
+        if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
+            local _, _, _, worldpos = tinmr()
+            local root = char:FindFirstChild("HumanoidRootPart") 
+            if root and worldpos and getDistance(root.Position, worldpos) < 7.5 then 
+                _G.swingPtr = foundSwingPtr
+                print(_G.target.Name .. " swing started!") 
+                task.spawn(function()
+                    keyrelease(0x46) 
+                    task.wait(0.085) 
+                    keypress(0x46) 
+                    task.wait(0.1) 
+                    keyrelease(0x46) 
+                end)
+            end 
         end
     end
 end)
