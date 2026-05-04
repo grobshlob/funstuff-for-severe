@@ -41,7 +41,7 @@ task.spawn(function()
             end
             if foundSwingPtr ~= nil then
                 print(_G.target.Name .. " swing started!")
-                task.wait(0.08)
+                task.wait(0.09)
                 keypress(0x46)
                 task.wait(0.1)
                 keyrelease(0x46)
