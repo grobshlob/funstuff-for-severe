@@ -1,6 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/getgameandanimations.lua"))()
 local lp = game.Players.LocalPlayer
-_G.debug = false
 _G.active = false
 _G.swingPtr = nil
 _G.OnKeybind1Change = function(key: string)
