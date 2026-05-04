@@ -64,9 +64,11 @@ local function getPlayingAnimationTracks(animator)
             local ok4, isPlaying = pcall(memory.readu8, track, 0xa18)
             if ok4 and isPlaying == 1 then
                 local ok5, timePos = pcall(memory.readf32, track, 0xe8)
+                local ok6, asset = pcall(memory.readstring, track, 0xd0)
                 table.insert(tracks, {
                     ptr = track,
                     timePosition = ok5 and timePos or 0,
+                    assetid = ok6 and asset,
                 })
             end
         end
