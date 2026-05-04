@@ -87,15 +87,20 @@ end
 
 local ignore = {}
 local dontignore = {}
+local gid = game.GameId
 
-local ok_body, body = pcall(function()
-    return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
-end)
+if gid == 4282985734 then
+    local ok_body, body = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
+    end)
+elseif gid == 8767500166
+    return nil
+end
 local ok_decode, data = pcall(function()
     return crypt.json.decode(body)
 end)
 --thank you ai
-if ok_decode then
+if ok_decode and gid == 4282985734 then
     local decodedJSON = data -- This is your array of animation objects
     
     for _, entry in pairs(decodedJSON) do
@@ -124,6 +129,8 @@ if ok_decode then
     print("Successfully loaded JSON.")
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
+elseif ok_decode and gid == 8767500166 then 
+    return nil
 else
     warn("Failed to decode JSON body.")
 end
