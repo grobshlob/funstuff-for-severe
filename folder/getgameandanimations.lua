@@ -18,7 +18,7 @@ local baselineSampled = false
 local function get2dDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
 end
-local function getDistance(a, b)
+function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
 end
 
@@ -26,7 +26,7 @@ local function mousepos()
     return uis:GetMouseLocation()
 end
 
-local function tinmr()
+function tinmr()
     local name = nil
     local color = Color3.new(0, 1, 0)
     local mpos = uis:GetMouseLocation()
@@ -50,7 +50,7 @@ local function tinmr()
     return color, name, spos, worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
-local function getPlayingAnimationTracks(animator)
+function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
     if not ok or head == 0 then return tracks end
@@ -91,7 +91,7 @@ local pid = game.PlaceId
 local body = nil
 local data = nil
 
-if pid == 4282985734 then
+if pid == 4282985734 or pid == 11979315221 then
     local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
     end)
