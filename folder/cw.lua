@@ -42,7 +42,7 @@ task.spawn(function()
         if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
             local _, _, _, worldpos = tinmr()
             local root = char:FindFirstChild("HumanoidRootPart") 
-            if root and worldpos and getDistance(root.Position, worldpos) < 7.5 then 
+            if root and worldpos and getDistance(root.Position, worldpos) < 20 then 
                 _G.swingPtr = foundSwingPtr
                 print(_G.target.Name .. " swing started!") 
                 task.spawn(function()
