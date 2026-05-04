@@ -35,7 +35,7 @@ task.spawn(function()
         local root = char:FindFirstChild("HumanoidRootPart")
         if not root or not worldpos then continue end
         local rpos = root.Position
-        if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 20 then
+        if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 7.5 then
             if _G.swingPtr ~= nil then
                 print(_G.target.Name .. " swing stopped!")
             end
