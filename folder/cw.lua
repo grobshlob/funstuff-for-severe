@@ -36,17 +36,18 @@ task.spawn(function()
         if not root or not worldpos then continue end
         local rpos = root.Position
         if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 7.5 then
+            _G.swingPtr = foundSwingPtr
             if _G.swingPtr ~= nil then
                 print(_G.target.Name .. " swing stopped!")
             end
             if foundSwingPtr ~= nil then
                 print(_G.target.Name .. " swing started!")
-                task.wait(0.075)
+                keyrelease(0x46)
+                task.wait(0.085)
                 keypress(0x46)
                 task.wait(0.1)
                 keyrelease(0x46)
             end
-            _G.swingPtr = foundSwingPtr
         end
     end
 end)
