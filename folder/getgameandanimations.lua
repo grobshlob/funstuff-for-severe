@@ -142,6 +142,7 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 then
     print("Successfully loaded JSON.")
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
+    _G.loaded = true
 elseif ok_decode and pid == 8767500166 then 
     
 else
