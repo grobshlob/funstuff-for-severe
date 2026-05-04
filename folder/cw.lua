@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/getgameandanimations.lua"))()
 local lp = game.Players.LocalPlayer
-_G.debug = true
+_G.debug = false
 _G.active = false
 _G.swingPtr = nil
 _G.OnKeybind1Change = function(key: string)
@@ -36,9 +36,7 @@ task.spawn(function()
         local root = char:FindFirstChild("HumanoidRootPart")
         if not root or not worldpos then continue end
         local rpos = root.Position
-        print(getDistance(rpos, worldpos))
         if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 20 then
-        	print("hi im here")
             if _G.swingPtr ~= nil then
                 print(_G.target.Name .. " swing stopped!")
             end
