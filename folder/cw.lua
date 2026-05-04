@@ -1,17 +1,22 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/getgameandanimations.lua"))()
 local lp = game.Players.LocalPlayer
 _G.debug = true
-local active = false
+_G.active = false
+_G.swingPtr = nil
+_G.OnKeybind1Change = function(key: string)
+    _G.active = not _G.active
+    print("status: " .. tostring(_G.active))
+end
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
-    print("active")
-    while active do
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/cw%20gui.lua"))()
+    while true do
         task.wait(0.016)
         local char = lp.Character
-        if not char then return end
+        if not char then continue end
         local _, _, _, worldpos = tinmr()
         if not _G.targetAnimator then continue end
-        print("im here")
+        if not _G.active then continue end
 
         local ok, tracks = pcall(getPlayingAnimationTracks, _G.targetAnimator)
         if not ok then continue end
@@ -29,7 +34,7 @@ task.spawn(function()
         end
 
         local root = char:FindFirstChild("HumanoidRootPart")
-        if not root or not worldpos then return end
+        if not root or not worldpos then continue end
         local rpos = root.Position
         print(getDistance(rpos, worldpos))
         if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 20 then
@@ -39,9 +44,9 @@ task.spawn(function()
             end
             if foundSwingPtr ~= nil then
                 print(_G.target.Name .. " swing started!")
-                task.wait(0.075)
+                task.wait(0.005)
                 keypress(0x46)
-                task.wait(0.1)
+                task.wait(0.75)
                 keyrelease(0x46)
             end
             _G.swingPtr = foundSwingPtr
