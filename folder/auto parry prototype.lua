@@ -93,7 +93,7 @@ local ignore = {}
 local dontignore = {}
 
 local ok_body, body = pcall(function()
-    return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/animidsBROKILLMEAIWONTSORTTHISOUT.json")
+    return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
 end)
 local ok_decode, data = pcall(function()
     return crypt.json.decode(body)
