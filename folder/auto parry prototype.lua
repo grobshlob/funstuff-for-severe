@@ -97,7 +97,7 @@ end)
 local ok_decode, data = pcall(function()
     return crypt.json.decode(body)
 end)
-
+--thank you ai
 if ok_decode then
     local decodedJSON = data -- This is your array of animation objects
     
@@ -186,8 +186,9 @@ task.spawn(function()
             end
             if foundSwingPtr ~= nil then
                 print(target.Name .. " swing started!")
-                task.wait(0.1)
+                task.wait(0.0567676741)
                 keypress(0x46)
+                task.wait(0.1)
                 keyrelease(0x46)
             end
             swingPtr = foundSwingPtr
