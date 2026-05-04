@@ -50,7 +50,7 @@ local function tinmr()
     end
     return color, name, spos, worldpos
 end
-local function getPlayingAnimationTracks()
+local function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
     if not ok or head == 0 then return tracks end
