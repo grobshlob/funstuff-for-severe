@@ -119,8 +119,8 @@ end
 do
     local PrevLeftPressed: boolean = false
     local PrevKeys: {string} = {}
-    
-    function OnKeybind1Change(key: string): ()
+
+    local function OnKeybind1Change(key: string): ()
         _G.active = not _G.active
     end
 
