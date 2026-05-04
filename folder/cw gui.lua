@@ -120,9 +120,8 @@ do
     local PrevLeftPressed: boolean = false
     local PrevKeys: {string} = {}
 
-    local function OnKeybind1Change(key: string): ()
+    function OnKeybind1Change(key: string): ()
         _G.active = true
-        print("hi")
     end
 
     RunService.PreLocal:Connect(function()
