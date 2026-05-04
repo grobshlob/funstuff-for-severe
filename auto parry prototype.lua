@@ -30,16 +30,19 @@ local function tinmr()
         if v ~= lp then
             local tchar = v.Character
             if not tchar then return end
-            local root = tchar:FindFirstChild("HumanoidRootPart").Position
-            for _, parts in pairs(tchar:GetChildren()) do
-                if parts:IsA("BasePart") then
-                    local screenpos = cam:WorldToScreenPoint(parts.Position)
-                    local screenpos2 = cam:WorldToScreenPoint(root)
-                    if get2dDistance(mpos, screenpos) <= radius + 10 then
-                        color = Color3.new(1, 0, 0)
-                        name = v.Name
-                        spos = screenpos2
-                        worldpos = root
+            local root = tchar:FindFirstChild("HumanoidRootPart")
+            if root then
+                local rpos = root.Position
+                for _, parts in pairs(tchar:GetChildren()) do
+                    if parts:IsA("BasePart") then
+                        local screenpos = cam:WorldToScreenPoint(parts.Position)
+                        local screenpos2 = cam:WorldToScreenPoint(rpos)
+                        if get2dDistance(mpos, screenpos) <= radius + 10 then
+                            color = Color3.new(1, 0, 0)
+                            name = v.Name
+                            spos = screenpos2
+                            worldpos = rpos
+                        end
                     end
                 end
             end
@@ -47,7 +50,6 @@ local function tinmr()
     end
     return color, name, spos, worldpos
 end
-
 local function getPlayingAnimationTracks()
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
@@ -113,7 +115,6 @@ task.spawn(function()
                             local hum = tchar:FindFirstChildOfClass("Humanoid")
                             if hum then
                                 targetAnimator = hum:FindFirstChildOfClass("Animator")
-                                task.spawn(sampleBaseline)
                             end
                         end
                         break
@@ -129,7 +130,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(0.016)
-        if not targetAnimator or not baselineSampled then continue end
+        if not targetAnimator then continue end
 
         local ok, tracks = pcall(getPlayingAnimationTracks, targetAnimator)
         if not ok then continue end
