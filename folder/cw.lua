@@ -1,10 +1,11 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/getgameandanimations.lua"))()
 local lp = game.Players.LocalPlayer
 _G.debug = true
+local active = false
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     print("active")
-    while true do
+    while active do
         task.wait(0.016)
         local char = lp.Character
         if not char then return end
