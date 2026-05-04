@@ -6,6 +6,7 @@ _G.OnKeybind1Change = function(key: string)
     _G.active = not _G.active
     print("status: " .. tostring(_G.active))
 end
+local time = 0
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/cw%20gui.lua"))()
@@ -23,10 +24,10 @@ task.spawn(function()
         local foundSwingPtr = nil
         for _, t in ipairs(tracks) do
             if t.assetid and _G.dontignore[t.assetid] then
-            
+                time = tostring(t.timePosition)
                 foundSwingPtr = t.ptr
                 if _G.debug then
-                    print("Detected non-ignored anim: " .. tostring(t.assetid))
+                    --print("Detected non-ignored anim: " .. tostring(t.assetid))
                 end
                 break
             end
@@ -44,12 +45,14 @@ task.spawn(function()
             local root = char:FindFirstChild("HumanoidRootPart") 
             if root and worldpos and getDistance(root.Position, worldpos) < 20 then 
                 _G.swingPtr = foundSwingPtr
-                print(_G.target.Name .. " swing started!") 
+                print(_G.target.Name .. " swing started!")
+                local parrytime = time / 3.45
+                print(parrytime)
                 task.spawn(function()
                     keyrelease(0x46) 
-                    task.wait(0.085) 
+                    task.wait(parrytime) 
                     keypress(0x46) 
-                    task.wait(0.1) 
+                    task.wait(0.01) 
                     keyrelease(0x46) 
                 end)
             end 
