@@ -1,5 +1,53 @@
-local holder = game.Players.LocalPlayer.Character
+--!optimize 2
+local RunService = game:GetService("RunService")
+local uis = game:GetService("UserInputService")
+local players = game:GetService("Players")
+local lp = players.LocalPlayer
+local char = lp.Character
+local root = char:FindFirstChild("HumanoidRootPart")
+local ws = game:GetService("Workspace")
+local cam = ws.CurrentCamera
+local radius = 60
+--would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
+_G.target = nil
+_G.targetAnimator = nil
+_G.swingPtr = nil
 
+local function get2dDistance(a, b)
+    return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
+end
+function getDistance(a, b)
+    return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
+end
+
+local function mousepos()
+    return uis:GetMouseLocation()
+end
+
+function tinmr()
+    local name = nil
+    local color = Color3.new(0, 1, 0)
+    local mpos = uis:GetMouseLocation()
+    for _, v in pairs(players:GetChildren()) do
+        if v ~= lp then
+            local tchar = v.Character
+            if not tchar then continue end
+            local root = tchar:FindFirstChild("HumanoidRootPart")
+            if root then
+                local rpos = root.Position
+                local screenpos2 = cam:WorldToScreenPoint(rpos)
+                if get2dDistance(mpos, screenpos2) <= radius + 10 then
+                    color = Color3.new(1, 0, 0)
+                    name = v.Name
+                    spos = screenpos2
+                    worldpos = rpos
+                end
+            end
+        end
+    end
+    return color, name, spos, worldpos
+end
+--thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds()
     local tracks = {}
     for _, v in pairs(holder:GetDescendants()) do
@@ -20,38 +68,141 @@ local function getsounds()
     end
     return tracks
 end
---blackout revival
-local ignore = { 
-  ["rbxassetid://14798996116"] = true,
-  ["rbxassetid://9114461977"] = true,
-  ["rbxassetid://7719563607"] = true,
-}
 
 
-local swingPtr = nil
+_G.dontignore = {}
+_G.ignore = {}
+_G.loaded = false
+local pid = game.PlaceId
+local body = nil
+local data = nil
 
-while task.wait(0.016) do
-	local ok, tracks = pcall(getsounds)
-	if not ok then continue end
-	
-	local foundsound = false
-	for _, t in ipairs(tracks) do
-		if t.asset and not ignore[t.asset] then
-			sound = t.playing
-			foundsound = true
-			print("Detected non-ignored anim: " .. tostring(t.asset), tostring(t.name), tostring(t.time)) --find missed anims
-			break
-		end
-	end
-	for _, i in ipairs(tracks) do
-		local parrytime = i.time / 1.65
-		if sound ~= 1 and tostring(i.name) == "MeleeSound" then
-			print("Swing stopped!")
-		end
-		if foundsound and tostring(i.name) == "MeleeSound" then
-			print("Swing started!")
-			task.wait(parrytime)
-			print("hi i should be in the middle")
-		end
-	end
+if pid == 4282985734 or pid == 11979315221 then
+    local ok_body, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
+    end)
+    if ok_body then body = result end
+elseif pid == 8767500166 then
+    local ok_body, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackoutrevivals.json")
+    end)
+    if ok_body then body = result end
 end
+local ok_decode = false
+if body then
+    local success, decoded = pcall(function()
+        return crypt.json.decode(body)
+    end)
+    if success then
+        data = decoded
+        ok_decode = true
+    end
+end
+--thank you ai
+if ok_decode and pid == 4282985734 or pid == 11979315221 then
+    local decodedJSON = data -- This is your array of animation objects
+    print("game: Combat Warriors")
+    for _, entry in pairs(decodedJSON) do
+        -- Check if the entry has the required fields
+        if type(entry) == "table" and entry.Name and entry.AnimationId then
+            local animName = entry.Name
+            local fullId = entry.AnimationId -- It already has "rbxassetid://" based on your segment
+            
+            -- Filter logic
+            if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
+               animName:find("Idle") or animName:find("Parry") or animName:find("Core") or 
+               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") then
+                
+                ignore[fullId] = true
+            else
+                dontignore[fullId] = true
+            end
+        end
+    end
+    local ignoreCount = 0
+    for _ in pairs(ignore) do ignoreCount += 1 end
+    
+    local dontIgnoreCount = 0
+    for _ in pairs(dontignore) do dontIgnoreCount += 1 end
+    
+    print("Successfully loaded JSON.")
+    print("Ignored (Movement/Utility): " .. ignoreCount)
+    print("Targeted (Attacks): " .. dontIgnoreCount)
+    _G.loaded = true
+elseif ok_decode and pid == 8767500166 then 
+    print("game: blackout revival")
+    local decodedJSON = data -- This is your array of animation objects
+    for _, entry in pairs(decodedJSON) do
+        if type(entry) == "table" and entry.Name and entry.SoundId then
+            local soundName = entry.Name
+            local fullId = entry.SoundId -- It already has "rbxassetid://" based on your segment
+            
+            -- Filter logic
+            if soundName:find("Equip") then
+                ignore[fullId] = true
+            else
+                dontignore[fullId] = true
+            end
+        end
+    end
+    local ignoreCount = 0
+    for _ in pairs(ignore) do ignoreCount += 1 end
+    
+    local dontIgnoreCount = 0
+    for _ in pairs(dontignore) do dontIgnoreCount += 1 end
+    
+    print("Successfully loaded JSON.")
+    print("Ignored (Movement/Utility): " .. ignoreCount)
+    print("Targeted (Attacks): " .. dontIgnoreCount)
+    _G.loaded = true
+else
+    warn("Failed to decode JSON body.")
+end
+-- lock target on left click
+local lastClick = false
+task.spawn(function()
+    while true do
+        task.wait(0.016)
+        local clicking = isleftpressed()
+        if clicking and not lastClick then
+            local color, name, sp, wp = tinmr()
+            if name then
+                for _, v in pairs(players:GetChildren()) do
+                    if v.Name == name and v ~= lp then
+                        _G.target = v
+                        local tchar = v.Character
+                        if tchar then
+                            local hum = tchar:FindFirstChildOfClass("Humanoid")
+                            if hum then
+                                local anim = hum:FindFirstChildOfClass("Animator")
+                                if anim then
+                                    _G.targetAnimator = anim
+                                end
+                            end
+                        end
+                        break
+                    end
+                end
+            end
+        end
+        lastClick = clicking
+    end
+end)
+
+RunService.Render:Connect(function()
+    local color, name, spos, worldpos = tinmr()
+    DrawingImmediate.Circle(mousepos(), radius, color, 1, 200, 2)
+    if name and spos then
+        DrawingImmediate.Text(spos, 10, color, 1, name, true)
+        if _G.target and name == _G.target.Name then
+            DrawingImmediate.Text(
+                Vector2.new(spos.X, spos.Y - 30),
+                10,
+                Color3.new(1, 1, 0),
+                1,
+                "[LOCKED]",
+                true
+            )
+        end
+    end
+end)
