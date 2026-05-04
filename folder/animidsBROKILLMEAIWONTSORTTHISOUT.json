@@ -1,4 +1,1523 @@
+
 [
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Animations.Blank",
+    "Name": "Blank",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.Carry",
+    "Name": "Carry",
+    "AnimationId": "rbxassetid://10077831793"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.CarryIdle",
+    "Name": "CarryIdle",
+    "AnimationId": "rbxassetid://10077830635"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.CarryThrow",
+    "Name": "CarryThrow",
+    "AnimationId": "rbxassetid://10077834051"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.CarryVictim",
+    "Name": "CarryVictim",
+    "AnimationId": "rbxassetid://10077839932"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.CarryVictimIdle",
+    "Name": "CarryVictimIdle",
+    "AnimationId": "rbxassetid://10077836442"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Carry.Animations.CarryVictimThrow",
+    "Name": "CarryVictimThrow",
+    "AnimationId": "rbxassetid://10077838607"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Case.Animations.AdorationCaseOpen",
+    "Name": "AdorationCaseOpen",
+    "AnimationId": "rbxassetid://92235525569468"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Case.Animations.CaseOpen",
+    "Name": "CaseOpen",
+    "AnimationId": "rbxassetid://13446110267"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Case.Animations.EnergyCaseOpen",
+    "Name": "EnergyCaseOpen",
+    "AnimationId": "rbxassetid://18483714550"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Case.Animations.ValentinesCaseOpen",
+    "Name": "ValentinesCaseOpen",
+    "AnimationId": "rbxassetid://118622748401738"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.BackDash",
+    "Name": "BackDash",
+    "AnimationId": "rbxassetid://4611813021"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.CrouchedIdle",
+    "Name": "CrouchedIdle",
+    "AnimationId": "rbxassetid://9279203398"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.CrouchedWalk",
+    "Name": "CrouchedWalk",
+    "AnimationId": "rbxassetid://9279204347"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.DownedCrawl",
+    "Name": "DownedCrawl",
+    "AnimationId": "rbxassetid://9288438796"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.DownedIdle",
+    "Name": "DownedIdle",
+    "AnimationId": "rbxassetid://9288437912"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Falling",
+    "Name": "Falling",
+    "AnimationId": "rbxassetid://6789231619"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.HurtIdle",
+    "Name": "HurtIdle",
+    "AnimationId": "rbxassetid://9377851344"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.HurtSprint",
+    "Name": "HurtSprint",
+    "AnimationId": "rbxassetid://9377853166"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.HurtWalk",
+    "Name": "HurtWalk",
+    "AnimationId": "rbxassetid://9377852354"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Jump",
+    "Name": "Jump",
+    "AnimationId": "rbxassetid://6789165310"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.ParriedIdle",
+    "Name": "ParriedIdle",
+    "AnimationId": "rbxassetid://127294458094056"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Sprint",
+    "Name": "Sprint",
+    "AnimationId": "rbxassetid://4639817538"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Swim",
+    "Name": "Swim",
+    "AnimationId": "rbxassetid://6792175955"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.SwimIdle",
+    "Name": "SwimIdle",
+    "AnimationId": "rbxassetid://6792174263"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Tired",
+    "Name": "Tired",
+    "AnimationId": "rbxassetid://4816848045"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Walk",
+    "Name": "Walk",
+    "AnimationId": "rbxassetid://6786106507"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://180435571"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Sliding",
+    "Name": "Sliding",
+    "AnimationId": "rbxassetid://7479225627"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.Climb",
+    "Name": "Climb",
+    "AnimationId": "rbxassetid://6820400023"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.SpeedBoostSprint",
+    "Name": "SpeedBoostSprint",
+    "AnimationId": "rbxassetid://98057298390733"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.ParriedKneeledIdle",
+    "Name": "ParriedKneeledIdle",
+    "AnimationId": "rbxassetid://85684674638452"
+  },
+  {
+    "Parent": "Core",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Core.ParriedWhileParriedIdle",
+    "Name": "ParriedWhileParriedIdle",
+    "AnimationId": "rbxassetid://137560639486349"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.CrouchLand",
+    "Name": "CrouchLand",
+    "AnimationId": "rbxassetid://7472468835"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.FrontDash",
+    "Name": "FrontDash",
+    "AnimationId": "rbxassetid://4611813691"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Hurt",
+    "Name": "Hurt",
+    "AnimationId": "rbxassetid://4817093899"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "http://www.roblox.com/asset/?id=180435571"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Land",
+    "Name": "Land",
+    "AnimationId": "rbxassetid://4764828935"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.LeftDash",
+    "Name": "LeftDash",
+    "AnimationId": "rbxassetid://4639819520"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.ParryWhileParried",
+    "Name": "ParryWhileParried",
+    "AnimationId": "rbxassetid://119093694587063"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.RightDash",
+    "Name": "RightDash",
+    "AnimationId": "rbxassetid://4639820070"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Stagger1",
+    "Name": "Stagger1",
+    "AnimationId": "rbxassetid://4814716454"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.Stagger2",
+    "Name": "Stagger2",
+    "AnimationId": "rbxassetid://4814717128"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.StandUpFaceDown",
+    "Name": "StandUpFaceDown",
+    "AnimationId": "rbxassetid://9442722883"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.StandUpFaceUp",
+    "Name": "StandUpFaceUp",
+    "AnimationId": "rbxassetid://7261701036"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.StunLockStagger1",
+    "Name": "StunLockStagger1",
+    "AnimationId": "rbxassetid://12157118471"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Character.Animations.StunLockStagger2",
+    "Name": "StunLockStagger2",
+    "AnimationId": "rbxassetid://12157121126"
+  },
+  {
+    "Parent": "Contents",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Bundles.SusanooV2.RightArm.Contents.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://14951772008"
+  },
+  {
+    "Parent": "Contents",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Bundles.SusanooV2.LeftArm.Contents.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://14951774447"
+  },
+  {
+    "Parent": "Ravens",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.CharacterAuras.Raven.Ravens.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13328709507"
+  },
+  {
+    "Parent": "2008",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.2008.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13354913495"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.AnthonyShuffle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493646280"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://105969305527915"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Intro",
+    "Name": "Intro",
+    "AnimationId": "rbxassetid://104473437508492"
+  },
+  {
+    "Parent": "Variant1",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant1.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://95575140207521"
+  },
+  {
+    "Parent": "Variant1",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant1.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://78077914198657"
+  },
+  {
+    "Parent": "Variant2",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant2.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://130422368600248"
+  },
+  {
+    "Parent": "Variant2",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant2.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://132737800945488"
+  },
+  {
+    "Parent": "Variant3",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant3.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://83366700156718"
+  },
+  {
+    "Parent": "Variant3",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant3.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://115055207840293"
+  },
+  {
+    "Parent": "Variant4",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant4.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://116763610941625"
+  },
+  {
+    "Parent": "Variant4",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ArmWrestle.Animations.Variant4.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://84807347384374"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BallroomWaltz.Animations.Player1Emote",
+    "Name": "Player1Emote",
+    "AnimationId": "rbxassetid://90237742487819"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BallroomWaltz.Animations.RequestInit",
+    "Name": "RequestInit",
+    "AnimationId": "rbxassetid://114695377450524"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BallroomWaltz.Animations.RequestLoop",
+    "Name": "RequestLoop",
+    "AnimationId": "rbxassetid://114235247327432"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BallroomWaltz.Animations.Player2Emote",
+    "Name": "Player2Emote",
+    "AnimationId": "rbxassetid://103982980065406"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Banjo.Animations.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://126615777444083"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BenchSit.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://129956413939614"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BenchSit.Animations.DuoEmote",
+    "Name": "DuoEmote",
+    "AnimationId": "rbxassetid://120145981616779"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BenchSit.Animations.DuoEmoteIntro",
+    "Name": "DuoEmoteIntro",
+    "AnimationId": "rbxassetid://136418716241494"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BoostedBackflip.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://96786698581731"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BoostedBackflip.Animations.Transition",
+    "Name": "Transition",
+    "AnimationId": "rbxassetid://124183816085477"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BoostedBackflip.Animations.Thrower",
+    "Name": "Thrower",
+    "AnimationId": "rbxassetid://113901652664541"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BoostedBackflip.Animations.Friend",
+    "Name": "Friend",
+    "AnimationId": "rbxassetid://100454855064380"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Bow.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816757869"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BowIdle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816758800"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://94522912572186"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Intro",
+    "Name": "Intro",
+    "AnimationId": "rbxassetid://70445133502352"
+  },
+  {
+    "Parent": "Variant1",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Variant1.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://98389184393315"
+  },
+  {
+    "Parent": "Variant1",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Variant1.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://115670186746523"
+  },
+  {
+    "Parent": "Variant2",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Variant2.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://90224875322251"
+  },
+  {
+    "Parent": "Variant2",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Boxing.Animations.Variant2.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://74499748173120"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BoxingIdle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485076201"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BreakDown.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11483813739"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BringItOn.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816591367"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.BrushOffShoulders.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888611390"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CaliforniaGirls.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485083365"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Campfire.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://113593526180457"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Campfire.Animations.Intro",
+    "Name": "Intro",
+    "AnimationId": "rbxassetid://100437728503944"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CantHearYou.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888612549"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CantTouchThis.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493688859"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CaramellDansen.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485086633"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Casey.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493686011"
+  },
+  {
+    "Parent": "Cat",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Cat.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13418002838"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CatBreakdance.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485089483"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Clap.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816759538"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ComeCloser.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485092183"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Confused.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888613637"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Conga.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://76956976654460"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.CrabSlip.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://135930605348861"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Crying.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888614640"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Dance.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://182491037"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Dance2.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://182491248"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Dance3.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://182491368"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.DeadResurrection.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://106805288581238"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.DeadResurrection.Animations.Transition",
+    "Name": "Transition",
+    "AnimationId": "rbxassetid://72224130353594"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.DeadResurrection.Animations.User",
+    "Name": "User",
+    "AnimationId": "rbxassetid://113211134405892"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.DeadResurrection.Animations.Friend",
+    "Name": "Friend",
+    "AnimationId": "rbxassetid://135763623400073"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Default.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://9233675270"
+  },
+  {
+    "Parent": "DieForYou",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.DieForYou.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417979351"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Distraction.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11484847193"
+  },
+  {
+    "Parent": "Drip",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Drip.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417975805"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ElectroSwing.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485097820"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Engineer.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816571022"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Facepalm.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816592792"
+  },
+  {
+    "Parent": "FidgetSpinner",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.FidgetSpinner.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417998262"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Flex.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816593788"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.FlexFail.Animations.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://137694623345321"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Floss.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485100089"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.FreeFlow.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493678493"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.FreestyleBreakdance.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://85892187289600"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.FrightFunk.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493694171"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.GangnamStyle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816572217"
+  },
+  {
+    "Parent": "Goopie",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Goopie.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13354914537"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Griddy.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493692034"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.HandsBehindBack.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888619028"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Harp.Animations.Intro",
+    "Name": "Intro",
+    "AnimationId": "rbxassetid://129573085671510"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Harp.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://128671978772197"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.HeadTap.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485072428"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.JabbaSwitchway.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493631783"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.JumpingJacks.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888618024"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.JungJustice.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493686829"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Kneel.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816760384"
+  },
+  {
+    "Parent": "Koi",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Koi.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417980141"
+  },
+  {
+    "Parent": "Koyomi",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Koyomi.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417981182"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.LaneWyre.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11494378776"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Laugh.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816756595"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Meditate.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493681646"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Monkey.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816573173"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.NeckSlice.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://104724399442218"
+  },
+  {
+    "Parent": "Nikki",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Nikki.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13418184272"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.NoSweat.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://129721719965120"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.OrangeJustice.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11483538594"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ParkerPride.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493679186"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.PartyRock.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11484929692"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.PayingRespects.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888619878"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Piano.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://91580355660273"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.PraiseTheLord.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493618342"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Rambunctious.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485101977"
+  },
+  {
+    "Parent": "Rewind",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Rewind.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417968803"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RicFlair.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493687745"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://126786641293205"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Transition",
+    "Name": "Transition",
+    "AnimationId": "rbxassetid://127745579226560"
+  },
+  {
+    "Parent": "Duo",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Duo.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://96219469011334"
+  },
+  {
+    "Parent": "Duo",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Duo.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://88683146285296"
+  },
+  {
+    "Parent": "Trio",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Trio.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://130075939551422"
+  },
+  {
+    "Parent": "Trio",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Trio.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://74797296093555"
+  },
+  {
+    "Parent": "Trio",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Trio.Player3",
+    "Name": "Player3",
+    "AnimationId": "rbxassetid://135432244015425"
+  },
+  {
+    "Parent": "Quad",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Quad.Player1",
+    "Name": "Player1",
+    "AnimationId": "rbxassetid://74774887969760"
+  },
+  {
+    "Parent": "Quad",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Quad.Player2",
+    "Name": "Player2",
+    "AnimationId": "rbxassetid://79625723215386"
+  },
+  {
+    "Parent": "Quad",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Quad.Player3",
+    "Name": "Player3",
+    "AnimationId": "rbxassetid://88790147086624"
+  },
+  {
+    "Parent": "Quad",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.RingAroundTheRosie.Animations.Quad.Player4",
+    "Name": "Player4",
+    "AnimationId": "rbxassetid://72483142795663"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Russian.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816574330"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Salute.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816764534"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SaluteIdle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816765077"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Sasageyo.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6826035578"
+  },
+  {
+    "Parent": "SeeTinh",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SeeTinh.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13417972323"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.ShadowBoxing.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485104115"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SideHustle.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816589362"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Sit.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6753559181"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SixSeven.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://71845309656851"
+  },
+  {
+    "Parent": "Skeletons",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Skeletons.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13381668646"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SmellTest.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://115359835249456"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SmoothCriminal.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11484875191"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Smug.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6816755513"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SnowAngel.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://118594764194550"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.SnowAngel.Animations.Start",
+    "Name": "Start",
+    "AnimationId": "rbxassetid://139200562445708"
+  },
+  {
+    "Parent": "Specialist",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Specialist.IntroAnimation",
+    "Name": "IntroAnimation",
+    "AnimationId": "rbxassetid://13417949910"
+  },
+  {
+    "Parent": "Specialist",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Specialist.LoopAnimation",
+    "Name": "LoopAnimation",
+    "AnimationId": "rbxassetid://13418187240"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Spin.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11485111858"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Spit.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://99453625280869"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Sponge.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888617209"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Sturdy.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://130583547060485"
+  },
+  {
+    "Parent": "TPose",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.TPose.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13418020941"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.TTDance.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://93995627644147"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.TakeTheL.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6753754362"
+  },
+  {
+    "Parent": "TheDefaultDance",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.TheDefaultDance.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13381667260"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Thriller.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11484905359"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.TurnMeUp.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://11493677649"
+  },
+  {
+    "Parent": "X",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.X.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://83285789953277"
+  },
+  {
+    "Parent": "YMCA",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.YMCA.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://75774172808836"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.Yoink.Animations.Emote",
+    "Name": "Emote",
+    "AnimationId": "rbxassetid://6888616431"
+  },
+  {
+    "Parent": "xQc",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.Emote.xQc.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://112911779701924"
+  },
+  {
+    "Parent": "Hammer",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.BanHammer.Hammer.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://13327631880"
+  },
+  {
+    "Parent": "Baseball",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.Baseball.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://11616684674"
+  },
+  {
+    "Parent": "ChainHell",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ChainHell.CharacterAnimation",
+    "Name": "CharacterAnimation",
+    "AnimationId": "rbxassetid://84094429968857"
+  },
+  {
+    "Parent": "ChainHell",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ChainHell.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://100046931467014"
+  },
+  {
+    "Parent": "CupidsArrow",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.CupidsArrow.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://83255220573284"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.FrigidBloom.Animations.killEffectVictim",
+    "Name": "killEffectVictim",
+    "AnimationId": "rbxassetid://77272213031368"
+  },
+  {
+    "Parent": "HeartBurst",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.HeartBurst.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://88467449955522"
+  },
+  {
+    "Parent": "LoveLetter",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.LoveLetter.AnimationVictim",
+    "Name": "AnimationVictim",
+    "AnimationId": "rbxassetid://140214115070467"
+  },
+  {
+    "Parent": "LoveLetter",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.LoveLetter.AnimationLetter",
+    "Name": "AnimationLetter",
+    "AnimationId": "rbxassetid://98583713544441"
+  },
+  {
+    "Parent": "NoobTakedown",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.NoobTakedown.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://100122467426462"
+  },
+  {
+    "Parent": "NoobTakedown",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.NoobTakedown.PulledUnder",
+    "Name": "PulledUnder",
+    "AnimationId": "rbxassetid://110591086357886"
+  },
+  {
+    "Parent": "PianoCrush",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.PianoCrush.PianoAnimationVictim",
+    "Name": "PianoAnimationVictim",
+    "AnimationId": "rbxassetid://71722879101005"
+  },
+  {
+    "Parent": "PianoCrush",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.PianoCrush.PianoAnimation",
+    "Name": "PianoAnimation",
+    "AnimationId": "rbxassetid://82163559886867"
+  },
+  {
+    "Parent": "ShadowHands",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ShadowHands.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://93087617031235"
+  },
+  {
+    "Parent": "ShadowHands",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ShadowHands.VictimAnimation",
+    "Name": "VictimAnimation",
+    "AnimationId": "rbxassetid://96161121870769"
+  },
+  {
+    "Parent": "ShadowTendrils",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ShadowTendrils.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://132031153677836"
+  },
+  {
+    "Parent": "ShadowTendrils",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.ShadowTendrils.VictimAnimation",
+    "Name": "VictimAnimation",
+    "AnimationId": "rbxassetid://84478647572976"
+  },
+  {
+    "Parent": "Tentacle",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.Tentacle.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://100440417825514"
+  },
+  {
+    "Parent": "Tentacle",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.Tentacle.VictimAnimation",
+    "Name": "VictimAnimation",
+    "AnimationId": "rbxassetid://112430941659389"
+  },
+  {
+    "Parent": "UFO",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.UFO.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://101076842238094"
+  },
+  {
+    "Parent": "UFO",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.UFO.VictimAnimation",
+    "Name": "VictimAnimation",
+    "AnimationId": "rbxassetid://138002630162966"
+  },
+  {
+    "Parent": "UndyingGrasp",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.UndyingGrasp.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://84864224468728"
+  },
+  {
+    "Parent": "UndyingGrasp",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.UndyingGrasp.VictimAnimation",
+    "Name": "VictimAnimation",
+    "AnimationId": "rbxassetid://131280994531225"
+  },
+  {
+    "Parent": "WinterGift",
+    "Path": "ReplicatedStorage.Shared.Assets.Cosmetics.KillEffects.WinterGift.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://79850043996217"
+  },
+  {
+    "Parent": "Rocks",
+    "Path": "ReplicatedStorage.Shared.Assets.Disasters.Blackhole.BlackholePart.WeldParts.Rocks.Animation",
+    "Name": "Animation",
+    "AnimationId": "rbxassetid://11866050125"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Fire.Animations.OnFire",
+    "Name": "OnFire",
+    "AnimationId": "rbxassetid://6862167754"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.BruteMaceMace.Animations.BruteMace",
+    "Name": "BruteMace",
+    "AnimationId": "rbxassetid://105281210424248"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.BruteMaceMace.Animations.Mace",
+    "Name": "Mace",
+    "AnimationId": "rbxassetid://100149492508394"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.BruteMaceMace.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://100988746070179"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.CombatCombat.Animations.Executor1",
+    "Name": "Executor1",
+    "AnimationId": "rbxassetid://79541037262789"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.CombatCombat.Animations.Executor2",
+    "Name": "Executor2",
+    "AnimationId": "rbxassetid://97501228802604"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.CombatCombat.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://89723555626690"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DSChainsword.Animations.Chainsword",
+    "Name": "Chainsword",
+    "AnimationId": "rbxassetid://112902014585612"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DSChainsword.Animations.DS",
+    "Name": "DS",
+    "AnimationId": "rbxassetid://71216550112577"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DSChainsword.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://71347328559765"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DualHammerWarHammer.Animations.DualHammer",
+    "Name": "DualHammer",
+    "AnimationId": "rbxassetid://70645816266733"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DualHammerWarHammer.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://99330618411420"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.DualHammerWarHammer.Animations.WarHammer",
+    "Name": "WarHammer",
+    "AnimationId": "rbxassetid://81530084752285"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.FistFist.Animations.Executor1",
+    "Name": "Executor1",
+    "AnimationId": "rbxassetid://80265430242290"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.FistFist.Animations.Executor2",
+    "Name": "Executor2",
+    "AnimationId": "rbxassetid://74383530595633"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.FistFist.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://103035614505622"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.HiddenBladeStealthKill.Animations.Executor",
+    "Name": "Executor",
+    "AnimationId": "rbxassetid://107149795887941"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.HiddenBladeStealthKill.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://128137341651229"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.HiddenBladeStealthKill.Animations.Camera",
+    "Name": "Camera",
+    "AnimationId": "rbxassetid://135938174915513"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.KatanaKatana.Animations.Executor1",
+    "Name": "Executor1",
+    "AnimationId": "rbxassetid://79819828384272"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.KatanaKatana.Animations.Executor2",
+    "Name": "Executor2",
+    "AnimationId": "rbxassetid://81211628449244"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.KatanaKatana.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://100857643877201"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.OdachiBoStaff.Animations.Executor_BoStaff",
+    "Name": "Executor_BoStaff",
+    "AnimationId": "rbxassetid://93694173738632"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.OdachiBoStaff.Animations.Executor_Odachi",
+    "Name": "Executor_Odachi",
+    "AnimationId": "rbxassetid://74332039599803"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.OdachiBoStaff.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://109544028121015"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.RiotShieldBaton.Animations.Baton",
+    "Name": "Baton",
+    "AnimationId": "rbxassetid://128903424561554"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.RiotShieldBaton.Animations.RiotShield",
+    "Name": "RiotShield",
+    "AnimationId": "rbxassetid://131665433702252"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.GloryKills.RiotShieldBaton.Animations.Victim",
+    "Name": "Victim",
+    "AnimationId": "rbxassetid://108784804373072"
+  },
+  {
+    "Parent": "ItemAttachmentMetadata",
+    "Path": "ReplicatedStorage.Shared.Assets.Items.Weapons.Chainsaw.Contents.Handle.ItemAttachmentMetadata.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://10079503443"
+  },
+  {
+    "Parent": "ItemAttachmentMetadata",
+    "Path": "ReplicatedStorage.Shared.Assets.Items.Weapons.Flail.Contents.Handle.ItemAttachmentMetadata.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://13521558450"
+  },
+  {
+    "Parent": "ItemAttachmentMetadata",
+    "Path": "ReplicatedStorage.Shared.Assets.Items.Weapons.Kusarigama.Contents.Handle.ItemAttachmentMetadata.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://11301486885"
+  },
+  {
+    "Parent": "ItemAttachmentMetadata",
+    "Path": "ReplicatedStorage.Shared.Assets.Items.Weapons.Nunchucks.Contents.Handle.ItemAttachmentMetadata.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://10028880836"
+  },
+  {
+    "Parent": "ItemAttachmentMetadata",
+    "Path": "ReplicatedStorage.Shared.Assets.Items.Weapons.Samehada.Contents.Handle.ItemAttachmentMetadata.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://18969097291"
+  },
+  {
+    "Parent": "LaunchPad",
+    "Path": "ReplicatedStorage.Shared.Assets.LaunchPad.LaunchPadJumpAnim",
+    "Name": "LaunchPadJumpAnim",
+    "AnimationId": "rbxassetid://16725947406"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.Anchor.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://116307468979381"
+  },
   {
     "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.Anchor.Animations.Finish",
@@ -127,6 +1646,12 @@
   },
   {
     "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.Bardiche.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9130894251"
+  },
+  {
+    "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.Bardiche.Animations.Slash1_2",
     "Name": "Slash1_2",
     "AnimationId": "rbxassetid://13453522871"
@@ -142,6 +1667,12 @@
     "Path": "ReplicatedStorage.Shared.Assets.Melee.Bardiche.Animations.Slash3_2",
     "Name": "Slash3_2",
     "AnimationId": "rbxassetid://13453526234"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.Bat.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://11704140966"
   },
   {
     "Parent": "Animations",
@@ -235,6 +1766,12 @@
   },
   {
     "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.Baton.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://8799576671"
+  },
+  {
+    "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.Baton.Animations.Finish",
     "Name": "Finish",
     "AnimationId": "rbxassetid://8799301663"
@@ -280,6 +1817,12 @@
     "Path": "ReplicatedStorage.Shared.Assets.Melee.BattleAxe.Animations.Block2",
     "Name": "Block2",
     "AnimationId": "rbxassetid://4720590394"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.BattleAxe.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://11704006726"
   },
   {
     "Parent": "Animations",
@@ -385,6 +1928,12 @@
   },
   {
     "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.BoStaff.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9130855192"
+  },
+  {
+    "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.BoStaff.Animations.Finish",
     "Name": "Finish",
     "AnimationId": "rbxassetid://9130861549"
@@ -481,6 +2030,12 @@
   },
   {
     "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.BruteMace.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9130768701"
+  },
+  {
+    "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.BruteMace.Animations.Finish",
     "Name": "Finish",
     "AnimationId": "rbxassetid://9130772247"
@@ -502,6 +2057,12 @@
     "Path": "ReplicatedStorage.Shared.Assets.Melee.BruteMace.Animations.Slash3",
     "Name": "Slash3",
     "AnimationId": "rbxassetid://13458741435"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.CSM.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://17636734482"
   },
   {
     "Parent": "Animations",
@@ -631,6 +2192,12 @@
   },
   {
     "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.CeremonialKatar.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://83522750519969"
+  },
+  {
+    "Parent": "Animations",
     "Path": "ReplicatedStorage.Shared.Assets.Melee.CeremonialKatar.Animations.Finish",
     "Name": "Finish",
     "AnimationId": "rbxassetid://106901377634081"
@@ -700,6 +2267,12 @@
     "Path": "ReplicatedStorage.Shared.Assets.Melee.Chainsaw.Animations.CoreTransition",
     "Name": "CoreTransition",
     "AnimationId": "rbxassetid://131291205716013"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Melee.Chainsaw.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://10027109772"
   },
   {
     "Parent": "Animations",
@@ -6922,5 +8495,2231 @@
     "Path": "ReplicatedStorage.Shared.Assets.Melee.ZweihanderFrostMourne.Animations.Camera",
     "Name": "Camera",
     "AnimationId": "rbxassetid://110355555894414"
+  },
+  {
+    "Parent": "Cutscene",
+    "Path": "ReplicatedStorage.Shared.Assets.NPCs.SaintNick.Cutscene.SaintNickTransitionBossAnimation",
+    "Name": "SaintNickTransitionBossAnimation",
+    "AnimationId": "rbxassetid://108765280436747"
+  },
+  {
+    "Parent": "Cutscene",
+    "Path": "ReplicatedStorage.Shared.Assets.NPCs.SaintNick.Cutscene.SaintNickTransitionCameraAnimation",
+    "Name": "SaintNickTransitionCameraAnimation",
+    "AnimationId": "rbxassetid://99534916369004"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parkour.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://12949026647"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parkour.Animations.MoveLeft",
+    "Name": "MoveLeft",
+    "AnimationId": "rbxassetid://12949028180"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parkour.Animations.MoveRight",
+    "Name": "MoveRight",
+    "AnimationId": "rbxassetid://12949029037"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parkour.Animations.PullUp",
+    "Name": "PullUp",
+    "AnimationId": "rbxassetid://12949030399"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parry.Animations.KneeledStagger",
+    "Name": "KneeledStagger",
+    "AnimationId": "rbxassetid://126121029068038"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Parry.Animations.ParriedStagger",
+    "Name": "ParriedStagger",
+    "AnimationId": "rbxassetid://76407687840829"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.AK47.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://13993494076"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.AK47.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://13993491301"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.AK47.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://13993505431"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.AK47.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://13993490084"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.AK47.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://13993496211"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://96731058294677"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://125738984592879"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://126464700471982"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://117070300973760"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://108136207982650"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://108627109467951"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://80251925496164"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.GkExecutor",
+    "Name": "GkExecutor",
+    "AnimationId": "rbxassetid://108588208830811"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.GkVictim",
+    "Name": "GkVictim",
+    "AnimationId": "rbxassetid://88176638392732"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCannon.Animations.Finish",
+    "Name": "Finish",
+    "AnimationId": "rbxassetid://94054230509864"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://117070300973760"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://140731006816431"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://107302023018809"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://117070300973760"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://114292789970644"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://99396399836547"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://76268163306657"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.ReloadStart",
+    "Name": "ReloadStart",
+    "AnimationId": "rbxassetid://96839853667112"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.GkExecutor",
+    "Name": "GkExecutor",
+    "AnimationId": "rbxassetid://104987053905756"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.GkVictim",
+    "Name": "GkVictim",
+    "AnimationId": "rbxassetid://129611697834516"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmCrossbow.Animations.Finish",
+    "Name": "Finish",
+    "AnimationId": "rbxassetid://98472505698597"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://108627109467951"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://117070300973760"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://126464700471982"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Finish",
+    "Name": "Finish",
+    "AnimationId": "rbxassetid://94054230509864"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.GkVictim",
+    "Name": "GkVictim",
+    "AnimationId": "rbxassetid://88176638392732"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://96731058294677"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://117070300973760"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://125738984592879"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://108136207982650"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.GkExecutor",
+    "Name": "GkExecutor",
+    "AnimationId": "rbxassetid://108588208830811"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://97262224742277"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Travel",
+    "Name": "Travel",
+    "AnimationId": "rbxassetid://73402999533836"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://79724728172007"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ArmGrapple.Animations.GoopyTravel",
+    "Name": "GoopyTravel",
+    "AnimationId": "rbxassetid://124501282376714"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.BFG50.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://13995503278"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.BFG50.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://13995501511"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.BFG50.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://13995454329"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.BFG50.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://13995501511"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.BFG50.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://13995505198"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://9067797355"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9067063497"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://9067065613"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://9067066972"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://9067068803"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9067070232"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Crossbow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://9067073422"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.GkVictim",
+    "Name": "GkVictim",
+    "AnimationId": "rbxassetid://124258498654915"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.GkExecutor",
+    "Name": "GkExecutor",
+    "AnimationId": "rbxassetid://100512778743593"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://84815800290968"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.Finisher",
+    "Name": "Finisher",
+    "AnimationId": "rbxassetid://99141102887946"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.Core",
+    "Name": "Core",
+    "AnimationId": "rbxassetid://99447584029700"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.CoreTransition",
+    "Name": "CoreTransition",
+    "AnimationId": "rbxassetid://116902378144451"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.CupidsLongbow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://71341408812052"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Flamethrower.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://14162262060"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Flamethrower.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://14162259600"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Flamethrower.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://14162285651"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Flamethrower.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14162259600"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Flamethrower.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://14162263462"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.AimChargeIdle",
+    "Name": "AimChargeIdle",
+    "AnimationId": "rbxassetid://9745838274"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://9745836560"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://9745832241"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.ChargeIdle",
+    "Name": "ChargeIdle",
+    "AnimationId": "rbxassetid://9745838274"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9745839485"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://9745840883"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://9745836560"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://9745842097"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9745829021"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.HeavyBow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://9745919582"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9745343481"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9745344365"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://11704288330"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.NoAmmoEquip",
+    "Name": "NoAmmoEquip",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.NoAmmoFlourish",
+    "Name": "NoAmmoFlourish",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.NoAmmoIdle",
+    "Name": "NoAmmoIdle",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://9745796833"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Kunai.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://9745345487"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.AimChargeIdle",
+    "Name": "AimChargeIdle",
+    "AnimationId": "rbxassetid://9288972313"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.AimIdle",
+    "Name": "AimIdle",
+    "AnimationId": "rbxassetid://6194623101"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Charge",
+    "Name": "Charge",
+    "AnimationId": "rbxassetid://9067139577"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.ChargeIdle",
+    "Name": "ChargeIdle",
+    "AnimationId": "rbxassetid://9067122660"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://9067123695"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Fire",
+    "Name": "Fire",
+    "AnimationId": "rbxassetid://9067125081"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.FireIdle",
+    "Name": "FireIdle",
+    "AnimationId": "rbxassetid://9067126579"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://9067127660"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9067138459"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Longbow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://9067137317"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.M249.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://14161305140"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.M249.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://14161307182"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.M249.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://14161315655"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.M249.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://14161308776"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.M249.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14174117486"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Minigun.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://14055518626"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Minigun.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://14055519987"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Minigun.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://14055526320"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Minigun.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://14055528873"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Minigun.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14055519987"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.RPG.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://14162171562"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.RPG.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://14162173204"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.RPG.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://14162182725"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.RPG.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14162173204"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.RPG.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://14162176720"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://108478523984866"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://104253287066086"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://94690275166925"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.GKExecutor",
+    "Name": "GKExecutor",
+    "AnimationId": "rbxassetid://113173804159784"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.GKVictim",
+    "Name": "GKVictim",
+    "AnimationId": "rbxassetid://127650651264718"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Finish",
+    "Name": "Finish",
+    "AnimationId": "rbxassetid://121406613019109"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.CoreIdle",
+    "Name": "CoreIdle",
+    "AnimationId": "rbxassetid://139795627002888"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.CoreTransition",
+    "Name": "CoreTransition",
+    "AnimationId": "rbxassetid://133232441996823"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Aim",
+    "Name": "Aim",
+    "AnimationId": "rbxassetid://111123573858159"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://81475689654121"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://78460541792450"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Raygun.Animations.CoreInspect",
+    "Name": "CoreInspect",
+    "AnimationId": "rbxassetid://115514930452355"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://14014716851"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://14014715146"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://14014750893"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14014715146"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://14014718287"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.ReloadStart",
+    "Name": "ReloadStart",
+    "AnimationId": "rbxassetid://14014749005"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.SPAS12.Animations.ReloadEnd",
+    "Name": "ReloadEnd",
+    "AnimationId": "rbxassetid://14014752394"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://113422253905489"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://132057959025238"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://101483840249152"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.NoAmmoEquip",
+    "Name": "NoAmmoEquip",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.NoAmmoFlourish",
+    "Name": "NoAmmoFlourish",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.NoAmmoIdle",
+    "Name": "NoAmmoIdle",
+    "AnimationId": "rbxassetid://0"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://140667230488997"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.Shuriken.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://118480245902539"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ThornedCrossbow.Animations.GkVictim",
+    "Name": "GkVictim",
+    "AnimationId": "rbxassetid://105049129520169"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ThornedCrossbow.Animations.GkExecutor",
+    "Name": "GkExecutor",
+    "AnimationId": "rbxassetid://123475725703922"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ThornedCrossbow.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://129578928533052"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ThornedCrossbow.Animations.Finisher",
+    "Name": "Finisher",
+    "AnimationId": "rbxassetid://101144325322711"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.ThornedCrossbow.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://138030361246748"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.TommyGun.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://13981650447"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.TommyGun.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://13981648847"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.TommyGun.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://13981646602"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.TommyGun.Animations.Shoot",
+    "Name": "Shoot",
+    "AnimationId": "rbxassetid://14098500347"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Ranged.TommyGun.Animations.Inspect",
+    "Name": "Inspect",
+    "AnimationId": "rbxassetid://13981647937"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Revive.Animations.Revive",
+    "Name": "Revive",
+    "AnimationId": "rbxassetid://9440158336"
+  },
+  {
+    "Parent": "AxeCleave",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.AxeCleave.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://70619831693977"
+  },
+  {
+    "Parent": "AxeSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.AxeSlam.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://91977301382423"
+  },
+  {
+    "Parent": "GreatswordBackslash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.GreatswordBackslash.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://104529646742407"
+  },
+  {
+    "Parent": "GreatswordRisingRend",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.GreatswordRisingRend.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://123980967680515"
+  },
+  {
+    "Parent": "MaulSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.MaulSlam.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://72139823873094"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.ExecutorCharge",
+    "Name": "ExecutorCharge",
+    "AnimationId": "rbxassetid://137365894042326"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.ExecutorStartup",
+    "Name": "ExecutorStartup",
+    "AnimationId": "rbxassetid://107322896492449"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.ExecutorThrow",
+    "Name": "ExecutorThrow",
+    "AnimationId": "rbxassetid://126492066642065"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.ExecutorWallFinish",
+    "Name": "ExecutorWallFinish",
+    "AnimationId": "rbxassetid://80748286530913"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimWallFinish_1",
+    "Name": "VictimWallFinish_1",
+    "AnimationId": "rbxassetid://81086222428962"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimWallFinish_2",
+    "Name": "VictimWallFinish_2",
+    "AnimationId": "rbxassetid://88493128971842"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimCharge_1",
+    "Name": "VictimCharge_1",
+    "AnimationId": "rbxassetid://105267468923026"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimCharge_2",
+    "Name": "VictimCharge_2",
+    "AnimationId": "rbxassetid://109286243906504"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimThrow_1",
+    "Name": "VictimThrow_1",
+    "AnimationId": "rbxassetid://105267468923026"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmImpalingRush.Animations.VictimThrow_2",
+    "Name": "VictimThrow_2",
+    "AnimationId": "rbxassetid://91890012771654"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmPiercingTrajectory.Animations.ExecutorTransitionEquip",
+    "Name": "ExecutorTransitionEquip",
+    "AnimationId": "rbxassetid://132183790708815"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmPiercingTrajectory.Animations.ExecutorGroundEquip",
+    "Name": "ExecutorGroundEquip",
+    "AnimationId": "rbxassetid://132183790708815"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.PolearmPiercingTrajectory.Animations.ExecutorWallEquip",
+    "Name": "ExecutorWallEquip",
+    "AnimationId": "rbxassetid://132183790708815"
+  },
+  {
+    "Parent": "SwordFocusedStrike",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.SwordFocusedStrike.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://79440068845556"
+  },
+  {
+    "Parent": "SwordSwiftCut",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.ArchetypeSkills.SwordSwiftCut.SkillAnimation",
+    "Name": "SkillAnimation",
+    "AnimationId": "rbxassetid://138809763576351"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.TeleportSlash.HitAnim",
+    "Name": "HitAnim",
+    "AnimationId": "rbxassetid://17865759132"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.TeleportSlash.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17865756896"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.TeleportSlash.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17865753666"
+  },
+  {
+    "Parent": "Tornado",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Tornado.LoopAnim",
+    "Name": "LoopAnim",
+    "AnimationId": "rbxassetid://17865736572"
+  },
+  {
+    "Parent": "Tornado",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Tornado.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17865732700"
+  },
+  {
+    "Parent": "Tornado",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Tornado.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17865696739"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17865694843"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17865721856"
+  },
+  {
+    "Parent": "SlashBackAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashBackAnims.SlashBack1",
+    "Name": "SlashBack1",
+    "AnimationId": "rbxassetid://14813162185"
+  },
+  {
+    "Parent": "SlashBackAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashBackAnims.SlashBack2",
+    "Name": "SlashBack2",
+    "AnimationId": "rbxassetid://14813162676"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashFrontAnims.SlashFront3",
+    "Name": "SlashFront3",
+    "AnimationId": "rbxassetid://14813165142"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashFrontAnims.SlashFront2",
+    "Name": "SlashFront2",
+    "AnimationId": "rbxassetid://14813164397"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashFrontAnims.SlashFront1",
+    "Name": "SlashFront1",
+    "AnimationId": "rbxassetid://14813163847"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashRightAnims.SlashRight4",
+    "Name": "SlashRight4",
+    "AnimationId": "rbxassetid://17000455333"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashRightAnims.SlashRight3",
+    "Name": "SlashRight3",
+    "AnimationId": "rbxassetid://14813170043"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashRightAnims.SlashRight2",
+    "Name": "SlashRight2",
+    "AnimationId": "rbxassetid://14813169285"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashRightAnims.SlashRight1",
+    "Name": "SlashRight1",
+    "AnimationId": "rbxassetid://14813168748"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashLeftAnims.SlashLeft4",
+    "Name": "SlashLeft4",
+    "AnimationId": "rbxassetid://17000450893"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashLeftAnims.SlashLeft3",
+    "Name": "SlashLeft3",
+    "AnimationId": "rbxassetid://14813168124"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashLeftAnims.SlashLeft2",
+    "Name": "SlashLeft2",
+    "AnimationId": "rbxassetid://14813167250"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Charge.SlashLeftAnims.SlashLeft1",
+    "Name": "SlashLeft1",
+    "AnimationId": "rbxassetid://14813165824"
+  },
+  {
+    "Parent": "Shards",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Shards.ShootingAnim",
+    "Name": "ShootingAnim",
+    "AnimationId": "rbxassetid://17804286503"
+  },
+  {
+    "Parent": "Shards",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Shards.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17804288878"
+  },
+  {
+    "Parent": "Shards",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.CSM.Shards.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17804284143"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.ChargeAnim",
+    "Name": "ChargeAnim",
+    "AnimationId": "rbxassetid://17850433126"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.ChargeVictimAnim",
+    "Name": "ChargeVictimAnim",
+    "AnimationId": "rbxassetid://17850435968"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.SlamAnim",
+    "Name": "SlamAnim",
+    "AnimationId": "rbxassetid://124500098557606"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.SlamVictimAnim",
+    "Name": "SlamVictimAnim",
+    "AnimationId": "rbxassetid://17850439659"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WallHitAnim",
+    "Name": "WallHitAnim",
+    "AnimationId": "rbxassetid://17850444572"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://98053102554847"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WallHitVictimAnim",
+    "Name": "WallHitVictimAnim",
+    "AnimationId": "rbxassetid://88455843317626"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WolfHeadWallHitAnim",
+    "Name": "WolfHeadWallHitAnim",
+    "AnimationId": "rbxassetid://132560270400895"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WolfHeadStartAnim",
+    "Name": "WolfHeadStartAnim",
+    "AnimationId": "rbxassetid://115096897627257"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WolfHeadLoopAnim",
+    "Name": "WolfHeadLoopAnim",
+    "AnimationId": "rbxassetid://81092125244208"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Charge.WolfHeadSlamAnim",
+    "Name": "WolfHeadSlamAnim",
+    "AnimationId": "rbxassetid://119228183760045"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://18443593488"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://18443596875"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://18443598830"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.WolfHeadStartAnim",
+    "Name": "WolfHeadStartAnim",
+    "AnimationId": "rbxassetid://96450613684817"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.WolfHeadLoopAnim",
+    "Name": "WolfHeadLoopAnim",
+    "AnimationId": "rbxassetid://121627078843655"
+  },
+  {
+    "Parent": "ThunderGun",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.ThunderGun.WolfHeadEndAnim",
+    "Name": "WolfHeadEndAnim",
+    "AnimationId": "rbxassetid://126215335081008"
+  },
+  {
+    "Parent": "Uproot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Uproot.MainAnim",
+    "Name": "MainAnim",
+    "AnimationId": "rbxassetid://17850390080"
+  },
+  {
+    "Parent": "Uproot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.Uproot.WolfHeadAnim",
+    "Name": "WolfHeadAnim",
+    "AnimationId": "rbxassetid://122368311837977"
+  },
+  {
+    "Parent": "DoubleSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.DoubleSlam.MainAnim",
+    "Name": "MainAnim",
+    "AnimationId": "rbxassetid://17850403781"
+  },
+  {
+    "Parent": "DoubleSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Crucible.DoubleSlam.WolfHeadAnim",
+    "Name": "WolfHeadAnim",
+    "AnimationId": "rbxassetid://138528587620719"
+  },
+  {
+    "Parent": "Blackhole",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.Blackhole.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17850837798"
+  },
+  {
+    "Parent": "Blackhole",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.Blackhole.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17850832448"
+  },
+  {
+    "Parent": "Blackhole",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.Blackhole.VictimIdleAnim",
+    "Name": "VictimIdleAnim",
+    "AnimationId": "rbxassetid://17850834979"
+  },
+  {
+    "Parent": "FloorPortal",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.FloorPortal.MainAnim",
+    "Name": "MainAnim",
+    "AnimationId": "rbxassetid://17850867591"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.TeleportSlash.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17850886332"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.TeleportSlash.HitAnim",
+    "Name": "HitAnim",
+    "AnimationId": "rbxassetid://17850888688"
+  },
+  {
+    "Parent": "TeleportSlash",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.TeleportSlash.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17850890050"
+  },
+  {
+    "Parent": "RodBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Darkheart.RodBarrage.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17850875012"
+  },
+  {
+    "Parent": "BallShot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.BallShot.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://15549786381"
+  },
+  {
+    "Parent": "BallShot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.BallShot.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://15549793239"
+  },
+  {
+    "Parent": "BallShot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.BallShot.ShootAnim",
+    "Name": "ShootAnim",
+    "AnimationId": "rbxassetid://15549792323"
+  },
+  {
+    "Parent": "ThunderStrikes",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ThunderStrikes.ShootAnim",
+    "Name": "ShootAnim",
+    "AnimationId": "rbxassetid://15550432679"
+  },
+  {
+    "Parent": "ThunderStrikes",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ThunderStrikes.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://15550432078"
+  },
+  {
+    "Parent": "ThunderStrikes",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ThunderStrikes.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://15550431210"
+  },
+  {
+    "Parent": "ThunderStrikes",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ThunderStrikes.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://18523851586"
+  },
+  {
+    "Parent": "ZigZag",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ZigZag.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://15554638933"
+  },
+  {
+    "Parent": "ZigZag",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ZigZag.JumpAnim",
+    "Name": "JumpAnim",
+    "AnimationId": "rbxassetid://15554640192"
+  },
+  {
+    "Parent": "ZigZag",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.ZigZag.WallHitAnim",
+    "Name": "WallHitAnim",
+    "AnimationId": "rbxassetid://15554641498"
+  },
+  {
+    "Parent": "BallSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.BallSlam.SlamAnim",
+    "Name": "SlamAnim",
+    "AnimationId": "rbxassetid://15551072528"
+  },
+  {
+    "Parent": "BallSlam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.EnergyBlade.BallSlam.HandAnim",
+    "Name": "HandAnim",
+    "AnimationId": "rbxassetid://83421015766222"
+  },
+  {
+    "Parent": "ForceChoke",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.ForceChoke.ChokeStart",
+    "Name": "ChokeStart",
+    "AnimationId": "rbxassetid://17850523470"
+  },
+  {
+    "Parent": "ForceChoke",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.ForceChoke.ChokeEnd",
+    "Name": "ChokeEnd",
+    "AnimationId": "rbxassetid://17850520036"
+  },
+  {
+    "Parent": "ForceChoke",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.ForceChoke.ChokeIdle",
+    "Name": "ChokeIdle",
+    "AnimationId": "rbxassetid://17850521719"
+  },
+  {
+    "Parent": "ForceChoke",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.ForceChoke.ChokeIdleVictim",
+    "Name": "ChokeIdleVictim",
+    "AnimationId": "rbxassetid://17850524816"
+  },
+  {
+    "Parent": "SlashBackAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashBackAnims.SlashBack2",
+    "Name": "SlashBack2",
+    "AnimationId": "rbxassetid://17850561625"
+  },
+  {
+    "Parent": "SlashBackAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashBackAnims.SlashBack1",
+    "Name": "SlashBack1",
+    "AnimationId": "rbxassetid://17850559547"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashFrontAnims.SlashFront1",
+    "Name": "SlashFront1",
+    "AnimationId": "rbxassetid://17850563005"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashFrontAnims.SlashFront2",
+    "Name": "SlashFront2",
+    "AnimationId": "rbxassetid://17850564784"
+  },
+  {
+    "Parent": "SlashFrontAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashFrontAnims.SlashFront3",
+    "Name": "SlashFront3",
+    "AnimationId": "rbxassetid://17850566064"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashLeftAnims.SlashLeft1",
+    "Name": "SlashLeft1",
+    "AnimationId": "rbxassetid://17850568142"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashLeftAnims.SlashLeft2",
+    "Name": "SlashLeft2",
+    "AnimationId": "rbxassetid://17850569974"
+  },
+  {
+    "Parent": "SlashLeftAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashLeftAnims.SlashLeft3",
+    "Name": "SlashLeft3",
+    "AnimationId": "rbxassetid://17850571397"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashRightAnims.SlashRight1",
+    "Name": "SlashRight1",
+    "AnimationId": "rbxassetid://17850577916"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashRightAnims.SlashRight2",
+    "Name": "SlashRight2",
+    "AnimationId": "rbxassetid://17850580022"
+  },
+  {
+    "Parent": "SlashRightAnims",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.SlashRightAnims.SlashRight3",
+    "Name": "SlashRight3",
+    "AnimationId": "rbxassetid://17850581561"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17865791130"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17865788604"
+  },
+  {
+    "Parent": "Charge",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.Charge.WallHitAnim",
+    "Name": "WallHitAnim",
+    "AnimationId": "rbxassetid://17865793552"
+  },
+  {
+    "Parent": "PlanetUpRoot",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.PlanetUpRoot.MainAnim",
+    "Name": "MainAnim",
+    "AnimationId": "rbxassetid://17850605334"
+  },
+  {
+    "Parent": "PlanetSuck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.PlanetSuck.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17850625446"
+  },
+  {
+    "Parent": "PlanetSuck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.PlanetSuck.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17850623913"
+  },
+  {
+    "Parent": "PlanetSuck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.PlanetSuck.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17850627803"
+  },
+  {
+    "Parent": "PlanetSuck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Saber.PlanetSuck.VictimIdleAnim",
+    "Name": "VictimIdleAnim",
+    "AnimationId": "rbxassetid://17850629644"
+  },
+  {
+    "Parent": "WaterWalls",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterWalls.SlamAnim",
+    "Name": "SlamAnim",
+    "AnimationId": "rbxassetid://17165133002"
+  },
+  {
+    "Parent": "WaterWalls",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterWalls.WaterSharkAnim",
+    "Name": "WaterSharkAnim",
+    "AnimationId": "rbxassetid://18998681703"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17147061507"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17147056820"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17147059142"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.ShootAnim",
+    "Name": "ShootAnim",
+    "AnimationId": "rbxassetid://17147067682"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.WaterSharkIdle",
+    "Name": "WaterSharkIdle",
+    "AnimationId": "rbxassetid://98485189135690"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.WaterSharkBite",
+    "Name": "WaterSharkBite",
+    "AnimationId": "rbxassetid://83713497385102"
+  },
+  {
+    "Parent": "WaterSharkBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterSharkBarrage.WaterSharkBiteClose",
+    "Name": "WaterSharkBiteClose",
+    "AnimationId": "rbxassetid://90135400781523"
+  },
+  {
+    "Parent": "WaterBeam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterBeam.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17153100538"
+  },
+  {
+    "Parent": "WaterBeam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterBeam.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17153103398"
+  },
+  {
+    "Parent": "WaterBeam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.WaterBeam.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17153102113"
+  },
+  {
+    "Parent": "Spin",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.Spin.EndAnim",
+    "Name": "EndAnim",
+    "AnimationId": "rbxassetid://17197690070"
+  },
+  {
+    "Parent": "Spin",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.Spin.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17197686689"
+  },
+  {
+    "Parent": "Spin",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.Samehada.Spin.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17197656861"
+  },
+  {
+    "Parent": "SnowShovel",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SnowShovel.SkillPart2",
+    "Name": "SkillPart2",
+    "AnimationId": "rbxassetid://140395916470019"
+  },
+  {
+    "Parent": "SnowShovel",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SnowShovel.SkillPart1",
+    "Name": "SkillPart1",
+    "AnimationId": "rbxassetid://120850288993775"
+  },
+  {
+    "Parent": "FistBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SpecificBaseSkills.FistBarrage.BarrageAnimation",
+    "Name": "BarrageAnimation",
+    "AnimationId": "rbxassetid://11771615016"
+  },
+  {
+    "Parent": "SkullCrush",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SpecificBaseSkills.SkullCrush.Scene_SkullCrushKillAnimation",
+    "Name": "Scene_SkullCrushKillAnimation",
+    "AnimationId": "rbxassetid://11836413954"
+  },
+  {
+    "Parent": "SkullCrush",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SpecificBaseSkills.SkullCrush.SkullCrushSwingAnimation",
+    "Name": "SkullCrushSwingAnimation",
+    "AnimationId": "rbxassetid://11836360790"
+  },
+  {
+    "Parent": "SkullCrush",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SpecificBaseSkills.SkullCrush.Scene_SkullCrushVictimAnimation",
+    "Name": "Scene_SkullCrushVictimAnimation",
+    "AnimationId": "rbxassetid://11836419535"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillStartup",
+    "Name": "SkillStartup",
+    "AnimationId": "rbxassetid://120681903491238"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillStartupLoop",
+    "Name": "SkillStartupLoop",
+    "AnimationId": "rbxassetid://75284662715519"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillSlash1",
+    "Name": "SkillSlash1",
+    "AnimationId": "rbxassetid://125218667008725"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillSlash2",
+    "Name": "SkillSlash2",
+    "AnimationId": "rbxassetid://93910363302706"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillSlash3",
+    "Name": "SkillSlash3",
+    "AnimationId": "rbxassetid://92969147041892"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillSlash4",
+    "Name": "SkillSlash4",
+    "AnimationId": "rbxassetid://120262091335866"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.SunfuryKiss.Animations.SkillFinalSlam",
+    "Name": "SkillFinalSlam",
+    "AnimationId": "rbxassetid://110678245374049"
+  },
+  {
+    "Parent": "Slam",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.Slam.SlamAnimation",
+    "Name": "SlamAnimation",
+    "AnimationId": "rbxassetid://15770277376"
+  },
+  {
+    "Parent": "TotsukaBlade",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.SusanooIdleAnimation",
+    "Name": "SusanooIdleAnimation",
+    "AnimationId": "rbxassetid://15770282189"
+  },
+  {
+    "Parent": "TotsukaBlade",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.SusanooWeaponIdleAnimation",
+    "Name": "SusanooWeaponIdleAnimation",
+    "AnimationId": "rbxassetid://15770287063"
+  },
+  {
+    "Parent": "ShardBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.ShardBarrage.ShootingAnimation",
+    "Name": "ShootingAnimation",
+    "AnimationId": "rbxassetid://15770279197"
+  },
+  {
+    "Parent": "ShardBarrage",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.ShardBarrage.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17864594381"
+  },
+  {
+    "Parent": "Suck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.Suck.SuckingAnimation",
+    "Name": "SuckingAnimation",
+    "AnimationId": "rbxassetid://15770284144"
+  },
+  {
+    "Parent": "Suck",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.Suck.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17864596745"
+  },
+  {
+    "Parent": "Amaterasu",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.Amaterasu.StartAnim",
+    "Name": "StartAnim",
+    "AnimationId": "rbxassetid://17864589659"
+  },
+  {
+    "Parent": "Amaterasu",
+    "Path": "ReplicatedStorage.Shared.Assets.Skills.TotsukaBlade.Amaterasu.IdleAnim",
+    "Name": "IdleAnim",
+    "AnimationId": "rbxassetid://17864591851"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Animations.BothArmsEquip",
+    "Name": "BothArmsEquip",
+    "AnimationId": "rbxassetid://9314628927"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Animations.EmptyEquip",
+    "Name": "EmptyEquip",
+    "AnimationId": "rbxassetid://94592380748506"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Animations.LeftArmEquip",
+    "Name": "LeftArmEquip",
+    "AnimationId": "rbxassetid://9309327884"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Animations.RightArmEquip",
+    "Name": "RightArmEquip",
+    "AnimationId": "rbxassetid://9309328973"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Bandages.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6144528150"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Bandages.Animations.ReviveWrap",
+    "Name": "ReviveWrap",
+    "AnimationId": "rbxassetid://9440160312"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Bandages.Animations.Wrap",
+    "Name": "Wrap",
+    "AnimationId": "rbxassetid://7188786906"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Bandages.Animations.WrapOther",
+    "Name": "WrapOther",
+    "AnimationId": "rbxassetid://9602843070"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.BearTrap.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6144518972"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.BearTrap.Animations.Set",
+    "Name": "Set",
+    "AnimationId": "rbxassetid://4746371214"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.C4.Animations.Activate",
+    "Name": "Activate",
+    "AnimationId": "rbxassetid://9599883053"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.C4.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9600051925"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Claymore.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://11189029247"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Claymore.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://11189031817"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Claymore.Animations.Set",
+    "Name": "Set",
+    "AnimationId": "rbxassetid://12654198216"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Defibrillators.Animations.UseAnimation",
+    "Name": "UseAnimation",
+    "AnimationId": "rbxassetid://74712287772656"
+  },
+  {
+    "Parent": "Flashbang",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Flashbang.FlashbangedIdleAnimation",
+    "Name": "FlashbangedIdleAnimation",
+    "AnimationId": "rbxassetid://11905986959"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.FragGrenade.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6670175551"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.FragGrenade.Animations.PreThrow",
+    "Name": "PreThrow",
+    "AnimationId": "rbxassetid://6686490354"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.FragGrenade.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://4746369062"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.FragGrenade.Animations.ThrowIdle",
+    "Name": "ThrowIdle",
+    "AnimationId": "rbxassetid://4746367113"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.GasCan.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9725971381"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.GasCan.Animations.Open",
+    "Name": "Open",
+    "AnimationId": "rbxassetid://9725976096"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.GasCan.Animations.Pour",
+    "Name": "Pour",
+    "AnimationId": "rbxassetid://9725972441"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.GhostPotion.Animations.Drink",
+    "Name": "Drink",
+    "AnimationId": "rbxassetid://4746370186"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.GhostPotion.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6144503422"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.HealthPen.Animations.Jab",
+    "Name": "Jab",
+    "AnimationId": "rbxassetid://90278134147308"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.HealthPen.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://85128034848806"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.HealthPen.Animations.Hold",
+    "Name": "Hold",
+    "AnimationId": "rbxassetid://120100961157991"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.HealthPen.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://105574087915179"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.HealthSplashPotion.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://129362865106717"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.MatchBox.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://9727047926"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.MatchBox.Animations.NoAmmoIdle",
+    "Name": "NoAmmoIdle",
+    "AnimationId": "rbxassetid://9814909948"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.MatchBox.Animations.Reload",
+    "Name": "Reload",
+    "AnimationId": "rbxassetid://9727049387"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.MatchBox.Animations.Strike",
+    "Name": "Strike",
+    "AnimationId": "rbxassetid://9727047021"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Medkit.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://11189076163"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Medkit.Animations.HealOther",
+    "Name": "HealOther",
+    "AnimationId": "rbxassetid://11869307679"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Medkit.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://11189078457"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Medkit.Animations.Use",
+    "Name": "Use",
+    "AnimationId": "rbxassetid://11869513038"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Molotov.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6846843486"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Molotov.Animations.PreThrow",
+    "Name": "PreThrow",
+    "AnimationId": "rbxassetid://6578683410"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Molotov.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://6846847681"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Molotov.Animations.ThrowIdle",
+    "Name": "ThrowIdle",
+    "AnimationId": "rbxassetid://6846850289"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Repulsor.Animations.IdleAnimation",
+    "Name": "IdleAnimation",
+    "AnimationId": "rbxassetid://99484289557860"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Repulsor.Animations.UseAnimation",
+    "Name": "UseAnimation",
+    "AnimationId": "rbxassetid://139974490893289"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SmokeGrenade.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://6670175551"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SmokeGrenade.Animations.PreThrow",
+    "Name": "PreThrow",
+    "AnimationId": "rbxassetid://6686490354"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SmokeGrenade.Animations.Throw",
+    "Name": "Throw",
+    "AnimationId": "rbxassetid://4746369062"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SmokeGrenade.Animations.ThrowIdle",
+    "Name": "ThrowIdle",
+    "AnimationId": "rbxassetid://4746367113"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Snowball.Animations.Gathering",
+    "Name": "Gathering",
+    "AnimationId": "rbxassetid://124987809347423"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Snowball.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://97894853182667"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Snowball.Animations.LargeFlourish",
+    "Name": "LargeFlourish",
+    "AnimationId": "rbxassetid://109745137571711"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Snowball.Animations.SmallFlourish",
+    "Name": "SmallFlourish",
+    "AnimationId": "rbxassetid://95390602065078"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SprayPaintCan.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://12691467052"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SprayPaintCan.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://12691464948"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SprayPaintCan.Animations.Spray",
+    "Name": "Spray",
+    "AnimationId": "rbxassetid://12691472662"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.SprayPaintCan.Animations.Flourish",
+    "Name": "Flourish",
+    "AnimationId": "rbxassetid://12691474634"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.StaminaGeneric.Animations.Implode",
+    "Name": "Implode",
+    "AnimationId": "rbxassetid://88467449955522"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.StaminaPen.Animations.Equip",
+    "Name": "Equip",
+    "AnimationId": "rbxassetid://97788083113284"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.StaminaPen.Animations.Inject",
+    "Name": "Inject",
+    "AnimationId": "rbxassetid://140696119077638"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.StaminaPen.Animations.Idle",
+    "Name": "Idle",
+    "AnimationId": "rbxassetid://87434754938316"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Utility.Trowel.Animations.UseAnimation",
+    "Name": "UseAnimation",
+    "AnimationId": "rbxassetid://140439169305335"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Anchor",
+    "Name": "Anchor",
+    "AnimationId": "rbxassetid://103406616270984"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Berserker",
+    "Name": "Berserker",
+    "AnimationId": "rbxassetid://137318217026166"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Boss",
+    "Name": "Boss",
+    "AnimationId": "rbxassetid://82381836163376"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Camera",
+    "Name": "Camera",
+    "AnimationId": "rbxassetid://92672801868956"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Chainsaw",
+    "Name": "Chainsaw",
+    "AnimationId": "rbxassetid://132706597515073"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.Doors",
+    "Name": "Doors",
+    "AnimationId": "rbxassetid://129118458172831"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.DragonSlayer",
+    "Name": "DragonSlayer",
+    "AnimationId": "rbxassetid://134778063996148"
+  },
+  {
+    "Parent": "Animations",
+    "Path": "ReplicatedStorage.Shared.Assets.Winter2025.IntroCutscene.Animations.ScissorBlades",
+    "Name": "ScissorBlades",
+    "AnimationId": "rbxassetid://139929364685747"
   }
 ]
