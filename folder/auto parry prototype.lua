@@ -37,17 +37,12 @@ local function tinmr()
             local root = tchar:FindFirstChild("HumanoidRootPart")
             if root then
                 local rpos = root.Position
-                for _, parts in pairs(tchar:GetChildren()) do
-                    if parts:IsA("BasePart") then
-                        local screenpos = cam:WorldToScreenPoint(parts.Position)
-                        local screenpos2 = cam:WorldToScreenPoint(rpos)
-                        if get2dDistance(mpos, screenpos) <= radius + 10 then
-                            color = Color3.new(1, 0, 0)
-                            name = v.Name
-                            spos = screenpos2
-                            worldpos = rpos
-                        end
-                    end
+                local screenpos2 = cam:WorldToScreenPoint(rpos)
+                if get2dDistance(mpos, screenpos2) <= radius + 10 then
+                    color = Color3.new(1, 0, 0)
+                    name = v.Name
+                    spos = screenpos2
+                    worldpos = rpos
                 end
             end
         end
