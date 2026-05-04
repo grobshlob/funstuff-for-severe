@@ -9,11 +9,9 @@ local ws = game:GetService("Workspace")
 local cam = ws.CurrentCamera
 local radius = 60
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
-local target = nil
-local targetAnimator = nil
-local baseline = {}
-local swingPtr = nil
-local baselineSampled = false
+_G.target = nil
+_G.targetAnimator = nil
+_G.swingPtr = nil
 
 local function get2dDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
@@ -85,8 +83,9 @@ function getPlayingAnimationTracks(animator)
 end
 
 
-local ignore = {}
-local dontignore = {}
+_G.dontignore = {}
+_G.ignore = {}
+_G.loaded = false
 local pid = game.PlaceId
 local body = nil
 local data = nil
@@ -165,7 +164,7 @@ task.spawn(function()
                         if tchar then
                             local hum = tchar:FindFirstChildOfClass("Humanoid")
                             if hum then
-                                targetAnimator = hum:FindFirstChildOfClass("Animator")
+                                _G.targetAnimator = hum:FindFirstChildOfClass("Animator")
                             end
                         end
                         break
