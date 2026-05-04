@@ -119,9 +119,9 @@ end
 do
     local PrevLeftPressed: boolean = false
     local PrevKeys: {string} = {}
-
+    
     function OnKeybind1Change(key: string): ()
-        _G.active = true
+        _G.active = not _G.active
     end
 
     RunService.PreLocal:Connect(function()
