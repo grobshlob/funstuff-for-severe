@@ -159,7 +159,7 @@ task.spawn(function()
             if name then
                 for _, v in pairs(players:GetChildren()) do
                     if v.Name == name and v ~= lp then
-                        target = v
+                        _G.target = v
                         local tchar = v.Character
                         if tchar then
                             local hum = tchar:FindFirstChildOfClass("Humanoid")
@@ -181,7 +181,7 @@ RunService.Render:Connect(function()
     DrawingImmediate.Circle(mousepos(), radius, color, 1, 200, 2)
     if name and spos then
         DrawingImmediate.Text(spos, 10, color, 1, name, true)
-        if target and name == target.Name then
+        if _G.target and name == _G.target.Name then
             DrawingImmediate.Text(
                 Vector2.new(spos.X, spos.Y - 30),
                 10,
