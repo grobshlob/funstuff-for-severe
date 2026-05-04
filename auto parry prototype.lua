@@ -48,54 +48,53 @@ local function tinmr()
     return color, name, spos, worldpos
 end
 
-local function getPlayingAnimationTracks(animator)
+local function getPlayingAnimationTracks()
     local tracks = {}
-    local ok, topguy = pcall(memory.readu64, animator, 0x868)
+    local ok, head = pcall(memory.readu64, animator, 0x868)
     if not ok or head == 0 then return tracks end
 
-    local ok2, bottomguys = pcall(memory.readu64, topguy)
+    local ok2, node = pcall(memory.readu64, head)
     if not ok2 then return tracks end
 
     local count = 0
-    while bottomguys ~= 0 and bottomguys ~= head and count < 100 do
+
+    while node ~= 0 and node ~= head and count < 100 do
         count += 1
-        local ok3, track = pcall(memory.readu64, bottomguys + 0x10)
+        local ok3, track = pcall(memory.readu64, node + 0x10)
         if ok3 and track ~= 0 then
             local ok4, isPlaying = pcall(memory.readu8, track, 0xa18)
-            if ok4 and isPlaying == 1 then
+            local ok6, stringptr = pcall(memory.readu64, track, 0xd0)
+            if ok4 and isPlaying == 1 and ok6 and stringptr > 100000 then
                 local ok5, timePos = pcall(memory.readf32, track, 0xe8)
-                local ok6, asset = pcall(memory.readstring, track, 0xd0)
+                local ok7 , asset = pcall(memory.readstring, stringptr, 0xd0)
                 table.insert(tracks, {
                     ptr = track,
                     timePosition = ok5 and timePos or 0,
-                    assetid = ok6 and asset,
+                    assetid = ok7 and asset,
                 })
             end
         end
-        local ok6, next = pcall(memory.readu64, bottomguys)
+        local ok6, next = pcall(memory.readu64, node)
         if not ok6 then break end
-        bottomguys = next
+        node = next
     end
+
     return tracks
 end
 
-local function sampleBaseline()
-    baseline = {}
-    swingPtr = nil
-    baselineSampled = false
-    --since the ptrs apparently change(according to claude) i made it so it detects any animations before swinging.
-    --maybe hardcode assetids for games? or see if its looped
-    print("sampling baseline for target")
-    for i = 1, 60 do
-        task.wait(0.1)
-        if not targetAnimator then break end
-        for _, t in ipairs(getPlayingAnimationTracks(targetAnimator)) do
-            baseline[t.ptr] = true
-        end
-    end
-    baselineSampled = true
-    print("ready! tracking:", target.Name)
-end
+local ignore = { 
+    ["rbxassetid://180435571"] = true,
+    ["rbxassetid://4639817538"] = true,
+    ["rbxassetid://6786106507"] = true,
+    ["rbxassetid://6789165310"] = true,
+    ["rbxassetid://6789231619"] = true,
+    ["rbxassetid://8799308611"] = true,
+    ["rbxassetid://0"] = true,
+    ["rbxassetid://6820400023"] = true,
+    ["rbxassetid://8799576671"] = true,
+    ["rbxassetid://9279203398"] = true,
+    ["rbxassetid://7479225627"] = true
+}
 
 -- lock target on left click
 local lastClick = false
@@ -137,11 +136,13 @@ task.spawn(function()
 
         local foundSwingPtr = nil
         for _, t in ipairs(tracks) do
-            if not baseline[t.ptr] then
+            if t.assetid and not ignore[t.assetid] then
                 foundSwingPtr = t.ptr
+                --print("Detected non-ignored anim: " .. tostring(t.assetid)) --find missed anims
                 break
             end
         end
+
 
         if foundSwingPtr ~= swingPtr then
             if swingPtr ~= nil then
@@ -162,11 +163,11 @@ RunService.Render:Connect(function()
     local color, name, spos, worldpos = tinmr()
     DrawingImmediate.Circle(mousepos(), radius, color, 1, 200, 2)
     if name and spos then
-        DrawingImmediate.Text(spos, 25, color, 1, name, true)
+        DrawingImmediate.Text(spos, 10, color, 1, name, true)
         if target and name == target.Name then
             DrawingImmediate.Text(
                 Vector2.new(spos.X, spos.Y - 30),
-                20,
+                10,
                 Color3.new(1, 1, 0),
                 1,
                 "[LOCKED]",
