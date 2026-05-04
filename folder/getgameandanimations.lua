@@ -113,7 +113,7 @@ if body then
     end
 end
 --thank you ai
-if ok_decode and pid == 4282985734 then
+if ok_decode and pid == 4282985734 or pid == 11979315221 then
     local decodedJSON = data -- This is your array of animation objects
     
     for _, entry in pairs(decodedJSON) do
