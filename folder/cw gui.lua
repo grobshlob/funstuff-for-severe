@@ -120,8 +120,13 @@ do
     local PrevLeftPressed: boolean = false
     local PrevKeys: {string} = {}
 
-    function OnKeybind1Change(key: string): ()
+    _G.OnKeybind1Change = function(key: string): ()
         _G.active = not _G.active
+        if _G.active then
+            send_notification("on", "info")
+        else
+            send_notification("off", "info")
+        end
     end
 
     RunService.PreLocal:Connect(function()
@@ -196,7 +201,7 @@ do
             if not isrbxactive() then return end
             if E.Keybind1Fired then
                 E.Keybind1Fired = false
-                OnKeybind1Change(E.Keybind1Key)
+                _G.OnKeybind1Change(E.Keybind1Key)
             end
         end)
     end
