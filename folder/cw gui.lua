@@ -33,10 +33,10 @@ E.Square1 = Drawing.new("Square")
 E.Square2 = Drawing.new("Square")
 E.Keybind1Background  = Drawing.new("Square")
 E.Keybind1Text        = Drawing.new("Text")
-E.Keybind1Key         = "F2"
+E.Keybind1Key         = "B"
 E.Keybind1Waiting     = false
 E.Keybind1WaitReady   = false
-E.Keybind1DisplayText = "[F2]"
+E.Keybind1DisplayText = "[B]"
 E.Keybind1Fired       = false
 E.Text1 = Drawing.new("Text")
 E.Line2 = Drawing.new("Line")
@@ -122,6 +122,7 @@ do
 
     local function OnKeybind1Change(key: string): ()
         _G.active = true
+        print("hi")
     end
 
     RunService.PreLocal:Connect(function()
