@@ -48,6 +48,9 @@ task.spawn(function()
                 task.wait(0.1)
                 keyrelease(0x46)
             end
+            if _G.swingPtr == foundSwingPtr then
+                _G.swingPtr = nil
+            end
         end
     end
 end)
