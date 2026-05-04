@@ -10,7 +10,7 @@ task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/cw%20gui.lua"))()
     while true do
-        task.wait(0.016)
+        task.wait(0.008)
         local char = lp.Character
         if not char then continue end
         local _, _, _, worldpos = tinmr()
@@ -41,7 +41,7 @@ task.spawn(function()
             end
             if foundSwingPtr ~= nil then
                 print(_G.target.Name .. " swing started!")
-                task.wait(0.09)
+                task.wait(0.1)
                 keypress(0x46)
                 task.wait(0.1)
                 keyrelease(0x46)
