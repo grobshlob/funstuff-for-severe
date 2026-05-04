@@ -86,6 +86,7 @@ end
 
 
 local ignore = {}
+local dontignore = {}
 
 local success, response = pcall(function()
     return http.get("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/animidsBROKILLMEAIWONTSORTTHISOUT.json")
@@ -99,6 +100,8 @@ if success then
     
         if name:find("Equip") or name:find("Finish") or name:find("Flourish") or name:find("Idle") or name:find("Parry") or name:find("CoreIdle") or name:find("CoreTransition") or name:find("GkVictim") or name:find("GkExecutor")  then
             ignore[fullId] = true
+        else
+            dontignore[fullId] = true
         end
     end
     print("Successfully loaded and filtered animation JSON")
@@ -144,7 +147,7 @@ task.spawn(function()
 
         local foundSwingPtr = nil
         for _, t in ipairs(tracks) do
-            if t.assetid and not ignore[t.assetid] then
+            if t.assetid and dontignore[t.assetid] then
                 foundSwingPtr = t.ptr
                 --print("Detected non-ignored anim: " .. tostring(t.assetid)) --find missed anims
                 break
