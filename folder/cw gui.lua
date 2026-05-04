@@ -121,7 +121,7 @@ do
     local PrevKeys: {string} = {}
 
     local function OnKeybind1Change(key: string): ()
-        active = true
+        _G.active = true
     end
 
     RunService.PreLocal:Connect(function()
