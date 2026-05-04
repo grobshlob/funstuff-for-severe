@@ -103,7 +103,6 @@ elseif pid == 8767500166 then
 end
 local ok_decode = false
 if body then
-    print("Body content length: " .. #body)
     local success, decoded = pcall(function()
         return crypt.json.decode(body)
     end)
