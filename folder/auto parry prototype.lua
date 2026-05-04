@@ -49,6 +49,7 @@ local function tinmr()
     end
     return color, name, spos, worldpos
 end
+--thank you hashmka i skidded your method
 local function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
