@@ -49,7 +49,7 @@ local function tinmr()
     end
     return color, name, spos, worldpos
 end
---thank you hashmka i skidded your method
+--thank you hashmka i skidded your method because ai couldnt figure it out
 local function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
@@ -87,20 +87,33 @@ end
 
 local ignore = {}
 local dontignore = {}
-local gid = game.GameId
+local pid = game.PlaceId
+local body = nil
+local data = nil
 
-if gid == 4282985734 then
-    local ok_body, body = pcall(function()
+if pid == 4282985734 then
+    local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
     end)
-elseif gid == 8767500166
-    return nil
+    if ok_body then body = result end
+elseif pid == 8767500166 then
+    local ok_body, result = pcall(function()
+        return nil
+    end)
+    if ok_body then body = result end
 end
-local ok_decode, data = pcall(function()
-    return crypt.json.decode(body)
-end)
+local ok_decode = false
+if body then
+    local success, decoded = pcall(function()
+        return crypt.json.decode(body)
+    end)
+    if success then
+        data = decoded
+        ok_decode = true
+    end
+end
 --thank you ai
-if ok_decode and gid == 4282985734 then
+if ok_decode and pid == 4282985734 then
     local decodedJSON = data -- This is your array of animation objects
     
     for _, entry in pairs(decodedJSON) do
@@ -129,8 +142,8 @@ if ok_decode and gid == 4282985734 then
     print("Successfully loaded JSON.")
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
-elseif ok_decode and gid == 8767500166 then 
-    return nil
+elseif ok_decode and pid == 8767500166 then 
+    
 else
     warn("Failed to decode JSON body.")
 end
@@ -159,46 +172,6 @@ task.spawn(function()
             end
         end
         lastClick = clicking
-    end
-end)
-
--- animation tracking loop
-task.spawn(function()
-    while true do
-        task.wait(0.016)
-        local _, _, _, worldpos = tinmr()
-        if not targetAnimator then continue end
-
-        local ok, tracks = pcall(getPlayingAnimationTracks, targetAnimator)
-        if not ok then continue end
-
-        local foundSwingPtr = nil
-        for _, t in ipairs(tracks) do
-            if t.assetid and dontignore[t.assetid] then
-                foundSwingPtr = t.ptr
-                if _G.debug then
-                    print("Detected non-ignored anim: " .. tostring(t.assetid))
-                end
-                break
-            end
-        end
-
-        local root = char:FindFirstChild("HumanoidRootPart")
-        if not root or not worldpos then return end
-        local rpos = root.Position
-        if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 20 then
-            if swingPtr ~= nil then
-                print(target.Name .. " swing stopped!")
-            end
-            if foundSwingPtr ~= nil then
-                print(target.Name .. " swing started!")
-                task.wait(0.075)
-                keypress(0x46)
-                task.wait(0.1)
-                keyrelease(0x46)
-            end
-            swingPtr = foundSwingPtr
-        end
     end
 end)
 
