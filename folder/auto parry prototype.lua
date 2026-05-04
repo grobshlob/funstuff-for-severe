@@ -169,7 +169,7 @@ task.spawn(function()
         for _, t in ipairs(tracks) do
             if t.assetid and dontignore[t.assetid] then
                 foundSwingPtr = t.ptr
-                if _G.debug the 
+                if _G.debug then
                     print("Detected non-ignored anim: " .. tostring(t.assetid))
                 end
                 break
