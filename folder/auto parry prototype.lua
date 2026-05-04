@@ -17,6 +17,9 @@ local baselineSampled = false
 local function get2dDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
 end
+local function getDistance(a, b)
+    return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
+end
 
 local function mousepos()
     return uis:GetMouseLocation()
@@ -88,25 +91,44 @@ end
 local ignore = {}
 local dontignore = {}
 
-local success, response = pcall(function()
-    return http.get("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/animidsBROKILLMEAIWONTSORTTHISOUT.json")
+local ok_body, body = pcall(function()
+    return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/animidsBROKILLMEAIWONTSORTTHISOUT.json")
+end)
+local ok_decode, data = pcall(function()
+    return crypt.json.decode(body)
 end)
 
-if success then
-    local decodedJSON = crypt.json.decode(response)
+if ok_decode then
+    local decodedJSON = data -- This is your array of animation objects
     
-    for name, id in pairs(decodedJSON) do
-        local fullId = "rbxassetid://" .. tostring(id)
-    
-        if name:find("Equip") or name:find("Finish") or name:find("Flourish") or name:find("Idle") or name:find("Parry") or name:find("CoreIdle") or name:find("CoreTransition") or name:find("GkVictim") or name:find("GkExecutor")  then
-            ignore[fullId] = true
-        else
-            dontignore[fullId] = true
+    for _, entry in pairs(decodedJSON) do
+        -- Check if the entry has the required fields
+        if type(entry) == "table" and entry.Name and entry.AnimationId then
+            local animName = entry.Name
+            local fullId = entry.AnimationId -- It already has "rbxassetid://" based on your segment
+            
+            -- Filter logic
+            if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
+               animName:find("Idle") or animName:find("Parry") or animName:find("Core") or 
+               animName:find("Gk") or animName:find("Walk") or animName:find("Run") then
+                
+                ignore[fullId] = true
+            else
+                dontignore[fullId] = true
+            end
         end
     end
-    print("Successfully loaded and filtered animation JSON")
+    local ignoreCount = 0
+    for _ in pairs(ignore) do ignoreCount += 1 end
+    
+    local dontIgnoreCount = 0
+    for _ in pairs(dontignore) do dontIgnoreCount += 1 end
+    
+    print("Successfully loaded JSON.")
+    print("Ignored (Movement/Utility): " .. ignoreCount)
+    print("Targeted (Attacks): " .. dontIgnoreCount)
 else
-    warn("Failed to fetch animation JSON: " .. tostring(response))
+    warn("Failed to decode JSON body.")
 end
 -- lock target on left click
 local lastClick = false
@@ -140,6 +162,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(0.016)
+        local _, _, _, worldpos = tinmr()
         if not targetAnimator then continue end
 
         local ok, tracks = pcall(getPlayingAnimationTracks, targetAnimator)
@@ -154,8 +177,10 @@ task.spawn(function()
             end
         end
 
-
-        if foundSwingPtr ~= swingPtr then
+        local root = char:FindFirstChild("HumanoidRootPart")
+        if not root or not worldpos then return end
+        local rpos = root.Position
+        if foundSwingPtr ~= swingPtr and getDistance(rpos, worldpos) < 20 then
             if swingPtr ~= nil then
                 print(target.Name .. " swing stopped!")
             end
