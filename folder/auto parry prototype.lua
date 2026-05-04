@@ -111,7 +111,7 @@ if ok_decode then
             -- Filter logic
             if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
                animName:find("Idle") or animName:find("Parry") or animName:find("Core") or 
-               animName:find("Gk") or animName:find("Walk") or animName:find("Run") then
+               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") then
                 
                 ignore[fullId] = true
             else
