@@ -45,7 +45,8 @@ local ignore = {
     ["rbxassetid://6820400023"] = true,
     ["rbxassetid://8799576671"] = true,
     ["rbxassetid://9279203398"] = true,
-    ["rbxassetid://7479225627"] = true
+    ["rbxassetid://7479225627"] = true,
+    ["rbxassetid://9952515414"] = true
 }
 
 local swingPtr = nil
@@ -58,7 +59,7 @@ while task.wait(0.016) do
     for _, t in ipairs(tracks) do
         if t.assetid and not ignore[t.assetid] then
             foundSwingPtr = t.ptr
-            --print("Detected non-ignored anim: " .. tostring(t.assetid)) --find missed anims
+            print("Detected non-ignored anim: " .. tostring(t.assetid)) --find missed anims
             break
         end
     end
