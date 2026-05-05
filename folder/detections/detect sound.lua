@@ -6,46 +6,37 @@ local lp = players.LocalPlayer
 local char = lp.Character
 local root = char:FindFirstChild("HumanoidRootPart")
 local ws = game:GetService("Workspace")
-local cam = ws.CurrentCamera
-local radius = 60
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
 _G.targetAnimator = nil
 _G.swingPtr = nil
-
-local function get2dDistance(a, b)
-    return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
-end
+_G.targets = {}
 function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
 end
 
-local function mousepos()
-    return uis:GetMouseLocation()
-end
-
 function tinmr()
-    local name = nil
-    local color = Color3.new(0, 1, 0)
-    local mpos = uis:GetMouseLocation()
+    table.clear(_G.targets)
     for _, v in pairs(players:GetChildren()) do
         if v ~= lp then
             local tchar = v.Character
             if not tchar then continue end
-            local root = tchar:FindFirstChild("HumanoidRootPart")
-            if root then
-                local rpos = root.Position
-                local screenpos2 = cam:WorldToScreenPoint(rpos)
-                if get2dDistance(mpos, screenpos2) <= radius + 10 then
-                    color = Color3.new(1, 0, 0)
-                    name = v.Name
-                    spos = screenpos2
-                    worldpos = rpos
+            local troot = tchar:FindFirstChild("HumanoidRootPart")
+            if troot then
+                local rpos = troot.Position
+                local root = char:FindFirstChild("HumanoidRootPart")
+                if getDistance(root.Position, rpos) <= 14 then
+                    local hum = tchar:FindFirstChild("Humanoid")
+                    local anim = hum:FindFirstChild("Animator")
+                    table.insert(_G.targets, {
+                        worldpos = rpos,
+                        animator = anim
+                    })
                 end
             end
         end
     end
-    return color, name, spos, worldpos
+    return worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds(soundmaker)
@@ -123,51 +114,3 @@ if ok_decode and pid == 15432890326 then
 else
     warn("Failed to decode JSON body.")
 end
--- lock target on left click
-local lastClick = false
-task.spawn(function()
-    while true do
-        task.wait(0.016)
-        local clicking = isleftpressed()
-        if clicking and not lastClick then
-            local color, name, sp, wp = tinmr()
-            if name then
-                for _, v in pairs(players:GetChildren()) do
-                    if v.Name == name and v ~= lp then
-                        _G.target = v
-                        local tchar = v.Character
-                        if tchar then
-                            local hum = tchar:FindFirstChildOfClass("Humanoid")
-                            if hum then
-                                local sound = hum:FindFirstChildOfClass("Sound")
-                                if sound then
-                                    _G.targetsoundmaker = sound
-                                end
-                            end
-                        end
-                        break
-                    end
-                end
-            end
-        end
-        lastClick = clicking
-    end
-end)
-
-RunService.Render:Connect(function()
-    local color, name, spos, worldpos = tinmr()
-    DrawingImmediate.Circle(mousepos(), radius, color, 1, 200, 2)
-    if name and spos then
-        DrawingImmediate.Text(spos, 10, color, 1, name, true)
-        if _G.target and name == _G.target.Name then
-            DrawingImmediate.Text(
-                Vector2.new(spos.X, spos.Y - 30),
-                10,
-                Color3.new(1, 1, 0),
-                1,
-                "[LOCKED]",
-                true
-            )
-        end
-    end
-end)
