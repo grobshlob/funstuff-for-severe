@@ -12,21 +12,22 @@ task.spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackout/bw%20gui.lua"))()
     while true do
         task.wait(0.008)
+        if not _G.active then continue end
         local char = lp.Character
         if not char then continue end
         tinmr()
         for _, t1 in pairs(_G.targets) do
-            local targetsoundmaker = t1.name
-            local worldpos = t1.worldpos
-            if not targetsoundmaker or not _G.active then continue end
-            local ok, tracks = pcall(getsounds, targetsoundmaker)
+            _G.targetsoundmaker = t1.char
+            worldpos = t1.worldpos
+            if not _G.targetsoundmaker then continue end
+            local ok, tracks = pcall(getsounds, _G.targetsoundmaker)
             if not ok then continue end
             
             local foundsound = false
             local root = char:FindFirstChild("HumanoidRootPart")
             if not root or not worldpos then continue end
             local rpos = root.Position
-            for _, t in ipairs(tracks) do
+            for _, t in ipairs(_G.tracks) do
                 if t.asset and not ignore[t.asset] then
                     local sound = t.playing
                     local foundsound = true
