@@ -30,7 +30,7 @@ function tinmr()
                     table.insert(_G.targets, {
                         worldpos = rpos,
                         animator = anim
-                    }
+                    })
                 end
             end
         end
