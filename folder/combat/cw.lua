@@ -60,7 +60,8 @@ task.spawn(function()
                         task.wait(parrytime) 
                         keypress(0x46) 
                         task.wait(0.01) 
-                        keyrelease(0x46) 
+                        keyrelease(0x46)
+                        task.wait(0.25)
                         parried[track.ptr] = nil
                     end)
                 end 
