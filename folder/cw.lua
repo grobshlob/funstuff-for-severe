@@ -46,7 +46,7 @@ task.spawn(function()
             parried = not parried
             local _, _, _, worldpos = tinmr()
             local root = char:FindFirstChild("HumanoidRootPart") 
-            if root and worldpos and getDistance(root.Position, worldpos) < 12.5 then 
+            if root and worldpos and getDistance(root.Position, worldpos) < 15 then 
                 _G.swingPtr = foundSwingPtr
                 print(_G.target.Name .. " swing started!")
                 local parrytime = time / 3.85
