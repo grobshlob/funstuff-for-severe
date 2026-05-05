@@ -50,8 +50,9 @@ task.spawn(function()
                 _G.swingPtr = foundSwingPtr
                 print(_G.target.Name .. " swing started!")
                 local parrytime = time / 3.85
-                print(parrytime)
-                if parrytime >= 0.17 then parrytime = 0.15 print(parrytime) end
+                if _G.debug then print(parrytime) end
+                if parrytime >= 0.17 then parrytime = 0.15 end
+                if _G.debug then print(parrytime) end
                 task.wait(parrytime) 
                 keypress(0x46) 
                 task.wait(0.01) 
