@@ -49,7 +49,7 @@ task.spawn(function()
             if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
                 local root = char:FindFirstChild("HumanoidRootPart") 
                 if root and worldpos and getDistance(root.Position, worldpos) < 14 then
-                    parried[t.ptr] = true
+                    parried[t1.ptr] = true
                     _G.swingPtr = foundSwingPtr
                     task.spawn(function()                   
                         print(_G.target.Name .. " swing started!")
@@ -62,7 +62,7 @@ task.spawn(function()
                         task.wait(0.01) 
                         keyrelease(0x46)
                         task.wait(0.25)
-                        parried[t.ptr] = nil
+                        parried[t1.ptr] = nil
                     end)
                 end 
             end
