@@ -28,6 +28,7 @@ function tinmr()
                 if getDistance(root.Position, rpos) <= 14 then
                     table.insert(_G.targets, {
                         worldpos = rpos,
+                        name = v.Name
                     })
                 end
             end
