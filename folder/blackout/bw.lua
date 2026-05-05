@@ -32,7 +32,7 @@ task.spawn(function()
                     local foundsound = true
                     local key = targetsoundmaker .. tostring(t.asset)
                     if not parried[key] then
-                        if getDistance(rpos, worldpos) < 14 then
+                        if getDistance(rpos, worldpos) < 7.5 then
                         
                             task.spawn(function()
                                 local parrytime = t.time / 3.65
