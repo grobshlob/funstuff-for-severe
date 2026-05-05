@@ -8,8 +8,7 @@ local root = char:FindFirstChild("HumanoidRootPart")
 local ws = game:GetService("Workspace")
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
-_G.targetAnimator = nil
-_G.swingPtr = nil
+_G.targetsoundmaker = nil
 _G.targets = {}
 function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
@@ -44,12 +43,12 @@ local function getsounds(soundmaker)
     		local play = memory.readu8(v, 0x154)
     		if play == 1 then
     			local id = memory.readstring(v, 0xe0)
-          local playback = memory.readf32(v, 0x130)
+                local playback = memory.readf32(v, 0x130)
     			table.insert(tracks, {
     				asset = id,
     				playing = play,
     				name = v.Name,
-            time = playback
+                    time = playback
     				}
     			)
     		end
