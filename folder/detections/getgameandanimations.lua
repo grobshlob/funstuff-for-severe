@@ -5,18 +5,17 @@ local players = game:GetService("Players")
 local lp = players.LocalPlayer
 local char = lp.Character
 local ws = game:GetService("Workspace")
-local cam = ws.CurrentCamera
-local radius = 60
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
 _G.targetAnimator = nil
 _G.swingPtr = nil
-
+_G.targets = {}
 function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
 end
 
 function tinmr()
+    table.clear(_G.targets)
     for _, v in pairs(players:GetChildren()) do
         if v ~= lp then
             local tchar = v.Character
@@ -28,8 +27,10 @@ function tinmr()
                 if getDistance(root.Position, rpos) <= 14 then
                     local hum = tchar:FindFirstChild("Humanoid")
                     local anim = hum:FindFirstChild("Animator")
-                    worldpos = rpos
-                    _G.targetAnimator = anim
+                    table.insert(_G.targets, {
+                        worldpos = rpos,
+                        animator = anim
+                    }
                 end
             end
         end
