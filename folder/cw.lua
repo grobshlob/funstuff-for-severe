@@ -51,7 +51,7 @@ task.spawn(function()
                 print(_G.target.Name .. " swing started!")
                 local parrytime = time / 3.85
                 print(parrytime)
-                if parrytime >= 0.25 then parrytime = 0.15 end
+                if parrytime >= 0.17 then parrytime = 0.15 end
                 keyrelease(0x46) 
                 task.wait(parrytime) 
                 keypress(0x46) 
