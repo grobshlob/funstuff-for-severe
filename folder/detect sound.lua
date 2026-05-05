@@ -50,7 +50,7 @@ end
 --thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds(soundmaker)
     local tracks = {}
-    local holder = 
+    local holder = soundmaker
     for _, v in pairs(holder:GetDescendants()) do
     	if v:IsA("Sound") then
     		local play = memory.readu8(v, 0x154)
