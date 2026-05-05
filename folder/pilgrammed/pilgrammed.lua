@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/getchar.lua"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
 local lp = game.Players.LocalPlayer
 _G.active = false
@@ -14,6 +14,8 @@ local folder = workspace.Mobs
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/getchar.lua"))()
+    tinmr(folder)
     while true do
         task.wait(0.008)
         if not _G.active then continue end
