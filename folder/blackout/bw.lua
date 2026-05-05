@@ -33,8 +33,9 @@ task.spawn(function()
         if not root or not worldpos then continue end
         local rpos = root.Position
         for _, i in ipairs(tracks) do
-            if getDistance(rpos, worldpos) < 20 then
-                local parrytime = i.time / 2.67
+            if getDistance(rpos, worldpos) < 14 then
+                local parrytime = i.time / 3.65
+                if parrytime >= 0.3 then parrytime = 0.15 end
                 if sound ~= 1 and tostring(i.name) == "MeleeSound" then
                     print("Swing stopped!")
                 end
