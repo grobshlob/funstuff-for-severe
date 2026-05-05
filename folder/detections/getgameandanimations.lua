@@ -3,7 +3,6 @@ local RunService = game:GetService("RunService")
 local uis = game:GetService("UserInputService")
 local players = game:GetService("Players")
 local lp = players.LocalPlayer
-local char = lp.Character
 local ws = game:GetService("Workspace")
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
@@ -19,7 +18,8 @@ function tinmr()
     for _, v in pairs(players:GetChildren()) do
         if v ~= lp then
             local tchar = v.Character
-            if not tchar then continue end
+            local char = lp.Character
+            if not tchar or not char then continue end
             local troot = tchar:FindFirstChild("HumanoidRootPart")
             if troot then
                 local rpos = troot.Position
