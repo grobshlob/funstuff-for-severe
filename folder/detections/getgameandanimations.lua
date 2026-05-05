@@ -133,7 +133,7 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
     _G.loaded = true
-elseif ok_decode and pid == 6735572261 then 
+elseif pid == 6735572261 then 
     print(" i see that ur playing pilgrammed")
 else
     warn("Failed to decode JSON body.")
