@@ -90,7 +90,7 @@ local pid = game.PlaceId
 local body = nil
 local data = nil
 
-if pid == 4282985734 or pid == 11979315221 then
+if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
     local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/combatwarriors.json")
     end)
