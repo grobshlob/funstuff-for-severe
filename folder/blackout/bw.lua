@@ -17,7 +17,7 @@ task.spawn(function()
         if not char then continue end
         tinmr()
         for _, t1 in pairs(_G.targets) do
-            _G.targetsoundmaker = t1.char
+            _G.targetsoundmaker = t1.character
             worldpos = t1.worldpos
             if not _G.targetsoundmaker then continue end
             local ok, tracks = pcall(getsounds, _G.targetsoundmaker)
