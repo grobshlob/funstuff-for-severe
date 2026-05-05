@@ -49,7 +49,7 @@ task.spawn(function()
                                 keypress(0x46) 
                                 task.wait(0.01) 
                                 keyrelease(0x46)
-                                task.wait(0.25)
+                                task.wait(0.01)
                                 parried[t.ptr] = nil
                             end)
                         end
