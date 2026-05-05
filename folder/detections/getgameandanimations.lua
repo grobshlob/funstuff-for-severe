@@ -102,7 +102,7 @@ if body then
     end
 end
 --thank you ai
-if ok_decode and pid == 4282985734 or pid == 11979315221 then
+if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
     local decodedJSON = data -- This is your array of animation objects
     print("game: Combat Warriors")
     for _, entry in pairs(decodedJSON) do
