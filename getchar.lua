@@ -14,6 +14,7 @@ end
 local function mousepos()
 	return uis:GetMouseLocation()
 end
+_G.characters = {}
 function tinmr(folder)
 	_G.characters = {}
 	local color = Color3.new(0, 1, 0)
