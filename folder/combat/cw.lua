@@ -37,11 +37,11 @@ task.spawn(function()
                     if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
                         parried[t.ptr] = true
                         local root = char:FindFirstChild("HumanoidRootPart") 
-                        if root and worldpos and getDistance(root.Position, worldpos) < 11 then
+                        if root and worldpos and getDistance(root.Position, worldpos) <= 14 then
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = time / 3.85
+                                local parrytime = math.abs((time / 2) - (game:GetPing() / 2000))
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0.17 then parrytime = 0.15 end
                                 if _G.debug then print(parrytime) end
