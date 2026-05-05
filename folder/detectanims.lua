@@ -1,6 +1,4 @@
-local animator = game.Players.LocalPlayer.Character.Humanoid.Animator
-
-local function getPlayingAnimationTracks()
+function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
     if not ok or head == 0 then return tracks end
@@ -33,46 +31,4 @@ local function getPlayingAnimationTracks()
 
     return tracks
 end
-
-local ignore = { 
-    ["rbxassetid://180435571"] = true,
-    ["rbxassetid://4639817538"] = true,
-    ["rbxassetid://6786106507"] = true,
-    ["rbxassetid://6789165310"] = true,
-    ["rbxassetid://6789231619"] = true,
-    ["rbxassetid://8799308611"] = true,
-    ["rbxassetid://0"] = true,
-    ["rbxassetid://6820400023"] = true,
-    ["rbxassetid://8799576671"] = true,
-    ["rbxassetid://9279203398"] = true,
-    ["rbxassetid://7479225627"] = true,
-    ["rbxassetid://9952515414"] = true
-}
-
-local swingPtr = nil
-
-while task.wait(0.016) do
-    local ok, tracks = pcall(getPlayingAnimationTracks)
-    if not ok then continue end
-
-    local foundSwingPtr = nil
-    for _, t in ipairs(tracks) do
-        if t.assetid and not ignore[t.assetid] then
-            foundSwingPtr = t.ptr
-            print("Detected non-ignored anim: " .. tostring(t.assetid)) --find missed anims
-            break
-        end
-    end
-
-    if foundSwingPtr ~= swingPtr then
-        if swingPtr ~= nil then
-            print("Swing stopped!")
-        end
-        if foundSwingPtr ~= nil then
-            print("Swing started!")
-             task.wait(0.1)
-            print("hi i should be in the middle")
-        end
-        swingPtr = foundSwingPtr
-    end
-end
+--local animator = game.Players.LocalPlayer.Character.Humanoid.Animator
