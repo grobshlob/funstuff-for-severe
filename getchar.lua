@@ -13,11 +13,11 @@ end
 local function mousepos()
 	return uis:GetMouseLocation()
 end
-local function tinmr(folder)
+local function tinmr(_G.folder)
 	_G.characters = {}
 	local color = Color3.new(0, 1, 0)
 	local mpos = uis:GetMouseLocation()
-	for _, v in pairs(folder:GetDescendants()) do
+	for _, v in pairs(_G.folder:GetDescendants()) do
 		if v ~= lp then
 			local tchar = v.Character
 			if not tchar then return end
@@ -41,20 +41,20 @@ local function tinmr(folder)
 	end
 	return color, name, spos, worldpos
 end
-_G.animator = nil
+_G.targetAnimator = nil
 local clicked = false
 task.spawn(function()
 	while true do
 		task.wait(0.016)
-		if leftispressed() and not clicked then
+		if leftispressed() and not clicked and not _G.character == {} then
 			clicked = true
-			for _, v in pairs(_G.Characters) do
+			for _, v in pairs(_G.characters) do
 				chara = v.character
 				if chara then
 					for _, g in pairs(chara:GetChildren()) do
 						if g.Name == "Humanoid" then
 							if g:FindFirstChild("Animator") then
-								_G.animator = g
+								_G.targetAnimator = g
 							end
 						end
 					end
