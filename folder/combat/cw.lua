@@ -10,7 +10,7 @@ local time = 0
 local parried = false
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/cw%20gui.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
     while true do
         task.wait(0.008)
         local char = lp.Character
