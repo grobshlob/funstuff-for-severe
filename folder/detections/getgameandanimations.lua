@@ -135,6 +135,7 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
     _G.loaded = true
 elseif pid == 6735572261 then 
     print(" i see that ur playing pilgrammed")
+    _G.loaded = true
 else
     warn("Failed to decode JSON body.")
 end
