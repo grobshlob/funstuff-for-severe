@@ -4,6 +4,7 @@ local lp = game.Players.LocalPlayer
 _G.active = false
 _G.swingPtr = nil
 _G.cleared = false
+_G.characters = {}
 _G.OnKeybind1Change = function(key: string)
     _G.active = not _G.active
     print("status: " .. tostring(_G.active))
