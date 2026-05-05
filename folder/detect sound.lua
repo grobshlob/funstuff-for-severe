@@ -78,7 +78,7 @@ local pid = game.PlaceId
 local body = nil
 local data = nil
 
-if pid == 8767500166 then
+if pid == 15432890326 then
     local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackoutrevivals.json")
     end)
