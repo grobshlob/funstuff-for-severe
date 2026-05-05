@@ -79,7 +79,7 @@ local data = nil
 
 if pid == 15432890326 then
     local ok_body, result = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackoutrevivals.json")
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackout/blackoutrevivals.json")
     end)
     if ok_body then body = result end
 end
