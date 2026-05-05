@@ -7,6 +7,7 @@ _G.OnKeybind1Change = function(key: string)
     print("status: " .. tostring(_G.active))
 end
 local time = 0
+local parried = false
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/cw%20gui.lua"))()
@@ -40,7 +41,8 @@ task.spawn(function()
             print(_G.target.Name .. " swing stopped!")
             _G.swingPtr = nil
         end
-        if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
+        if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr and not parried then 
+            parried = not parried
             local _, _, _, worldpos = tinmr()
             local root = char:FindFirstChild("HumanoidRootPart") 
             if root and worldpos and getDistance(root.Position, worldpos) < 20 then 
