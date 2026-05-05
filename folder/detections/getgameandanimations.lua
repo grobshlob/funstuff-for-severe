@@ -24,6 +24,7 @@ function tinmr()
             if troot then
                 local rpos = troot.Position
                 local root = char:FindFirstChild("HumanoidRootPart")
+                if not root or not rpos then continue end
                 if getDistance(root.Position, rpos) <= 14 then
                     local hum = tchar:FindFirstChild("Humanoid")
                     local anim = hum:FindFirstChild("Animator")
