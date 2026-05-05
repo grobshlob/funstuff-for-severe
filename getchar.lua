@@ -6,7 +6,6 @@ local char = lp.Character
 local root = char:FindFirstChild("HumanoidRootPart")
 local ws = game:GetService("Workspace")
 local cam = ws.CurrentCamera
-local radius = 60
 local function get2dDistance(a, b)
 	return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2)
 end
@@ -15,25 +14,23 @@ local function mousepos()
 	return uis:GetMouseLocation()
 end
 local function tinmr()
-	local name = nil
 	local color = Color3.new(0, 1, 0)
 	local mpos = uis:GetMouseLocation()
 	for _, v in pairs(players:GetChildren()) do
 		if v ~= lp then
 			local tchar = v.Character
 			if not tchar then return end
-			local root = tchar:FindFirstChild("HumanoidRootPart").Position
-			for _, parts in pairs(tchar:GetChildren()) do
-				if parts:IsA("BasePart") then
-					local tpos = parts.Position
-					local screenpos = cam:WorldToScreenPoint(tpos)
-					local screenpos2 = cam:WorldToScreenPoint(root)
-					if get2dDistance(mpos, screenpos) <= radius + 10 then
-						color = Color3.new(1, 0, 0)
-						name = v.Name
-						spos = screenpos2
-						worldpos = root
-					end
+			local root = tchar:FindFirstChild("HumanoidRootPart")
+			if root then
+				local tpos = root.Position
+				local screenpos = cam:WorldToScreenPoint(tpos)
+				local screenpos2 = cam:WorldToScreenPoint(root)
+				if get2dDistance(mpos, screenpos) <= radius + 10 then
+					color = Color3.new(1, 0, 0)
+					name = v.Name
+					spos = screenpos2
+					worldpos = root
+					character = tchar
 				end
 			end
 		end
