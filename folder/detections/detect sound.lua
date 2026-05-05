@@ -27,13 +27,12 @@ function tinmr()
                 if getDistance(root.Position, rpos) <= 14 then
                     table.insert(_G.targets, {
                         worldpos = rpos,
-                        name = v.Name
+                        char = tchar
                     })
                 end
             end
         end
     end
-    return worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds(soundmaker)
