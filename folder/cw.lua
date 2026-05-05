@@ -24,16 +24,16 @@ task.spawn(function()
 
         local foundSwingPtr = nil
         for _, t in ipairs(tracks) do
-            if t.assetid and _G.dontignore[t.assetid] then
+            if t.assetid and _G.dontignore[t.assetid] and not parried then
                 time = tostring(t.timePosition)
                 foundSwingPtr = t.ptr
                 if _G.debug then
-                    --print("Detected non-ignored anim: " .. tostring(t.assetid))
+                    print("Detected non-ignored anim: " .. tostring(t.assetid))
                 end
                 break
             end
         end
-
+        
         local root = char:FindFirstChild("HumanoidRootPart")
         if not root or not worldpos then continue end
         local rpos = root.Position         
@@ -41,6 +41,7 @@ task.spawn(function()
             print(_G.target.Name .. " swing stopped!")
             _G.swingPtr = nil
         end
+        local parried = false
         if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr and not parried then 
             parried = not parried
             local _, _, _, worldpos = tinmr()
@@ -48,15 +49,15 @@ task.spawn(function()
             if root and worldpos and getDistance(root.Position, worldpos) < 20 then 
                 _G.swingPtr = foundSwingPtr
                 print(_G.target.Name .. " swing started!")
-                local parrytime = time / 3.45
+                local parrytime = time / 3.85
                 print(parrytime)
-                task.spawn(function()
-                    keyrelease(0x46) 
-                    task.wait(parrytime) 
-                    keypress(0x46) 
-                    task.wait(0.01) 
-                    keyrelease(0x46) 
-                end)
+                if parrytime >= 0.25 then parrytime = 0.15 end
+                keyrelease(0x46) 
+                task.wait(parrytime) 
+                keypress(0x46) 
+                task.wait(0.01) 
+                keyrelease(0x46) 
+                parried = not parried
             end 
         end
     end
