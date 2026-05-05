@@ -13,12 +13,13 @@ end
 local function mousepos()
 	return uis:GetMouseLocation()
 end
-local function tinmr(_G.folder)
+function tinmr(_G.folder)
 	_G.characters = {}
 	local color = Color3.new(0, 1, 0)
 	local mpos = uis:GetMouseLocation()
+	if _G.cleared then
 	for _, v in pairs(_G.folder:GetDescendants()) do
-		if v ~= lp then
+		if v ~= lp and v:IsA("Model") then
 			local tchar = v.Character
 			if not tchar then return end
 			local troot = tchar:FindFirstChild("HumanoidRootPart")
@@ -26,6 +27,8 @@ local function tinmr(_G.folder)
 				local tpos = troot.Position
 				local screenpos = cam:WorldToScreenPoint(tpos)
 				local screenpos2 = cam:WorldToScreenPoint(troot)
+				local hum = tchar:FindFirstChild("Humanoid")
+				local anim = hum:FindFirstChild("Animator")
 				if get2dDistance(mpos, screenpos) <= radius + 10 then
 					table.insert(_G.characters, {
 						color = Color3.new(1, 0, 0)
@@ -33,6 +36,7 @@ local function tinmr(_G.folder)
 						spos = screenpos2
 						worldpos = troot
 						character = tchar
+						animator = anim
 						}
 					)	
 				end
@@ -77,7 +81,7 @@ RunService.Render:Connect(function()
 	if name and spos then
 		DrawingImmediate.Text(
 			spos,
-			25,
+			10,
 			color,
 			1,
 			name,
