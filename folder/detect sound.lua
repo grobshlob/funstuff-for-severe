@@ -10,7 +10,7 @@ local cam = ws.CurrentCamera
 local radius = 60
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
-_G.targetAnimator = nil
+_G.targetsoundmaker = nil
 _G.swingPtr = nil
 
 local function get2dDistance(a, b)
@@ -48,8 +48,9 @@ function tinmr()
     return color, name, spos, worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
-local function getsounds()
+local function getsounds(soundmaker)
     local tracks = {}
+    local holder = soundmaker
     for _, v in pairs(holder:GetDescendants()) do
     	if v:IsA("Sound") then
     		local play = memory.readu8(v, 0x154)
@@ -60,7 +61,7 @@ local function getsounds()
     				asset = id,
     				playing = play,
     				name = v.Name,
-            time = playback
+                    time = playback
     				}
     			)
     		end
@@ -77,12 +78,7 @@ local pid = game.PlaceId
 local body = nil
 local data = nil
 
-if pid == 4282985734 or pid == 11979315221 then
-    local ok_body, result = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combatwarriors.json")
-    end)
-    if ok_body then body = result end
-elseif pid == 8767500166 then
+if pid == 8767500166 then
     local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackoutrevivals.json")
     end)
@@ -99,37 +95,7 @@ if body then
     end
 end
 --thank you ai
-if ok_decode and pid == 4282985734 or pid == 11979315221 then
-    local decodedJSON = data -- This is your array of animation objects
-    print("game: Combat Warriors")
-    for _, entry in pairs(decodedJSON) do
-        -- Check if the entry has the required fields
-        if type(entry) == "table" and entry.Name and entry.AnimationId then
-            local animName = entry.Name
-            local fullId = entry.AnimationId -- It already has "rbxassetid://" based on your segment
-            
-            -- Filter logic
-            if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
-               animName:find("Idle") or animName:find("Parry") or animName:find("Core") or 
-               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") then
-                
-                ignore[fullId] = true
-            else
-                dontignore[fullId] = true
-            end
-        end
-    end
-    local ignoreCount = 0
-    for _ in pairs(ignore) do ignoreCount += 1 end
-    
-    local dontIgnoreCount = 0
-    for _ in pairs(dontignore) do dontIgnoreCount += 1 end
-    
-    print("Successfully loaded JSON.")
-    print("Ignored (Movement/Utility): " .. ignoreCount)
-    print("Targeted (Attacks): " .. dontIgnoreCount)
-    _G.loaded = true
-elseif ok_decode and pid == 8767500166 then 
+if ok_decode and pid == 15432890326 then 
     print("game: blackout revival")
     local decodedJSON = data -- This is your array of animation objects
     for _, entry in pairs(decodedJSON) do
@@ -174,9 +140,9 @@ task.spawn(function()
                         if tchar then
                             local hum = tchar:FindFirstChildOfClass("Humanoid")
                             if hum then
-                                local anim = hum:FindFirstChildOfClass("Animator")
-                                if anim then
-                                    _G.targetAnimator = anim
+                                local sound = hum:FindFirstChildOfClass("Sound")
+                                if sound then
+                                    _G.targetsoundmaker = sound
                                 end
                             end
                         end
