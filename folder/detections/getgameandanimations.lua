@@ -86,7 +86,7 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/combatwarriors.json")
     end)
     if ok_body then body = result end
-elseif pid == 8767500166 then
+elseif pid == 6735572261 then
     local ok_body, result = pcall(function()
         return nil
     end)
@@ -133,8 +133,8 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
     _G.loaded = true
-elseif ok_decode and pid == 8767500166 then 
-    
+elseif ok_decode and pid == 6735572261 then 
+    print(" i see that ur playing pilgrammed")
 else
     warn("Failed to decode JSON body.")
 end
