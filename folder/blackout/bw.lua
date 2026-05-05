@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detect%20sound.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/detect%20sound.lua"))()
 local lp = game.Players.LocalPlayer
 _G.active = false
 _G.OnKeybind1Change = function(key: string)
@@ -8,7 +8,7 @@ end
 local time = 0
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/bw%20gui.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/blackout/bw%20gui.lua"))()
     while true do
         task.wait(0.016)
         local char = lp.Character
