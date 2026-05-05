@@ -26,11 +26,8 @@ function tinmr()
                 local rpos = troot.Position
                 local root = char:FindFirstChild("HumanoidRootPart")
                 if getDistance(root.Position, rpos) <= 14 then
-                    local hum = tchar:FindFirstChild("Humanoid")
-                    local anim = hum:FindFirstChild("Animator")
                     table.insert(_G.targets, {
                         worldpos = rpos,
-                        animator = anim
                     })
                 end
             end
