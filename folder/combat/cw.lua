@@ -15,7 +15,7 @@ task.spawn(function()
         task.wait(0.008)
         local char = lp.Character
         if not char then continue end
-        local _, _, _, worldpos = tinmr()
+        local worldpos = tinmr()
         if not _G.targetAnimator then continue end
         if not _G.active then continue end
 
