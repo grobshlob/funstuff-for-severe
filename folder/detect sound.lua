@@ -10,7 +10,7 @@ local cam = ws.CurrentCamera
 local radius = 60
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
 _G.target = nil
-_G.targetsoundmaker = nil
+_G.targetAnimator = nil
 _G.swingPtr = nil
 
 local function get2dDistance(a, b)
@@ -50,7 +50,7 @@ end
 --thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds(soundmaker)
     local tracks = {}
-    local holder = soundmaker
+    local holder = 
     for _, v in pairs(holder:GetDescendants()) do
     	if v:IsA("Sound") then
     		local play = memory.readu8(v, 0x154)
@@ -61,7 +61,7 @@ local function getsounds(soundmaker)
     				asset = id,
     				playing = play,
     				name = v.Name,
-                    time = playback
+            time = playback
     				}
     			)
     		end
