@@ -7,9 +7,9 @@ local char = lp.Character
 local root = char:FindFirstChild("HumanoidRootPart")
 local ws = game:GetService("Workspace")
 --would be really easy to add support since u would just have to hardcode any movement/equip ids. only problem is timing but i mean it should be the same for swings
-_G.target = nil
 _G.targetsoundmaker = nil
 _G.targets = {}
+_G.tracks = {}
 function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
 end
@@ -37,7 +37,7 @@ function tinmr()
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
 local function getsounds(soundmaker)
-    local tracks = {}
+    _G.tracks = {}
     for _, v in pairs(soundmaker:GetDescendants()) do
     	if v:IsA("Sound") then
     		local play = memory.readu8(v, 0x154)
