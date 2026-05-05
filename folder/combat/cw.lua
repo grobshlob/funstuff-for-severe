@@ -22,8 +22,7 @@ task.spawn(function()
             local char = lp.Character
             if not char then continue end
             if not _G.targetAnimator then continue end
-            
-        
+                
             local ok, tracks = pcall(getPlayingAnimationTracks, _G.targetAnimator)
             if not ok then continue end
         
@@ -35,36 +34,31 @@ task.spawn(function()
                     if _G.debug then
                         print("Detected non-ignored anim: " .. tostring(t.assetid))
                     end
-                    break
+                    if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
+                        local root = char:FindFirstChild("HumanoidRootPart") 
+                        if root and worldpos and getDistance(root.Position, worldpos) < 14 then
+                            parried[t.ptr] = true
+                            _G.swingPtr = foundSwingPtr
+                            task.spawn(function()                   
+                                print("swing started!")
+                                local parrytime = time / 3.85
+                                if _G.debug then print(parrytime) end
+                                if parrytime >= 0.17 then parrytime = 0.15 end
+                                if _G.debug then print(parrytime) end
+                                task.wait(parrytime) 
+                                keypress(0x46) 
+                                task.wait(0.01) 
+                                keyrelease(0x46)
+                                task.wait(0.25)
+                                parried[t.ptr] = nil
+                            end)
+                        end
+                    end 
                 end
-            end
-            
-            local root = char:FindFirstChild("HumanoidRootPart")
-            if not root or not worldpos then continue end
-            local rpos = root.Position         
+            end      
             if _G.swingPtr ~= nil then
-                print(_G.target.Name .. " swing stopped!")
+                print("swing stopped!")
                 _G.swingPtr = nil
-            end
-            if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
-                local root = char:FindFirstChild("HumanoidRootPart") 
-                if root and worldpos and getDistance(root.Position, worldpos) < 14 then
-                    parried[t1.ptr] = true
-                    _G.swingPtr = foundSwingPtr
-                    task.spawn(function()                   
-                        print(_G.target.Name .. " swing started!")
-                        local parrytime = time / 3.85
-                        if _G.debug then print(parrytime) end
-                        if parrytime >= 0.17 then parrytime = 0.15 end
-                        if _G.debug then print(parrytime) end
-                        task.wait(parrytime) 
-                        keypress(0x46) 
-                        task.wait(0.01) 
-                        keyrelease(0x46)
-                        task.wait(0.25)
-                        parried[t1.ptr] = nil
-                    end)
-                end 
             end
         end
     end
