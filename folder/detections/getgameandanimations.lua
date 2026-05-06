@@ -76,6 +76,8 @@ end
 
 _G.dontignore = {}
 _G.ignore = {}
+_G.dodge = {}
+_G.multi = {}
 _G.loaded = false
 local pid = game.PlaceId
 local body = nil
@@ -88,7 +90,7 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
     if ok_body then body = result end
 elseif pid == 6735572261 then
     local ok_body, result = pcall(function()
-        return nil
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/pilgrammed/pilgrammed.json")
     end)
     if ok_body then body = result end
 end
@@ -123,7 +125,20 @@ function decode(game)
                     dontignore[fullId] = true
                 end
             elseif game == "pil" then
-                nil
+                --PILGRAMMED IS GETTING DELAYED MORE THAN WALLCHECK ;-;
+                --gonna have to remove/add/add time to some animations
+                if animName:find("Slash") or animName:find("Swing") or animName:find("Alt") or animName:find("Smack") or animName:find("Strike") or animName:find("Stab") or animName:find("Overhead") or animName:find("Cleave") or animName:find("Vertical") or animName:find("Lunge") or animName:find("Uppercut") or animName:find("Fist")
+                    or animName:find("Punch") or animName:find("Kick") or animName:find("Bite") or animName:find("Chomp") or animName:find("Tongue") or animName:find("Jab") or animName:find("Sweep") or animName:find("Bash") or animName:find("Heavy") or animName:find("Smash") then
+                        dontignore[fullId] = true
+                elseif animName:find("Laser") or animName:find("Beam") or animName:find("Breath") or animName:find("Blast") or animName:find("Spit") or animName:find("Acid") or animName:find("Nova") or animName:find("Boom") or animName:find("Quake") or animName:find("Spin") or animName:find("Stomp") or animName:find("Charge") or animName:find("Rush") or animName:find("LungeSlam") or animName:find("Leap") or animName:find("JumpSlam") or animName:find("FlightSlam") or animName:find("Shoot") or
+                       animName:find("Fire") or animName:find("Spine") or animName:find("Grab") or animName:find("Slam") or animName:find("Cannon") or animName:find("Orb") or animName:find("Wave") or animName:find("Beams") or animName:find("SpinShoot") or animName:find("Psychic") or animName:find("Meteor") or animName:find("Snap") or animName:find("Cast") or animName:find("Spill") or animName:find("Twirl") or animName:find("Throw") or animName:find("Burst") or animName:find("Cero") or animName:find("Deadeye") or
+                        animName:find("Strafe") or animName:find("SlideSword") or animName:find("Crackers") or animName:find("Feint") or animName:find("Special") or animName:find("Dodge") or animName:find("Aerial") or animName:find("Execute") or animName:find("Air") or animName:find("Backstep") or animName:find("Fountain") or animName:find("Spew") or animName:find("Leap") or animName:find("Warp") or animName:find("Twist") or animName:find("Float") or animName:find("Charge") or animName:find("Swipe") or animName:find("Dive") or animName:find("Unleash") then
+                        _G.dodge[fullId] = true
+                elseif animName:find("Combo") or animName:find("Three") or animName:find("Strikes") or animName:find("Flurry") then
+                    _G.multi[fullId] = true
+                else
+                    ignore[fullId] = true
+                end
             end
         end
     end
