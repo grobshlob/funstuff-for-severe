@@ -103,7 +103,7 @@ if body then
     end
 end
 --thank you ai
-if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
+function decode(game)
     local decodedJSON = data -- This is your array of animation objects
     print("game: Combat Warriors")
     for _, entry in pairs(decodedJSON) do
@@ -113,13 +113,17 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
             local fullId = entry.AnimationId -- It already has "rbxassetid://" based on your segment
             
             -- Filter logic
-            if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
-               animName:find("Idle") or animName:find("Parr") or animName:find("Core") or 
-               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") or animName:find("Stomp") then
-                
-                ignore[fullId] = true
-            else
-                dontignore[fullId] = true
+            if game == "cw" then
+                if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
+                   animName:find("Idle") or animName:find("Parr") or animName:find("Core") or 
+                   animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") or animName:find("Stomp") then
+                    
+                    ignore[fullId] = true
+                else
+                    dontignore[fullId] = true
+                end
+            elseif game == "pil" then
+                nil
             end
         end
     end
@@ -133,9 +137,11 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
     print("Ignored (Movement/Utility): " .. ignoreCount)
     print("Targeted (Attacks): " .. dontIgnoreCount)
     _G.loaded = true
+end
+if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
+    decode(cw)
 elseif pid == 6735572261 then 
-    print(" i see that ur playing pilgrammed")
-    _G.loaded = true
+    decode(pil)
 else
     warn("Failed to decode JSON body.")
 end
