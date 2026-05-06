@@ -43,8 +43,6 @@ task.spawn(function()
                                 print("swing started!")
                                 local parrytime = math.abs((time / 2) - (game:GetPing() / 2000))
                                 if _G.debug then print(parrytime) end
-                                if parrytime >= 0.17 then parrytime = 0.15 end
-                                if _G.debug then print(parrytime) end
                                 task.wait(parrytime) 
                                 keypress(0x46) 
                                 task.wait(0.01) 
