@@ -73,8 +73,9 @@ RunService.Render:Connect(function()
 	if _G.characters then
 		for _, v in pairs(_G.characters) do
 			name = v.name
-			color = color
-			spos = spos
+			color = v.color
+			spos = v.spos
+			print(name, spos)
 			DrawingImmediate.Circle(
 				mousepos(), 
 				radius, 
