@@ -154,9 +154,9 @@ function decode(game)
     _G.loaded = true
 end
 if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
-    decode(cw)
+    decode("cw")
 elseif pid == 6735572261 then 
-    decode(pil)
+    decode("pil")
 else
     warn("Failed to decode JSON body.")
 end
