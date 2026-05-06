@@ -115,7 +115,7 @@ if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 t
             -- Filter logic
             if animName:find("Equip") or animName:find("Finish") or animName:find("Flourish") or 
                animName:find("Idle") or animName:find("Parry") or animName:find("Core") or 
-               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") then
+               animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") or animName:find("Stomp") then
                 
                 ignore[fullId] = true
             else
