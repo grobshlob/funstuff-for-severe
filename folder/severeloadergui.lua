@@ -278,7 +278,7 @@ do
 
     local function OnButton2Click(): ()
         if _G.selectedgame == "Combat Warriors" then Drawing.clear()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/c_w.lua"))()
             else send_notification("please select a game", "info")
                 end
     end
