@@ -31,5 +31,5 @@ do
 end
 
 end)()
-task.wait(10)
+task.wait(6)
 Drawing.clear()
