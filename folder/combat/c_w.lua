@@ -1,6 +1,6 @@
 task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
-    --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
+    --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
 end)
 --task.wait(7)
 local lp = game.Players.LocalPlayer
@@ -14,7 +14,7 @@ local time = 0
 local parried = {}
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
-    task.wait(1)
+    --task.wait(1)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
     while true do
         task.wait(0.008)
