@@ -277,10 +277,10 @@ do
     local PrevLeftPressed: boolean = false
 
     local function OnButton2Click(): ()
-        if _G.selectedgame == "Combat Warriors" then Drawing.clear()
+        if _G.selectedgame == "Combat Warriors" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/c_w.lua"))()
-            else send_notification("please select a game", "info")
-                end
+         else send_notification("please select a game", "info")
+        end
     end
 
     local function OnDropdown1Change(selected: string, index: number): ()
