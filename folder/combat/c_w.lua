@@ -1,4 +1,7 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
+task.spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
+end)
 local lp = game.Players.LocalPlayer
 _G.active = false
 _G.swingPtr = nil
@@ -9,7 +12,6 @@ end
 local time = 0
 local parried = {}
 task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     repeat task.wait(0.5) until _G.loaded == true
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
     while true do
