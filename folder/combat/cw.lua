@@ -346,7 +346,7 @@ end
     end
 
     local function OnButton2CopyClick(): ()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/c_w.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/logic.lua"))()
             _G.active = true
     end
 
