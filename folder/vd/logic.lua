@@ -93,7 +93,7 @@ task.spawn(function()
                 if players.LocalPlayer.Character and players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
                     local lpos = players.LocalPlayer.Character.HumanoidRootPart.Position 
                     if tpos then 
-                        local dist = (tpos.Position - lpos).Magnitude
+                        local dist = vector.magnitude(tpos - lpos)
                         if foundSwingPtr ~= nil and dist < 10 then 
                             print("Swing started!") 
                             local hold = tposition - ping 
@@ -216,7 +216,7 @@ task.spawn(function()
     while true do 
         task.wait(0.5) 
         local mapsFolder = ws:FindFirstChild("Map") 
-        if mapsFolder and mapsFolder.Parent then 
+        if mapsFolder then 
             local ok, currentChildren = pcall(function() return mapsFolder:GetChildren() end) 
             if ok and currentChildren then 
                 local currentCount = #currentChildren 
