@@ -131,9 +131,6 @@ local function clearDrawings()
     table.clear(activePoints) 
 end 
 
-_G.killesp = true 
-_G.genesp = true 
-
 local function scanAndSetup() 
     if isScanning then return end 
     isScanning = true 
