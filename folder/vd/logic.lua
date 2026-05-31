@@ -64,41 +64,42 @@ local dontdihgnore = {
 }
 
 local swingPtr = nil
-
-while task.wait(0.016) do
-    local ok, tracks = pcall(getPlayingAnimationTracks)
-    if not ok then continue end
-
-    local foundSwingPtr = nil
-    for _, t in ipairs(tracks) do
-        if t.assetid and dontdihgnore[t.assetid] then
-            foundSwingPtr = t.ptr
-            tposition = t.timePosition
-            --print(tostring(t.assetid))
-            break
-        end
-    end
-    local ping = game:GetPing() / 1000
-    if foundSwingPtr ~= swingPtr then
-        if swingPtr ~= nil then
-            print("Swing stopped!")
-        end
-        local _, tpos = getkiller()
-        local lpos = players.LocalPlayer.Character.HumanoidRootPart.Position
-        if tpos then
-        	local dist = vector.magnitude(tpos - lpos)
-	        if foundSwingPtr ~= nil and dist <= 10 then
-	            --print("Swing started!")
-	            local hold = tposition - ping
-	            --print(hold)
-	            if hold >= 0 then
-	              task.wait(tposition / 1.4 - ping)
-	            end
-	            mouse2click()
-	            --print("hi i should be in the middle")
+task.spawn(function()
+	while task.wait(0.016) do
+	    local ok, tracks = pcall(getPlayingAnimationTracks)
+	    if not ok then continue end
+	
+	    local foundSwingPtr = nil
+	    for _, t in ipairs(tracks) do
+	        if t.assetid and dontdihgnore[t.assetid] then
+	            foundSwingPtr = t.ptr
+	            tposition = t.timePosition
+	            --print(tostring(t.assetid))
+	            break
 	        end
-	        swingPtr = foundSwingPtr
 	    end
+	    local ping = game:GetPing() / 1000
+	    if foundSwingPtr ~= swingPtr then
+	        if swingPtr ~= nil then
+	            print("Swing stopped!")
+	        end
+	        local _, tpos = getkiller()
+	        local lpos = players.LocalPlayer.Character.HumanoidRootPart.Position
+	        if tpos then
+	        	local dist = vector.magnitude(tpos - lpos)
+		        if foundSwingPtr ~= nil and dist <= 10 then
+		            --print("Swing started!")
+		            local hold = tposition - ping
+		            --print(hold)
+		            if hold >= 0 then
+		              task.wait(tposition / 1.4 - ping)
+		            end
+		            mouse2click()
+		            --print("hi i should be in the middle")
+		        end
+		        swingPtr = foundSwingPtr
+		    end
+		end
 	end
 end
 local lp = players.LocalPlayer
