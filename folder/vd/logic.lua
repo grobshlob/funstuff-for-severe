@@ -175,14 +175,14 @@ local function destroypallets()
 	if lp.Team.Name == "Killer" then 
 		local ok, map = pcall(function() return ws.Map end)
 		if ok then
-			local pallet = map.Pallets
+			local pallet = map:FindFirstChild("Pallets")
 			if pallet then
 				if _G.destroypallets then
 					for _, onbro in pairs(pallet:GetChildren()) do
 						onbro:Destroy()
 					end
 				end
-			elseif map.Palletwrong then map.Palletwrong:Delete()
+			elseif map.Palletwrong then map.Palletwrong:Destroy()
 			else return
 			end
 		end
