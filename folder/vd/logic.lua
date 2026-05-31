@@ -143,7 +143,7 @@ function getgens()
 	if _G.genesp then
 		local ok2, map = pcall(function() return ws.Map end)
 		if ok2 and #map:GetChildren() > 0 then
-			local ok, folder = pcall(function() return map:FindFirstChild("Generators") or map:FindFirstChild("Generator") or map:FindFirstChild("Gens") end)
+			local ok, folder = pcall(function() return map:FindFirstChild("Generators") or map:FindFirstChild("Generator") or map:FindFirstChild("Gens") or map:FindFirstChild("newGenerators") end)
 			if ok then
 				if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" then
 					for _, v in pairs(folder:GetChildren()) do
@@ -186,6 +186,7 @@ local function destroypallets()
 		end
 	end
 end
+
 task.spawn(function()
 	while true do 
 		task.wait(3)
