@@ -92,7 +92,7 @@ task.spawn(function()
 		            local hold = tposition - ping
 		            --print(hold)
 		            if hold >= 0 then
-		              task.wait(math.clamp(hold, 0, 0.4)
+		              task.wait(math.clamp(hold, 0, 0.4))
 		            end
 		            mouse2click()
 		            --print("hi i should be in the middle")
