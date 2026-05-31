@@ -92,7 +92,7 @@ task.spawn(function()
 		            local hold = tposition - ping
 		            --print(hold)
 		            if hold >= 0 then
-		              task.wait(tposition / 1.4 - ping)
+		              task.wait(math.clamp(hold, 0, 0)
 		            end
 		            mouse2click()
 		            --print("hi i should be in the middle")
@@ -107,6 +107,7 @@ local cam = ws.CurrentCamera
 local rs = game.RunService
 _G.killesp = true
 _G.genesp = true
+_G.palletesp = true
 local killerdata = {}
 function getkiller2()
 	killerdata = {}
@@ -175,8 +176,10 @@ local function destroypallets()
 		if ok then
 			local pallet = map.Pallets
 			if pallet then
-				for _, onbro in pairs(pallet:GetChildren()) do
-					onbro:Destroy()
+				if _G.destroypallets then
+					for _, onbro in pairs(pallet:GetChildren()) do
+						onbro:Destroy()
+					end
 				end
 			end
 		end
