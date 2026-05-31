@@ -182,6 +182,8 @@ local function destroypallets()
 						onbro:Destroy()
 					end
 				end
+			elseif map.Palletwrong then map.Palletwrong:Delete()
+			else return
 			end
 		end
 	end
