@@ -107,7 +107,7 @@ local cam = ws.CurrentCamera
 local rs = game.RunService
 _G.killesp = true
 _G.genesp = true
-_G.palletesp = true
+
 _G.destroypallets = false
 local killerdata = {}
 function getkiller2()
