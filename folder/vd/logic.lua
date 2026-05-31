@@ -113,7 +113,7 @@ function getkiller2()
 	killerdata = {}
 	if _G.killesp then
 		for _, p in pairs(players:GetChildren()) do
-			if p.Name ~= lp.Name and p.Team.Name == "Killer" and not lp.Team.Name ~= "Spectator" then
+			if p.Name ~= lp.Name and p.Team.Name == "Killer" and lp.Team.Name ~= "Spectator" then
 				local killerchar = p.Character
 				local hrp = killerchar.HumanoidRootPart
 				local hrppos = hrp.Position
