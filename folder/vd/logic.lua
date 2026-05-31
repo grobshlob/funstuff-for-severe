@@ -175,22 +175,19 @@ local function destroypallets()
 	if lp.Team.Name == "Killer" then 
 		local ok, map = pcall(function() return ws.Map end)
 		if ok then
-			local pallet = map:FindFirstChild("Pallets")
-			if pallet then
-				if _G.destroypallets then
-					for _, onbro in pairs(pallet:GetDescendants()) do
-						onbro:Destroy()
-					end
+			local ok, pallet = pcall(function() return map:FindFirstChild("Pallets") end)
+			if ok and pallet then
+				for _, variable in pairs(pallet:GetDescendants()) do
+					variable:Destroy()
 				end
-			elseif map.Palletwrong then for _, v in pairs(map.Palletwrong:GetDescendants()) do v:Destroy() end
+			elseif map:FindFirstChild("Palletwrong") then for _, v in pairs(map.Palletwrong:GetDescendants()) do v:Destroy() end
 			end
 		end
 	end
 end
 
-task.spawn(function()
-	while true do 
-		task.wait(3)
+rs.PostModel:Connect(function()
+	if _G.destroypallets then
 		destroypallets()
 	end
 end)
