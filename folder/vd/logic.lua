@@ -101,7 +101,7 @@ task.spawn(function()
 		    end
 		end
 	end
-end
+end)
 local lp = players.LocalPlayer
 local cam = ws.CurrentCamera
 local rs = game.RunService
