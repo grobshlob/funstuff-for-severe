@@ -178,12 +178,11 @@ local function destroypallets()
 			local pallet = map:FindFirstChild("Pallets")
 			if pallet then
 				if _G.destroypallets then
-					for _, onbro in pairs(pallet:GetChildren()) do
+					for _, onbro in pairs(pallet:GetDescendants()) do
 						onbro:Destroy()
 					end
 				end
-			elseif map.Palletwrong then map.Palletwrong:Destroy()
-			else return
+			elseif map.Palletwrong then for _, v in pairs(map.Palletwrong:GetDescendants()) do v:Destroy() end
 			end
 		end
 	end
