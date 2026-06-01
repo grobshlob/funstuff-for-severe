@@ -107,8 +107,6 @@ local cam = ws.CurrentCamera
 local rs = game.RunService
 _G.killesp = true
 _G.genesp = true
-
-_G.destroypallets = false
 local killerdata = {}
 function getkiller2()
 	killerdata = {}
@@ -171,26 +169,6 @@ function getgens()
 	end
 	return data
 end
-local function destroypallets()
-	if lp.Team.Name == "Killer" then 
-		local ok, map = pcall(function() return ws.Map end)
-		if ok then
-			local ok, pallet = pcall(function() return map:FindFirstChild("Pallets") end)
-			if ok and pallet then
-				for _, variable in pairs(pallet:GetDescendants()) do
-					variable:Destroy()
-				end
-			elseif map:FindFirstChild("Palletwrong") then for _, v in pairs(map.Palletwrong:GetDescendants()) do v:Destroy() end
-			end
-		end
-	end
-end
-
-rs.PostModel:Connect(function()
-	if _G.destroypallets then
-		destroypallets()
-	end
-end)
 rs.Render:Connect(function()
 	local data = getgens()
 	for _, i in pairs(data) do
