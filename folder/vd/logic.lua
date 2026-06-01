@@ -141,7 +141,7 @@ function getgens()
 	if _G.genesp then
 		local ok2, map = pcall(function() return ws.Map end)
 		if ok2 and #map:GetChildren() > 0 then
-			local ok, folder = pcall(function() return map:FindFirstChild("Generators") or map:FindFirstChild("Generator") or map:FindFirstChild("Gens") or map:FindFirstChild("newGenerators") end)
+			local ok, folder = pcall(function() return map:FindFirstChild("Generators") or map:FindFirstChild("Generator") or map:FindFirstChild("Gens") or map:FindFirstChild("newGenerators") or map:FindFirstChild("new Generators") end)
 			if ok then
 				if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" then
 					for _, v in pairs(folder:GetChildren()) do
@@ -169,6 +169,58 @@ function getgens()
 	end
 	return data
 end
+--ai
+local function fetchOffsets()
+    local success, response = pcall(function()
+        return game:HttpGet("https://offsets.imtheo.lol/offsets.json")
+    end)
+    
+    if not success or not response then 
+        warn("Failed to fetch offsets via HttpGet")
+        return nil 
+    end
+    return crypt.json.decode(response)
+end
+
+local FullData = fetchOffsets()
+local FrameRotation = 0 
+
+if FullData then
+    local offsets = FullData.Offsets or FullData
+    local rotationValue = offsets.GuiObject and offsets.GuiObject.Rotation
+    
+    if rotationValue then
+        FrameRotation = tonumber(rotationValue)
+    else
+        warn("Could not find 'Rotation' offset inside GuiObject.")
+    end
+end
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:FindFirstChild("PlayerGui")
+local function normalizeAngle(angle)
+    angle = angle % 360
+    if angle < 0 then
+        angle = angle + 360
+    end
+    return angle
+end
+local function getAngleDifference(angle1, angle2)
+    angle1 = normalizeAngle(angle1)
+    angle2 = normalizeAngle(angle2)
+    local diff = math.abs(angle1 - angle2)
+    if diff > 180 then
+        diff = 360 - diff
+    end
+    return diff
+end
+local function isRotationClose(rotation1, rotation2, threshold)
+    threshold = threshold or 5
+    local difference = getAngleDifference(rotation1, rotation2)
+    return difference <= threshold
+end
+--
 rs.Render:Connect(function()
 	local data = getgens()
 	for _, i in pairs(data) do
@@ -179,7 +231,31 @@ rs.Render:Connect(function()
 		end
 	end
 end)
-
+_G.autocomplete = true
+rs.PostData:Connect(function()
+	if _G.autocomplete then
+		local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
+		if CheckPrompt then
+			local Line = CheckPrompt.Check.Line
+			local Goal = CheckPrompt.Check.Goal
+	
+			local Rotation = memory.readf32(Line, FrameRotation)
+			local GoalRotation = memory.readf32(Goal, FrameRotation)
+	
+			Rotation = normalizeAngle(Rotation)
+			GoalRotation = normalizeAngle(GoalRotation)
+	
+			local lowerSuccess = normalizeAngle(104 + GoalRotation)
+			local upperSuccess = normalizeAngle(114 + GoalRotation)
+			local upperNeutral = normalizeAngle(159 + GoalRotation)
+	
+			if lowerSuccess <= Rotation and Rotation <= upperSuccess then
+				keypress(32)
+				keyrelease(32)
+			end
+		end
+	end
+end)
 rs.Render:Connect(function()
 	local killerdata = getkiller2()
 	for _, i in pairs(killerdata) do
