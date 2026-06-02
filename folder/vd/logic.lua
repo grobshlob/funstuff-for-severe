@@ -68,7 +68,7 @@ task.spawn(function()
 	while task.wait(0.016) do
 	    local ok, tracks = pcall(getPlayingAnimationTracks)
 	    if not ok then continue end
-
+		if lp.Team.Name == "Spectator" then continue end
 	    local foundSwingPtr = nil
 	    for _, t in ipairs(tracks) do
 	        if t.assetid and dontdihgnore[t.assetid] then
