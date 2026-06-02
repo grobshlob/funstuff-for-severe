@@ -256,14 +256,12 @@ rs.PostData:Connect(function()
 		end
 	end
 end)
-rs.Render:Connect(function()
-	local killerdata = getkiller2()
-	for _, i in pairs(killerdata) do
-		local check = i.root
-		if check then
-			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
-		end
+local killerdata = getkiller2()
+for _, i in pairs(killerdata) do
+	local check = i.root
+	if check then
+		local position = i.genpart
+		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
 	end
-end)
+end
 
