@@ -1,6 +1,6 @@
 --!strict
 --!optimize 2
--- UI MADE FROM https://sploiter13.github.io/ui-build/. ty hashmka (@fulore)
+
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 
@@ -719,7 +719,7 @@ do
     E.Text3.ZIndex       = 1
     E.Text3.Visible      = true
 
-    E.Text3Copy.Position     = Vector2.new(933, 650)
+    E.Text3Copy.Position     = Vector2.new(930, 650)
     E.Text3Copy.Text         = "Toggle Key"
     E.Text3Copy.Size         = 13
     E.Text3Copy.Font         = 2
@@ -2760,7 +2760,7 @@ end
 
             E.Text3.Position = NewPos + Vector2.new(302, 97)
 
-            E.Text3Copy.Position = NewPos + Vector2.new(259, 292)
+            E.Text3Copy.Position = NewPos + Vector2.new(256, 292)
 
             E.Text3Copy2.Position = NewPos + Vector2.new(302, 166)
 
