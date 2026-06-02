@@ -63,12 +63,12 @@ local function getdata(place)
 				local skillname = tostring(key)
 				local skilltype = data.type
                 stuff[animid] = {
-					bossname = data.boss
+					bossname = data.boss,
                     delay = data.timing,
                     type = data.type,
                     distance = data.distance or 0,
                     skill = skillname,
-					multi = data.amount,
+					multi = data.amount
                 }
 				if skilltype == "multi" then
 					stuff[animid] = {
@@ -157,6 +157,7 @@ function parry()
 				local name = data.bossname
 				local check = data.distance
 				local amountparry = data.multi
+				print(skillname, type, name, check)
 				if type == "normal" then
 					scheduled[key] = true
 					task.spawn(function()
