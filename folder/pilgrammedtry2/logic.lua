@@ -148,7 +148,7 @@ function parry()
 			local key = 
 				v.target .. 
 				idmem .. 
-			if stuff[idmem] and not proccessed[key]then
+			if stuff[idmem] and not proccessed[key] then
 				print("Found")
 				proccessed[key] = os.clock()
 				local data = stuff[idmem]
