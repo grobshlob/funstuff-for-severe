@@ -1,9 +1,29 @@
 {
-  "Thief King": {
-    "NPCS": [
-    ],
-    "Boss": [
-    ].
-  },
+  "bosses": [
+    {
+      "boss": "Thief King",
+        "swing1": {
+          "timing": 0.8,
+          "type": "normal",
+          "amount_damage": 1
+        },
+        "barrage": {
+          "timing_seconds": 1.2,
+          "type": "multi",
+          "amount": 22
+        },
+        "rush": {
+          "timing": 1.6,
+          "type": "distance",
+          "amount": 30,
+          "distance": 15
+        },
+        "jump": {
+          "timing": 1.6,
+          "type": "dodge",
+          "amount": 0,
+          "distance": 0
+        }
+    }
+  ]
 }
-
