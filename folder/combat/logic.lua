@@ -4,12 +4,7 @@ task.spawn(function()
 end)
 --task.wait(7)
 local lp = game.Players.LocalPlayer
-_G.active = false
 _G.swingPtr = nil
-_G.OnKeybind1Change = function(key: string)
-    _G.active = not _G.active
-    print("status: " .. tostring(_G.active))
-end
 local time = 0
 local parried = {}
 task.spawn(function()
@@ -18,7 +13,6 @@ task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
     while true do
         task.wait(0.008)
-        if not _G.active then continue end
         tinmr()
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
@@ -46,7 +40,7 @@ task.spawn(function()
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = math.abs((time / 2.67) - (game:GetPing() / 2000))
+                                local parrytime = math.abs((time / 2.4) - (game:GetPing() / 2000))
                                 if _G.debug then print(parrytime) end
                                 task.wait(parrytime) 
                                 keypress(0x46) 
