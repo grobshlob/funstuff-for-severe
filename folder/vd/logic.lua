@@ -19,12 +19,12 @@ local function getPlayingAnimationTracks()
     if anima then
 	    local ok, head = pcall(memory.readu64, anima, 0x868)
 	    if not ok or head == 0 then return tracks end
-	
+
 	    local ok2, node = pcall(memory.readu64, head)
 	    if not ok2 then return tracks end
-	
+
 	    local count = 0
-	
+
 	    while node ~= 0 and node ~= head and count < 100 do
 	        count += 1
 	        local ok3, track = pcall(memory.readu64, node + 0x10)
@@ -68,7 +68,7 @@ task.spawn(function()
 	while task.wait(0.016) do
 	    local ok, tracks = pcall(getPlayingAnimationTracks)
 	    if not ok then continue end
-	
+
 	    local foundSwingPtr = nil
 	    for _, t in ipairs(tracks) do
 	        if t.assetid and dontdihgnore[t.assetid] then
@@ -174,7 +174,7 @@ local function fetchOffsets()
     local success, response = pcall(function()
         return game:HttpGet("https://offsets.imtheo.lol/offsets.json")
     end)
-    
+
     if not success or not response then 
         warn("Failed to fetch offsets via HttpGet")
         return nil 
@@ -188,7 +188,7 @@ local FrameRotation = 0
 if FullData then
     local offsets = FullData.Offsets or FullData
     local rotationValue = offsets.GuiObject and offsets.GuiObject.Rotation
-    
+
     if rotationValue then
         FrameRotation = tonumber(rotationValue)
     else
@@ -221,43 +221,48 @@ local function isRotationClose(rotation1, rotation2, threshold)
     return difference <= threshold
 end
 --
-local data = getgens()
-for _, i in pairs(data) do
-	local check = i.main
-	if check then
-		local position = i.genpart
-		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
-	end
-end
-_G.autocomplete = true
-if _G.autocomplete then
-	local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
-	if CheckPrompt then
-		local Line = CheckPrompt.Check.Line
-		local Goal = CheckPrompt.Check.Goal
-
-		local Rotation = memory.readf32(Line, FrameRotation)
-		local GoalRotation = memory.readf32(Goal, FrameRotation)
-
-		Rotation = normalizeAngle(Rotation)
-		GoalRotation = normalizeAngle(GoalRotation)
-
-		local lowerSuccess = normalizeAngle(104 + GoalRotation)
-		local upperSuccess = normalizeAngle(114 + GoalRotation)
-		local upperNeutral = normalizeAngle(159 + GoalRotation)
-
-		if lowerSuccess <= Rotation and Rotation <= upperSuccess then
-			keypress(32)
-			keyrelease(32)
+rs.Render:Connect(function()
+	local data = getgens()
+	for _, i in pairs(data) do
+		local check = i.main
+		if check then
+			local position = i.genpart
+			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
 		end
 	end
-end
-local killerdata = getkiller2()
-for _, i in pairs(killerdata) do
-	local check = i.root
-	if check then
-		local position = i.genpart
-		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
-	end
-end
+end)
+_G.autocomplete = true
+rs.PostData:Connect(function()
+	if _G.autocomplete then
+		local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
+		if CheckPrompt then
+			local Line = CheckPrompt.Check.Line
+			local Goal = CheckPrompt.Check.Goal
 
+			local Rotation = memory.readf32(Line, FrameRotation)
+			local GoalRotation = memory.readf32(Goal, FrameRotation)
+
+			Rotation = normalizeAngle(Rotation)
+			GoalRotation = normalizeAngle(GoalRotation)
+
+			local lowerSuccess = normalizeAngle(104 + GoalRotation)
+			local upperSuccess = normalizeAngle(114 + GoalRotation)
+			local upperNeutral = normalizeAngle(159 + GoalRotation)
+
+			if lowerSuccess <= Rotation and Rotation <= upperSuccess then
+				keypress(32)
+				keyrelease(32)
+			end
+		end
+	end
+end)
+rs.Render:Connect(function()
+	local killerdata = getkiller2()
+	for _, i in pairs(killerdata) do
+		local check = i.root
+		if check then
+			local position = i.genpart
+			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
+		end
+	end
+end)
