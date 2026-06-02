@@ -3,21 +3,21 @@
     {
       "boss": "Thief King",
         "swing1/3": {
-          "timing": 0.8,
+          "timing": 0.2,
           "type": "normal",
-          "amount_damage": 1,
+          "amount": 1,
           "id": "rbxassetid://11745422815"
         },
         "swing2": {
-          "timing": 0.8,
+          "timing": 0.3,
           "type": "normal",
-          "amount_damage": 1,
+          "amount": ,
           "id": "rbxassetid://11745635484"
         },
         "barrage": {
           "timing_seconds": 1.2,
           "type": "multi",
-          "amount": 22,
+          "amount": 10,
           "id": "rbxassetid://8980463494"
         },
         "rush": {
