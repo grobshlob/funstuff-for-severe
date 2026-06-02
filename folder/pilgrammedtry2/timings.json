@@ -19,9 +19,9 @@
           "type": "distance",
           "amount": 30,
           "distance": 15,
-          "multiplier" = 0.4,
-          "sub" = 0.1,
-          "max" = 0.4,
+          "multiplier": 0.4,
+          "sub": 0.1,
+          "max": 0.4,
           "id": ""
         },
         "jump": {
