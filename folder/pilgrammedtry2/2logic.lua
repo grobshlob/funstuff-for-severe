@@ -203,7 +203,7 @@ function parry()
 						scheduled[key] = nil
 					end)
 				elseif type == "distance" then
-					
+				end
 						
 					
 				local holdtime = waittime(idmem)
