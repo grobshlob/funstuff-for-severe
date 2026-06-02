@@ -221,41 +221,37 @@ local function isRotationClose(rotation1, rotation2, threshold)
     return difference <= threshold
 end
 --
-rs.Render:Connect(function()
-	local data = getgens()
-	for _, i in pairs(data) do
-		local check = i.main
-		if check then
-			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
-		end
+local data = getgens()
+for _, i in pairs(data) do
+	local check = i.main
+	if check then
+		local position = i.genpart
+		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
 	end
-end)
+end
 _G.autocomplete = true
-rs.PostData:Connect(function()
-	if _G.autocomplete then
-		local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
-		if CheckPrompt then
-			local Line = CheckPrompt.Check.Line
-			local Goal = CheckPrompt.Check.Goal
-	
-			local Rotation = memory.readf32(Line, FrameRotation)
-			local GoalRotation = memory.readf32(Goal, FrameRotation)
-	
-			Rotation = normalizeAngle(Rotation)
-			GoalRotation = normalizeAngle(GoalRotation)
-	
-			local lowerSuccess = normalizeAngle(104 + GoalRotation)
-			local upperSuccess = normalizeAngle(114 + GoalRotation)
-			local upperNeutral = normalizeAngle(159 + GoalRotation)
-	
-			if lowerSuccess <= Rotation and Rotation <= upperSuccess then
-				keypress(32)
-				keyrelease(32)
-			end
+if _G.autocomplete then
+	local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
+	if CheckPrompt then
+		local Line = CheckPrompt.Check.Line
+		local Goal = CheckPrompt.Check.Goal
+
+		local Rotation = memory.readf32(Line, FrameRotation)
+		local GoalRotation = memory.readf32(Goal, FrameRotation)
+
+		Rotation = normalizeAngle(Rotation)
+		GoalRotation = normalizeAngle(GoalRotation)
+
+		local lowerSuccess = normalizeAngle(104 + GoalRotation)
+		local upperSuccess = normalizeAngle(114 + GoalRotation)
+		local upperNeutral = normalizeAngle(159 + GoalRotation)
+
+		if lowerSuccess <= Rotation and Rotation <= upperSuccess then
+			keypress(32)
+			keyrelease(32)
 		end
 	end
-end)
+end
 local killerdata = getkiller2()
 for _, i in pairs(killerdata) do
 	local check = i.root
