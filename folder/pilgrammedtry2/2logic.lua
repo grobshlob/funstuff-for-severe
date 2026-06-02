@@ -145,6 +145,7 @@ function parry()
 			if idmem ~= "rbxassetid://14079307927" and idmem ~= "rbxassetid://14069005805" and idmem ~= "rbxassetid://14070371463" and idmem ~= "rbxassetid://14071657488" and idmem ~= "rbxassetid://16930848691" then
 				--print(idmem)
 			end
+			getboss(idmem)
 			local key = 
 				v.target .. 
 				idmem
@@ -219,12 +220,7 @@ function parry()
 		end
 	end
 end
-task.spawn(function()
-	while true do
-		task.wait(0.5)
-		getraceandanimator()
-	end
-end)
+
 task.spawn(function()
 	while true do
 		task.wait(0.03)
