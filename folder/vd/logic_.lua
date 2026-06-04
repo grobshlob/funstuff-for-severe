@@ -221,16 +221,14 @@ local function isRotationClose(rotation1, rotation2, threshold)
     return difference <= threshold
 end
 --
-rs.Render:Connect(function()
-	local data = getgens()
-	for _, i in pairs(data) do
-		local check = i.main
-		if check then
-			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
-		end
+local data = getgens()
+for _, i in pairs(data) do
+	local check = i.main
+	if check then
+		local position = i.genpart
+		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
 	end
-end)
+end
 _G.autocomplete = true
 rs.PostData:Connect(function()
 	if _G.autocomplete then
@@ -256,13 +254,11 @@ rs.PostData:Connect(function()
 		end
 	end
 end)
-rs.Render:Connect(function()
-	local killerdata = getkiller2()
-	for _, i in pairs(killerdata) do
-		local check = i.root
-		if check then
-			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
-		end
+local killerdata = getkiller2()
+for _, i in pairs(killerdata) do
+	local check = i.root
+	if check then
+		local position = i.genpart
+		DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
 	end
-end)
+end
