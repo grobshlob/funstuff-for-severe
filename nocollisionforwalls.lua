@@ -1,4 +1,5 @@
 local ws = game:GetService("Workspace")
+
 local function exclude(instance)
     local current = instance.Parent
     while current and current ~= ws and current ~= game do
@@ -22,7 +23,8 @@ local function batch(instancesarray, size)
             local instance = instancesarray[j]
             
             if instance and (instance:IsA("BasePart") or instance:IsA("Part")) and instance.CanCollide then
-                if not exclude(instance) then
+                local floorcheck = instance.CFrame.UpVector.Y > 0.7
+                if not exclude(instance) and not floorcheck then
                     instance.CanCollide = false
                 end
             end
