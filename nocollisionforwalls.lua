@@ -23,13 +23,13 @@ local function batch(instancesarray, size)
             local instance = instancesarray[j]
             
             if instance and (instance:IsA("BasePart") or instance:IsA("Part")) and instance.CanCollide then
-                local floorcheck = instance.CFrame.UpVector.Y > 0.7
-                if not exclude(instance) and not floorcheck then
+                if not exclude(instance) then
                     instance.CanCollide = false
+
                 end
             end
         end
-        task.wait(0.1)
+        task.wait(0.5)
     end
     print("all done")
 end
@@ -41,6 +41,6 @@ task.spawn(function()
             local parts = geo:GetDescendants()
             batch(parts, _G.size)
         end
-        task.wait(_G.scandelay or 5)
+        task.wait(_G.scandelay or 7)
     end
 end)
