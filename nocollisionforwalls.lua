@@ -31,7 +31,7 @@ local function batch(instancesarray, size)
         end
         task.wait(0.5)
     end
-    print("all done")
+    send_notification("all done")
 end
 
 task.spawn(function()
