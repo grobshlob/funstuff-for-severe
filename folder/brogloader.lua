@@ -50,6 +50,7 @@ E.Square1Copy = Drawing.new("Square")
 E.Square6 = Drawing.new("Square")
 E.Square6Copy = Drawing.new("Square")
 E.Square6Copy2 = Drawing.new("Square")
+E.Square6Copy3 = Drawing.new("Square")
 E.Square1Copy7 = Drawing.new("Square")
 E.Square1Copy8 = Drawing.new("Square")
 E.Square1Copy12 = Drawing.new("Square")
@@ -57,6 +58,7 @@ E.Square1 = Drawing.new("Square")
 E.Square1Copy2 = Drawing.new("Square")
 E.Square1Copy3 = Drawing.new("Square")
 E.Square1Copy9 = Drawing.new("Square")
+E.Square1Copy14 = Drawing.new("Square")
 E.Dropdown1Background = Drawing.new("Square")
 E.Dropdown1Text       = Drawing.new("Text")
 E.Dropdown1Arrow      = Drawing.new("Text")
@@ -197,6 +199,103 @@ E.Checkbox1Copy3Background = Drawing.new("Square")
 E.Checkbox1Copy3Fill       = Drawing.new("Square")
 E.Checkbox1Copy3Label      = Drawing.new("Text")
 E.Checkbox1Copy3Checked    = true
+E.Text1Copy8 = Drawing.new("Text")
+E.Text1Copy9 = Drawing.new("Text")
+E.Line4Copy4 = Drawing.new("Line")
+E.Line5Copy4 = Drawing.new("Line")
+E.Line6Copy4 = Drawing.new("Line")
+E.Line7Copy4 = Drawing.new("Line")
+E.Line8Copy8 = Drawing.new("Line")
+E.Line8Copy9 = Drawing.new("Line")
+E.Line9Copy8 = Drawing.new("Line")
+E.Line9Copy9 = Drawing.new("Line")
+E.Line10Copy8 = Drawing.new("Line")
+E.Line10Copy9 = Drawing.new("Line")
+E.Text9 = Drawing.new("Text")
+E.Dropdown3Background = Drawing.new("Square")
+E.Dropdown3Text       = Drawing.new("Text")
+E.Dropdown3Arrow      = Drawing.new("Text")
+E.Dropdown3Selected   = "Thief King"
+E.Dropdown3Options    = { "Thief King", "Yalgaroth", "Pop Off Pirate", "Mondo Squid", "Martial Artist", "Giant Pigface", "Viperhead", "Magma Turtle", "Granny", "Ice King", "Abdominal Snowman", "Pro Thief", "Snow Cultist", "False Believer", "Shock Marauder", "Sailord", "Archmage", "Purple Shark", "Psychocrab", "Highway Son", "King Sandpod", "Creepy Crab", "Bigfish", "The Skeleton", "The Patris", "Kai Lazurai", "Grave Treelad", "Cata", "Lost Guys", "Prism Troll", "Mr. Normal", "N", "Old Fart", "Democan", "Unfair Fight" }
+E.Dropdown3Open       = false
+E.Dropdown3Fired      = false
+E.Dropdown3FiredIdx   = 0
+E.Dropdown3OptionBackground0 = Drawing.new("Square")
+E.Dropdown3OptionText0       = Drawing.new("Text")
+E.Dropdown3OptionBackground1 = Drawing.new("Square")
+E.Dropdown3OptionText1       = Drawing.new("Text")
+E.Dropdown3OptionBackground2 = Drawing.new("Square")
+E.Dropdown3OptionText2       = Drawing.new("Text")
+E.Dropdown3OptionBackground3 = Drawing.new("Square")
+E.Dropdown3OptionText3       = Drawing.new("Text")
+E.Dropdown3OptionBackground4 = Drawing.new("Square")
+E.Dropdown3OptionText4       = Drawing.new("Text")
+E.Dropdown3OptionBackground5 = Drawing.new("Square")
+E.Dropdown3OptionText5       = Drawing.new("Text")
+E.Dropdown3OptionBackground6 = Drawing.new("Square")
+E.Dropdown3OptionText6       = Drawing.new("Text")
+E.Dropdown3OptionBackground7 = Drawing.new("Square")
+E.Dropdown3OptionText7       = Drawing.new("Text")
+E.Dropdown3OptionBackground8 = Drawing.new("Square")
+E.Dropdown3OptionText8       = Drawing.new("Text")
+E.Dropdown3OptionBackground9 = Drawing.new("Square")
+E.Dropdown3OptionText9       = Drawing.new("Text")
+E.Dropdown3OptionBackground10 = Drawing.new("Square")
+E.Dropdown3OptionText10       = Drawing.new("Text")
+E.Dropdown3OptionBackground11 = Drawing.new("Square")
+E.Dropdown3OptionText11       = Drawing.new("Text")
+E.Dropdown3OptionBackground12 = Drawing.new("Square")
+E.Dropdown3OptionText12       = Drawing.new("Text")
+E.Dropdown3OptionBackground13 = Drawing.new("Square")
+E.Dropdown3OptionText13       = Drawing.new("Text")
+E.Dropdown3OptionBackground14 = Drawing.new("Square")
+E.Dropdown3OptionText14       = Drawing.new("Text")
+E.Dropdown3OptionBackground15 = Drawing.new("Square")
+E.Dropdown3OptionText15       = Drawing.new("Text")
+E.Dropdown3OptionBackground16 = Drawing.new("Square")
+E.Dropdown3OptionText16       = Drawing.new("Text")
+E.Dropdown3OptionBackground17 = Drawing.new("Square")
+E.Dropdown3OptionText17       = Drawing.new("Text")
+E.Dropdown3OptionBackground18 = Drawing.new("Square")
+E.Dropdown3OptionText18       = Drawing.new("Text")
+E.Dropdown3OptionBackground19 = Drawing.new("Square")
+E.Dropdown3OptionText19       = Drawing.new("Text")
+E.Dropdown3OptionBackground20 = Drawing.new("Square")
+E.Dropdown3OptionText20       = Drawing.new("Text")
+E.Dropdown3OptionBackground21 = Drawing.new("Square")
+E.Dropdown3OptionText21       = Drawing.new("Text")
+E.Dropdown3OptionBackground22 = Drawing.new("Square")
+E.Dropdown3OptionText22       = Drawing.new("Text")
+E.Dropdown3OptionBackground23 = Drawing.new("Square")
+E.Dropdown3OptionText23       = Drawing.new("Text")
+E.Dropdown3OptionBackground24 = Drawing.new("Square")
+E.Dropdown3OptionText24       = Drawing.new("Text")
+E.Dropdown3OptionBackground25 = Drawing.new("Square")
+E.Dropdown3OptionText25       = Drawing.new("Text")
+E.Dropdown3OptionBackground26 = Drawing.new("Square")
+E.Dropdown3OptionText26       = Drawing.new("Text")
+E.Dropdown3OptionBackground27 = Drawing.new("Square")
+E.Dropdown3OptionText27       = Drawing.new("Text")
+E.Dropdown3OptionBackground28 = Drawing.new("Square")
+E.Dropdown3OptionText28       = Drawing.new("Text")
+E.Dropdown3OptionBackground29 = Drawing.new("Square")
+E.Dropdown3OptionText29       = Drawing.new("Text")
+E.Dropdown3OptionBackground30 = Drawing.new("Square")
+E.Dropdown3OptionText30       = Drawing.new("Text")
+E.Dropdown3OptionBackground31 = Drawing.new("Square")
+E.Dropdown3OptionText31       = Drawing.new("Text")
+E.Dropdown3OptionBackground32 = Drawing.new("Square")
+E.Dropdown3OptionText32       = Drawing.new("Text")
+E.Dropdown3OptionBackground33 = Drawing.new("Square")
+E.Dropdown3OptionText33       = Drawing.new("Text")
+E.Dropdown3OptionBackground34 = Drawing.new("Square")
+E.Dropdown3OptionText34       = Drawing.new("Text")
+E.Dropdown3_OptBg     = { E.Dropdown3OptionBackground0, E.Dropdown3OptionBackground1, E.Dropdown3OptionBackground2, E.Dropdown3OptionBackground3, E.Dropdown3OptionBackground4, E.Dropdown3OptionBackground5, E.Dropdown3OptionBackground6, E.Dropdown3OptionBackground7, E.Dropdown3OptionBackground8, E.Dropdown3OptionBackground9, E.Dropdown3OptionBackground10, E.Dropdown3OptionBackground11, E.Dropdown3OptionBackground12, E.Dropdown3OptionBackground13, E.Dropdown3OptionBackground14, E.Dropdown3OptionBackground15, E.Dropdown3OptionBackground16, E.Dropdown3OptionBackground17, E.Dropdown3OptionBackground18, E.Dropdown3OptionBackground19, E.Dropdown3OptionBackground20, E.Dropdown3OptionBackground21, E.Dropdown3OptionBackground22, E.Dropdown3OptionBackground23, E.Dropdown3OptionBackground24, E.Dropdown3OptionBackground25, E.Dropdown3OptionBackground26, E.Dropdown3OptionBackground27, E.Dropdown3OptionBackground28, E.Dropdown3OptionBackground29, E.Dropdown3OptionBackground30, E.Dropdown3OptionBackground31, E.Dropdown3OptionBackground32, E.Dropdown3OptionBackground33, E.Dropdown3OptionBackground34 }
+E.Dropdown3_OptTx     = { E.Dropdown3OptionText0, E.Dropdown3OptionText1, E.Dropdown3OptionText2, E.Dropdown3OptionText3, E.Dropdown3OptionText4, E.Dropdown3OptionText5, E.Dropdown3OptionText6, E.Dropdown3OptionText7, E.Dropdown3OptionText8, E.Dropdown3OptionText9, E.Dropdown3OptionText10, E.Dropdown3OptionText11, E.Dropdown3OptionText12, E.Dropdown3OptionText13, E.Dropdown3OptionText14, E.Dropdown3OptionText15, E.Dropdown3OptionText16, E.Dropdown3OptionText17, E.Dropdown3OptionText18, E.Dropdown3OptionText19, E.Dropdown3OptionText20, E.Dropdown3OptionText21, E.Dropdown3OptionText22, E.Dropdown3OptionText23, E.Dropdown3OptionText24, E.Dropdown3OptionText25, E.Dropdown3OptionText26, E.Dropdown3OptionText27, E.Dropdown3OptionText28, E.Dropdown3OptionText29, E.Dropdown3OptionText30, E.Dropdown3OptionText31, E.Dropdown3OptionText32, E.Dropdown3OptionText33, E.Dropdown3OptionText34 }
+E.Checkbox1Copy4Background = Drawing.new("Square")
+E.Checkbox1Copy4Fill       = Drawing.new("Square")
+E.Checkbox1Copy4Label      = Drawing.new("Text")
+E.Checkbox1Copy4Checked    = true
 E.Circle1Copy = Drawing.new("Circle")
 E.Circle1Copy6 = Drawing.new("Circle")
 E.Circle1Copy2 = Drawing.new("Circle")
@@ -204,6 +303,8 @@ E.Circle1Copy3 = Drawing.new("Circle")
 E.Circle1Copy4 = Drawing.new("Circle")
 E.Circle1Copy5 = Drawing.new("Circle")
 E.Circle1Copy7 = Drawing.new("Circle")
+E.Circle1Copy8 = Drawing.new("Circle")
+E.Circle1Copy9 = Drawing.new("Circle")
 E.Square1Copy13 = Drawing.new("Square")
 E.Line1Copy2 = Drawing.new("Line")
 E.Line1Copy3 = Drawing.new("Line")
@@ -212,6 +313,8 @@ E.Line1Copy5 = Drawing.new("Line")
 E.Line1Copy6 = Drawing.new("Line")
 E.Line1Copy7 = Drawing.new("Line")
 E.Line1Copy8 = Drawing.new("Line")
+E.Line1Copy9 = Drawing.new("Line")
+E.Line1Copy10 = Drawing.new("Line")
 E.Button2Background = Drawing.new("Square")
 E.Button2Text       = Drawing.new("Text")
 E.Button2Fired    = false
@@ -221,6 +324,9 @@ E.Button2CopyFired    = false
 E.Button2Copy2Background = Drawing.new("Square")
 E.Button2Copy2Text       = Drawing.new("Text")
 E.Button2Copy2Fired    = false
+E.Button2Copy3Background = Drawing.new("Square")
+E.Button2Copy3Text       = Drawing.new("Text")
+E.Button2Copy3Fired    = false
 
 E.Square1CopyDragActive     = false
 E.Square1CopyDragStartMouse = Vector2.new(0, 0)
@@ -237,6 +343,9 @@ E.Square1Copy3DragStartPos   = Vector2.new(0, 0)
 E.Square1Copy9DragActive     = false
 E.Square1Copy9DragStartMouse = Vector2.new(0, 0)
 E.Square1Copy9DragStartPos   = Vector2.new(0, 0)
+E.Square1Copy14DragActive     = false
+E.Square1Copy14DragStartMouse = Vector2.new(0, 0)
+E.Square1Copy14DragStartPos   = Vector2.new(0, 0)
 @native local function _eOut(t: number): number local u: number = 1 - t return 1 - u * u * u end
 E._UIAt = os.clock()      -- entrance clock (slide / fade)
 E._slideDone = false
@@ -401,6 +510,104 @@ local function SetTab(n: number): ()
     E.Line1Copy8.Visible = UIVisible and n == 4 and true
     E.Button2Copy2Background.Visible = UIVisible and n == 4 and false
     E.Button2Copy2Text.Visible       = UIVisible and n == 4 and false
+    -- Tab 5
+    E.Square6Copy3.Visible = UIVisible and n == 5 and true
+    E.Square1Copy14.Visible = UIVisible and n == 5 and true
+    E.Text1Copy8.Visible = UIVisible and n == 5 and true
+    E.Text1Copy9.Visible = UIVisible and n == 5 and true
+    E.Line4Copy4.Visible = UIVisible and n == 5 and true
+    E.Line5Copy4.Visible = UIVisible and n == 5 and true
+    E.Line6Copy4.Visible = UIVisible and n == 5 and true
+    E.Line7Copy4.Visible = UIVisible and n == 5 and true
+    E.Line8Copy8.Visible = UIVisible and n == 5 and true
+    E.Line8Copy9.Visible = UIVisible and n == 5 and true
+    E.Line9Copy8.Visible = UIVisible and n == 5 and true
+    E.Line9Copy9.Visible = UIVisible and n == 5 and true
+    E.Line10Copy8.Visible = UIVisible and n == 5 and true
+    E.Line10Copy9.Visible = UIVisible and n == 5 and true
+    E.Text9.Visible = UIVisible and n == 5 and true
+    E.Dropdown3Background.Visible = UIVisible and n == 5 and true
+    E.Dropdown3Text.Visible       = UIVisible and n == 5 and true
+    E.Dropdown3Arrow.Visible      = UIVisible and n == 5 and true
+    E.Dropdown3OptionBackground0.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText0.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground1.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText1.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground2.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText2.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground3.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText3.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground4.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText4.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground5.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText5.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground6.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText6.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground7.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText7.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground8.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText8.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground9.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText9.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground10.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText10.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground11.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText11.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground12.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText12.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground13.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText13.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground14.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText14.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground15.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText15.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground16.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText16.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground17.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText17.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground18.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText18.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground19.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText19.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground20.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText20.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground21.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText21.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground22.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText22.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground23.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText23.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground24.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText24.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground25.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText25.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground26.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText26.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground27.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText27.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground28.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText28.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground29.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText29.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground30.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText30.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground31.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText31.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground32.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText32.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground33.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText33.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionBackground34.Visible = UIVisible and n == 5 and E.Dropdown3Open
+    E.Dropdown3OptionText34.Visible       = UIVisible and n == 5 and E.Dropdown3Open
+    E.Checkbox1Copy4Background.Visible = UIVisible and n == 5 and true
+    E.Checkbox1Copy4Label.Visible      = UIVisible and n == 5 and true
+    E.Checkbox1Copy4Fill.Visible       = UIVisible and n == 5 and E.Checkbox1Copy4Checked
+    E.Circle1Copy8.Visible = UIVisible and n == 5 and true
+    E.Circle1Copy9.Visible = UIVisible and n == 5 and true
+    E.Line1Copy9.Visible = UIVisible and n == 5 and true
+    E.Line1Copy10.Visible = UIVisible and n == 5 and true
+    E.Button2Copy3Background.Visible = UIVisible and n == 5 and false
+    E.Button2Copy3Text.Visible       = UIVisible and n == 5 and false
 end
 
 do
@@ -444,6 +651,16 @@ do
     E.Square6Copy2.Rounding  = 33
     E.Square6Copy2.ZIndex    = -11
     E.Square6Copy2.Visible   = true
+
+    E.Square6Copy3.Position  = Vector2.new(829, 418)
+    E.Square6Copy3.Size      = Vector2.new(327, 139)
+    E.Square6Copy3.Color     = Color3.fromRGB(44, 26, 81)
+    E.Square6Copy3.Opacity   = 0.50
+    E.Square6Copy3.Filled    = true
+    E.Square6Copy3.Thickness = 1
+    E.Square6Copy3.Rounding  = 33
+    E.Square6Copy3.ZIndex    = -11
+    E.Square6Copy3.Visible   = true
 
     E.Square1Copy7.Position  = Vector2.new(823, 483)
     E.Square1Copy7.Size      = Vector2.new(177, 104)
@@ -514,6 +731,16 @@ do
     E.Square1Copy9.Rounding  = 33
     E.Square1Copy9.ZIndex    = 0
     E.Square1Copy9.Visible   = true
+
+    E.Square1Copy14.Position  = Vector2.new(829, 418)
+    E.Square1Copy14.Size      = Vector2.new(330, 139)
+    E.Square1Copy14.Color     = Color3.fromRGB(77, 8, 217)
+    E.Square1Copy14.Opacity   = 1
+    E.Square1Copy14.Filled    = false
+    E.Square1Copy14.Thickness = 6
+    E.Square1Copy14.Rounding  = 33
+    E.Square1Copy14.ZIndex    = 0
+    E.Square1Copy14.Visible   = true
 
     E.Dropdown1Background.Position  = Vector2.new(692, 437)
     E.Dropdown1Background.Size      = Vector2.new(212, 59)
@@ -1087,7 +1314,7 @@ do
     E.Square1Copy4.ZIndex    = 1
     E.Square1Copy4.Visible   = true
 
-    E.Text6.Position     = Vector2.new(399, 333)
+    E.Text6.Position     = Vector2.new(399, 329)
     E.Text6.Text         = "If you experience"
     E.Text6.Size         = 16
     E.Text6.Font         = 0
@@ -1098,7 +1325,7 @@ do
     E.Text6.ZIndex       = 1
     E.Text6.Visible      = true
 
-    E.Text6Copy.Position     = Vector2.new(412, 347)
+    E.Text6Copy.Position     = Vector2.new(400, 345)
     E.Text6Copy.Text         = "any bad timings"
     E.Text6Copy.Size         = 16
     E.Text6Copy.Font         = 0
@@ -1109,7 +1336,7 @@ do
     E.Text6Copy.ZIndex       = 1
     E.Text6Copy.Visible      = true
 
-    E.Text6Copy2.Position     = Vector2.new(419, 362)
+    E.Text6Copy2.Position     = Vector2.new(407, 362)
     E.Text6Copy2.Text         = "DM urgol0000"
     E.Text6Copy2.Size         = 16
     E.Text6Copy2.Font         = 0
@@ -1579,6 +1806,839 @@ do
     E.Checkbox1Copy3Label.ZIndex       = 2
     E.Checkbox1Copy3Label.Visible      = true
 
+    E.Text1Copy8.Position     = Vector2.new(900, 434)
+    E.Text1Copy8.Text         = "BROG"
+    E.Text1Copy8.Size         = 23
+    E.Text1Copy8.Font         = 0
+    E.Text1Copy8.Color        = Color3.fromRGB(255, 255, 255)
+    E.Text1Copy8.Opacity      = 1
+    E.Text1Copy8.Center       = false
+    E.Text1Copy8.Outline      = false
+    E.Text1Copy8.ZIndex       = 1
+    E.Text1Copy8.Visible      = true
+
+    E.Text1Copy9.Position     = Vector2.new(954, 435)
+    E.Text1Copy9.Text         = ":  Pilgrammed"
+    E.Text1Copy9.Size         = 17
+    E.Text1Copy9.Font         = 0
+    E.Text1Copy9.Color        = Color3.fromRGB(204, 0, 139)
+    E.Text1Copy9.Opacity      = 1
+    E.Text1Copy9.Center       = false
+    E.Text1Copy9.Outline      = false
+    E.Text1Copy9.ZIndex       = 1
+    E.Text1Copy9.Visible      = true
+
+    E.Line4Copy4.From      = Vector2.new(851, 439)
+    E.Line4Copy4.To        = Vector2.new(855, 431)
+    E.Line4Copy4.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line4Copy4.Opacity   = 1
+    E.Line4Copy4.Thickness = 1
+    E.Line4Copy4.ZIndex    = 1
+    E.Line4Copy4.Visible   = true
+
+    E.Line5Copy4.From      = Vector2.new(855, 431)
+    E.Line5Copy4.To        = Vector2.new(859, 438)
+    E.Line5Copy4.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line5Copy4.Opacity   = 1
+    E.Line5Copy4.Thickness = 1
+    E.Line5Copy4.ZIndex    = 1
+    E.Line5Copy4.Visible   = true
+
+    E.Line6Copy4.From      = Vector2.new(871, 438)
+    E.Line6Copy4.To        = Vector2.new(875, 431)
+    E.Line6Copy4.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line6Copy4.Opacity   = 1
+    E.Line6Copy4.Thickness = 1
+    E.Line6Copy4.ZIndex    = 1
+    E.Line6Copy4.Visible   = true
+
+    E.Line7Copy4.From      = Vector2.new(875, 431)
+    E.Line7Copy4.To        = Vector2.new(878, 440)
+    E.Line7Copy4.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line7Copy4.Opacity   = 1
+    E.Line7Copy4.Thickness = 1
+    E.Line7Copy4.ZIndex    = 1
+    E.Line7Copy4.Visible   = true
+
+    E.Line8Copy8.From      = Vector2.new(847, 451)
+    E.Line8Copy8.To        = Vector2.new(855, 453)
+    E.Line8Copy8.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line8Copy8.Opacity   = 1
+    E.Line8Copy8.Thickness = 1
+    E.Line8Copy8.ZIndex    = 1
+    E.Line8Copy8.Visible   = true
+
+    E.Line8Copy9.From      = Vector2.new(846, 456)
+    E.Line8Copy9.To        = Vector2.new(856, 456)
+    E.Line8Copy9.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line8Copy9.Opacity   = 1
+    E.Line8Copy9.Thickness = 1
+    E.Line8Copy9.ZIndex    = 1
+    E.Line8Copy9.Visible   = true
+
+    E.Line9Copy8.From      = Vector2.new(875, 454)
+    E.Line9Copy8.To        = Vector2.new(883, 452)
+    E.Line9Copy8.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line9Copy8.Opacity   = 1
+    E.Line9Copy8.Thickness = 1
+    E.Line9Copy8.ZIndex    = 1
+    E.Line9Copy8.Visible   = true
+
+    E.Line9Copy9.From      = Vector2.new(874, 456)
+    E.Line9Copy9.To        = Vector2.new(883, 458)
+    E.Line9Copy9.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line9Copy9.Opacity   = 1
+    E.Line9Copy9.Thickness = 1
+    E.Line9Copy9.ZIndex    = 1
+    E.Line9Copy9.Visible   = true
+
+    E.Line10Copy8.From      = Vector2.new(865, 452)
+    E.Line10Copy8.To        = Vector2.new(863, 456)
+    E.Line10Copy8.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line10Copy8.Opacity   = 1
+    E.Line10Copy8.Thickness = 1
+    E.Line10Copy8.ZIndex    = 1
+    E.Line10Copy8.Visible   = true
+
+    E.Line10Copy9.From      = Vector2.new(865, 452)
+    E.Line10Copy9.To        = Vector2.new(868, 457)
+    E.Line10Copy9.Color     = Color3.fromRGB(255, 255, 255)
+    E.Line10Copy9.Opacity   = 1
+    E.Line10Copy9.Thickness = 1
+    E.Line10Copy9.ZIndex    = 1
+    E.Line10Copy9.Visible   = true
+
+    E.Text9.Position     = Vector2.new(856, 475)
+    E.Text9.Text         = "Boss"
+    E.Text9.Size         = 16
+    E.Text9.Font         = 0
+    E.Text9.Color        = Color3.fromRGB(102, 102, 102)
+    E.Text9.Opacity      = 1
+    E.Text9.Center       = false
+    E.Text9.Outline      = false
+    E.Text9.ZIndex       = 1
+    E.Text9.Visible      = true
+
+    E.Dropdown3Background.Position  = Vector2.new(841, 502)
+    E.Dropdown3Background.Size      = Vector2.new(150, 30)
+    E.Dropdown3Background.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3Background.Filled    = true
+    E.Dropdown3Background.Thickness = 1
+    E.Dropdown3Background.Rounding  = 6
+    E.Dropdown3Background.ZIndex    = 1
+    E.Dropdown3Background.Visible   = true
+
+    E.Dropdown3Text.Position  = Vector2.new(849, 509)
+    E.Dropdown3Text.Text      = E.Dropdown3Selected
+    E.Dropdown3Text.Size      = 16
+    E.Dropdown3Text.Font      = 2
+    E.Dropdown3Text.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3Text.Outline   = false
+    E.Dropdown3Text.ZIndex    = 2
+    E.Dropdown3Text.Visible   = true
+    _FitText(E.Dropdown3Text, 122)
+
+    E.Dropdown3Arrow.Position = Vector2.new(975, 509)
+    E.Dropdown3Arrow.Text     = "▼"
+    E.Dropdown3Arrow.Size     = 12
+    E.Dropdown3Arrow.Font     = 2
+    E.Dropdown3Arrow.Color    = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3Arrow.ZIndex   = 2
+    E.Dropdown3Arrow.Visible  = true
+
+    E.Dropdown3OptionBackground0.Position  = Vector2.new(841, 532)
+    E.Dropdown3OptionBackground0.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground0.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground0.Filled    = true
+    E.Dropdown3OptionBackground0.Rounding  = 6
+    E.Dropdown3OptionBackground0.ZIndex    = 3
+    E.Dropdown3OptionBackground0.Visible   = false
+
+    E.Dropdown3OptionText0.Position  = Vector2.new(849, 539)
+    E.Dropdown3OptionText0.Text      = "Thief King"
+    E.Dropdown3OptionText0.Size      = 16
+    E.Dropdown3OptionText0.Font      = 2
+    E.Dropdown3OptionText0.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText0.ZIndex    = 4
+    E.Dropdown3OptionText0.Visible   = false
+    _FitText(E.Dropdown3OptionText0, 134)
+
+    E.Dropdown3OptionBackground1.Position  = Vector2.new(841, 562)
+    E.Dropdown3OptionBackground1.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground1.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground1.Filled    = true
+    E.Dropdown3OptionBackground1.Rounding  = 6
+    E.Dropdown3OptionBackground1.ZIndex    = 3
+    E.Dropdown3OptionBackground1.Visible   = false
+
+    E.Dropdown3OptionText1.Position  = Vector2.new(849, 569)
+    E.Dropdown3OptionText1.Text      = "Yalgaroth"
+    E.Dropdown3OptionText1.Size      = 16
+    E.Dropdown3OptionText1.Font      = 2
+    E.Dropdown3OptionText1.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText1.ZIndex    = 4
+    E.Dropdown3OptionText1.Visible   = false
+    _FitText(E.Dropdown3OptionText1, 134)
+
+    E.Dropdown3OptionBackground2.Position  = Vector2.new(841, 592)
+    E.Dropdown3OptionBackground2.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground2.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground2.Filled    = true
+    E.Dropdown3OptionBackground2.Rounding  = 6
+    E.Dropdown3OptionBackground2.ZIndex    = 3
+    E.Dropdown3OptionBackground2.Visible   = false
+
+    E.Dropdown3OptionText2.Position  = Vector2.new(849, 599)
+    E.Dropdown3OptionText2.Text      = "Pop Off Pirate"
+    E.Dropdown3OptionText2.Size      = 16
+    E.Dropdown3OptionText2.Font      = 2
+    E.Dropdown3OptionText2.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText2.ZIndex    = 4
+    E.Dropdown3OptionText2.Visible   = false
+    _FitText(E.Dropdown3OptionText2, 134)
+
+    E.Dropdown3OptionBackground3.Position  = Vector2.new(841, 622)
+    E.Dropdown3OptionBackground3.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground3.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground3.Filled    = true
+    E.Dropdown3OptionBackground3.Rounding  = 6
+    E.Dropdown3OptionBackground3.ZIndex    = 3
+    E.Dropdown3OptionBackground3.Visible   = false
+
+    E.Dropdown3OptionText3.Position  = Vector2.new(849, 629)
+    E.Dropdown3OptionText3.Text      = "Mondo Squid"
+    E.Dropdown3OptionText3.Size      = 16
+    E.Dropdown3OptionText3.Font      = 2
+    E.Dropdown3OptionText3.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText3.ZIndex    = 4
+    E.Dropdown3OptionText3.Visible   = false
+    _FitText(E.Dropdown3OptionText3, 134)
+
+    E.Dropdown3OptionBackground4.Position  = Vector2.new(841, 652)
+    E.Dropdown3OptionBackground4.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground4.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground4.Filled    = true
+    E.Dropdown3OptionBackground4.Rounding  = 6
+    E.Dropdown3OptionBackground4.ZIndex    = 3
+    E.Dropdown3OptionBackground4.Visible   = false
+
+    E.Dropdown3OptionText4.Position  = Vector2.new(849, 659)
+    E.Dropdown3OptionText4.Text      = "Martial Artist"
+    E.Dropdown3OptionText4.Size      = 16
+    E.Dropdown3OptionText4.Font      = 2
+    E.Dropdown3OptionText4.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText4.ZIndex    = 4
+    E.Dropdown3OptionText4.Visible   = false
+    _FitText(E.Dropdown3OptionText4, 134)
+
+    E.Dropdown3OptionBackground5.Position  = Vector2.new(841, 682)
+    E.Dropdown3OptionBackground5.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground5.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground5.Filled    = true
+    E.Dropdown3OptionBackground5.Rounding  = 6
+    E.Dropdown3OptionBackground5.ZIndex    = 3
+    E.Dropdown3OptionBackground5.Visible   = false
+
+    E.Dropdown3OptionText5.Position  = Vector2.new(849, 689)
+    E.Dropdown3OptionText5.Text      = "Giant Pigface"
+    E.Dropdown3OptionText5.Size      = 16
+    E.Dropdown3OptionText5.Font      = 2
+    E.Dropdown3OptionText5.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText5.ZIndex    = 4
+    E.Dropdown3OptionText5.Visible   = false
+    _FitText(E.Dropdown3OptionText5, 134)
+
+    E.Dropdown3OptionBackground6.Position  = Vector2.new(841, 712)
+    E.Dropdown3OptionBackground6.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground6.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground6.Filled    = true
+    E.Dropdown3OptionBackground6.Rounding  = 6
+    E.Dropdown3OptionBackground6.ZIndex    = 3
+    E.Dropdown3OptionBackground6.Visible   = false
+
+    E.Dropdown3OptionText6.Position  = Vector2.new(849, 719)
+    E.Dropdown3OptionText6.Text      = "Viperhead"
+    E.Dropdown3OptionText6.Size      = 16
+    E.Dropdown3OptionText6.Font      = 2
+    E.Dropdown3OptionText6.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText6.ZIndex    = 4
+    E.Dropdown3OptionText6.Visible   = false
+    _FitText(E.Dropdown3OptionText6, 134)
+
+    E.Dropdown3OptionBackground7.Position  = Vector2.new(841, 742)
+    E.Dropdown3OptionBackground7.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground7.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground7.Filled    = true
+    E.Dropdown3OptionBackground7.Rounding  = 6
+    E.Dropdown3OptionBackground7.ZIndex    = 3
+    E.Dropdown3OptionBackground7.Visible   = false
+
+    E.Dropdown3OptionText7.Position  = Vector2.new(849, 749)
+    E.Dropdown3OptionText7.Text      = "Magma Turtle"
+    E.Dropdown3OptionText7.Size      = 16
+    E.Dropdown3OptionText7.Font      = 2
+    E.Dropdown3OptionText7.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText7.ZIndex    = 4
+    E.Dropdown3OptionText7.Visible   = false
+    _FitText(E.Dropdown3OptionText7, 134)
+
+    E.Dropdown3OptionBackground8.Position  = Vector2.new(841, 772)
+    E.Dropdown3OptionBackground8.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground8.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground8.Filled    = true
+    E.Dropdown3OptionBackground8.Rounding  = 6
+    E.Dropdown3OptionBackground8.ZIndex    = 3
+    E.Dropdown3OptionBackground8.Visible   = false
+
+    E.Dropdown3OptionText8.Position  = Vector2.new(849, 779)
+    E.Dropdown3OptionText8.Text      = "Granny"
+    E.Dropdown3OptionText8.Size      = 16
+    E.Dropdown3OptionText8.Font      = 2
+    E.Dropdown3OptionText8.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText8.ZIndex    = 4
+    E.Dropdown3OptionText8.Visible   = false
+    _FitText(E.Dropdown3OptionText8, 134)
+
+    E.Dropdown3OptionBackground9.Position  = Vector2.new(841, 802)
+    E.Dropdown3OptionBackground9.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground9.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground9.Filled    = true
+    E.Dropdown3OptionBackground9.Rounding  = 6
+    E.Dropdown3OptionBackground9.ZIndex    = 3
+    E.Dropdown3OptionBackground9.Visible   = false
+
+    E.Dropdown3OptionText9.Position  = Vector2.new(849, 809)
+    E.Dropdown3OptionText9.Text      = "Ice King"
+    E.Dropdown3OptionText9.Size      = 16
+    E.Dropdown3OptionText9.Font      = 2
+    E.Dropdown3OptionText9.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText9.ZIndex    = 4
+    E.Dropdown3OptionText9.Visible   = false
+    _FitText(E.Dropdown3OptionText9, 134)
+
+    E.Dropdown3OptionBackground10.Position  = Vector2.new(841, 832)
+    E.Dropdown3OptionBackground10.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground10.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground10.Filled    = true
+    E.Dropdown3OptionBackground10.Rounding  = 6
+    E.Dropdown3OptionBackground10.ZIndex    = 3
+    E.Dropdown3OptionBackground10.Visible   = false
+
+    E.Dropdown3OptionText10.Position  = Vector2.new(849, 839)
+    E.Dropdown3OptionText10.Text      = "Abdominal Snowman"
+    E.Dropdown3OptionText10.Size      = 16
+    E.Dropdown3OptionText10.Font      = 2
+    E.Dropdown3OptionText10.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText10.ZIndex    = 4
+    E.Dropdown3OptionText10.Visible   = false
+    _FitText(E.Dropdown3OptionText10, 134)
+
+    E.Dropdown3OptionBackground11.Position  = Vector2.new(841, 862)
+    E.Dropdown3OptionBackground11.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground11.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground11.Filled    = true
+    E.Dropdown3OptionBackground11.Rounding  = 6
+    E.Dropdown3OptionBackground11.ZIndex    = 3
+    E.Dropdown3OptionBackground11.Visible   = false
+
+    E.Dropdown3OptionText11.Position  = Vector2.new(849, 869)
+    E.Dropdown3OptionText11.Text      = "Pro Thief"
+    E.Dropdown3OptionText11.Size      = 16
+    E.Dropdown3OptionText11.Font      = 2
+    E.Dropdown3OptionText11.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText11.ZIndex    = 4
+    E.Dropdown3OptionText11.Visible   = false
+    _FitText(E.Dropdown3OptionText11, 134)
+
+    E.Dropdown3OptionBackground12.Position  = Vector2.new(841, 892)
+    E.Dropdown3OptionBackground12.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground12.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground12.Filled    = true
+    E.Dropdown3OptionBackground12.Rounding  = 6
+    E.Dropdown3OptionBackground12.ZIndex    = 3
+    E.Dropdown3OptionBackground12.Visible   = false
+
+    E.Dropdown3OptionText12.Position  = Vector2.new(849, 899)
+    E.Dropdown3OptionText12.Text      = "Snow Cultist"
+    E.Dropdown3OptionText12.Size      = 16
+    E.Dropdown3OptionText12.Font      = 2
+    E.Dropdown3OptionText12.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText12.ZIndex    = 4
+    E.Dropdown3OptionText12.Visible   = false
+    _FitText(E.Dropdown3OptionText12, 134)
+
+    E.Dropdown3OptionBackground13.Position  = Vector2.new(841, 922)
+    E.Dropdown3OptionBackground13.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground13.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground13.Filled    = true
+    E.Dropdown3OptionBackground13.Rounding  = 6
+    E.Dropdown3OptionBackground13.ZIndex    = 3
+    E.Dropdown3OptionBackground13.Visible   = false
+
+    E.Dropdown3OptionText13.Position  = Vector2.new(849, 929)
+    E.Dropdown3OptionText13.Text      = "False Believer"
+    E.Dropdown3OptionText13.Size      = 16
+    E.Dropdown3OptionText13.Font      = 2
+    E.Dropdown3OptionText13.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText13.ZIndex    = 4
+    E.Dropdown3OptionText13.Visible   = false
+    _FitText(E.Dropdown3OptionText13, 134)
+
+    E.Dropdown3OptionBackground14.Position  = Vector2.new(841, 952)
+    E.Dropdown3OptionBackground14.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground14.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground14.Filled    = true
+    E.Dropdown3OptionBackground14.Rounding  = 6
+    E.Dropdown3OptionBackground14.ZIndex    = 3
+    E.Dropdown3OptionBackground14.Visible   = false
+
+    E.Dropdown3OptionText14.Position  = Vector2.new(849, 959)
+    E.Dropdown3OptionText14.Text      = "Shock Marauder"
+    E.Dropdown3OptionText14.Size      = 16
+    E.Dropdown3OptionText14.Font      = 2
+    E.Dropdown3OptionText14.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText14.ZIndex    = 4
+    E.Dropdown3OptionText14.Visible   = false
+    _FitText(E.Dropdown3OptionText14, 134)
+
+    E.Dropdown3OptionBackground15.Position  = Vector2.new(841, 982)
+    E.Dropdown3OptionBackground15.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground15.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground15.Filled    = true
+    E.Dropdown3OptionBackground15.Rounding  = 6
+    E.Dropdown3OptionBackground15.ZIndex    = 3
+    E.Dropdown3OptionBackground15.Visible   = false
+
+    E.Dropdown3OptionText15.Position  = Vector2.new(849, 989)
+    E.Dropdown3OptionText15.Text      = "Sailord"
+    E.Dropdown3OptionText15.Size      = 16
+    E.Dropdown3OptionText15.Font      = 2
+    E.Dropdown3OptionText15.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText15.ZIndex    = 4
+    E.Dropdown3OptionText15.Visible   = false
+    _FitText(E.Dropdown3OptionText15, 134)
+
+    E.Dropdown3OptionBackground16.Position  = Vector2.new(841, 1012)
+    E.Dropdown3OptionBackground16.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground16.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground16.Filled    = true
+    E.Dropdown3OptionBackground16.Rounding  = 6
+    E.Dropdown3OptionBackground16.ZIndex    = 3
+    E.Dropdown3OptionBackground16.Visible   = false
+
+    E.Dropdown3OptionText16.Position  = Vector2.new(849, 1019)
+    E.Dropdown3OptionText16.Text      = "Archmage"
+    E.Dropdown3OptionText16.Size      = 16
+    E.Dropdown3OptionText16.Font      = 2
+    E.Dropdown3OptionText16.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText16.ZIndex    = 4
+    E.Dropdown3OptionText16.Visible   = false
+    _FitText(E.Dropdown3OptionText16, 134)
+
+    E.Dropdown3OptionBackground17.Position  = Vector2.new(841, 1042)
+    E.Dropdown3OptionBackground17.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground17.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground17.Filled    = true
+    E.Dropdown3OptionBackground17.Rounding  = 6
+    E.Dropdown3OptionBackground17.ZIndex    = 3
+    E.Dropdown3OptionBackground17.Visible   = false
+
+    E.Dropdown3OptionText17.Position  = Vector2.new(849, 1049)
+    E.Dropdown3OptionText17.Text      = "Purple Shark"
+    E.Dropdown3OptionText17.Size      = 16
+    E.Dropdown3OptionText17.Font      = 2
+    E.Dropdown3OptionText17.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText17.ZIndex    = 4
+    E.Dropdown3OptionText17.Visible   = false
+    _FitText(E.Dropdown3OptionText17, 134)
+
+    E.Dropdown3OptionBackground18.Position  = Vector2.new(841, 1072)
+    E.Dropdown3OptionBackground18.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground18.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground18.Filled    = true
+    E.Dropdown3OptionBackground18.Rounding  = 6
+    E.Dropdown3OptionBackground18.ZIndex    = 3
+    E.Dropdown3OptionBackground18.Visible   = false
+
+    E.Dropdown3OptionText18.Position  = Vector2.new(849, 1079)
+    E.Dropdown3OptionText18.Text      = "Psychocrab"
+    E.Dropdown3OptionText18.Size      = 16
+    E.Dropdown3OptionText18.Font      = 2
+    E.Dropdown3OptionText18.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText18.ZIndex    = 4
+    E.Dropdown3OptionText18.Visible   = false
+    _FitText(E.Dropdown3OptionText18, 134)
+
+    E.Dropdown3OptionBackground19.Position  = Vector2.new(841, 1102)
+    E.Dropdown3OptionBackground19.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground19.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground19.Filled    = true
+    E.Dropdown3OptionBackground19.Rounding  = 6
+    E.Dropdown3OptionBackground19.ZIndex    = 3
+    E.Dropdown3OptionBackground19.Visible   = false
+
+    E.Dropdown3OptionText19.Position  = Vector2.new(849, 1109)
+    E.Dropdown3OptionText19.Text      = "Highway Son"
+    E.Dropdown3OptionText19.Size      = 16
+    E.Dropdown3OptionText19.Font      = 2
+    E.Dropdown3OptionText19.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText19.ZIndex    = 4
+    E.Dropdown3OptionText19.Visible   = false
+    _FitText(E.Dropdown3OptionText19, 134)
+
+    E.Dropdown3OptionBackground20.Position  = Vector2.new(841, 1132)
+    E.Dropdown3OptionBackground20.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground20.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground20.Filled    = true
+    E.Dropdown3OptionBackground20.Rounding  = 6
+    E.Dropdown3OptionBackground20.ZIndex    = 3
+    E.Dropdown3OptionBackground20.Visible   = false
+
+    E.Dropdown3OptionText20.Position  = Vector2.new(849, 1139)
+    E.Dropdown3OptionText20.Text      = "King Sandpod"
+    E.Dropdown3OptionText20.Size      = 16
+    E.Dropdown3OptionText20.Font      = 2
+    E.Dropdown3OptionText20.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText20.ZIndex    = 4
+    E.Dropdown3OptionText20.Visible   = false
+    _FitText(E.Dropdown3OptionText20, 134)
+
+    E.Dropdown3OptionBackground21.Position  = Vector2.new(841, 1162)
+    E.Dropdown3OptionBackground21.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground21.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground21.Filled    = true
+    E.Dropdown3OptionBackground21.Rounding  = 6
+    E.Dropdown3OptionBackground21.ZIndex    = 3
+    E.Dropdown3OptionBackground21.Visible   = false
+
+    E.Dropdown3OptionText21.Position  = Vector2.new(849, 1169)
+    E.Dropdown3OptionText21.Text      = "Creepy Crab"
+    E.Dropdown3OptionText21.Size      = 16
+    E.Dropdown3OptionText21.Font      = 2
+    E.Dropdown3OptionText21.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText21.ZIndex    = 4
+    E.Dropdown3OptionText21.Visible   = false
+    _FitText(E.Dropdown3OptionText21, 134)
+
+    E.Dropdown3OptionBackground22.Position  = Vector2.new(841, 1192)
+    E.Dropdown3OptionBackground22.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground22.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground22.Filled    = true
+    E.Dropdown3OptionBackground22.Rounding  = 6
+    E.Dropdown3OptionBackground22.ZIndex    = 3
+    E.Dropdown3OptionBackground22.Visible   = false
+
+    E.Dropdown3OptionText22.Position  = Vector2.new(849, 1199)
+    E.Dropdown3OptionText22.Text      = "Bigfish"
+    E.Dropdown3OptionText22.Size      = 16
+    E.Dropdown3OptionText22.Font      = 2
+    E.Dropdown3OptionText22.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText22.ZIndex    = 4
+    E.Dropdown3OptionText22.Visible   = false
+    _FitText(E.Dropdown3OptionText22, 134)
+
+    E.Dropdown3OptionBackground23.Position  = Vector2.new(841, 1222)
+    E.Dropdown3OptionBackground23.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground23.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground23.Filled    = true
+    E.Dropdown3OptionBackground23.Rounding  = 6
+    E.Dropdown3OptionBackground23.ZIndex    = 3
+    E.Dropdown3OptionBackground23.Visible   = false
+
+    E.Dropdown3OptionText23.Position  = Vector2.new(849, 1229)
+    E.Dropdown3OptionText23.Text      = "The Skeleton"
+    E.Dropdown3OptionText23.Size      = 16
+    E.Dropdown3OptionText23.Font      = 2
+    E.Dropdown3OptionText23.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText23.ZIndex    = 4
+    E.Dropdown3OptionText23.Visible   = false
+    _FitText(E.Dropdown3OptionText23, 134)
+
+    E.Dropdown3OptionBackground24.Position  = Vector2.new(841, 1252)
+    E.Dropdown3OptionBackground24.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground24.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground24.Filled    = true
+    E.Dropdown3OptionBackground24.Rounding  = 6
+    E.Dropdown3OptionBackground24.ZIndex    = 3
+    E.Dropdown3OptionBackground24.Visible   = false
+
+    E.Dropdown3OptionText24.Position  = Vector2.new(849, 1259)
+    E.Dropdown3OptionText24.Text      = "The Patris"
+    E.Dropdown3OptionText24.Size      = 16
+    E.Dropdown3OptionText24.Font      = 2
+    E.Dropdown3OptionText24.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText24.ZIndex    = 4
+    E.Dropdown3OptionText24.Visible   = false
+    _FitText(E.Dropdown3OptionText24, 134)
+
+    E.Dropdown3OptionBackground25.Position  = Vector2.new(841, 1282)
+    E.Dropdown3OptionBackground25.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground25.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground25.Filled    = true
+    E.Dropdown3OptionBackground25.Rounding  = 6
+    E.Dropdown3OptionBackground25.ZIndex    = 3
+    E.Dropdown3OptionBackground25.Visible   = false
+
+    E.Dropdown3OptionText25.Position  = Vector2.new(849, 1289)
+    E.Dropdown3OptionText25.Text      = "Kai Lazurai"
+    E.Dropdown3OptionText25.Size      = 16
+    E.Dropdown3OptionText25.Font      = 2
+    E.Dropdown3OptionText25.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText25.ZIndex    = 4
+    E.Dropdown3OptionText25.Visible   = false
+    _FitText(E.Dropdown3OptionText25, 134)
+
+    E.Dropdown3OptionBackground26.Position  = Vector2.new(841, 1312)
+    E.Dropdown3OptionBackground26.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground26.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground26.Filled    = true
+    E.Dropdown3OptionBackground26.Rounding  = 6
+    E.Dropdown3OptionBackground26.ZIndex    = 3
+    E.Dropdown3OptionBackground26.Visible   = false
+
+    E.Dropdown3OptionText26.Position  = Vector2.new(849, 1319)
+    E.Dropdown3OptionText26.Text      = "Grave Treelad"
+    E.Dropdown3OptionText26.Size      = 16
+    E.Dropdown3OptionText26.Font      = 2
+    E.Dropdown3OptionText26.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText26.ZIndex    = 4
+    E.Dropdown3OptionText26.Visible   = false
+    _FitText(E.Dropdown3OptionText26, 134)
+
+    E.Dropdown3OptionBackground27.Position  = Vector2.new(841, 1342)
+    E.Dropdown3OptionBackground27.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground27.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground27.Filled    = true
+    E.Dropdown3OptionBackground27.Rounding  = 6
+    E.Dropdown3OptionBackground27.ZIndex    = 3
+    E.Dropdown3OptionBackground27.Visible   = false
+
+    E.Dropdown3OptionText27.Position  = Vector2.new(849, 1349)
+    E.Dropdown3OptionText27.Text      = "Cata"
+    E.Dropdown3OptionText27.Size      = 16
+    E.Dropdown3OptionText27.Font      = 2
+    E.Dropdown3OptionText27.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText27.ZIndex    = 4
+    E.Dropdown3OptionText27.Visible   = false
+    _FitText(E.Dropdown3OptionText27, 134)
+
+    E.Dropdown3OptionBackground28.Position  = Vector2.new(841, 1372)
+    E.Dropdown3OptionBackground28.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground28.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground28.Filled    = true
+    E.Dropdown3OptionBackground28.Rounding  = 6
+    E.Dropdown3OptionBackground28.ZIndex    = 3
+    E.Dropdown3OptionBackground28.Visible   = false
+
+    E.Dropdown3OptionText28.Position  = Vector2.new(849, 1379)
+    E.Dropdown3OptionText28.Text      = "Lost Guys"
+    E.Dropdown3OptionText28.Size      = 16
+    E.Dropdown3OptionText28.Font      = 2
+    E.Dropdown3OptionText28.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText28.ZIndex    = 4
+    E.Dropdown3OptionText28.Visible   = false
+    _FitText(E.Dropdown3OptionText28, 134)
+
+    E.Dropdown3OptionBackground29.Position  = Vector2.new(841, 1402)
+    E.Dropdown3OptionBackground29.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground29.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground29.Filled    = true
+    E.Dropdown3OptionBackground29.Rounding  = 6
+    E.Dropdown3OptionBackground29.ZIndex    = 3
+    E.Dropdown3OptionBackground29.Visible   = false
+
+    E.Dropdown3OptionText29.Position  = Vector2.new(849, 1409)
+    E.Dropdown3OptionText29.Text      = "Prism Troll"
+    E.Dropdown3OptionText29.Size      = 16
+    E.Dropdown3OptionText29.Font      = 2
+    E.Dropdown3OptionText29.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText29.ZIndex    = 4
+    E.Dropdown3OptionText29.Visible   = false
+    _FitText(E.Dropdown3OptionText29, 134)
+
+    E.Dropdown3OptionBackground30.Position  = Vector2.new(841, 1432)
+    E.Dropdown3OptionBackground30.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground30.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground30.Filled    = true
+    E.Dropdown3OptionBackground30.Rounding  = 6
+    E.Dropdown3OptionBackground30.ZIndex    = 3
+    E.Dropdown3OptionBackground30.Visible   = false
+
+    E.Dropdown3OptionText30.Position  = Vector2.new(849, 1439)
+    E.Dropdown3OptionText30.Text      = "Mr. Normal"
+    E.Dropdown3OptionText30.Size      = 16
+    E.Dropdown3OptionText30.Font      = 2
+    E.Dropdown3OptionText30.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText30.ZIndex    = 4
+    E.Dropdown3OptionText30.Visible   = false
+    _FitText(E.Dropdown3OptionText30, 134)
+
+    E.Dropdown3OptionBackground31.Position  = Vector2.new(841, 1462)
+    E.Dropdown3OptionBackground31.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground31.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground31.Filled    = true
+    E.Dropdown3OptionBackground31.Rounding  = 6
+    E.Dropdown3OptionBackground31.ZIndex    = 3
+    E.Dropdown3OptionBackground31.Visible   = false
+
+    E.Dropdown3OptionText31.Position  = Vector2.new(849, 1469)
+    E.Dropdown3OptionText31.Text      = "N"
+    E.Dropdown3OptionText31.Size      = 16
+    E.Dropdown3OptionText31.Font      = 2
+    E.Dropdown3OptionText31.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText31.ZIndex    = 4
+    E.Dropdown3OptionText31.Visible   = false
+    _FitText(E.Dropdown3OptionText31, 134)
+
+    E.Dropdown3OptionBackground32.Position  = Vector2.new(841, 1492)
+    E.Dropdown3OptionBackground32.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground32.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground32.Filled    = true
+    E.Dropdown3OptionBackground32.Rounding  = 6
+    E.Dropdown3OptionBackground32.ZIndex    = 3
+    E.Dropdown3OptionBackground32.Visible   = false
+
+    E.Dropdown3OptionText32.Position  = Vector2.new(849, 1499)
+    E.Dropdown3OptionText32.Text      = "Old Fart"
+    E.Dropdown3OptionText32.Size      = 16
+    E.Dropdown3OptionText32.Font      = 2
+    E.Dropdown3OptionText32.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText32.ZIndex    = 4
+    E.Dropdown3OptionText32.Visible   = false
+    _FitText(E.Dropdown3OptionText32, 134)
+
+    E.Dropdown3OptionBackground33.Position  = Vector2.new(841, 1522)
+    E.Dropdown3OptionBackground33.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground33.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground33.Filled    = true
+    E.Dropdown3OptionBackground33.Rounding  = 6
+    E.Dropdown3OptionBackground33.ZIndex    = 3
+    E.Dropdown3OptionBackground33.Visible   = false
+
+    E.Dropdown3OptionText33.Position  = Vector2.new(849, 1529)
+    E.Dropdown3OptionText33.Text      = "Democan"
+    E.Dropdown3OptionText33.Size      = 16
+    E.Dropdown3OptionText33.Font      = 2
+    E.Dropdown3OptionText33.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText33.ZIndex    = 4
+    E.Dropdown3OptionText33.Visible   = false
+    _FitText(E.Dropdown3OptionText33, 134)
+
+    E.Dropdown3OptionBackground34.Position  = Vector2.new(841, 1552)
+    E.Dropdown3OptionBackground34.Size      = Vector2.new(150, 30)
+    E.Dropdown3OptionBackground34.Color     = Color3.fromRGB(69, 66, 87)
+    E.Dropdown3OptionBackground34.Filled    = true
+    E.Dropdown3OptionBackground34.Rounding  = 6
+    E.Dropdown3OptionBackground34.ZIndex    = 3
+    E.Dropdown3OptionBackground34.Visible   = false
+
+    E.Dropdown3OptionText34.Position  = Vector2.new(849, 1559)
+    E.Dropdown3OptionText34.Text      = "Unfair Fight"
+    E.Dropdown3OptionText34.Size      = 16
+    E.Dropdown3OptionText34.Font      = 2
+    E.Dropdown3OptionText34.Color     = Color3.fromRGB(204, 0, 139)
+    E.Dropdown3OptionText34.ZIndex    = 4
+    E.Dropdown3OptionText34.Visible   = false
+    _FitText(E.Dropdown3OptionText34, 134)
+    E.Dropdown3Background.Opacity = 0.85
+    E.Dropdown3Text.Opacity = 0.85
+    E.Dropdown3Arrow.Opacity = 0.85
+    E.Dropdown3OptionBackground0.Opacity = 0.85
+    E.Dropdown3OptionText0.Opacity = 0.85
+    E.Dropdown3OptionBackground1.Opacity = 0.85
+    E.Dropdown3OptionText1.Opacity = 0.85
+    E.Dropdown3OptionBackground2.Opacity = 0.85
+    E.Dropdown3OptionText2.Opacity = 0.85
+    E.Dropdown3OptionBackground3.Opacity = 0.85
+    E.Dropdown3OptionText3.Opacity = 0.85
+    E.Dropdown3OptionBackground4.Opacity = 0.85
+    E.Dropdown3OptionText4.Opacity = 0.85
+    E.Dropdown3OptionBackground5.Opacity = 0.85
+    E.Dropdown3OptionText5.Opacity = 0.85
+    E.Dropdown3OptionBackground6.Opacity = 0.85
+    E.Dropdown3OptionText6.Opacity = 0.85
+    E.Dropdown3OptionBackground7.Opacity = 0.85
+    E.Dropdown3OptionText7.Opacity = 0.85
+    E.Dropdown3OptionBackground8.Opacity = 0.85
+    E.Dropdown3OptionText8.Opacity = 0.85
+    E.Dropdown3OptionBackground9.Opacity = 0.85
+    E.Dropdown3OptionText9.Opacity = 0.85
+    E.Dropdown3OptionBackground10.Opacity = 0.85
+    E.Dropdown3OptionText10.Opacity = 0.85
+    E.Dropdown3OptionBackground11.Opacity = 0.85
+    E.Dropdown3OptionText11.Opacity = 0.85
+    E.Dropdown3OptionBackground12.Opacity = 0.85
+    E.Dropdown3OptionText12.Opacity = 0.85
+    E.Dropdown3OptionBackground13.Opacity = 0.85
+    E.Dropdown3OptionText13.Opacity = 0.85
+    E.Dropdown3OptionBackground14.Opacity = 0.85
+    E.Dropdown3OptionText14.Opacity = 0.85
+    E.Dropdown3OptionBackground15.Opacity = 0.85
+    E.Dropdown3OptionText15.Opacity = 0.85
+    E.Dropdown3OptionBackground16.Opacity = 0.85
+    E.Dropdown3OptionText16.Opacity = 0.85
+    E.Dropdown3OptionBackground17.Opacity = 0.85
+    E.Dropdown3OptionText17.Opacity = 0.85
+    E.Dropdown3OptionBackground18.Opacity = 0.85
+    E.Dropdown3OptionText18.Opacity = 0.85
+    E.Dropdown3OptionBackground19.Opacity = 0.85
+    E.Dropdown3OptionText19.Opacity = 0.85
+    E.Dropdown3OptionBackground20.Opacity = 0.85
+    E.Dropdown3OptionText20.Opacity = 0.85
+    E.Dropdown3OptionBackground21.Opacity = 0.85
+    E.Dropdown3OptionText21.Opacity = 0.85
+    E.Dropdown3OptionBackground22.Opacity = 0.85
+    E.Dropdown3OptionText22.Opacity = 0.85
+    E.Dropdown3OptionBackground23.Opacity = 0.85
+    E.Dropdown3OptionText23.Opacity = 0.85
+    E.Dropdown3OptionBackground24.Opacity = 0.85
+    E.Dropdown3OptionText24.Opacity = 0.85
+    E.Dropdown3OptionBackground25.Opacity = 0.85
+    E.Dropdown3OptionText25.Opacity = 0.85
+    E.Dropdown3OptionBackground26.Opacity = 0.85
+    E.Dropdown3OptionText26.Opacity = 0.85
+    E.Dropdown3OptionBackground27.Opacity = 0.85
+    E.Dropdown3OptionText27.Opacity = 0.85
+    E.Dropdown3OptionBackground28.Opacity = 0.85
+    E.Dropdown3OptionText28.Opacity = 0.85
+    E.Dropdown3OptionBackground29.Opacity = 0.85
+    E.Dropdown3OptionText29.Opacity = 0.85
+    E.Dropdown3OptionBackground30.Opacity = 0.85
+    E.Dropdown3OptionText30.Opacity = 0.85
+    E.Dropdown3OptionBackground31.Opacity = 0.85
+    E.Dropdown3OptionText31.Opacity = 0.85
+    E.Dropdown3OptionBackground32.Opacity = 0.85
+    E.Dropdown3OptionText32.Opacity = 0.85
+    E.Dropdown3OptionBackground33.Opacity = 0.85
+    E.Dropdown3OptionText33.Opacity = 0.85
+    E.Dropdown3OptionBackground34.Opacity = 0.85
+    E.Dropdown3OptionText34.Opacity = 0.85
+
+    E.Checkbox1Copy4Background.Position  = Vector2.new(1021, 500)
+    E.Checkbox1Copy4Background.Size      = Vector2.new(26, 24)
+    E.Checkbox1Copy4Background.Color     = Color3.fromRGB(92, 79, 191)
+    E.Checkbox1Copy4Background.Filled    = true
+    E.Checkbox1Copy4Background.Thickness = 1
+    E.Checkbox1Copy4Background.ZIndex    = 1
+    E.Checkbox1Copy4Background.Visible   = true
+
+    E.Checkbox1Copy4Fill.Position  = Vector2.new(1024, 503)
+    E.Checkbox1Copy4Fill.Size      = Vector2.new(20, 18)
+    E.Checkbox1Copy4Fill.Color     = Color3.fromRGB(219, 0, 161)
+    E.Checkbox1Copy4Fill.Filled    = true
+    E.Checkbox1Copy4Fill.ZIndex    = 2
+    E.Checkbox1Copy4Fill.Visible   = true
+
+    E.Checkbox1Copy4Label.Position     = Vector2.new(1053, 505)
+    E.Checkbox1Copy4Label.Text         = "Auto Parry"
+    E.Checkbox1Copy4Label.Size         = 16
+    E.Checkbox1Copy4Label.Font         = 2
+    E.Checkbox1Copy4Label.Color        = Color3.fromRGB(255, 255, 255)
+    E.Checkbox1Copy4Label.Outline      = true
+    E.Checkbox1Copy4Label.OutlineColor = Vector3.new(0, 0, 0)
+    E.Checkbox1Copy4Label.ZIndex       = 2
+    E.Checkbox1Copy4Label.Visible      = true
+
     E.Circle1Copy.Position  = Vector2.new(718, 385)
     E.Circle1Copy.Radius    = 3.675981117494274
     E.Circle1Copy.Color     = Color3.fromRGB(255, 255, 255)
@@ -1649,6 +2709,26 @@ do
     E.Circle1Copy7.ZIndex    = 2
     E.Circle1Copy7.Visible   = true
 
+    E.Circle1Copy8.Position  = Vector2.new(871, 445)
+    E.Circle1Copy8.Radius    = 3.675981117494274
+    E.Circle1Copy8.Color     = Color3.fromRGB(255, 255, 255)
+    E.Circle1Copy8.Opacity   = 1
+    E.Circle1Copy8.Filled    = false
+    E.Circle1Copy8.Thickness = 1
+    E.Circle1Copy8.NumSides  = 64
+    E.Circle1Copy8.ZIndex    = 2
+    E.Circle1Copy8.Visible   = true
+
+    E.Circle1Copy9.Position  = Vector2.new(859, 445)
+    E.Circle1Copy9.Radius    = 3.675981117494274
+    E.Circle1Copy9.Color     = Color3.fromRGB(255, 255, 255)
+    E.Circle1Copy9.Opacity   = 1
+    E.Circle1Copy9.Filled    = false
+    E.Circle1Copy9.Thickness = 1
+    E.Circle1Copy9.NumSides  = 64
+    E.Circle1Copy9.ZIndex    = 2
+    E.Circle1Copy9.Visible   = true
+
     E.Square1Copy13.Position  = Vector2.new(492, 289)
     E.Square1Copy13.Size      = Vector2.new(88, 71)
     E.Square1Copy13.Color     = Color3.fromRGB(77, 8, 217)
@@ -1714,6 +2794,22 @@ do
     E.Line1Copy8.Thickness = 1
     E.Line1Copy8.ZIndex    = 3
     E.Line1Copy8.Visible   = true
+
+    E.Line1Copy9.From      = Vector2.new(840, 466)
+    E.Line1Copy9.To        = Vector2.new(1149, 466)
+    E.Line1Copy9.Color     = Color3.fromRGB(133, 133, 133)
+    E.Line1Copy9.Opacity   = 0.33
+    E.Line1Copy9.Thickness = 1
+    E.Line1Copy9.ZIndex    = 3
+    E.Line1Copy9.Visible   = true
+
+    E.Line1Copy10.From      = Vector2.new(842, 495)
+    E.Line1Copy10.To        = Vector2.new(1002, 495)
+    E.Line1Copy10.Color     = Color3.fromRGB(133, 133, 133)
+    E.Line1Copy10.Opacity   = 0.33
+    E.Line1Copy10.Thickness = 1
+    E.Line1Copy10.ZIndex    = 3
+    E.Line1Copy10.Visible   = true
 
     E.Button2Background.Position  = Vector2.new(249, 258)
     E.Button2Background.Size      = Vector2.new(23, 23)
@@ -1781,6 +2877,28 @@ do
     E.Button2Copy2Background.Opacity = 0
     E.Button2Copy2Text.Opacity = 0
 
+    E.Button2Copy3Background.Position  = Vector2.new(854, 433)
+    E.Button2Copy3Background.Size      = Vector2.new(23, 23)
+    E.Button2Copy3Background.Color     = Color3.fromRGB(194, 0, 78)
+    E.Button2Copy3Background.Filled    = false
+    E.Button2Copy3Background.Thickness = 1
+    E.Button2Copy3Background.Rounding  = 4
+    E.Button2Copy3Background.ZIndex    = 4
+    E.Button2Copy3Background.Visible   = false
+
+    E.Button2Copy3Text.Position     = Vector2.new(866, 437)
+    E.Button2Copy3Text.Text         = "."
+    E.Button2Copy3Text.Size         = 16
+    E.Button2Copy3Text.Font         = 2
+    E.Button2Copy3Text.Color        = Color3.fromRGB(255, 255, 255)
+    E.Button2Copy3Text.Center       = true
+    E.Button2Copy3Text.Outline      = false
+    E.Button2Copy3Text.ZIndex       = 5
+    E.Button2Copy3Text.Visible      = false
+    _FitText(E.Button2Copy3Text, 15.014568727466553)
+    E.Button2Copy3Background.Opacity = 0
+    E.Button2Copy3Text.Opacity = 0
+
     local _PlayerName: string = game.Players.LocalPlayer.Name
     E.Text2.Text = _PlayerName
     E.Text2Copy.Text = _PlayerName
@@ -1802,6 +2920,7 @@ local function _DestroyUI(): ()
     if E.Square6 then E.Square6:Remove() end
     if E.Square6Copy then E.Square6Copy:Remove() end
     if E.Square6Copy2 then E.Square6Copy2:Remove() end
+    if E.Square6Copy3 then E.Square6Copy3:Remove() end
     if E.Square1Copy7 then E.Square1Copy7:Remove() end
     if E.Square1Copy8 then E.Square1Copy8:Remove() end
     if E.Square1Copy12 then E.Square1Copy12:Remove() end
@@ -1809,6 +2928,7 @@ local function _DestroyUI(): ()
     if E.Square1Copy2 then E.Square1Copy2:Remove() end
     if E.Square1Copy3 then E.Square1Copy3:Remove() end
     if E.Square1Copy9 then E.Square1Copy9:Remove() end
+    if E.Square1Copy14 then E.Square1Copy14:Remove() end
     if E.Dropdown1Background then E.Dropdown1Background:Remove() end
     if E.Dropdown1Text then E.Dropdown1Text:Remove() end
     if E.Dropdown1Arrow then E.Dropdown1Arrow:Remove() end
@@ -1927,6 +3047,95 @@ local function _DestroyUI(): ()
     if E.Checkbox1Copy3Background then E.Checkbox1Copy3Background:Remove() end
     if E.Checkbox1Copy3Fill then E.Checkbox1Copy3Fill:Remove() end
     if E.Checkbox1Copy3Label then E.Checkbox1Copy3Label:Remove() end
+    if E.Text1Copy8 then E.Text1Copy8:Remove() end
+    if E.Text1Copy9 then E.Text1Copy9:Remove() end
+    if E.Line4Copy4 then E.Line4Copy4:Remove() end
+    if E.Line5Copy4 then E.Line5Copy4:Remove() end
+    if E.Line6Copy4 then E.Line6Copy4:Remove() end
+    if E.Line7Copy4 then E.Line7Copy4:Remove() end
+    if E.Line8Copy8 then E.Line8Copy8:Remove() end
+    if E.Line8Copy9 then E.Line8Copy9:Remove() end
+    if E.Line9Copy8 then E.Line9Copy8:Remove() end
+    if E.Line9Copy9 then E.Line9Copy9:Remove() end
+    if E.Line10Copy8 then E.Line10Copy8:Remove() end
+    if E.Line10Copy9 then E.Line10Copy9:Remove() end
+    if E.Text9 then E.Text9:Remove() end
+    if E.Dropdown3Background then E.Dropdown3Background:Remove() end
+    if E.Dropdown3Text then E.Dropdown3Text:Remove() end
+    if E.Dropdown3Arrow then E.Dropdown3Arrow:Remove() end
+    if E.Dropdown3OptionBackground0 then E.Dropdown3OptionBackground0:Remove() end
+    if E.Dropdown3OptionText0 then E.Dropdown3OptionText0:Remove() end
+    if E.Dropdown3OptionBackground1 then E.Dropdown3OptionBackground1:Remove() end
+    if E.Dropdown3OptionText1 then E.Dropdown3OptionText1:Remove() end
+    if E.Dropdown3OptionBackground2 then E.Dropdown3OptionBackground2:Remove() end
+    if E.Dropdown3OptionText2 then E.Dropdown3OptionText2:Remove() end
+    if E.Dropdown3OptionBackground3 then E.Dropdown3OptionBackground3:Remove() end
+    if E.Dropdown3OptionText3 then E.Dropdown3OptionText3:Remove() end
+    if E.Dropdown3OptionBackground4 then E.Dropdown3OptionBackground4:Remove() end
+    if E.Dropdown3OptionText4 then E.Dropdown3OptionText4:Remove() end
+    if E.Dropdown3OptionBackground5 then E.Dropdown3OptionBackground5:Remove() end
+    if E.Dropdown3OptionText5 then E.Dropdown3OptionText5:Remove() end
+    if E.Dropdown3OptionBackground6 then E.Dropdown3OptionBackground6:Remove() end
+    if E.Dropdown3OptionText6 then E.Dropdown3OptionText6:Remove() end
+    if E.Dropdown3OptionBackground7 then E.Dropdown3OptionBackground7:Remove() end
+    if E.Dropdown3OptionText7 then E.Dropdown3OptionText7:Remove() end
+    if E.Dropdown3OptionBackground8 then E.Dropdown3OptionBackground8:Remove() end
+    if E.Dropdown3OptionText8 then E.Dropdown3OptionText8:Remove() end
+    if E.Dropdown3OptionBackground9 then E.Dropdown3OptionBackground9:Remove() end
+    if E.Dropdown3OptionText9 then E.Dropdown3OptionText9:Remove() end
+    if E.Dropdown3OptionBackground10 then E.Dropdown3OptionBackground10:Remove() end
+    if E.Dropdown3OptionText10 then E.Dropdown3OptionText10:Remove() end
+    if E.Dropdown3OptionBackground11 then E.Dropdown3OptionBackground11:Remove() end
+    if E.Dropdown3OptionText11 then E.Dropdown3OptionText11:Remove() end
+    if E.Dropdown3OptionBackground12 then E.Dropdown3OptionBackground12:Remove() end
+    if E.Dropdown3OptionText12 then E.Dropdown3OptionText12:Remove() end
+    if E.Dropdown3OptionBackground13 then E.Dropdown3OptionBackground13:Remove() end
+    if E.Dropdown3OptionText13 then E.Dropdown3OptionText13:Remove() end
+    if E.Dropdown3OptionBackground14 then E.Dropdown3OptionBackground14:Remove() end
+    if E.Dropdown3OptionText14 then E.Dropdown3OptionText14:Remove() end
+    if E.Dropdown3OptionBackground15 then E.Dropdown3OptionBackground15:Remove() end
+    if E.Dropdown3OptionText15 then E.Dropdown3OptionText15:Remove() end
+    if E.Dropdown3OptionBackground16 then E.Dropdown3OptionBackground16:Remove() end
+    if E.Dropdown3OptionText16 then E.Dropdown3OptionText16:Remove() end
+    if E.Dropdown3OptionBackground17 then E.Dropdown3OptionBackground17:Remove() end
+    if E.Dropdown3OptionText17 then E.Dropdown3OptionText17:Remove() end
+    if E.Dropdown3OptionBackground18 then E.Dropdown3OptionBackground18:Remove() end
+    if E.Dropdown3OptionText18 then E.Dropdown3OptionText18:Remove() end
+    if E.Dropdown3OptionBackground19 then E.Dropdown3OptionBackground19:Remove() end
+    if E.Dropdown3OptionText19 then E.Dropdown3OptionText19:Remove() end
+    if E.Dropdown3OptionBackground20 then E.Dropdown3OptionBackground20:Remove() end
+    if E.Dropdown3OptionText20 then E.Dropdown3OptionText20:Remove() end
+    if E.Dropdown3OptionBackground21 then E.Dropdown3OptionBackground21:Remove() end
+    if E.Dropdown3OptionText21 then E.Dropdown3OptionText21:Remove() end
+    if E.Dropdown3OptionBackground22 then E.Dropdown3OptionBackground22:Remove() end
+    if E.Dropdown3OptionText22 then E.Dropdown3OptionText22:Remove() end
+    if E.Dropdown3OptionBackground23 then E.Dropdown3OptionBackground23:Remove() end
+    if E.Dropdown3OptionText23 then E.Dropdown3OptionText23:Remove() end
+    if E.Dropdown3OptionBackground24 then E.Dropdown3OptionBackground24:Remove() end
+    if E.Dropdown3OptionText24 then E.Dropdown3OptionText24:Remove() end
+    if E.Dropdown3OptionBackground25 then E.Dropdown3OptionBackground25:Remove() end
+    if E.Dropdown3OptionText25 then E.Dropdown3OptionText25:Remove() end
+    if E.Dropdown3OptionBackground26 then E.Dropdown3OptionBackground26:Remove() end
+    if E.Dropdown3OptionText26 then E.Dropdown3OptionText26:Remove() end
+    if E.Dropdown3OptionBackground27 then E.Dropdown3OptionBackground27:Remove() end
+    if E.Dropdown3OptionText27 then E.Dropdown3OptionText27:Remove() end
+    if E.Dropdown3OptionBackground28 then E.Dropdown3OptionBackground28:Remove() end
+    if E.Dropdown3OptionText28 then E.Dropdown3OptionText28:Remove() end
+    if E.Dropdown3OptionBackground29 then E.Dropdown3OptionBackground29:Remove() end
+    if E.Dropdown3OptionText29 then E.Dropdown3OptionText29:Remove() end
+    if E.Dropdown3OptionBackground30 then E.Dropdown3OptionBackground30:Remove() end
+    if E.Dropdown3OptionText30 then E.Dropdown3OptionText30:Remove() end
+    if E.Dropdown3OptionBackground31 then E.Dropdown3OptionBackground31:Remove() end
+    if E.Dropdown3OptionText31 then E.Dropdown3OptionText31:Remove() end
+    if E.Dropdown3OptionBackground32 then E.Dropdown3OptionBackground32:Remove() end
+    if E.Dropdown3OptionText32 then E.Dropdown3OptionText32:Remove() end
+    if E.Dropdown3OptionBackground33 then E.Dropdown3OptionBackground33:Remove() end
+    if E.Dropdown3OptionText33 then E.Dropdown3OptionText33:Remove() end
+    if E.Dropdown3OptionBackground34 then E.Dropdown3OptionBackground34:Remove() end
+    if E.Dropdown3OptionText34 then E.Dropdown3OptionText34:Remove() end
+    if E.Checkbox1Copy4Background then E.Checkbox1Copy4Background:Remove() end
+    if E.Checkbox1Copy4Fill then E.Checkbox1Copy4Fill:Remove() end
+    if E.Checkbox1Copy4Label then E.Checkbox1Copy4Label:Remove() end
     if E.Circle1Copy then E.Circle1Copy:Remove() end
     if E.Circle1Copy6 then E.Circle1Copy6:Remove() end
     if E.Circle1Copy2 then E.Circle1Copy2:Remove() end
@@ -1934,6 +3143,8 @@ local function _DestroyUI(): ()
     if E.Circle1Copy4 then E.Circle1Copy4:Remove() end
     if E.Circle1Copy5 then E.Circle1Copy5:Remove() end
     if E.Circle1Copy7 then E.Circle1Copy7:Remove() end
+    if E.Circle1Copy8 then E.Circle1Copy8:Remove() end
+    if E.Circle1Copy9 then E.Circle1Copy9:Remove() end
     if E.Square1Copy13 then E.Square1Copy13:Remove() end
     if E.Line1Copy2 then E.Line1Copy2:Remove() end
     if E.Line1Copy3 then E.Line1Copy3:Remove() end
@@ -1942,12 +3153,16 @@ local function _DestroyUI(): ()
     if E.Line1Copy6 then E.Line1Copy6:Remove() end
     if E.Line1Copy7 then E.Line1Copy7:Remove() end
     if E.Line1Copy8 then E.Line1Copy8:Remove() end
+    if E.Line1Copy9 then E.Line1Copy9:Remove() end
+    if E.Line1Copy10 then E.Line1Copy10:Remove() end
     if E.Button2Background then E.Button2Background:Remove() end
     if E.Button2Text then E.Button2Text:Remove() end
     if E.Button2CopyBackground then E.Button2CopyBackground:Remove() end
     if E.Button2CopyText then E.Button2CopyText:Remove() end
     if E.Button2Copy2Background then E.Button2Copy2Background:Remove() end
     if E.Button2Copy2Text then E.Button2Copy2Text:Remove() end
+    if E.Button2Copy3Background then E.Button2Copy3Background:Remove() end
+    if E.Button2Copy3Text then E.Button2Copy3Text:Remove() end
 end
 
     local function OnDropdown1Change(selected: string, index: number): ()
@@ -1999,6 +3214,14 @@ end
         
     end
 
+    local function OnDropdown3Change(selected: string, index: number): ()
+        _G.boss = selected
+    end
+
+    local function OnCheckbox1Copy4Toggle(state: boolean): ()
+        
+    end
+
     local function OnButton2Click(): ()
         SetTab(1)
     end
@@ -2008,6 +3231,10 @@ end
     end
 
     local function OnButton2Copy2Click(): ()
+        SetTab(1)
+    end
+
+    local function OnButton2Copy3Click(): ()
         SetTab(1)
     end
 
@@ -2099,6 +3326,15 @@ end
             end
         end
 
+        if ActiveTab == 5 and LeftClicked then
+            local Pos  = E.Checkbox1Copy4Background.Position
+            local Size = E.Checkbox1Copy4Background.Size
+            if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+            and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                E.Checkbox1Copy4Checked = not E.Checkbox1Copy4Checked
+            end
+        end
+
         if E.Keybind1Waiting then
             if E.Keybind1WaitReady then
                 local Pressed: {string} = getpressedkeys()
@@ -2131,6 +3367,7 @@ end
                 E.Square6.Visible = UIVisible and true
                 E.Square6Copy.Visible = UIVisible and true
                 E.Square6Copy2.Visible = UIVisible and true
+                E.Square6Copy3.Visible = UIVisible and true
                 E.Square1Copy7.Visible = UIVisible and true
                 E.Square1Copy8.Visible = UIVisible and true
                 E.Square1Copy12.Visible = UIVisible and true
@@ -2138,6 +3375,7 @@ end
                 E.Square1Copy2.Visible = UIVisible and true
                 E.Square1Copy3.Visible = UIVisible and true
                 E.Square1Copy9.Visible = UIVisible and true
+                E.Square1Copy14.Visible = UIVisible and true
                 E.Dropdown1Background.Visible = UIVisible and true
                 E.Dropdown1Text.Visible       = UIVisible and true
                 E.Dropdown1Arrow.Visible      = UIVisible and true
@@ -2241,6 +3479,24 @@ end
                 E.Text3Copy4.Visible = UIVisible and true
                 E.Checkbox1Copy3Background.Visible = UIVisible and true
                 E.Checkbox1Copy3Label.Visible      = UIVisible and true
+                E.Text1Copy8.Visible = UIVisible and true
+                E.Text1Copy9.Visible = UIVisible and true
+                E.Line4Copy4.Visible = UIVisible and true
+                E.Line5Copy4.Visible = UIVisible and true
+                E.Line6Copy4.Visible = UIVisible and true
+                E.Line7Copy4.Visible = UIVisible and true
+                E.Line8Copy8.Visible = UIVisible and true
+                E.Line8Copy9.Visible = UIVisible and true
+                E.Line9Copy8.Visible = UIVisible and true
+                E.Line9Copy9.Visible = UIVisible and true
+                E.Line10Copy8.Visible = UIVisible and true
+                E.Line10Copy9.Visible = UIVisible and true
+                E.Text9.Visible = UIVisible and true
+                E.Dropdown3Background.Visible = UIVisible and true
+                E.Dropdown3Text.Visible       = UIVisible and true
+                E.Dropdown3Arrow.Visible      = UIVisible and true
+                E.Checkbox1Copy4Background.Visible = UIVisible and true
+                E.Checkbox1Copy4Label.Visible      = UIVisible and true
                 E.Circle1Copy.Visible = UIVisible and true
                 E.Circle1Copy6.Visible = UIVisible and true
                 E.Circle1Copy2.Visible = UIVisible and true
@@ -2248,6 +3504,8 @@ end
                 E.Circle1Copy4.Visible = UIVisible and true
                 E.Circle1Copy5.Visible = UIVisible and true
                 E.Circle1Copy7.Visible = UIVisible and true
+                E.Circle1Copy8.Visible = UIVisible and true
+                E.Circle1Copy9.Visible = UIVisible and true
                 E.Square1Copy13.Visible = UIVisible and true
                 E.Line1Copy2.Visible = UIVisible and true
                 E.Line1Copy3.Visible = UIVisible and true
@@ -2256,12 +3514,16 @@ end
                 E.Line1Copy6.Visible = UIVisible and true
                 E.Line1Copy7.Visible = UIVisible and true
                 E.Line1Copy8.Visible = UIVisible and true
+                E.Line1Copy9.Visible = UIVisible and true
+                E.Line1Copy10.Visible = UIVisible and true
                 E.Button2Background.Visible = UIVisible and false
                 E.Button2Text.Visible       = UIVisible and false
                 E.Button2CopyBackground.Visible = UIVisible and true
                 E.Button2CopyText.Visible       = UIVisible and true
                 E.Button2Copy2Background.Visible = UIVisible and false
                 E.Button2Copy2Text.Visible       = UIVisible and false
+                E.Button2Copy3Background.Visible = UIVisible and false
+                E.Button2Copy3Text.Visible       = UIVisible and false
                 if UIVisible then SetTab(ActiveTab) end
             end
         end
@@ -2306,6 +3568,402 @@ end
                     E.Dropdown1Open     = false
                     E.Dropdown1FiredIdx = 3
                     E.Dropdown1Fired    = true
+                end
+            end
+        end
+
+        if ActiveTab == 5 and LeftClicked then
+            do
+                local Pos  = E.Dropdown3Background.Position
+                local Size = E.Dropdown3Background.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Open = not E.Dropdown3Open
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground0.Position
+                local Size = E.Dropdown3OptionBackground0.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Thief King"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 1
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground1.Position
+                local Size = E.Dropdown3OptionBackground1.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Yalgaroth"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 2
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground2.Position
+                local Size = E.Dropdown3OptionBackground2.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Pop Off Pirate"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 3
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground3.Position
+                local Size = E.Dropdown3OptionBackground3.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Mondo Squid"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 4
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground4.Position
+                local Size = E.Dropdown3OptionBackground4.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Martial Artist"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 5
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground5.Position
+                local Size = E.Dropdown3OptionBackground5.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Giant Pigface"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 6
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground6.Position
+                local Size = E.Dropdown3OptionBackground6.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Viperhead"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 7
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground7.Position
+                local Size = E.Dropdown3OptionBackground7.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Magma Turtle"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 8
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground8.Position
+                local Size = E.Dropdown3OptionBackground8.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Granny"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 9
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground9.Position
+                local Size = E.Dropdown3OptionBackground9.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Ice King"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 10
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground10.Position
+                local Size = E.Dropdown3OptionBackground10.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Abdominal Snowman"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 11
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground11.Position
+                local Size = E.Dropdown3OptionBackground11.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Pro Thief"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 12
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground12.Position
+                local Size = E.Dropdown3OptionBackground12.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Snow Cultist"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 13
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground13.Position
+                local Size = E.Dropdown3OptionBackground13.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "False Believer"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 14
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground14.Position
+                local Size = E.Dropdown3OptionBackground14.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Shock Marauder"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 15
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground15.Position
+                local Size = E.Dropdown3OptionBackground15.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Sailord"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 16
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground16.Position
+                local Size = E.Dropdown3OptionBackground16.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Archmage"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 17
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground17.Position
+                local Size = E.Dropdown3OptionBackground17.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Purple Shark"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 18
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground18.Position
+                local Size = E.Dropdown3OptionBackground18.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Psychocrab"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 19
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground19.Position
+                local Size = E.Dropdown3OptionBackground19.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Highway Son"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 20
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground20.Position
+                local Size = E.Dropdown3OptionBackground20.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "King Sandpod"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 21
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground21.Position
+                local Size = E.Dropdown3OptionBackground21.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Creepy Crab"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 22
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground22.Position
+                local Size = E.Dropdown3OptionBackground22.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Bigfish"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 23
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground23.Position
+                local Size = E.Dropdown3OptionBackground23.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "The Skeleton"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 24
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground24.Position
+                local Size = E.Dropdown3OptionBackground24.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "The Patris"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 25
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground25.Position
+                local Size = E.Dropdown3OptionBackground25.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Kai Lazurai"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 26
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground26.Position
+                local Size = E.Dropdown3OptionBackground26.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Grave Treelad"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 27
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground27.Position
+                local Size = E.Dropdown3OptionBackground27.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Cata"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 28
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground28.Position
+                local Size = E.Dropdown3OptionBackground28.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Lost Guys"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 29
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground29.Position
+                local Size = E.Dropdown3OptionBackground29.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Prism Troll"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 30
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground30.Position
+                local Size = E.Dropdown3OptionBackground30.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Mr. Normal"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 31
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground31.Position
+                local Size = E.Dropdown3OptionBackground31.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "N"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 32
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground32.Position
+                local Size = E.Dropdown3OptionBackground32.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Old Fart"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 33
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground33.Position
+                local Size = E.Dropdown3OptionBackground33.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Democan"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 34
+                    E.Dropdown3Fired    = true
+                end
+            end
+            if E.Dropdown3Open then
+                local Pos  = E.Dropdown3OptionBackground34.Position
+                local Size = E.Dropdown3OptionBackground34.Size
+                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                    E.Dropdown3Selected = "Unfair Fight"
+                    E.Dropdown3Open     = false
+                    E.Dropdown3FiredIdx = 35
+                    E.Dropdown3Fired    = true
                 end
             end
         end
@@ -2368,6 +4026,16 @@ end
                               and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
             if ActiveTab == 4 and Over and LeftClicked then
                 E.Button2Copy2Fired   = true
+            end
+        end
+
+        do
+            local Pos  = E.Button2Copy3Background.Position
+            local Size = E.Button2Copy3Background.Size
+            local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                              and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
+            if ActiveTab == 5 and Over and LeftClicked then
+                E.Button2Copy3Fired   = true
             end
         end
 
@@ -2567,70 +4235,131 @@ end
             end
         end
 
+        do
+            local SquarePos:  Vector2 = E.Square1Copy14.Position
+            local SquareSize: Vector2 = E.Square1Copy14.Size
+            local OnSquare: boolean = Mouse.X >= SquarePos.X and Mouse.X <= SquarePos.X + SquareSize.X
+                                  and Mouse.Y >= SquarePos.Y and Mouse.Y <= SquarePos.Y + SquareSize.Y
+            local OnChild: boolean = false
+            do
+                local ChildPos  = E.Dropdown3Background.Position
+                local ChildSize = E.Dropdown3Background.Size
+                if Mouse.X >= ChildPos.X and Mouse.X <= ChildPos.X + ChildSize.X
+                and Mouse.Y >= ChildPos.Y and Mouse.Y <= ChildPos.Y + ChildSize.Y then
+                    OnChild = true
+                end
+            end
+            do
+                local ChildPos  = E.Checkbox1Copy4Background.Position
+                local ChildSize = E.Checkbox1Copy4Background.Size
+                if Mouse.X >= ChildPos.X and Mouse.X <= ChildPos.X + ChildSize.X
+                and Mouse.Y >= ChildPos.Y and Mouse.Y <= ChildPos.Y + ChildSize.Y then
+                    OnChild = true
+                end
+            end
+            if LeftPressed and not OnChild and (E.Square1Copy14DragActive or OnSquare) then
+                if not E.Square1Copy14DragActive then
+                    E.Square1Copy14DragActive     = true
+                    E.Square1Copy14DragStartMouse = Mouse
+                    E.Square1Copy14DragStartPos   = SquarePos
+                end
+            elseif not LeftPressed then
+                E.Square1Copy14DragActive = false
+            end
+        end
+
         PrevKeys        = Keys
         PrevLeftPressed = LeftPressed
 
     end))
 
     do
-        local _wtCheckbox1: number = 0
-        local function _waitCheckbox1(s: number) _wtCheckbox1 = os.clock() + s end
-        local _wtCheckbox1Copy: number = 0
-        local function _waitCheckbox1Copy(s: number) _wtCheckbox1Copy = os.clock() + s end
-        local _wtCheckbox1Copy2: number = 0
-        local function _waitCheckbox1Copy2(s: number) _wtCheckbox1Copy2 = os.clock() + s end
-        local _wtCheckbox1Copy3: number = 0
-        local function _waitCheckbox1Copy3(s: number) _wtCheckbox1Copy3 = os.clock() + s end
+        local function _noopWait(_: number?) end  -- legacy wait() in a toggle body is now a no-op (callbacks are edge-triggered, not per-frame)
+        local _prevCheckbox1: boolean = E.Checkbox1Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy: boolean = E.Checkbox1CopyChecked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy2: boolean = E.Checkbox1Copy2Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy3: boolean = E.Checkbox1Copy3Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy4: boolean = E.Checkbox1Copy4Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
         table.insert(_Conns, RunService.PostLocal:Connect(function()
             if not isrbxactive() then return end
             if E.Dropdown1Fired then
                 local _i: number = E.Dropdown1FiredIdx
                 E.Dropdown1Fired = false
-                OnDropdown1Change(E.Dropdown1Selected, _i)
+                task.spawn(OnDropdown1Change, E.Dropdown1Selected, _i)
             end
             if E.Button1Fired then
                 E.Button1Fired = false
-                OnButton1Click()
+                task.spawn(OnButton1Click)
             end
             if E.Button3Fired then
                 E.Button3Fired = false
-                OnButton3Click()
+                task.spawn(OnButton3Click)
+            end
+            if E.Dropdown3Fired then
+                local _i: number = E.Dropdown3FiredIdx
+                E.Dropdown3Fired = false
+                task.spawn(OnDropdown3Change, E.Dropdown3Selected, _i)
             end
             if E.Button2Fired then
                 E.Button2Fired = false
-                OnButton2Click()
+                task.spawn(OnButton2Click)
             end
             if E.Button2CopyFired then
                 E.Button2CopyFired = false
-                OnButton2CopyClick()
+                task.spawn(OnButton2CopyClick)
             end
             if E.Button2Copy2Fired then
                 E.Button2Copy2Fired = false
-                OnButton2Copy2Click()
+                task.spawn(OnButton2Copy2Click)
+            end
+            if E.Button2Copy3Fired then
+                E.Button2Copy3Fired = false
+                task.spawn(OnButton2Copy3Click)
             end
 
-            if E.Checkbox1Checked and os.clock() >= _wtCheckbox1 then
-                local state: boolean = true
-                local wait = _waitCheckbox1
-                _G.genesp = not _G.genesp
+            if E.Checkbox1Checked ~= _prevCheckbox1 then
+                local state: boolean = E.Checkbox1Checked
+                _prevCheckbox1 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.genesp = not _G.genesp
+                end)
             end
 
-            if E.Checkbox1CopyChecked and os.clock() >= _wtCheckbox1Copy then
-                local state: boolean = true
-                local wait = _waitCheckbox1Copy
-                _G.killesp = not _G.killesp
+            if E.Checkbox1CopyChecked ~= _prevCheckbox1Copy then
+                local state: boolean = E.Checkbox1CopyChecked
+                _prevCheckbox1Copy = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.killesp = not _G.killesp
+                end)
             end
 
-            if E.Checkbox1Copy2Checked and os.clock() >= _wtCheckbox1Copy2 then
-                local state: boolean = true
-                local wait = _waitCheckbox1Copy2
-                _G.ap = not _G.ap
+            if E.Checkbox1Copy2Checked ~= _prevCheckbox1Copy2 then
+                local state: boolean = E.Checkbox1Copy2Checked
+                _prevCheckbox1Copy2 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.ap = not _G.ap
+                end)
             end
 
-            if E.Checkbox1Copy3Checked and os.clock() >= _wtCheckbox1Copy3 then
-                local state: boolean = true
-                local wait = _waitCheckbox1Copy3
-                _G.autocomplete = not _G.autocomplete
+            if E.Checkbox1Copy3Checked ~= _prevCheckbox1Copy3 then
+                local state: boolean = E.Checkbox1Copy3Checked
+                _prevCheckbox1Copy3 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.autocomplete = not _G.autocomplete
+                end)
+            end
+
+            if E.Checkbox1Copy4Checked ~= _prevCheckbox1Copy4 then
+                local state: boolean = E.Checkbox1Copy4Checked
+                _prevCheckbox1Copy4 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.autoparry = not _G.autoparry
+                end)
             end
         end))
     end
@@ -2648,6 +4377,7 @@ end
         E.Checkbox4Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox4Checked
         E.Checkbox5Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox5Checked
         E.Checkbox1Copy3Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy3Checked
+        E.Checkbox1Copy4Fill.Visible = UIVisible and ActiveTab == 5 and E.Checkbox1Copy4Checked
 
         E.Dropdown1Text.Text  = E.Dropdown1Selected
         _FitText(E.Dropdown1Text, 183.52167077241995)
@@ -2658,6 +4388,80 @@ end
         E.Dropdown1OptionText1.Visible       = UIVisible and ActiveTab == 1 and E.Dropdown1Open
         E.Dropdown1OptionBackground2.Visible = UIVisible and ActiveTab == 1 and E.Dropdown1Open
         E.Dropdown1OptionText2.Visible       = UIVisible and ActiveTab == 1 and E.Dropdown1Open
+
+        E.Dropdown3Text.Text  = E.Dropdown3Selected
+        _FitText(E.Dropdown3Text, 122)
+        E.Dropdown3Arrow.Text = if E.Dropdown3Open then "▲" else "▼"
+        E.Dropdown3OptionBackground0.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText0.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground1.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText1.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground2.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText2.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground3.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText3.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground4.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText4.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground5.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText5.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground6.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText6.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground7.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText7.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground8.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText8.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground9.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText9.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground10.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText10.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground11.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText11.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground12.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText12.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground13.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText13.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground14.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText14.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground15.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText15.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground16.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText16.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground17.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText17.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground18.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText18.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground19.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText19.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground20.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText20.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground21.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText21.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground22.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText22.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground23.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText23.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground24.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText24.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground25.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText25.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground26.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText26.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground27.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText27.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground28.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText28.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground29.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText29.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground30.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText30.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground31.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText31.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground32.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText32.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground33.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText33.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground34.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionText34.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
 
         do
             local Pos  = E.Button1Background.Position
@@ -2700,6 +4504,13 @@ end
             local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
                               and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
             E.Button2Copy2Background.Color = if Over then _HC9 else _HC8
+        end
+        do
+            local Pos  = E.Button2Copy3Background.Position
+            local Size = E.Button2Copy3Background.Size
+            local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+                              and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
+            E.Button2Copy3Background.Color = if Over then _HC9 else _HC8
         end
 
         if E.Square1CopyDragActive then
@@ -2846,11 +4657,11 @@ end
 
             E.Square1Copy4.Position = NewPos + Vector2.new(166, 73)
 
-            E.Text6.Position = NewPos + Vector2.new(175, 90)
+            E.Text6.Position = NewPos + Vector2.new(175, 86)
 
-            E.Text6Copy.Position = NewPos + Vector2.new(188, 104)
+            E.Text6Copy.Position = NewPos + Vector2.new(176, 102)
 
-            E.Text6Copy2.Position = NewPos + Vector2.new(195, 119)
+            E.Text6Copy2.Position = NewPos + Vector2.new(183, 119)
         end
 
         if E.Square1Copy3DragActive then
@@ -3026,6 +4837,137 @@ end
             E.Square1Copy12.Position = NewPos + Vector2.new(12, 56)
 
             E.Square1Copy13.Position = NewPos + Vector2.new(307, 56)
+        end
+
+        if E.Square1Copy14DragActive then
+            local NewPos: Vector2 = E.Square1Copy14DragStartPos + (Mouse - E.Square1Copy14DragStartMouse)
+            E.Square1Copy14.Position = NewPos
+
+            E.Line1Copy9.From = NewPos + Vector2.new(11, 48)
+            E.Line1Copy9.To   = NewPos + Vector2.new(320, 48)
+
+            E.Circle1Copy8.Position = NewPos + Vector2.new(42, 27)
+
+            E.Circle1Copy9.Position = NewPos + Vector2.new(30, 27)
+
+            E.Text1Copy8.Position = NewPos + Vector2.new(71, 16)
+
+            E.Text1Copy9.Position = NewPos + Vector2.new(125, 17)
+
+            E.Line4Copy4.From = NewPos + Vector2.new(22, 21)
+            E.Line4Copy4.To   = NewPos + Vector2.new(26, 13)
+
+            E.Line5Copy4.From = NewPos + Vector2.new(26, 13)
+            E.Line5Copy4.To   = NewPos + Vector2.new(30, 20)
+
+            E.Line6Copy4.From = NewPos + Vector2.new(42, 20)
+            E.Line6Copy4.To   = NewPos + Vector2.new(46, 13)
+
+            E.Line7Copy4.From = NewPos + Vector2.new(46, 13)
+            E.Line7Copy4.To   = NewPos + Vector2.new(49, 22)
+
+            E.Line8Copy8.From = NewPos + Vector2.new(18, 33)
+            E.Line8Copy8.To   = NewPos + Vector2.new(26, 35)
+
+            E.Line8Copy9.From = NewPos + Vector2.new(17, 38)
+            E.Line8Copy9.To   = NewPos + Vector2.new(27, 38)
+
+            E.Line9Copy8.From = NewPos + Vector2.new(46, 36)
+            E.Line9Copy8.To   = NewPos + Vector2.new(54, 34)
+
+            E.Line9Copy9.From = NewPos + Vector2.new(45, 38)
+            E.Line9Copy9.To   = NewPos + Vector2.new(54, 40)
+
+            E.Line10Copy8.From = NewPos + Vector2.new(36, 34)
+            E.Line10Copy8.To   = NewPos + Vector2.new(34, 38)
+
+            E.Line10Copy9.From = NewPos + Vector2.new(36, 34)
+            E.Line10Copy9.To   = NewPos + Vector2.new(39, 39)
+
+            E.Square6Copy3.Position = NewPos + Vector2.new(0, 0)
+
+            E.Text9.Position = NewPos + Vector2.new(27, 57)
+
+            E.Line1Copy10.From = NewPos + Vector2.new(13, 77)
+            E.Line1Copy10.To   = NewPos + Vector2.new(173, 77)
+
+            E.Dropdown3Background.Position = NewPos + Vector2.new(12, 84)
+            E.Dropdown3Text.Position       = NewPos + Vector2.new(20, 91)
+            E.Dropdown3Arrow.Position      = NewPos + Vector2.new(146, 91)
+            E.Dropdown3OptionBackground0.Position = NewPos + Vector2.new(12, 114)
+            E.Dropdown3OptionText0.Position       = NewPos + Vector2.new(20, 121)
+            E.Dropdown3OptionBackground1.Position = NewPos + Vector2.new(12, 144)
+            E.Dropdown3OptionText1.Position       = NewPos + Vector2.new(20, 151)
+            E.Dropdown3OptionBackground2.Position = NewPos + Vector2.new(12, 174)
+            E.Dropdown3OptionText2.Position       = NewPos + Vector2.new(20, 181)
+            E.Dropdown3OptionBackground3.Position = NewPos + Vector2.new(12, 204)
+            E.Dropdown3OptionText3.Position       = NewPos + Vector2.new(20, 211)
+            E.Dropdown3OptionBackground4.Position = NewPos + Vector2.new(12, 234)
+            E.Dropdown3OptionText4.Position       = NewPos + Vector2.new(20, 241)
+            E.Dropdown3OptionBackground5.Position = NewPos + Vector2.new(12, 264)
+            E.Dropdown3OptionText5.Position       = NewPos + Vector2.new(20, 271)
+            E.Dropdown3OptionBackground6.Position = NewPos + Vector2.new(12, 294)
+            E.Dropdown3OptionText6.Position       = NewPos + Vector2.new(20, 301)
+            E.Dropdown3OptionBackground7.Position = NewPos + Vector2.new(12, 324)
+            E.Dropdown3OptionText7.Position       = NewPos + Vector2.new(20, 331)
+            E.Dropdown3OptionBackground8.Position = NewPos + Vector2.new(12, 354)
+            E.Dropdown3OptionText8.Position       = NewPos + Vector2.new(20, 361)
+            E.Dropdown3OptionBackground9.Position = NewPos + Vector2.new(12, 384)
+            E.Dropdown3OptionText9.Position       = NewPos + Vector2.new(20, 391)
+            E.Dropdown3OptionBackground10.Position = NewPos + Vector2.new(12, 414)
+            E.Dropdown3OptionText10.Position       = NewPos + Vector2.new(20, 421)
+            E.Dropdown3OptionBackground11.Position = NewPos + Vector2.new(12, 444)
+            E.Dropdown3OptionText11.Position       = NewPos + Vector2.new(20, 451)
+            E.Dropdown3OptionBackground12.Position = NewPos + Vector2.new(12, 474)
+            E.Dropdown3OptionText12.Position       = NewPos + Vector2.new(20, 481)
+            E.Dropdown3OptionBackground13.Position = NewPos + Vector2.new(12, 504)
+            E.Dropdown3OptionText13.Position       = NewPos + Vector2.new(20, 511)
+            E.Dropdown3OptionBackground14.Position = NewPos + Vector2.new(12, 534)
+            E.Dropdown3OptionText14.Position       = NewPos + Vector2.new(20, 541)
+            E.Dropdown3OptionBackground15.Position = NewPos + Vector2.new(12, 564)
+            E.Dropdown3OptionText15.Position       = NewPos + Vector2.new(20, 571)
+            E.Dropdown3OptionBackground16.Position = NewPos + Vector2.new(12, 594)
+            E.Dropdown3OptionText16.Position       = NewPos + Vector2.new(20, 601)
+            E.Dropdown3OptionBackground17.Position = NewPos + Vector2.new(12, 624)
+            E.Dropdown3OptionText17.Position       = NewPos + Vector2.new(20, 631)
+            E.Dropdown3OptionBackground18.Position = NewPos + Vector2.new(12, 654)
+            E.Dropdown3OptionText18.Position       = NewPos + Vector2.new(20, 661)
+            E.Dropdown3OptionBackground19.Position = NewPos + Vector2.new(12, 684)
+            E.Dropdown3OptionText19.Position       = NewPos + Vector2.new(20, 691)
+            E.Dropdown3OptionBackground20.Position = NewPos + Vector2.new(12, 714)
+            E.Dropdown3OptionText20.Position       = NewPos + Vector2.new(20, 721)
+            E.Dropdown3OptionBackground21.Position = NewPos + Vector2.new(12, 744)
+            E.Dropdown3OptionText21.Position       = NewPos + Vector2.new(20, 751)
+            E.Dropdown3OptionBackground22.Position = NewPos + Vector2.new(12, 774)
+            E.Dropdown3OptionText22.Position       = NewPos + Vector2.new(20, 781)
+            E.Dropdown3OptionBackground23.Position = NewPos + Vector2.new(12, 804)
+            E.Dropdown3OptionText23.Position       = NewPos + Vector2.new(20, 811)
+            E.Dropdown3OptionBackground24.Position = NewPos + Vector2.new(12, 834)
+            E.Dropdown3OptionText24.Position       = NewPos + Vector2.new(20, 841)
+            E.Dropdown3OptionBackground25.Position = NewPos + Vector2.new(12, 864)
+            E.Dropdown3OptionText25.Position       = NewPos + Vector2.new(20, 871)
+            E.Dropdown3OptionBackground26.Position = NewPos + Vector2.new(12, 894)
+            E.Dropdown3OptionText26.Position       = NewPos + Vector2.new(20, 901)
+            E.Dropdown3OptionBackground27.Position = NewPos + Vector2.new(12, 924)
+            E.Dropdown3OptionText27.Position       = NewPos + Vector2.new(20, 931)
+            E.Dropdown3OptionBackground28.Position = NewPos + Vector2.new(12, 954)
+            E.Dropdown3OptionText28.Position       = NewPos + Vector2.new(20, 961)
+            E.Dropdown3OptionBackground29.Position = NewPos + Vector2.new(12, 984)
+            E.Dropdown3OptionText29.Position       = NewPos + Vector2.new(20, 991)
+            E.Dropdown3OptionBackground30.Position = NewPos + Vector2.new(12, 1014)
+            E.Dropdown3OptionText30.Position       = NewPos + Vector2.new(20, 1021)
+            E.Dropdown3OptionBackground31.Position = NewPos + Vector2.new(12, 1044)
+            E.Dropdown3OptionText31.Position       = NewPos + Vector2.new(20, 1051)
+            E.Dropdown3OptionBackground32.Position = NewPos + Vector2.new(12, 1074)
+            E.Dropdown3OptionText32.Position       = NewPos + Vector2.new(20, 1081)
+            E.Dropdown3OptionBackground33.Position = NewPos + Vector2.new(12, 1104)
+            E.Dropdown3OptionText33.Position       = NewPos + Vector2.new(20, 1111)
+            E.Dropdown3OptionBackground34.Position = NewPos + Vector2.new(12, 1134)
+            E.Dropdown3OptionText34.Position       = NewPos + Vector2.new(20, 1141)
+
+            E.Checkbox1Copy4Background.Position  = NewPos + Vector2.new(192, 82)
+            E.Checkbox1Copy4Fill.Position        = NewPos + Vector2.new(195, 85)
+            E.Checkbox1Copy4Label.Position       = NewPos + Vector2.new(224, 86)
         end
 
     end))
