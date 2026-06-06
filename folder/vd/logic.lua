@@ -1,4 +1,5 @@
 local players = game.Players
+local lp = players.LocalPlayer
 local ws = game.Workspace
 function getkiller()
   for _, v in pairs(players:GetChildren()) do
@@ -68,41 +69,42 @@ task.spawn(function()
 	while task.wait(0.016) do
 	    local ok, tracks = pcall(getPlayingAnimationTracks)
 	    if not ok then continue end
-		if lp.Team.Name == "Spectator" then continue end
-	    local foundSwingPtr = nil
-	    for _, t in ipairs(tracks) do
-	        if t.assetid and dontdihgnore[t.assetid] then
-	            foundSwingPtr = t.ptr
-	            tposition = t.timePosition
-	            --print(tostring(t.assetid))
-	            break
-	        end
-	    end
-	    local ping = game:GetPing() / 1000
-	    if foundSwingPtr ~= swingPtr then
-	        if swingPtr ~= nil then
-	            print("Swing stopped!")
-	        end
-	        local _, tpos = getkiller()
-	        local lpos = players.LocalPlayer.Character.HumanoidRootPart.Position
-	        if tpos then
-	        	local dist = vector.magnitude(tpos - lpos)
-		        if foundSwingPtr ~= nil and dist <= 10 then
-		            --print("Swing started!")
-		            local hold = tposition - ping
-		            --print(hold)
-		            if hold >= 0 then
-		              task.wait(math.clamp(hold, 0, 0.4))
-		            end
-		            mouse2click()
-		            --print("hi i should be in the middle")
+		if lp then
+			if lp.Team.Name == "Spectator" then continue end
+		    local foundSwingPtr = nil
+		    for _, t in ipairs(tracks) do
+		        if t.assetid and dontdihgnore[t.assetid] then
+		            foundSwingPtr = t.ptr
+		            tposition = t.timePosition
+		            --print(tostring(t.assetid))
+		            break
 		        end
-		        swingPtr = foundSwingPtr
 		    end
+		    local ping = game:GetPing() / 1000
+		    if foundSwingPtr ~= swingPtr then
+		        if swingPtr ~= nil then
+		            --print("Swing stopped!")
+		        end
+		        local _, tpos = getkiller()
+		        local lpos = players.LocalPlayer.Character.HumanoidRootPart.Position
+		        if tpos then
+		        	local dist = vector.magnitude(tpos - lpos)
+			        if foundSwingPtr ~= nil and dist <= 10 then
+			            --print("Swing started!")
+			            local hold = tposition - ping
+			           -- print(hold)
+			            if hold >= 0 then
+			              task.wait(math.clamp(hold, 0, 0.4))
+			            end
+			            mouse2click()
+			            --print("hi i should be in the middle")
+			        end
+			        swingPtr = foundSwingPtr
+			    end
+			end
 		end
 	end
 end)
-local lp = players.LocalPlayer
 local cam = ws.CurrentCamera
 local rs = game.RunService
 _G.killesp = true
@@ -112,25 +114,28 @@ function getkiller2()
 	killerdata = {}
 	if _G.killesp then
 		for _, p in pairs(players:GetChildren()) do
-			if p.Name ~= lp.Name and p.Team.Name == "Killer" and lp.Team.Name ~= "Spectator" then
-				local killerchar = p.Character
-				local hrp = killerchar.HumanoidRootPart
-				local hrppos = hrp.Position
-				local screen, visk = cam:WorldToScreenPoint(hrppos)
-				local chara = lp.Character
-				local mroot = chara.HumanoidRootPart
-				local dist = vector.magnitude(mroot.Position - hrppos)
-				local hh = math.clamp(1750/ dist, 20, 90)
-				local hw = math.clamp(1000 / dist, 12, 45)
-				if visk then
-					local A = Vector2.new(screen.X - hw, screen.Y - hh) 
-					local B = Vector2.new(screen.X + hw, screen.Y - hh) 
-					local C = Vector2.new(screen.X + hw, screen.Y + hh) 
-					local D = Vector2.new(screen.X - hw, screen.Y + hh)
-					table.insert(killerdata, {root = hrp, rootpos = hrppos, a = A, b = B, c = C, d = D, boxsize = size})
+			if p and lp then
+				if p.Name ~= lp.Name and p.Team.Name == "Killer" and lp.Team.Name ~= "Spectator" then
+					local killerchar = p.Character
+					local hrp = killerchar.HumanoidRootPart
+					local hrppos = hrp.Position
+					local screen, visk = cam:WorldToScreenPoint(hrppos)
+					local chara = lp.Character
+					local mroot = chara.HumanoidRootPart
+					local dist = vector.magnitude(mroot.Position - hrppos)
+					local hh = math.clamp(1750/ dist, 20, 90)
+					local hw = math.clamp(1000 / dist, 12, 45)
+					if visk then
+						local A = Vector2.new(screen.X - hw, screen.Y - hh) 
+						local B = Vector2.new(screen.X + hw, screen.Y - hh) 
+						local C = Vector2.new(screen.X + hw, screen.Y + hh) 
+						local D = Vector2.new(screen.X - hw, screen.Y + hh)
+						table.insert(killerdata, {root = hrp, rootpos = hrppos, a = A, b = B, c = C, d = D, boxsize = size})
+					end
 				end
 			end
 		end
+		
 	end
 	return killerdata
 end
