@@ -158,6 +158,7 @@ function getgens()
 								local partpos = part.Position
 								local screen, vis = cam:WorldToScreenPoint(partpos)
 								local chara = lp.Character
+								if not mroot then return end
 								local mroot = chara.HumanoidRootPart
 								if not mroot then return end
 								local dist = vector.magnitude(mroot.Position - partpos)
