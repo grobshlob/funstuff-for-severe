@@ -145,27 +145,51 @@ function getgens()
 	if not _G.genesp then return data end
 	if _G.genesp then
 		local ok2, map = pcall(function() return ws.Map end)
-		if ok2 and #map:GetChildren() > 0 then
-			local ok, folder = pcall(function() return map:FindFirstChild("Generators") or map:FindFirstChild("Generator") or map:FindFirstChild("Gens") or map:FindFirstChild("newGenerators") or map:FindFirstChild("new Generators") end)
-			if ok then
-				if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" then
-					for _, v in pairs(folder:GetChildren()) do
-						local part = v.HitBox
-						local partpos = part.Position
-						local screen, vis = cam:WorldToScreenPoint(partpos)
-						local chara = lp.Character
-						local mroot = chara.HumanoidRootPart
-						if not mroot then return end
-						local dist = vector.magnitude(mroot.Position - partpos)
-						local hh = math.clamp(1500 / dist, 17, 70)
-						local hw = math.clamp(1750 / dist, 30, 150)
-						if not _G.genesp then vis = false end
-						if vis then
-							local A = Vector2.new(screen.X - hw, screen.Y - hh) 
-							local B = Vector2.new(screen.X + hw, screen.Y - hh) 
-							local C = Vector2.new(screen.X + hw, screen.Y + hh) 
-							local D = Vector2.new(screen.X - hw, screen.Y + hh)
-							table.insert(data, {main = part, genpart = partpos, a = A, b = B, c = C, d = D, boxsize = size})
+		for _, v in pairs(map:GetChildren()) do
+			if string.find(v.Name, "Gen") then
+			local folder = v
+				if folder then
+					if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" and lp.Team.Name ~= "Killer" then
+						for _, v in pairs(folder:GetChildren()) do
+							local repair = v:GetAttribute("RepairProgress")
+							local progress = tonumber(repair)
+							if progress < 100 then
+								local part = v.HitBox
+								local partpos = part.Position
+								local screen, vis = cam:WorldToScreenPoint(partpos)
+								local chara = lp.Character
+								local mroot = chara.HumanoidRootPart
+								if not mroot then return end
+								local dist = vector.magnitude(mroot.Position - partpos)
+								local hh = math.clamp(1500 / dist, 17, 70)
+								local hw = math.clamp(1750 / dist, 30, 150)
+								if not _G.genesp then vis = false end
+								if vis then
+									local A = Vector2.new(screen.X - hw, screen.Y - hh) 
+									local B = Vector2.new(screen.X + hw, screen.Y - hh) 
+									local C = Vector2.new(screen.X + hw, screen.Y + hh) 
+									local D = Vector2.new(screen.X - hw, screen.Y + hh)
+									table.insert(data, {main = part, genpart = partpos, a = A, b = B, c = C, d = D, boxsize = size, color = Color3.fromRGB(118, 0, 118)})
+								end
+							else
+								local part = v.HitBox
+								local partpos = part.Position
+								local screen, vis = cam:WorldToScreenPoint(partpos)
+								local chara = lp.Character
+								local mroot = chara.HumanoidRootPart
+								if not mroot then return end
+								local dist = vector.magnitude(mroot.Position - partpos)
+								local hh = math.clamp(1500 / dist, 17, 70)
+								local hw = math.clamp(1750 / dist, 30, 150)
+								if not _G.genesp then vis = false end
+								if vis then
+									local A = Vector2.new(screen.X - hw, screen.Y - hh) 
+									local B = Vector2.new(screen.X + hw, screen.Y - hh) 
+									local C = Vector2.new(screen.X + hw, screen.Y + hh) 
+									local D = Vector2.new(screen.X - hw, screen.Y + hh)
+									table.insert(data, {main = part, genpart = partpos, a = A, b = B, c = C, d = D, boxsize = size, color = Color3.fromRGB(34, 139, 34)})
+								end
+							end
 						end
 					end
 				end
@@ -232,7 +256,7 @@ rs.Render:Connect(function()
 		local check = i.main
 		if check then
 			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(118, 0, 118), 0.5)
+			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, i.color, 0.5)
 		end
 	end
 end)
