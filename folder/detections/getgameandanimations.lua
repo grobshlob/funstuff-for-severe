@@ -77,8 +77,7 @@ end
 
 _G.dontignore = {}
 _G.ignore = {}
-_G.dodge = {}
-_G.multi = {}
+
 _G.loaded = false
 local pid = game.PlaceId
 local body = nil
