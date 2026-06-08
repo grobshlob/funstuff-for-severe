@@ -40,13 +40,15 @@ task.spawn(function()
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = math.abs((time / 3.46) - (game:GetPing() / 1000))
+                                local parrytime = time / 3.2 - game:GetPing() / 1000
                                 if _G.debug then print(parrytime) end
-                                task.wait(parrytime) 
+                                if parrytime >= 0 then
+                                	task.wait(parrytime)
+                                end
                                 keypress(0x46) 
                                 task.wait(0.01) 
                                 keyrelease(0x46)
-                                task.wait(0.5)
+                                task.wait(0.8)
                                  _G.swingPtr = nil
                                 parried[t.ptr] = nil
                             end)
@@ -54,9 +56,6 @@ task.spawn(function()
                     end 
                 end
             end      
-            if _G.swingPtr ~= nil then
-                print("swing stopped!")
-            end
         end
     end
 end)
