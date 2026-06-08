@@ -162,8 +162,8 @@ function getgens()
 								local mroot = chara.HumanoidRootPart
 								if not mroot then return end
 								local dist = vector.magnitude(mroot.Position - partpos)
-								local hh = math.clamp(1500 / dist, 17, 70)
-								local hw = math.clamp(1750 / dist, 30, 150)
+								local hh = math.clamp(1500 / dist, 13, 80)
+								local hw = math.clamp(1750 / dist, 20, 150)
 								if not _G.genesp then vis = false end
 								if vis then
 									local A = Vector2.new(screen.X - hw, screen.Y - hh) 
@@ -180,8 +180,8 @@ function getgens()
 								local mroot = chara.HumanoidRootPart
 								if not mroot then return end
 								local dist = vector.magnitude(mroot.Position - partpos)
-								local hh = math.clamp(1500 / dist, 17, 70)
-								local hw = math.clamp(1750 / dist, 30, 150)
+								local hh = math.clamp(1500 / dist, 13, 80)
+								local hw = math.clamp(1750 / dist, 20, 150)
 								if not _G.genesp then vis = false end
 								if vis then
 									local A = Vector2.new(screen.X - hw, screen.Y - hh) 
@@ -257,7 +257,8 @@ rs.Render:Connect(function()
 		local check = i.main
 		if check then
 			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, i.color, 0.5)
+			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, i.color, 0.4)
+			DrawingImmediate.Quad(i.a, i.b, i.c, i.d, i.color, 1)
 		end
 	end
 end)
