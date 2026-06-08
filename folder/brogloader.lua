@@ -296,6 +296,8 @@ E.Checkbox1Copy4Background = Drawing.new("Square")
 E.Checkbox1Copy4Fill       = Drawing.new("Square")
 E.Checkbox1Copy4Label      = Drawing.new("Text")
 E.Checkbox1Copy4Checked    = true
+E.Circle10 = Drawing.new("Circle")
+E.Text10 = Drawing.new("Text")
 E.Circle1Copy = Drawing.new("Circle")
 E.Circle1Copy6 = Drawing.new("Circle")
 E.Circle1Copy2 = Drawing.new("Circle")
@@ -327,6 +329,8 @@ E.Button2Copy2Fired    = false
 E.Button2Copy3Background = Drawing.new("Square")
 E.Button2Copy3Text       = Drawing.new("Text")
 E.Button2Copy3Fired    = false
+E.Line11 = Drawing.new("Line")
+E.Triangle1 = Drawing.new("Triangle")
 
 E.Square1CopyDragActive     = false
 E.Square1CopyDragStartMouse = Vector2.new(0, 0)
@@ -420,11 +424,15 @@ local function SetTab(n: number): ()
     E.Text6.Visible = UIVisible and n == 2 and true
     E.Text6Copy.Visible = UIVisible and n == 2 and true
     E.Text6Copy2.Visible = UIVisible and n == 2 and true
+    E.Circle10.Visible = UIVisible and n == 2 and true
+    E.Text10.Visible = UIVisible and n == 2 and true
     E.Circle1Copy6.Visible = UIVisible and n == 2 and true
     E.Circle1Copy2.Visible = UIVisible and n == 2 and true
     E.Line1Copy2.Visible = UIVisible and n == 2 and true
     E.Button2Background.Visible = UIVisible and n == 2 and false
     E.Button2Text.Visible       = UIVisible and n == 2 and false
+    E.Line11.Visible = UIVisible and n == 2 and true
+    E.Triangle1.Visible = UIVisible and n == 2 and true
     -- Tab 3
     E.Square6Copy.Visible = UIVisible and n == 3 and true
     E.Square1Copy7.Visible = UIVisible and n == 3 and true
@@ -468,8 +476,10 @@ local function SetTab(n: number): ()
     E.Button2CopyText.Visible       = UIVisible and n == 3 and true
     -- Tab 4
     E.Square6Copy2.Visible = UIVisible and n == 4 and true
+    E.Square6Copy3.Visible = UIVisible and n == 4 and true
     E.Square1Copy12.Visible = UIVisible and n == 4 and true
     E.Square1Copy9.Visible = UIVisible and n == 4 and true
+    E.Square1Copy14.Visible = UIVisible and n == 4 and true
     E.Text1Copy6.Visible = UIVisible and n == 4 and true
     E.Text1Copy7.Visible = UIVisible and n == 4 and true
     E.Line4Copy3.Visible = UIVisible and n == 4 and true
@@ -502,112 +512,109 @@ local function SetTab(n: number): ()
     E.Checkbox5Background.Visible = UIVisible and n == 4 and true
     E.Checkbox5Label.Visible      = UIVisible and n == 4 and true
     E.Checkbox5Fill.Visible       = UIVisible and n == 4 and E.Checkbox5Checked
+    E.Text1Copy8.Visible = UIVisible and n == 4 and true
+    E.Text1Copy9.Visible = UIVisible and n == 4 and true
+    E.Line4Copy4.Visible = UIVisible and n == 4 and true
+    E.Line5Copy4.Visible = UIVisible and n == 4 and true
+    E.Line6Copy4.Visible = UIVisible and n == 4 and true
+    E.Line7Copy4.Visible = UIVisible and n == 4 and true
+    E.Line8Copy8.Visible = UIVisible and n == 4 and true
+    E.Line8Copy9.Visible = UIVisible and n == 4 and true
+    E.Line9Copy8.Visible = UIVisible and n == 4 and true
+    E.Line9Copy9.Visible = UIVisible and n == 4 and true
+    E.Line10Copy8.Visible = UIVisible and n == 4 and true
+    E.Line10Copy9.Visible = UIVisible and n == 4 and true
+    E.Text9.Visible = UIVisible and n == 4 and true
+    E.Dropdown3Background.Visible = UIVisible and n == 4 and true
+    E.Dropdown3Text.Visible       = UIVisible and n == 4 and true
+    E.Dropdown3Arrow.Visible      = UIVisible and n == 4 and true
+    E.Dropdown3OptionBackground0.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText0.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground1.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText1.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground2.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText2.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground3.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText3.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground4.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText4.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground5.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText5.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground6.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText6.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground7.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText7.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground8.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText8.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground9.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText9.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground10.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText10.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground11.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText11.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground12.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText12.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground13.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText13.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground14.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText14.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground15.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText15.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground16.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText16.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground17.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText17.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground18.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText18.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground19.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText19.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground20.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText20.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground21.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText21.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground22.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText22.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground23.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText23.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground24.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText24.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground25.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText25.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground26.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText26.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground27.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText27.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground28.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText28.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground29.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText29.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground30.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText30.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground31.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText31.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground32.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText32.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground33.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText33.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionBackground34.Visible = UIVisible and n == 4 and E.Dropdown3Open
+    E.Dropdown3OptionText34.Visible       = UIVisible and n == 4 and E.Dropdown3Open
+    E.Checkbox1Copy4Background.Visible = UIVisible and n == 4 and true
+    E.Checkbox1Copy4Label.Visible      = UIVisible and n == 4 and true
+    E.Checkbox1Copy4Fill.Visible       = UIVisible and n == 4 and E.Checkbox1Copy4Checked
     E.Circle1Copy5.Visible = UIVisible and n == 4 and true
     E.Circle1Copy7.Visible = UIVisible and n == 4 and true
+    E.Circle1Copy8.Visible = UIVisible and n == 4 and true
+    E.Circle1Copy9.Visible = UIVisible and n == 4 and true
     E.Square1Copy13.Visible = UIVisible and n == 4 and true
     E.Line1Copy6.Visible = UIVisible and n == 4 and true
     E.Line1Copy7.Visible = UIVisible and n == 4 and true
     E.Line1Copy8.Visible = UIVisible and n == 4 and true
+    E.Line1Copy9.Visible = UIVisible and n == 4 and true
+    E.Line1Copy10.Visible = UIVisible and n == 4 and true
     E.Button2Copy2Background.Visible = UIVisible and n == 4 and false
     E.Button2Copy2Text.Visible       = UIVisible and n == 4 and false
-    -- Tab 5
-    E.Square6Copy3.Visible = UIVisible and n == 5 and true
-    E.Square1Copy14.Visible = UIVisible and n == 5 and true
-    E.Text1Copy8.Visible = UIVisible and n == 5 and true
-    E.Text1Copy9.Visible = UIVisible and n == 5 and true
-    E.Line4Copy4.Visible = UIVisible and n == 5 and true
-    E.Line5Copy4.Visible = UIVisible and n == 5 and true
-    E.Line6Copy4.Visible = UIVisible and n == 5 and true
-    E.Line7Copy4.Visible = UIVisible and n == 5 and true
-    E.Line8Copy8.Visible = UIVisible and n == 5 and true
-    E.Line8Copy9.Visible = UIVisible and n == 5 and true
-    E.Line9Copy8.Visible = UIVisible and n == 5 and true
-    E.Line9Copy9.Visible = UIVisible and n == 5 and true
-    E.Line10Copy8.Visible = UIVisible and n == 5 and true
-    E.Line10Copy9.Visible = UIVisible and n == 5 and true
-    E.Text9.Visible = UIVisible and n == 5 and true
-    E.Dropdown3Background.Visible = UIVisible and n == 5 and true
-    E.Dropdown3Text.Visible       = UIVisible and n == 5 and true
-    E.Dropdown3Arrow.Visible      = UIVisible and n == 5 and true
-    E.Dropdown3OptionBackground0.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText0.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground1.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText1.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground2.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText2.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground3.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText3.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground4.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText4.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground5.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText5.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground6.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText6.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground7.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText7.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground8.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText8.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground9.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText9.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground10.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText10.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground11.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText11.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground12.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText12.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground13.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText13.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground14.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText14.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground15.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText15.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground16.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText16.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground17.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText17.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground18.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText18.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground19.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText19.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground20.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText20.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground21.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText21.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground22.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText22.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground23.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText23.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground24.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText24.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground25.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText25.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground26.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText26.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground27.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText27.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground28.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText28.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground29.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText29.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground30.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText30.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground31.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText31.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground32.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText32.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground33.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText33.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionBackground34.Visible = UIVisible and n == 5 and E.Dropdown3Open
-    E.Dropdown3OptionText34.Visible       = UIVisible and n == 5 and E.Dropdown3Open
-    E.Checkbox1Copy4Background.Visible = UIVisible and n == 5 and true
-    E.Checkbox1Copy4Label.Visible      = UIVisible and n == 5 and true
-    E.Checkbox1Copy4Fill.Visible       = UIVisible and n == 5 and E.Checkbox1Copy4Checked
-    E.Circle1Copy8.Visible = UIVisible and n == 5 and true
-    E.Circle1Copy9.Visible = UIVisible and n == 5 and true
-    E.Line1Copy9.Visible = UIVisible and n == 5 and true
-    E.Line1Copy10.Visible = UIVisible and n == 5 and true
-    E.Button2Copy3Background.Visible = UIVisible and n == 5 and false
-    E.Button2Copy3Text.Visible       = UIVisible and n == 5 and false
+    E.Button2Copy3Background.Visible = UIVisible and n == 4 and false
+    E.Button2Copy3Text.Visible       = UIVisible and n == 4 and false
 end
 
 do
@@ -622,7 +629,7 @@ do
     E.Square1Copy.ZIndex    = -670000000
     E.Square1Copy.Visible   = true
 
-    E.Square6.Position  = Vector2.new(224, 243)
+    E.Square6.Position  = Vector2.new(837, 386)
     E.Square6.Size      = Vector2.new(310, 169)
     E.Square6.Color     = Color3.fromRGB(44, 26, 81)
     E.Square6.Opacity   = 0.50
@@ -702,7 +709,7 @@ do
     E.Square1.ZIndex    = 0
     E.Square1.Visible   = true
 
-    E.Square1Copy2.Position  = Vector2.new(224, 243)
+    E.Square1Copy2.Position  = Vector2.new(837, 386)
     E.Square1Copy2.Size      = Vector2.new(310, 169)
     E.Square1Copy2.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1Copy2.Opacity   = 1
@@ -1017,7 +1024,7 @@ do
     E.Circle1.ZIndex    = 1
     E.Circle1.Visible   = true
 
-    E.Text1Copy2.Position     = Vector2.new(295, 259)
+    E.Text1Copy2.Position     = Vector2.new(908, 402)
     E.Text1Copy2.Text         = "BROG"
     E.Text1Copy2.Size         = 23
     E.Text1Copy2.Font         = 0
@@ -1028,7 +1035,7 @@ do
     E.Text1Copy2.ZIndex       = 1
     E.Text1Copy2.Visible      = true
 
-    E.Text1Copy3.Position     = Vector2.new(242, 295)
+    E.Text1Copy3.Position     = Vector2.new(855, 438)
     E.Text1Copy3.Text         = "Combat Warriors"
     E.Text1Copy3.Size         = 15
     E.Text1Copy3.Font         = 0
@@ -1039,71 +1046,71 @@ do
     E.Text1Copy3.ZIndex       = 1
     E.Text1Copy3.Visible      = true
 
-    E.Line4Copy.From      = Vector2.new(246, 264)
-    E.Line4Copy.To        = Vector2.new(250, 256)
+    E.Line4Copy.From      = Vector2.new(859, 406)
+    E.Line4Copy.To        = Vector2.new(863, 399)
     E.Line4Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line4Copy.Opacity   = 1
     E.Line4Copy.Thickness = 1
     E.Line4Copy.ZIndex    = 1
     E.Line4Copy.Visible   = true
 
-    E.Line5Copy.From      = Vector2.new(250, 256)
-    E.Line5Copy.To        = Vector2.new(254, 263)
+    E.Line5Copy.From      = Vector2.new(863, 399)
+    E.Line5Copy.To        = Vector2.new(867, 406)
     E.Line5Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line5Copy.Opacity   = 1
     E.Line5Copy.Thickness = 1
     E.Line5Copy.ZIndex    = 1
     E.Line5Copy.Visible   = true
 
-    E.Line6Copy.From      = Vector2.new(266, 263)
-    E.Line6Copy.To        = Vector2.new(270, 256)
+    E.Line6Copy.From      = Vector2.new(879, 406)
+    E.Line6Copy.To        = Vector2.new(883, 399)
     E.Line6Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line6Copy.Opacity   = 1
     E.Line6Copy.Thickness = 1
     E.Line6Copy.ZIndex    = 1
     E.Line6Copy.Visible   = true
 
-    E.Line7Copy.From      = Vector2.new(270, 256)
-    E.Line7Copy.To        = Vector2.new(274, 265)
+    E.Line7Copy.From      = Vector2.new(883, 399)
+    E.Line7Copy.To        = Vector2.new(886, 408)
     E.Line7Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line7Copy.Opacity   = 1
     E.Line7Copy.Thickness = 1
     E.Line7Copy.ZIndex    = 1
     E.Line7Copy.Visible   = true
 
-    E.Line8Copy2.From      = Vector2.new(242, 276)
-    E.Line8Copy2.To        = Vector2.new(250, 278)
+    E.Line8Copy2.From      = Vector2.new(855, 419)
+    E.Line8Copy2.To        = Vector2.new(863, 421)
     E.Line8Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8Copy2.Opacity   = 1
     E.Line8Copy2.Thickness = 1
     E.Line8Copy2.ZIndex    = 1
     E.Line8Copy2.Visible   = true
 
-    E.Line8Copy3.From      = Vector2.new(241, 281)
-    E.Line8Copy3.To        = Vector2.new(251, 281)
+    E.Line8Copy3.From      = Vector2.new(854, 424)
+    E.Line8Copy3.To        = Vector2.new(864, 424)
     E.Line8Copy3.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8Copy3.Opacity   = 1
     E.Line8Copy3.Thickness = 1
     E.Line8Copy3.ZIndex    = 1
     E.Line8Copy3.Visible   = true
 
-    E.Line9Copy2.From      = Vector2.new(269, 281)
-    E.Line9Copy2.To        = Vector2.new(278, 283)
+    E.Line9Copy2.From      = Vector2.new(882, 424)
+    E.Line9Copy2.To        = Vector2.new(891, 426)
     E.Line9Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9Copy2.Opacity   = 1
     E.Line9Copy2.Thickness = 1
     E.Line9Copy2.ZIndex    = 1
     E.Line9Copy2.Visible   = true
 
-    E.Line9Copy3.From      = Vector2.new(270, 279)
-    E.Line9Copy3.To        = Vector2.new(278, 277)
+    E.Line9Copy3.From      = Vector2.new(883, 422)
+    E.Line9Copy3.To        = Vector2.new(891, 420)
     E.Line9Copy3.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9Copy3.Opacity   = 1
     E.Line9Copy3.Thickness = 1
     E.Line9Copy3.ZIndex    = 1
     E.Line9Copy3.Visible   = true
 
-    E.Text2Copy.Position     = Vector2.new(431, 261)
+    E.Text2Copy.Position     = Vector2.new(1043, 404)
     E.Text2Copy.Text         = "Text"
     E.Text2Copy.Size         = 19
     E.Text2Copy.Font         = 0
@@ -1114,7 +1121,7 @@ do
     E.Text2Copy.ZIndex       = 1
     E.Text2Copy.Visible      = true
 
-    E.Button3Background.Position  = Vector2.new(247, 322)
+    E.Button3Background.Position  = Vector2.new(859, 465)
     E.Button3Background.Size      = Vector2.new(125, 24)
     E.Button3Background.Color     = Color3.fromRGB(230, 0, 157)
     E.Button3Background.Filled    = true
@@ -1123,7 +1130,7 @@ do
     E.Button3Background.ZIndex    = 1
     E.Button3Background.Visible   = true
 
-    E.Button3Text.Position     = Vector2.new(309, 327)
+    E.Button3Text.Position     = Vector2.new(922, 469)
     E.Button3Text.Text         = "ON"
     E.Button3Text.Size         = 16
     E.Button3Text.Font         = 2
@@ -1134,16 +1141,16 @@ do
     E.Button3Text.Visible      = true
     _FitText(E.Button3Text, 116.57287135795161)
 
-    E.Line10.From      = Vector2.new(260, 277)
-    E.Line10.To        = Vector2.new(258, 281)
+    E.Line10.From      = Vector2.new(873, 420)
+    E.Line10.To        = Vector2.new(871, 424)
     E.Line10.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10.Opacity   = 1
     E.Line10.Thickness = 1
     E.Line10.ZIndex    = 1
     E.Line10.Visible   = true
 
-    E.Line10Copy.From      = Vector2.new(260, 277)
-    E.Line10Copy.To        = Vector2.new(263, 282)
+    E.Line10Copy.From      = Vector2.new(873, 420)
+    E.Line10Copy.To        = Vector2.new(876, 425)
     E.Line10Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10Copy.Opacity   = 1
     E.Line10Copy.Thickness = 1
@@ -1304,7 +1311,7 @@ do
     E.Checkbox1Label.ZIndex       = 2
     E.Checkbox1Label.Visible      = true
 
-    E.Square1Copy4.Position  = Vector2.new(390, 316)
+    E.Square1Copy4.Position  = Vector2.new(1003, 459)
     E.Square1Copy4.Size      = Vector2.new(117, 71)
     E.Square1Copy4.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1Copy4.Opacity   = 1
@@ -1314,7 +1321,7 @@ do
     E.Square1Copy4.ZIndex    = 1
     E.Square1Copy4.Visible   = true
 
-    E.Text6.Position     = Vector2.new(399, 329)
+    E.Text6.Position     = Vector2.new(1012, 471)
     E.Text6.Text         = "If you experience"
     E.Text6.Size         = 16
     E.Text6.Font         = 0
@@ -1325,7 +1332,7 @@ do
     E.Text6.ZIndex       = 1
     E.Text6.Visible      = true
 
-    E.Text6Copy.Position     = Vector2.new(400, 345)
+    E.Text6Copy.Position     = Vector2.new(1013, 487)
     E.Text6Copy.Text         = "any bad timings"
     E.Text6Copy.Size         = 16
     E.Text6Copy.Font         = 0
@@ -1336,7 +1343,7 @@ do
     E.Text6Copy.ZIndex       = 1
     E.Text6Copy.Visible      = true
 
-    E.Text6Copy2.Position     = Vector2.new(407, 362)
+    E.Text6Copy2.Position     = Vector2.new(1020, 505)
     E.Text6Copy2.Text         = "DM urgol0000"
     E.Text6Copy2.Size         = 16
     E.Text6Copy2.Font         = 0
@@ -2639,6 +2646,27 @@ do
     E.Checkbox1Copy4Label.ZIndex       = 2
     E.Checkbox1Copy4Label.Visible      = true
 
+    E.Circle10.Position  = Vector2.new(921, 479)
+    E.Circle10.Radius    = 41.81886450387489
+    E.Circle10.Color     = Color3.fromRGB(255, 0, 0)
+    E.Circle10.Opacity   = 1
+    E.Circle10.Filled    = false
+    E.Circle10.Thickness = 4
+    E.Circle10.NumSides  = 64
+    E.Circle10.ZIndex    = 1
+    E.Circle10.Visible   = true
+
+    E.Text10.Position     = Vector2.new(938, 622)
+    E.Text10.Text         = "CLICK THIS TO TURN IT ON. THIS IS A BUTTON NOT THE STATUS"
+    E.Text10.Size         = 16
+    E.Text10.Font         = 0
+    E.Text10.Color        = Color3.fromRGB(255, 0, 0)
+    E.Text10.Opacity      = 1
+    E.Text10.Center       = true
+    E.Text10.Outline      = false
+    E.Text10.ZIndex       = 1
+    E.Text10.Visible      = true
+
     E.Circle1Copy.Position  = Vector2.new(718, 385)
     E.Circle1Copy.Radius    = 3.675981117494274
     E.Circle1Copy.Color     = Color3.fromRGB(255, 255, 255)
@@ -2649,7 +2677,7 @@ do
     E.Circle1Copy.ZIndex    = 2
     E.Circle1Copy.Visible   = true
 
-    E.Circle1Copy6.Position  = Vector2.new(267, 270)
+    E.Circle1Copy6.Position  = Vector2.new(879, 412)
     E.Circle1Copy6.Radius    = 3.675981117494274
     E.Circle1Copy6.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1Copy6.Opacity   = 1
@@ -2659,7 +2687,7 @@ do
     E.Circle1Copy6.ZIndex    = 2
     E.Circle1Copy6.Visible   = true
 
-    E.Circle1Copy2.Position  = Vector2.new(254, 270)
+    E.Circle1Copy2.Position  = Vector2.new(867, 412)
     E.Circle1Copy2.Radius    = 3.675981117494274
     E.Circle1Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1Copy2.Opacity   = 1
@@ -2739,8 +2767,8 @@ do
     E.Square1Copy13.ZIndex    = 2
     E.Square1Copy13.Visible   = true
 
-    E.Line1Copy2.From      = Vector2.new(235, 290)
-    E.Line1Copy2.To        = Vector2.new(523, 290)
+    E.Line1Copy2.From      = Vector2.new(848, 433)
+    E.Line1Copy2.To        = Vector2.new(1135, 433)
     E.Line1Copy2.Color     = Color3.fromRGB(133, 133, 133)
     E.Line1Copy2.Opacity   = 0.33
     E.Line1Copy2.Thickness = 1
@@ -2811,7 +2839,7 @@ do
     E.Line1Copy10.ZIndex    = 3
     E.Line1Copy10.Visible   = true
 
-    E.Button2Background.Position  = Vector2.new(249, 258)
+    E.Button2Background.Position  = Vector2.new(862, 401)
     E.Button2Background.Size      = Vector2.new(23, 23)
     E.Button2Background.Color     = Color3.fromRGB(194, 0, 78)
     E.Button2Background.Filled    = false
@@ -2820,7 +2848,7 @@ do
     E.Button2Background.ZIndex    = 4
     E.Button2Background.Visible   = false
 
-    E.Button2Text.Position     = Vector2.new(261, 262)
+    E.Button2Text.Position     = Vector2.new(873, 404)
     E.Button2Text.Text         = "."
     E.Button2Text.Size         = 16
     E.Button2Text.Font         = 2
@@ -2898,6 +2926,24 @@ do
     _FitText(E.Button2Copy3Text, 15.014568727466553)
     E.Button2Copy3Background.Opacity = 0
     E.Button2Copy3Text.Opacity = 0
+
+    E.Line11.From      = Vector2.new(920, 559)
+    E.Line11.To        = Vector2.new(920, 612)
+    E.Line11.Color     = Color3.fromRGB(255, 0, 0)
+    E.Line11.Opacity   = 1
+    E.Line11.Thickness = 5
+    E.Line11.ZIndex    = 5
+    E.Line11.Visible   = true
+
+    E.Triangle1.PointA    = Vector2.new(920, 524)
+    E.Triangle1.PointB    = Vector2.new(897, 562)
+    E.Triangle1.PointC    = Vector2.new(943, 562)
+    E.Triangle1.Color     = Color3.fromRGB(255, 0, 0)
+    E.Triangle1.Opacity   = 1
+    E.Triangle1.Filled    = true
+    E.Triangle1.Thickness = 1
+    E.Triangle1.ZIndex    = 6
+    E.Triangle1.Visible   = true
 
     local _PlayerName: string = game.Players.LocalPlayer.Name
     E.Text2.Text = _PlayerName
@@ -3136,6 +3182,8 @@ local function _DestroyUI(): ()
     if E.Checkbox1Copy4Background then E.Checkbox1Copy4Background:Remove() end
     if E.Checkbox1Copy4Fill then E.Checkbox1Copy4Fill:Remove() end
     if E.Checkbox1Copy4Label then E.Checkbox1Copy4Label:Remove() end
+    if E.Circle10 then E.Circle10:Remove() end
+    if E.Text10 then E.Text10:Remove() end
     if E.Circle1Copy then E.Circle1Copy:Remove() end
     if E.Circle1Copy6 then E.Circle1Copy6:Remove() end
     if E.Circle1Copy2 then E.Circle1Copy2:Remove() end
@@ -3163,6 +3211,8 @@ local function _DestroyUI(): ()
     if E.Button2Copy2Text then E.Button2Copy2Text:Remove() end
     if E.Button2Copy3Background then E.Button2Copy3Background:Remove() end
     if E.Button2Copy3Text then E.Button2Copy3Text:Remove() end
+    if E.Line11 then E.Line11:Remove() end
+    if E.Triangle1 then E.Triangle1:Remove() end
 end
 
     local function OnDropdown1Change(selected: string, index: number): ()
@@ -3326,7 +3376,7 @@ end
             end
         end
 
-        if ActiveTab == 5 and LeftClicked then
+        if ActiveTab == 4 and LeftClicked then
             local Pos  = E.Checkbox1Copy4Background.Position
             local Size = E.Checkbox1Copy4Background.Size
             if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
@@ -3497,6 +3547,8 @@ end
                 E.Dropdown3Arrow.Visible      = UIVisible and true
                 E.Checkbox1Copy4Background.Visible = UIVisible and true
                 E.Checkbox1Copy4Label.Visible      = UIVisible and true
+                E.Circle10.Visible = UIVisible and true
+                E.Text10.Visible = UIVisible and true
                 E.Circle1Copy.Visible = UIVisible and true
                 E.Circle1Copy6.Visible = UIVisible and true
                 E.Circle1Copy2.Visible = UIVisible and true
@@ -3524,6 +3576,8 @@ end
                 E.Button2Copy2Text.Visible       = UIVisible and false
                 E.Button2Copy3Background.Visible = UIVisible and false
                 E.Button2Copy3Text.Visible       = UIVisible and false
+                E.Line11.Visible = UIVisible and true
+                E.Triangle1.Visible = UIVisible and true
                 if UIVisible then SetTab(ActiveTab) end
             end
         end
@@ -3572,7 +3626,7 @@ end
             end
         end
 
-        if ActiveTab == 5 and LeftClicked then
+        if ActiveTab == 4 and LeftClicked then
             do
                 local Pos  = E.Dropdown3Background.Position
                 local Size = E.Dropdown3Background.Size
@@ -4034,7 +4088,7 @@ end
             local Size = E.Button2Copy3Background.Size
             local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
                               and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
-            if ActiveTab == 5 and Over and LeftClicked then
+            if ActiveTab == 4 and Over and LeftClicked then
                 E.Button2Copy3Fired   = true
             end
         end
@@ -4377,7 +4431,7 @@ end
         E.Checkbox4Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox4Checked
         E.Checkbox5Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox5Checked
         E.Checkbox1Copy3Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy3Checked
-        E.Checkbox1Copy4Fill.Visible = UIVisible and ActiveTab == 5 and E.Checkbox1Copy4Checked
+        E.Checkbox1Copy4Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox1Copy4Checked
 
         E.Dropdown1Text.Text  = E.Dropdown1Selected
         _FitText(E.Dropdown1Text, 183.52167077241995)
@@ -4392,76 +4446,76 @@ end
         E.Dropdown3Text.Text  = E.Dropdown3Selected
         _FitText(E.Dropdown3Text, 122)
         E.Dropdown3Arrow.Text = if E.Dropdown3Open then "▲" else "▼"
-        E.Dropdown3OptionBackground0.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText0.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground1.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText1.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground2.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText2.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground3.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText3.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground4.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText4.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground5.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText5.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground6.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText6.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground7.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText7.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground8.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText8.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground9.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText9.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground10.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText10.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground11.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText11.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground12.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText12.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground13.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText13.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground14.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText14.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground15.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText15.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground16.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText16.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground17.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText17.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground18.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText18.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground19.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText19.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground20.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText20.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground21.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText21.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground22.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText22.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground23.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText23.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground24.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText24.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground25.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText25.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground26.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText26.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground27.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText27.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground28.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText28.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground29.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText29.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground30.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText30.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground31.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText31.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground32.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText32.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground33.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText33.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionBackground34.Visible = UIVisible and ActiveTab == 5 and E.Dropdown3Open
-        E.Dropdown3OptionText34.Visible       = UIVisible and ActiveTab == 5 and E.Dropdown3Open
+        E.Dropdown3OptionBackground0.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText0.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground1.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText1.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground2.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText2.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground3.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText3.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground4.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText4.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground5.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText5.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground6.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText6.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground7.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText7.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground8.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText8.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground9.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText9.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground10.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText10.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground11.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText11.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground12.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText12.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground13.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText13.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground14.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText14.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground15.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText15.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground16.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText16.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground17.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText17.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground18.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText18.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground19.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText19.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground20.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText20.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground21.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText21.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground22.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText22.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground23.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText23.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground24.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText24.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground25.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText25.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground26.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText26.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground27.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText27.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground28.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText28.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground29.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText29.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground30.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText30.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground31.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText31.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground32.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText32.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground33.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText33.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionBackground34.Visible = UIVisible and ActiveTab == 4 and E.Dropdown3Open
+        E.Dropdown3OptionText34.Visible       = UIVisible and ActiveTab == 4 and E.Dropdown3Open
 
         do
             local Pos  = E.Button1Background.Position
@@ -4611,7 +4665,7 @@ end
 
             E.Text1Copy3.Position = NewPos + Vector2.new(18, 52)
 
-            E.Line4Copy.From = NewPos + Vector2.new(22, 21)
+            E.Line4Copy.From = NewPos + Vector2.new(22, 20)
             E.Line4Copy.To   = NewPos + Vector2.new(26, 13)
 
             E.Line5Copy.From = NewPos + Vector2.new(26, 13)
@@ -4621,7 +4675,7 @@ end
             E.Line6Copy.To   = NewPos + Vector2.new(46, 13)
 
             E.Line7Copy.From = NewPos + Vector2.new(46, 13)
-            E.Line7Copy.To   = NewPos + Vector2.new(50, 22)
+            E.Line7Copy.To   = NewPos + Vector2.new(49, 22)
 
             E.Line8Copy2.From = NewPos + Vector2.new(18, 33)
             E.Line8Copy2.To   = NewPos + Vector2.new(26, 35)
@@ -4635,19 +4689,19 @@ end
             E.Line9Copy3.From = NewPos + Vector2.new(46, 36)
             E.Line9Copy3.To   = NewPos + Vector2.new(54, 34)
 
-            E.Text2Copy.Position = NewPos + Vector2.new(207, 18)
+            E.Text2Copy.Position = NewPos + Vector2.new(206, 18)
 
             E.Line1Copy2.From = NewPos + Vector2.new(11, 47)
-            E.Line1Copy2.To   = NewPos + Vector2.new(299, 47)
+            E.Line1Copy2.To   = NewPos + Vector2.new(298, 47)
 
             E.Square6.Position = NewPos + Vector2.new(0, 0)
 
-            E.Circle1Copy6.Position = NewPos + Vector2.new(43, 27)
+            E.Circle1Copy6.Position = NewPos + Vector2.new(42, 26)
 
-            E.Circle1Copy2.Position = NewPos + Vector2.new(30, 27)
+            E.Circle1Copy2.Position = NewPos + Vector2.new(30, 26)
 
-            E.Button3Background.Position = NewPos + Vector2.new(23, 79)
-            E.Button3Text.Position       = NewPos + Vector2.new(85, 83)
+            E.Button3Background.Position = NewPos + Vector2.new(22, 79)
+            E.Button3Text.Position       = NewPos + Vector2.new(84, 83)
 
             E.Line10.From = NewPos + Vector2.new(36, 34)
             E.Line10.To   = NewPos + Vector2.new(34, 38)
@@ -4657,11 +4711,22 @@ end
 
             E.Square1Copy4.Position = NewPos + Vector2.new(166, 73)
 
-            E.Text6.Position = NewPos + Vector2.new(175, 86)
+            E.Text6.Position = NewPos + Vector2.new(175, 85)
 
-            E.Text6Copy.Position = NewPos + Vector2.new(176, 102)
+            E.Text6Copy.Position = NewPos + Vector2.new(176, 101)
 
             E.Text6Copy2.Position = NewPos + Vector2.new(183, 119)
+
+            E.Circle10.Position = NewPos + Vector2.new(84, 93)
+
+            E.Line11.From = NewPos + Vector2.new(83, 173)
+            E.Line11.To   = NewPos + Vector2.new(83, 226)
+
+            E.Triangle1.PointA = NewPos + Vector2.new(83, 138)
+            E.Triangle1.PointB = NewPos + Vector2.new(60, 176)
+            E.Triangle1.PointC = NewPos + Vector2.new(106, 176)
+
+            E.Text10.Position = NewPos + Vector2.new(101, 236)
         end
 
         if E.Square1Copy3DragActive then
