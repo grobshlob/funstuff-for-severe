@@ -27,7 +27,7 @@ task.spawn(function()
         
             local foundSwingPtr = nil
             for _, t in ipairs(tracks) do
-                if t.assetid and _G.dontignore[t.assetid] and not parried[t.ptr] and not cached[t.assetid] then
+                if t.assetid and _G.dontignore[t.assetid] and not parried[t.ptr] and not _G.cached[t.assetid] then
                     time = tostring(t.timePosition)
                     foundSwingPtr = t.ptr
                     if _G.debug then
