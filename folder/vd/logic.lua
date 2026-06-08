@@ -123,8 +123,8 @@ function getkiller2()
 					local chara = lp.Character
 					local mroot = chara.HumanoidRootPart
 					local dist = vector.magnitude(mroot.Position - hrppos)
-					local hh = math.clamp(1750/ dist, 20, 90)
-					local hw = math.clamp(1000 / dist, 12, 45)
+					local hh = math.clamp(1750/ dist, 18, 100)
+					local hw = math.clamp(1000 / dist, 10, 45)
 					if visk then
 						local A = Vector2.new(screen.X - hw, screen.Y - hh) 
 						local B = Vector2.new(screen.X + hw, screen.Y - hh) 
@@ -293,7 +293,8 @@ rs.Render:Connect(function()
 		local check = i.root
 		if check then
 			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.5)
+			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.4)
+			DrawingImmediate.Quad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 1)
 		end
 	end
 end)
