@@ -9,7 +9,7 @@ local time = 0
 local parried = {}
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
-    --task.wait(1)
+    send_notification("on", "info")
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
     while true do
         task.wait(0.008)
