@@ -39,7 +39,7 @@ function tinmr()
     return worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
-_G.cached = {}
+
 function getPlayingAnimationTracks(animator)
     local tracks = {}
     local ok, head = pcall(memory.readu64, animator, 0x868)
@@ -64,7 +64,6 @@ function getPlayingAnimationTracks(animator)
                     timePosition = ok5 and timePos or 0,
                     assetid = ok7 and asset,
                 })
-                _G.cached[asset] = true
             end
         end
         local ok6, next = pcall(memory.readu64, node)
