@@ -1,3 +1,5 @@
+-- THIS IS AN OLD VERSION. THE NEW VERSION IS PRIVATE
+
 local players = game:GetService("Players")
 local lp = players.LocalPlayer
 local ws = game:GetService("Workspace")
