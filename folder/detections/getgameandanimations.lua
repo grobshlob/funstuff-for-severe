@@ -132,7 +132,7 @@ function decode(game)
     print("Targeted (Attacks): " .. dontIgnoreCount)
     _G.loaded = true
 end
-if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
+if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594569228 then
     decode("cw")
 else
     warn("Failed to decode JSON body. Send this to brog: " .. game.PlaceId)
