@@ -8,12 +8,13 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = false
+local turnedon = false
 task.spawn(function()
-    repeat task.wait(0.5) until _G.loaded == true
-    send_notification("on", "info")
-    --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/cw%20gui.lua"))()
-    while true do
+    while _G.loaded do
+        if _G.loaded = true and not turnedon then
+            send_notification("on", "info")
+        end
+        turnedon = true
         task.wait(0.008)
         tinmr()
         for _, t1 in pairs(_G.targets) do
