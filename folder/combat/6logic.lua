@@ -8,15 +8,15 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = false
+_G.loaded = true
 print("1")
 task.spawn(function()
     print("2")
     while true do
+        task.wait(0.008)
         print("3")
         if not _G.loaded then continue end
         print("4")
-        task.wait(0.008)
         print("hi")
         tinmr()
         for _, t1 in pairs(_G.targets) do
