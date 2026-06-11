@@ -266,6 +266,7 @@ end)
 _G.autocomplete = true
 rs.PostData:Connect(function()
 	if _G.autocomplete then
+		if lp.Team.Name == "Spectator" then return end
 		local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
 		if CheckPrompt and #CheckPrompt:GetChildren() > 0 then
 			local Line = CheckPrompt.Check.Line
