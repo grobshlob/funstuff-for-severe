@@ -6,19 +6,19 @@
           "timing": 0.2,
           "type": "normal",
           "amount": 1,
-          "id": "rbxassetid://11745422815"
+          "id": "rbxassetid://noob"
         },
         "swing2": {
           "timing": 0.3,
           "type": "normal",
           "amount": 1,
-          "id": "rbxassetid://11745635484"
+          "id": "rbxassetid://noob"
         },
         "barrage": {
           "timing_seconds": 1.2,
           "type": "multi",
           "amount": 10,
-          "id": "rbxassetid://8980463494"
+          "id": "rbxassetid://noob"
         },
         "rush": {
           "timing": 1.6,
@@ -28,14 +28,14 @@
           "multiplier": 0.4,
           "sub": 0.1,
           "max": 0.4,
-          "id": "rbxassetid://6971345727"
+          "id": "rbxassetid://noob"
         },
         "jump": {
           "timing": 1.6,
           "type": "dodge",
           "amount": 0,
           "distance": 0,
-          "id": "rbxassetid://8972417889"
+          "id": "rbxassetid://noob"
         }
     }
   ]
