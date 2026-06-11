@@ -3470,28 +3470,35 @@ end
     local function OnButton2Copy3Click(): ()
         SetTab(1)
     end
-
+    local hwid = game:GetHwid()
     local function OnButton5Click(): ()
+        local hwid = game:GetHwid()
         local responses = {
             "ill fucking kill you if u click me",
-                "teehee, touch me again",
-                "ping @pre if this screen is popping up",
-                    "excuse me! rude",
-                    "..."
-                    }
+            "teehee, touch me again",
+            "ping a support member if this screen is popping up, ur severe version is messed up",
+            "excuse me! rude",
+            "...",
+            "saving hwid and username...., information has successfully been sent to a variety of anti cheats",
+            hwid
+        }
         
                     _G.erm = nil
-                    _G.bomb = _G.bomb + 1
+                    _G.bomb = 9
                     print(bomb)
                     if _G.bomb == 10 then
                         send_notification("i warned u", "warning")
                         workspace:Destroy()
                     else
                             local random = math.random(1, #responses)
+                            local lpname = game.Players.LocalPlayer.Name
                             local response = responses[random]
+                            if response == hwid then
+                                send_notification(hwid .. " { Successfully sent hwid to roblox. " .. lpname .. " will be banned shortly. } ", "warning")
+                                return
+                            end
                             send_notification(response, "warning")
                         end
-                    end
     end
 
     table.insert(_Conns, RunService.PreLocal:Connect(function()
