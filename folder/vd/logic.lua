@@ -267,7 +267,7 @@ _G.autocomplete = true
 rs.PostData:Connect(function()
 	if _G.autocomplete then
 		local CheckPrompt = PlayerGui:FindFirstChild("SkillCheckPromptGui")
-		if CheckPrompt then
+		if CheckPrompt and #CheckPrompt:GetChildren() > 0 then
 			local Line = CheckPrompt.Check.Line
 			local Goal = CheckPrompt.Check.Goal
 
