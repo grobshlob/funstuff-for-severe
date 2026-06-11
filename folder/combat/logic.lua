@@ -12,8 +12,10 @@ _G.loaded = false
 print("1")
 task.spawn(function()
     print("2")
-    while _G.loaded do
+    while true do
         print("3")
+        if not _G.loaded then continue end
+        print("4")
         task.wait(0.008)
         print("hi")
         tinmr()
