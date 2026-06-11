@@ -42,7 +42,7 @@ task.spawn(function()
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = time / 2.85 - game:GetPing() / 1000
+                                local parrytime = time / 3.3 - game:GetPing() / 1000
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
