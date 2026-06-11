@@ -135,6 +135,6 @@ end
 if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 then
     decode("cw")
 else
-    warn("Failed to decode JSON body.")
+    warn("Failed to decode JSON body. Send this to brog: " .. game.PlaceId)
 end
 
