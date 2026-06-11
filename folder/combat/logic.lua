@@ -8,7 +8,7 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = true
+_G.loaded = false
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     send_notification("on", "info")
