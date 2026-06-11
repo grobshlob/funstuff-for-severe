@@ -8,13 +8,9 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-local turnedon = false
+_G.loaded = false
 task.spawn(function()
     while _G.loaded do
-        if _G.loaded == true and not turnedon then
-            send_notification("on", "info")
-        end
-        turnedon = true
         task.wait(0.008)
         tinmr()
         for _, t1 in pairs(_G.targets) do
