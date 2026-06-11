@@ -3,11 +3,12 @@ task.spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
 end)
 --send_notification("script is currently down", "warning")
-task.wait(math.huge)
+--task.wait(math.huge)
 local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
+_G.loaded = true
 task.spawn(function()
     repeat task.wait(0.5) until _G.loaded == true
     send_notification("on", "info")
