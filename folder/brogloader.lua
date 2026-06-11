@@ -21,7 +21,6 @@ local _HC6: Color3 = Color3.fromRGB(106, 168, 255)
 local _HC7: Color3 = Color3.fromRGB(255, 255, 255)
 local _HC8: Color3 = Color3.fromRGB(194, 0, 78)
 local _HC9: Color3 = Color3.fromRGB(255, 0, 0)
-local _HC10: Color3 = Color3.fromRGB(117, 117, 117)
 
 ;(function(): ()
 
@@ -60,22 +59,6 @@ E.Square1Copy2 = Drawing.new("Square")
 E.Square1Copy3 = Drawing.new("Square")
 E.Square1Copy9 = Drawing.new("Square")
 E.Square1Copy14 = Drawing.new("Square")
-E.Dropdown4Background = Drawing.new("Square")
-E.Dropdown4Text       = Drawing.new("Text")
-E.Dropdown4Arrow      = Drawing.new("Text")
-E.Dropdown4Selected   = "Option 1"
-E.Dropdown4Options    = { "Option 1", "Option 2", "Option 3" }
-E.Dropdown4Open       = false
-E.Dropdown4Fired      = true
-E.Dropdown4FiredIdx   = 1
-E.Dropdown4OptionBackground0 = Drawing.new("Square")
-E.Dropdown4OptionText0       = Drawing.new("Text")
-E.Dropdown4OptionBackground1 = Drawing.new("Square")
-E.Dropdown4OptionText1       = Drawing.new("Text")
-E.Dropdown4OptionBackground2 = Drawing.new("Square")
-E.Dropdown4OptionText2       = Drawing.new("Text")
-E.Dropdown4_OptBg     = { E.Dropdown4OptionBackground0, E.Dropdown4OptionBackground1, E.Dropdown4OptionBackground2 }
-E.Dropdown4_OptTx     = { E.Dropdown4OptionText0, E.Dropdown4OptionText1, E.Dropdown4OptionText2 }
 E.Dropdown1Background = Drawing.new("Square")
 E.Dropdown1Text       = Drawing.new("Text")
 E.Dropdown1Arrow      = Drawing.new("Text")
@@ -347,13 +330,7 @@ E.Button2Copy3Background = Drawing.new("Square")
 E.Button2Copy3Text       = Drawing.new("Text")
 E.Button2Copy3Fired    = false
 E.Line11 = Drawing.new("Line")
-E.Button5Background = Drawing.new("Square")
-E.Button5Text       = Drawing.new("Text")
-E.Button5Fired    = false
 E.Triangle1 = Drawing.new("Triangle")
-E.Text12 = Drawing.new("Text")
-E.Text12Copy = Drawing.new("Text")
-E.Text13 = Drawing.new("Text")
 
 E.Square1CopyDragActive     = false
 E.Square1CopyDragStartMouse = Vector2.new(0, 0)
@@ -386,15 +363,6 @@ local function SetTab(n: number): ()
     -- Tab 1
     E.Square1Copy.Visible = UIVisible and n == 1 and true
     E.Square1.Visible = UIVisible and n == 1 and true
-    E.Dropdown4Background.Visible = UIVisible and n == 1 and true
-    E.Dropdown4Text.Visible       = UIVisible and n == 1 and true
-    E.Dropdown4Arrow.Visible      = UIVisible and n == 1 and true
-    E.Dropdown4OptionBackground0.Visible = UIVisible and n == 1 and E.Dropdown4Open
-    E.Dropdown4OptionText0.Visible       = UIVisible and n == 1 and E.Dropdown4Open
-    E.Dropdown4OptionBackground1.Visible = UIVisible and n == 1 and E.Dropdown4Open
-    E.Dropdown4OptionText1.Visible       = UIVisible and n == 1 and E.Dropdown4Open
-    E.Dropdown4OptionBackground2.Visible = UIVisible and n == 1 and E.Dropdown4Open
-    E.Dropdown4OptionText2.Visible       = UIVisible and n == 1 and E.Dropdown4Open
     E.Dropdown1Background.Visible = UIVisible and n == 1 and true
     E.Dropdown1Text.Visible       = UIVisible and n == 1 and true
     E.Dropdown1Arrow.Visible      = UIVisible and n == 1 and true
@@ -434,11 +402,6 @@ local function SetTab(n: number): ()
     E.Square2Copy.Visible = UIVisible and n == 1 and true
     E.Text3Copy4.Visible = UIVisible and n == 1 and true
     E.Circle1Copy.Visible = UIVisible and n == 1 and true
-    E.Button5Background.Visible = UIVisible and n == 1 and true
-    E.Button5Text.Visible       = UIVisible and n == 1 and true
-    E.Text12.Visible = UIVisible and n == 1 and true
-    E.Text12Copy.Visible = UIVisible and n == 1 and true
-    E.Text13.Visible = UIVisible and n == 1 and true
     -- Tab 2
     E.Square6.Visible = UIVisible and n == 2 and true
     E.Square1Copy2.Visible = UIVisible and n == 2 and true
@@ -656,7 +619,7 @@ end
 
 do
 
-    E.Square1Copy.Position  = Vector2.new(1709, 733)
+    E.Square1Copy.Position  = Vector2.new(648, 338)
     E.Square1Copy.Size      = Vector2.new(549, 325)
     E.Square1Copy.Color     = Color3.fromRGB(44, 26, 81)
     E.Square1Copy.Opacity   = 0.34
@@ -736,7 +699,7 @@ do
     E.Square1Copy12.ZIndex    = -1
     E.Square1Copy12.Visible   = true
 
-    E.Square1.Position  = Vector2.new(1709, 733)
+    E.Square1.Position  = Vector2.new(648, 338)
     E.Square1.Size      = Vector2.new(549, 325)
     E.Square1.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1.Opacity   = 1
@@ -786,82 +749,7 @@ do
     E.Square1Copy14.ZIndex    = 0
     E.Square1Copy14.Visible   = true
 
-    E.Dropdown4Background.Position  = Vector2.new(211, 731)
-    E.Dropdown4Background.Size      = Vector2.new(150, 30)
-    E.Dropdown4Background.Color     = Color3.fromRGB(255, 255, 255)
-    E.Dropdown4Background.Filled    = true
-    E.Dropdown4Background.Thickness = 1
-    E.Dropdown4Background.ZIndex    = 0
-    E.Dropdown4Background.Visible   = true
-
-    E.Dropdown4Text.Position  = Vector2.new(219, 738)
-    E.Dropdown4Text.Text      = E.Dropdown4Selected
-    E.Dropdown4Text.Size      = 16
-    E.Dropdown4Text.Font      = 2
-    E.Dropdown4Text.Color     = Color3.fromRGB(0, 0, 0)
-    E.Dropdown4Text.Outline   = true
-    E.Dropdown4Text.OutlineColor = Vector3.new(0, 0, 0)
-    E.Dropdown4Text.ZIndex    = 1
-    E.Dropdown4Text.Visible   = true
-    _FitText(E.Dropdown4Text, 122)
-
-    E.Dropdown4Arrow.Position = Vector2.new(345, 738)
-    E.Dropdown4Arrow.Text     = "▼"
-    E.Dropdown4Arrow.Size     = 12
-    E.Dropdown4Arrow.Font     = 2
-    E.Dropdown4Arrow.Color    = Color3.fromRGB(0, 0, 0)
-    E.Dropdown4Arrow.ZIndex   = 1
-    E.Dropdown4Arrow.Visible  = true
-
-    E.Dropdown4OptionBackground0.Position  = Vector2.new(211, 761)
-    E.Dropdown4OptionBackground0.Size      = Vector2.new(150, 30)
-    E.Dropdown4OptionBackground0.Color     = Color3.fromRGB(255, 255, 255)
-    E.Dropdown4OptionBackground0.Filled    = true
-    E.Dropdown4OptionBackground0.ZIndex    = 2
-    E.Dropdown4OptionBackground0.Visible   = false
-
-    E.Dropdown4OptionText0.Position  = Vector2.new(219, 768)
-    E.Dropdown4OptionText0.Text      = "Option 1"
-    E.Dropdown4OptionText0.Size      = 16
-    E.Dropdown4OptionText0.Font      = 2
-    E.Dropdown4OptionText0.Color     = Color3.fromRGB(0, 0, 0)
-    E.Dropdown4OptionText0.ZIndex    = 3
-    E.Dropdown4OptionText0.Visible   = false
-    _FitText(E.Dropdown4OptionText0, 134)
-
-    E.Dropdown4OptionBackground1.Position  = Vector2.new(211, 791)
-    E.Dropdown4OptionBackground1.Size      = Vector2.new(150, 30)
-    E.Dropdown4OptionBackground1.Color     = Color3.fromRGB(255, 255, 255)
-    E.Dropdown4OptionBackground1.Filled    = true
-    E.Dropdown4OptionBackground1.ZIndex    = 2
-    E.Dropdown4OptionBackground1.Visible   = false
-
-    E.Dropdown4OptionText1.Position  = Vector2.new(219, 798)
-    E.Dropdown4OptionText1.Text      = "Option 2"
-    E.Dropdown4OptionText1.Size      = 16
-    E.Dropdown4OptionText1.Font      = 2
-    E.Dropdown4OptionText1.Color     = Color3.fromRGB(0, 0, 0)
-    E.Dropdown4OptionText1.ZIndex    = 3
-    E.Dropdown4OptionText1.Visible   = false
-    _FitText(E.Dropdown4OptionText1, 134)
-
-    E.Dropdown4OptionBackground2.Position  = Vector2.new(211, 821)
-    E.Dropdown4OptionBackground2.Size      = Vector2.new(150, 30)
-    E.Dropdown4OptionBackground2.Color     = Color3.fromRGB(255, 255, 255)
-    E.Dropdown4OptionBackground2.Filled    = true
-    E.Dropdown4OptionBackground2.ZIndex    = 2
-    E.Dropdown4OptionBackground2.Visible   = false
-
-    E.Dropdown4OptionText2.Position  = Vector2.new(219, 828)
-    E.Dropdown4OptionText2.Text      = "Option 3"
-    E.Dropdown4OptionText2.Size      = 16
-    E.Dropdown4OptionText2.Font      = 2
-    E.Dropdown4OptionText2.Color     = Color3.fromRGB(0, 0, 0)
-    E.Dropdown4OptionText2.ZIndex    = 3
-    E.Dropdown4OptionText2.Visible   = false
-    _FitText(E.Dropdown4OptionText2, 134)
-
-    E.Dropdown1Background.Position  = Vector2.new(1727, 812)
+    E.Dropdown1Background.Position  = Vector2.new(666, 417)
     E.Dropdown1Background.Size      = Vector2.new(212, 59)
     E.Dropdown1Background.Color     = Color3.fromRGB(69, 66, 87)
     E.Dropdown1Background.Filled    = true
@@ -870,7 +758,7 @@ do
     E.Dropdown1Background.ZIndex    = 1
     E.Dropdown1Background.Visible   = true
 
-    E.Dropdown1Text.Position  = Vector2.new(1735, 832)
+    E.Dropdown1Text.Position  = Vector2.new(674, 437)
     E.Dropdown1Text.Text      = E.Dropdown1Selected
     E.Dropdown1Text.Size      = 19
     E.Dropdown1Text.Font      = 2
@@ -880,7 +768,7 @@ do
     E.Dropdown1Text.Visible   = true
     _FitText(E.Dropdown1Text, 183.52167077241995)
 
-    E.Dropdown1Arrow.Position = Vector2.new(1922, 832)
+    E.Dropdown1Arrow.Position = Vector2.new(861, 437)
     E.Dropdown1Arrow.Text     = "▼"
     E.Dropdown1Arrow.Size     = 15
     E.Dropdown1Arrow.Font     = 2
@@ -888,7 +776,7 @@ do
     E.Dropdown1Arrow.ZIndex   = 2
     E.Dropdown1Arrow.Visible  = true
 
-    E.Dropdown1OptionBackground0.Position  = Vector2.new(1727, 871)
+    E.Dropdown1OptionBackground0.Position  = Vector2.new(666, 476)
     E.Dropdown1OptionBackground0.Size      = Vector2.new(212, 59)
     E.Dropdown1OptionBackground0.Color     = Color3.fromRGB(69, 66, 87)
     E.Dropdown1OptionBackground0.Filled    = true
@@ -896,7 +784,7 @@ do
     E.Dropdown1OptionBackground0.ZIndex    = 3
     E.Dropdown1OptionBackground0.Visible   = false
 
-    E.Dropdown1OptionText0.Position  = Vector2.new(1735, 892)
+    E.Dropdown1OptionText0.Position  = Vector2.new(674, 496)
     E.Dropdown1OptionText0.Text      = "Combat Warriors"
     E.Dropdown1OptionText0.Size      = 19
     E.Dropdown1OptionText0.Font      = 2
@@ -905,7 +793,7 @@ do
     E.Dropdown1OptionText0.Visible   = false
     _FitText(E.Dropdown1OptionText0, 195.52167077241995)
 
-    E.Dropdown1OptionBackground1.Position  = Vector2.new(1727, 931)
+    E.Dropdown1OptionBackground1.Position  = Vector2.new(666, 535)
     E.Dropdown1OptionBackground1.Size      = Vector2.new(212, 59)
     E.Dropdown1OptionBackground1.Color     = Color3.fromRGB(69, 66, 87)
     E.Dropdown1OptionBackground1.Filled    = true
@@ -913,7 +801,7 @@ do
     E.Dropdown1OptionBackground1.ZIndex    = 3
     E.Dropdown1OptionBackground1.Visible   = false
 
-    E.Dropdown1OptionText1.Position  = Vector2.new(1735, 951)
+    E.Dropdown1OptionText1.Position  = Vector2.new(674, 556)
     E.Dropdown1OptionText1.Text      = "Violence District"
     E.Dropdown1OptionText1.Size      = 19
     E.Dropdown1OptionText1.Font      = 2
@@ -922,7 +810,7 @@ do
     E.Dropdown1OptionText1.Visible   = false
     _FitText(E.Dropdown1OptionText1, 195.52167077241995)
 
-    E.Dropdown1OptionBackground2.Position  = Vector2.new(1727, 990)
+    E.Dropdown1OptionBackground2.Position  = Vector2.new(666, 595)
     E.Dropdown1OptionBackground2.Size      = Vector2.new(212, 59)
     E.Dropdown1OptionBackground2.Color     = Color3.fromRGB(69, 66, 87)
     E.Dropdown1OptionBackground2.Filled    = true
@@ -930,7 +818,7 @@ do
     E.Dropdown1OptionBackground2.ZIndex    = 3
     E.Dropdown1OptionBackground2.Visible   = false
 
-    E.Dropdown1OptionText2.Position  = Vector2.new(1735, 1010)
+    E.Dropdown1OptionText2.Position  = Vector2.new(674, 615)
     E.Dropdown1OptionText2.Text      = "Type Soul (OWNER ONLY)"
     E.Dropdown1OptionText2.Size      = 19
     E.Dropdown1OptionText2.Font      = 2
@@ -939,15 +827,15 @@ do
     E.Dropdown1OptionText2.Visible   = false
     _FitText(E.Dropdown1OptionText2, 195.52167077241995)
 
-    E.Line1.From      = Vector2.new(1717, 788)
-    E.Line1.To        = Vector2.new(2246, 788)
+    E.Line1.From      = Vector2.new(656, 393)
+    E.Line1.To        = Vector2.new(1185, 393)
     E.Line1.Color     = Color3.fromRGB(133, 133, 133)
     E.Line1.Opacity   = 0.36
     E.Line1.Thickness = 1
     E.Line1.ZIndex    = 1
     E.Line1.Visible   = true
 
-    E.Text1.Position     = Vector2.new(1780, 751)
+    E.Text1.Position     = Vector2.new(719, 356)
     E.Text1.Text         = "BROG"
     E.Text1.Size         = 23
     E.Text1.Font         = 0
@@ -958,7 +846,7 @@ do
     E.Text1.ZIndex       = 1
     E.Text1.Visible      = true
 
-    E.Text1Copy.Position     = Vector2.new(1835, 751)
+    E.Text1Copy.Position     = Vector2.new(774, 355)
     E.Text1Copy.Text         = ":   HUB"
     E.Text1Copy.Size         = 23
     E.Text1Copy.Font         = 0
@@ -969,71 +857,71 @@ do
     E.Text1Copy.ZIndex       = 1
     E.Text1Copy.Visible      = true
 
-    E.Line4.From      = Vector2.new(1731, 755)
-    E.Line4.To        = Vector2.new(1734, 747)
+    E.Line4.From      = Vector2.new(670, 360)
+    E.Line4.To        = Vector2.new(673, 352)
     E.Line4.Color     = Color3.fromRGB(255, 255, 255)
     E.Line4.Opacity   = 1
     E.Line4.Thickness = 1
     E.Line4.ZIndex    = 1
     E.Line4.Visible   = true
 
-    E.Line5.From      = Vector2.new(1734, 746)
-    E.Line5.To        = Vector2.new(1738, 753)
+    E.Line5.From      = Vector2.new(673, 351)
+    E.Line5.To        = Vector2.new(677, 358)
     E.Line5.Color     = Color3.fromRGB(255, 255, 255)
     E.Line5.Opacity   = 1
     E.Line5.Thickness = 1
     E.Line5.ZIndex    = 1
     E.Line5.Visible   = true
 
-    E.Line6.From      = Vector2.new(1750, 753)
-    E.Line6.To        = Vector2.new(1754, 746)
+    E.Line6.From      = Vector2.new(689, 358)
+    E.Line6.To        = Vector2.new(693, 351)
     E.Line6.Color     = Color3.fromRGB(255, 255, 255)
     E.Line6.Opacity   = 1
     E.Line6.Thickness = 1
     E.Line6.ZIndex    = 1
     E.Line6.Visible   = true
 
-    E.Line7.From      = Vector2.new(1754, 746)
-    E.Line7.To        = Vector2.new(1758, 755)
+    E.Line7.From      = Vector2.new(693, 351)
+    E.Line7.To        = Vector2.new(697, 360)
     E.Line7.Color     = Color3.fromRGB(255, 255, 255)
     E.Line7.Opacity   = 1
     E.Line7.Thickness = 1
     E.Line7.ZIndex    = 1
     E.Line7.Visible   = true
 
-    E.Line8.From      = Vector2.new(1726, 766)
-    E.Line8.To        = Vector2.new(1734, 768)
+    E.Line8.From      = Vector2.new(665, 371)
+    E.Line8.To        = Vector2.new(673, 373)
     E.Line8.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8.Opacity   = 1
     E.Line8.Thickness = 1
     E.Line8.ZIndex    = 1
     E.Line8.Visible   = true
 
-    E.Line8Copy.From      = Vector2.new(1725, 771)
-    E.Line8Copy.To        = Vector2.new(1735, 771)
+    E.Line8Copy.From      = Vector2.new(664, 376)
+    E.Line8Copy.To        = Vector2.new(674, 376)
     E.Line8Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8Copy.Opacity   = 1
     E.Line8Copy.Thickness = 1
     E.Line8Copy.ZIndex    = 1
     E.Line8Copy.Visible   = true
 
-    E.Line9.From      = Vector2.new(1753, 771)
-    E.Line9.To        = Vector2.new(1762, 773)
+    E.Line9.From      = Vector2.new(692, 376)
+    E.Line9.To        = Vector2.new(701, 378)
     E.Line9.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9.Opacity   = 1
     E.Line9.Thickness = 1
     E.Line9.ZIndex    = 1
     E.Line9.Visible   = true
 
-    E.Line9Copy.From      = Vector2.new(1754, 769)
-    E.Line9Copy.To        = Vector2.new(1762, 767)
+    E.Line9Copy.From      = Vector2.new(693, 374)
+    E.Line9Copy.To        = Vector2.new(701, 372)
     E.Line9Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9Copy.Opacity   = 1
     E.Line9Copy.Thickness = 1
     E.Line9Copy.ZIndex    = 1
     E.Line9Copy.Visible   = true
 
-    E.Text2.Position     = Vector2.new(2135, 751)
+    E.Text2.Position     = Vector2.new(1074, 356)
     E.Text2.Text         = "Text"
     E.Text2.Size         = 19
     E.Text2.Font         = 0
@@ -1044,7 +932,7 @@ do
     E.Text2.ZIndex       = 1
     E.Text2.Visible      = true
 
-    E.Square2.Position  = Vector2.new(1977, 812)
+    E.Square2.Position  = Vector2.new(916, 417)
     E.Square2.Size      = Vector2.new(269, 145)
     E.Square2.Color     = Color3.fromRGB(235, 0, 215)
     E.Square2.Opacity   = 0.28
@@ -1054,7 +942,7 @@ do
     E.Square2.ZIndex    = 1
     E.Square2.Visible   = true
 
-    E.Text3.Position     = Vector2.new(2010, 830)
+    E.Text3.Position     = Vector2.new(949, 435)
     E.Text3.Text         = "If you experience any bugs"
     E.Text3.Size         = 13
     E.Text3.Font         = 2
@@ -1065,7 +953,7 @@ do
     E.Text3.ZIndex       = 1
     E.Text3.Visible      = true
 
-    E.Text3Copy.Position     = Vector2.new(1964, 1025)
+    E.Text3Copy.Position     = Vector2.new(904, 630)
     E.Text3Copy.Text         = "Toggle Key"
     E.Text3Copy.Size         = 13
     E.Text3Copy.Font         = 2
@@ -1076,7 +964,7 @@ do
     E.Text3Copy.ZIndex       = 1
     E.Text3Copy.Visible      = true
 
-    E.Text3Copy2.Position     = Vector2.new(2010, 899)
+    E.Text3Copy2.Position     = Vector2.new(949, 504)
     E.Text3Copy2.Text         = "IF YOU LOAD TYPE SOUL"
     E.Text3Copy2.Size         = 16
     E.Text3Copy2.Font         = 2
@@ -1087,7 +975,7 @@ do
     E.Text3Copy2.ZIndex       = 1
     E.Text3Copy2.Visible      = true
 
-    E.Text3Copy3.Position     = Vector2.new(2006, 928)
+    E.Text3Copy3.Position     = Vector2.new(945, 532)
     E.Text3Copy3.Text         = "YOUR ROBLOX WILL CRASH"
     E.Text3Copy3.Size         = 16
     E.Text3Copy3.Font         = 2
@@ -1098,7 +986,7 @@ do
     E.Text3Copy3.ZIndex       = 1
     E.Text3Copy3.Visible      = true
 
-    E.Button1Background.Position  = Vector2.new(2018, 969)
+    E.Button1Background.Position  = Vector2.new(957, 573)
     E.Button1Background.Size      = Vector2.new(184, 39)
     E.Button1Background.Color     = Color3.fromRGB(103, 53, 126)
     E.Button1Background.Filled    = true
@@ -1107,7 +995,7 @@ do
     E.Button1Background.ZIndex    = 1
     E.Button1Background.Visible   = true
 
-    E.Button1Text.Position     = Vector2.new(2110, 980)
+    E.Button1Text.Position     = Vector2.new(1049, 585)
     E.Button1Text.Text         = "LOAD"
     E.Button1Text.Size         = 16
     E.Button1Text.Font         = 2
@@ -1118,15 +1006,15 @@ do
     E.Button1Text.Visible      = true
     _FitText(E.Button1Text, 175.6340733710631)
 
-    E.Line1Copy.From      = Vector2.new(2026, 885)
-    E.Line1Copy.To        = Vector2.new(2202, 885)
+    E.Line1Copy.From      = Vector2.new(965, 490)
+    E.Line1Copy.To        = Vector2.new(1141, 490)
     E.Line1Copy.Color     = Color3.fromRGB(133, 133, 133)
     E.Line1Copy.Opacity   = 0.36
     E.Line1Copy.Thickness = 1
     E.Line1Copy.ZIndex    = 1
     E.Line1Copy.Visible   = true
 
-    E.Circle1.Position  = Vector2.new(1739, 760)
+    E.Circle1.Position  = Vector2.new(678, 365)
     E.Circle1.Radius    = 3.675981117494274
     E.Circle1.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1.Opacity   = 1
@@ -1269,16 +1157,16 @@ do
     E.Line10Copy.ZIndex    = 1
     E.Line10Copy.Visible   = true
 
-    E.Line10Copy2.From      = Vector2.new(1744, 766)
-    E.Line10Copy2.To        = Vector2.new(1747, 771)
+    E.Line10Copy2.From      = Vector2.new(683, 370)
+    E.Line10Copy2.To        = Vector2.new(686, 375)
     E.Line10Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10Copy2.Opacity   = 1
     E.Line10Copy2.Thickness = 1
     E.Line10Copy2.ZIndex    = 1
     E.Line10Copy2.Visible   = true
 
-    E.Line10Copy3.From      = Vector2.new(1744, 766)
-    E.Line10Copy3.To        = Vector2.new(1742, 770)
+    E.Line10Copy3.From      = Vector2.new(683, 370)
+    E.Line10Copy3.To        = Vector2.new(681, 374)
     E.Line10Copy3.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10Copy3.Opacity   = 1
     E.Line10Copy3.Thickness = 1
@@ -1838,7 +1726,7 @@ do
     E.Checkbox5Label.ZIndex       = 2
     E.Checkbox5Label.Visible      = true
 
-    E.Button4Background.Position  = Vector2.new(1727, 744)
+    E.Button4Background.Position  = Vector2.new(666, 349)
     E.Button4Background.Size      = Vector2.new(38, 34)
     E.Button4Background.Color     = Color3.fromRGB(77, 144, 255)
     E.Button4Background.Filled    = true
@@ -1847,7 +1735,7 @@ do
     E.Button4Background.ZIndex    = 1
     E.Button4Background.Visible   = false
 
-    E.Button4Text.Position     = Vector2.new(1745, 753)
+    E.Button4Text.Position     = Vector2.new(685, 358)
     E.Button4Text.Text         = "Button"
     E.Button4Text.Size         = 16
     E.Button4Text.Font         = 2
@@ -1860,7 +1748,7 @@ do
     E.Button4Background.Opacity = 0
     E.Button4Text.Opacity = 0
 
-    E.Keybind1Background.Position  = Vector2.new(2059, 1017)
+    E.Keybind1Background.Position  = Vector2.new(998, 622)
     E.Keybind1Background.Size      = Vector2.new(100, 30)
     E.Keybind1Background.Color     = Color3.fromRGB(103, 53, 126)
     E.Keybind1Background.Filled    = true
@@ -1869,7 +1757,7 @@ do
     E.Keybind1Background.ZIndex    = 1
     E.Keybind1Background.Visible   = true
 
-    E.Keybind1Text.Position     = Vector2.new(2109, 1024)
+    E.Keybind1Text.Position     = Vector2.new(1048, 629)
     E.Keybind1Text.Text         = E.Keybind1DisplayText
     E.Keybind1Text.Size         = 16
     E.Keybind1Text.Font         = 2
@@ -1879,7 +1767,7 @@ do
     E.Keybind1Text.ZIndex       = 2
     E.Keybind1Text.Visible      = true
 
-    E.Square2Copy.Position  = Vector2.new(1957, 1019)
+    E.Square2Copy.Position  = Vector2.new(897, 623)
     E.Square2Copy.Size      = Vector2.new(93, 24)
     E.Square2Copy.Color     = Color3.fromRGB(235, 0, 215)
     E.Square2Copy.Opacity   = 0.28
@@ -1889,7 +1777,7 @@ do
     E.Square2Copy.ZIndex    = 1
     E.Square2Copy.Visible   = true
 
-    E.Text3Copy4.Position     = Vector2.new(2030, 850)
+    E.Text3Copy4.Position     = Vector2.new(969, 455)
     E.Text3Copy4.Text         = "If you experience any bugs"
     E.Text3Copy4.Size         = 13
     E.Text3Copy4.Font         = 2
@@ -2779,7 +2667,7 @@ do
     E.Text10.ZIndex       = 1
     E.Text10.Visible      = true
 
-    E.Circle1Copy.Position  = Vector2.new(1752, 760)
+    E.Circle1Copy.Position  = Vector2.new(691, 365)
     E.Circle1Copy.Radius    = 3.675981117494274
     E.Circle1Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1Copy.Opacity   = 1
@@ -3047,26 +2935,6 @@ do
     E.Line11.ZIndex    = 5
     E.Line11.Visible   = true
 
-    E.Button5Background.Position  = Vector2.new(-210, -98)
-    E.Button5Background.Size      = Vector2.new(2320, 1263)
-    E.Button5Background.Color     = Color3.fromRGB(117, 117, 117)
-    E.Button5Background.Filled    = true
-    E.Button5Background.Thickness = 1
-    E.Button5Background.Rounding  = 4
-    E.Button5Background.ZIndex    = 6
-    E.Button5Background.Visible   = true
-
-    E.Button5Text.Position     = Vector2.new(950, 524)
-    E.Button5Text.Text         = ";-;"
-    E.Button5Text.Size         = 20
-    E.Button5Text.Font         = 2
-    E.Button5Text.Color        = Color3.fromRGB(255, 255, 255)
-    E.Button5Text.Center       = true
-    E.Button5Text.Outline      = false
-    E.Button5Text.ZIndex       = 7
-    E.Button5Text.Visible      = true
-    _FitText(E.Button5Text, 2312)
-
     E.Triangle1.PointA    = Vector2.new(920, 524)
     E.Triangle1.PointB    = Vector2.new(897, 562)
     E.Triangle1.PointC    = Vector2.new(943, 562)
@@ -3076,39 +2944,6 @@ do
     E.Triangle1.Thickness = 1
     E.Triangle1.ZIndex    = 6
     E.Triangle1.Visible   = true
-
-    E.Text12.Position     = Vector2.new(859, 457)
-    E.Text12.Text         = "script is down until further notice"
-    E.Text12.Size         = 16
-    E.Text12.Font         = 0
-    E.Text12.Color        = Color3.fromRGB(255, 255, 255)
-    E.Text12.Opacity      = 0.34
-    E.Text12.Center       = false
-    E.Text12.Outline      = false
-    E.Text12.ZIndex       = 7
-    E.Text12.Visible      = true
-
-    E.Text12Copy.Position     = Vector2.new(855, 489)
-    E.Text12Copy.Text         = "please restart the lua environment"
-    E.Text12Copy.Size         = 16
-    E.Text12Copy.Font         = 0
-    E.Text12Copy.Color        = Color3.fromRGB(255, 255, 255)
-    E.Text12Copy.Opacity      = 0.34
-    E.Text12Copy.Center       = false
-    E.Text12Copy.Outline      = false
-    E.Text12Copy.ZIndex       = 7
-    E.Text12Copy.Visible      = true
-
-    E.Text13.Position     = Vector2.new(123, 965)
-    E.Text13.Text         = "or click anywhere on the screen for a surprise"
-    E.Text13.Size         = 16
-    E.Text13.Font         = 0
-    E.Text13.Color        = Color3.fromRGB(255, 255, 255)
-    E.Text13.Opacity      = 1
-    E.Text13.Center       = false
-    E.Text13.Outline      = false
-    E.Text13.ZIndex       = 8
-    E.Text13.Visible      = true
 
     local _PlayerName: string = game.Players.LocalPlayer.Name
     E.Text2.Text = _PlayerName
@@ -3140,15 +2975,6 @@ local function _DestroyUI(): ()
     if E.Square1Copy3 then E.Square1Copy3:Remove() end
     if E.Square1Copy9 then E.Square1Copy9:Remove() end
     if E.Square1Copy14 then E.Square1Copy14:Remove() end
-    if E.Dropdown4Background then E.Dropdown4Background:Remove() end
-    if E.Dropdown4Text then E.Dropdown4Text:Remove() end
-    if E.Dropdown4Arrow then E.Dropdown4Arrow:Remove() end
-    if E.Dropdown4OptionBackground0 then E.Dropdown4OptionBackground0:Remove() end
-    if E.Dropdown4OptionText0 then E.Dropdown4OptionText0:Remove() end
-    if E.Dropdown4OptionBackground1 then E.Dropdown4OptionBackground1:Remove() end
-    if E.Dropdown4OptionText1 then E.Dropdown4OptionText1:Remove() end
-    if E.Dropdown4OptionBackground2 then E.Dropdown4OptionBackground2:Remove() end
-    if E.Dropdown4OptionText2 then E.Dropdown4OptionText2:Remove() end
     if E.Dropdown1Background then E.Dropdown1Background:Remove() end
     if E.Dropdown1Text then E.Dropdown1Text:Remove() end
     if E.Dropdown1Arrow then E.Dropdown1Arrow:Remove() end
@@ -3386,17 +3212,8 @@ local function _DestroyUI(): ()
     if E.Button2Copy3Background then E.Button2Copy3Background:Remove() end
     if E.Button2Copy3Text then E.Button2Copy3Text:Remove() end
     if E.Line11 then E.Line11:Remove() end
-    if E.Button5Background then E.Button5Background:Remove() end
-    if E.Button5Text then E.Button5Text:Remove() end
     if E.Triangle1 then E.Triangle1:Remove() end
-    if E.Text12 then E.Text12:Remove() end
-    if E.Text12Copy then E.Text12Copy:Remove() end
-    if E.Text13 then E.Text13:Remove() end
 end
-
-    local function OnDropdown4Change(selected: string, index: number): ()
-        _G.bomb = index
-    end
 
     local function OnDropdown1Change(selected: string, index: number): ()
         _G.erm = index
@@ -3469,36 +3286,6 @@ end
 
     local function OnButton2Copy3Click(): ()
         SetTab(1)
-    end
-    local hwid = game:GetHwid()
-    local function OnButton5Click(): ()
-        local hwid = game:GetHwid()
-        local responses = {
-            "ill fucking kill you if u click me",
-            "teehee, touch me again",
-            "ping a support member if this screen is popping up, ur severe version is messed up",
-            "excuse me! rude",
-            "...",
-            "saving hwid and username...., information has successfully been sent to a variety of anti cheats",
-            hwid
-        }
-        
-                    _G.erm = nil
-                    _G.bomb = 9
-                    print(bomb)
-                    if _G.bomb == 10 then
-                        send_notification("i warned u", "warning")
-                        workspace:Destroy()
-                    else
-                            local random = math.random(1, #responses)
-                            local lpname = game.Players.LocalPlayer.Name
-                            local response = responses[random]
-                            if response == hwid then
-                                send_notification(hwid .. " { Successfully sent hwid to roblox. " .. lpname .. " will be banned shortly. } ", "warning")
-                                return
-                            end
-                            send_notification(response, "warning")
-                        end
     end
 
     table.insert(_Conns, RunService.PreLocal:Connect(function()
@@ -3639,9 +3426,6 @@ end
                 E.Square1Copy3.Visible = UIVisible and true
                 E.Square1Copy9.Visible = UIVisible and true
                 E.Square1Copy14.Visible = UIVisible and true
-                E.Dropdown4Background.Visible = UIVisible and true
-                E.Dropdown4Text.Visible       = UIVisible and true
-                E.Dropdown4Arrow.Visible      = UIVisible and true
                 E.Dropdown1Background.Visible = UIVisible and true
                 E.Dropdown1Text.Visible       = UIVisible and true
                 E.Dropdown1Arrow.Visible      = UIVisible and true
@@ -3793,57 +3577,8 @@ end
                 E.Button2Copy3Background.Visible = UIVisible and false
                 E.Button2Copy3Text.Visible       = UIVisible and false
                 E.Line11.Visible = UIVisible and true
-                E.Button5Background.Visible = UIVisible and true
-                E.Button5Text.Visible       = UIVisible and true
                 E.Triangle1.Visible = UIVisible and true
-                E.Text12.Visible = UIVisible and true
-                E.Text12Copy.Visible = UIVisible and true
-                E.Text13.Visible = UIVisible and true
                 if UIVisible then SetTab(ActiveTab) end
-            end
-        end
-
-        if ActiveTab == 1 and LeftClicked then
-            do
-                local Pos  = E.Dropdown4Background.Position
-                local Size = E.Dropdown4Background.Size
-                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
-                    E.Dropdown4Open = not E.Dropdown4Open
-                end
-            end
-            if E.Dropdown4Open then
-                local Pos  = E.Dropdown4OptionBackground0.Position
-                local Size = E.Dropdown4OptionBackground0.Size
-                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
-                    E.Dropdown4Selected = "Option 1"
-                    E.Dropdown4Open     = false
-                    E.Dropdown4FiredIdx = 1
-                    E.Dropdown4Fired    = true
-                end
-            end
-            if E.Dropdown4Open then
-                local Pos  = E.Dropdown4OptionBackground1.Position
-                local Size = E.Dropdown4OptionBackground1.Size
-                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
-                    E.Dropdown4Selected = "Option 2"
-                    E.Dropdown4Open     = false
-                    E.Dropdown4FiredIdx = 2
-                    E.Dropdown4Fired    = true
-                end
-            end
-            if E.Dropdown4Open then
-                local Pos  = E.Dropdown4OptionBackground2.Position
-                local Size = E.Dropdown4OptionBackground2.Size
-                if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
-                    E.Dropdown4Selected = "Option 3"
-                    E.Dropdown4Open     = false
-                    E.Dropdown4FiredIdx = 3
-                    E.Dropdown4Fired    = true
-                end
             end
         end
 
@@ -4359,16 +4094,6 @@ end
         end
 
         do
-            local Pos  = E.Button5Background.Position
-            local Size = E.Button5Background.Size
-            local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                              and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
-            if ActiveTab == 1 and Over and LeftClicked then
-                E.Button5Fired   = true
-            end
-        end
-
-        do
             local SquarePos:  Vector2 = E.Square1Copy.Position
             local SquareSize: Vector2 = E.Square1Copy.Size
             local OnSquare: boolean = Mouse.X >= SquarePos.X and Mouse.X <= SquarePos.X + SquareSize.X
@@ -4611,11 +4336,6 @@ end
         local _prevCheckbox1Copy4: boolean = E.Checkbox1Copy4Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
         table.insert(_Conns, RunService.PostLocal:Connect(function()
             if not isrbxactive() then return end
-            if E.Dropdown4Fired then
-                local _i: number = E.Dropdown4FiredIdx
-                E.Dropdown4Fired = false
-                task.spawn(OnDropdown4Change, E.Dropdown4Selected, _i)
-            end
             if E.Dropdown1Fired then
                 local _i: number = E.Dropdown1FiredIdx
                 E.Dropdown1Fired = false
@@ -4649,10 +4369,6 @@ end
             if E.Button2Copy3Fired then
                 E.Button2Copy3Fired = false
                 task.spawn(OnButton2Copy3Click)
-            end
-            if E.Button5Fired then
-                E.Button5Fired = false
-                task.spawn(OnButton5Click)
             end
 
             if E.Checkbox1Checked ~= _prevCheckbox1 then
@@ -4716,16 +4432,6 @@ end
         E.Checkbox5Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox5Checked
         E.Checkbox1Copy3Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy3Checked
         E.Checkbox1Copy4Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox1Copy4Checked
-
-        E.Dropdown4Text.Text  = E.Dropdown4Selected
-        _FitText(E.Dropdown4Text, 122)
-        E.Dropdown4Arrow.Text = if E.Dropdown4Open then "▲" else "▼"
-        E.Dropdown4OptionBackground0.Visible = UIVisible and ActiveTab == 1 and E.Dropdown4Open
-        E.Dropdown4OptionText0.Visible       = UIVisible and ActiveTab == 1 and E.Dropdown4Open
-        E.Dropdown4OptionBackground1.Visible = UIVisible and ActiveTab == 1 and E.Dropdown4Open
-        E.Dropdown4OptionText1.Visible       = UIVisible and ActiveTab == 1 and E.Dropdown4Open
-        E.Dropdown4OptionBackground2.Visible = UIVisible and ActiveTab == 1 and E.Dropdown4Open
-        E.Dropdown4OptionText2.Visible       = UIVisible and ActiveTab == 1 and E.Dropdown4Open
 
         E.Dropdown1Text.Text  = E.Dropdown1Selected
         _FitText(E.Dropdown1Text, 183.52167077241995)
@@ -4860,13 +4566,6 @@ end
                               and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
             E.Button2Copy3Background.Color = if Over then _HC9 else _HC8
         end
-        do
-            local Pos  = E.Button5Background.Position
-            local Size = E.Button5Background.Size
-            local Over: boolean = Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
-                              and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y
-            E.Button5Background.Color = if Over then _HC10 else _HC10
-        end
 
         if E.Square1CopyDragActive then
             local NewPos: Vector2 = E.Square1CopyDragStartPos + (Mouse - E.Square1CopyDragStartMouse)
@@ -4875,7 +4574,7 @@ end
 
         if E.Square1DragActive or not E._slideDone then
             local _slot: number = 1 - _eOut(math.clamp((os.clock() - E._UIAt) * 3.3333, 0, 1))
-            local NewPos: Vector2 = if E.Square1DragActive then E.Square1DragStartPos + (Mouse - E.Square1DragStartMouse) else Vector2.new(1709, 733) + Vector2.new(40 * _slot, 0 * _slot)
+            local NewPos: Vector2 = if E.Square1DragActive then E.Square1DragStartPos + (Mouse - E.Square1DragStartMouse) else Vector2.new(648, 338) + Vector2.new(40 * _slot, 0 * _slot)
             if not E.Square1DragActive and _slot <= 0 then E._slideDone = true end
             E.Square1.Position = NewPos
 
@@ -4894,7 +4593,7 @@ end
 
             E.Text1.Position = NewPos + Vector2.new(71, 18)
 
-            E.Text1Copy.Position = NewPos + Vector2.new(126, 18)
+            E.Text1Copy.Position = NewPos + Vector2.new(126, 17)
 
             E.Line4.From = NewPos + Vector2.new(22, 22)
             E.Line4.To   = NewPos + Vector2.new(25, 14)
@@ -4926,14 +4625,14 @@ end
 
             E.Text3.Position = NewPos + Vector2.new(301, 97)
 
-            E.Text3Copy.Position = NewPos + Vector2.new(255, 292)
+            E.Text3Copy.Position = NewPos + Vector2.new(256, 292)
 
             E.Text3Copy2.Position = NewPos + Vector2.new(301, 166)
 
-            E.Text3Copy3.Position = NewPos + Vector2.new(297, 195)
+            E.Text3Copy3.Position = NewPos + Vector2.new(297, 194)
 
-            E.Button1Background.Position = NewPos + Vector2.new(309, 236)
-            E.Button1Text.Position       = NewPos + Vector2.new(401, 248)
+            E.Button1Background.Position = NewPos + Vector2.new(309, 235)
+            E.Button1Text.Position       = NewPos + Vector2.new(401, 247)
 
             E.Line1Copy.From = NewPos + Vector2.new(317, 152)
             E.Line1Copy.To   = NewPos + Vector2.new(493, 152)
@@ -4944,16 +4643,16 @@ end
 
             E.Square1Copy.Position = NewPos + Vector2.new(0, 0)
 
-            E.Line10Copy2.From = NewPos + Vector2.new(35, 33)
-            E.Line10Copy2.To   = NewPos + Vector2.new(38, 38)
+            E.Line10Copy2.From = NewPos + Vector2.new(35, 32)
+            E.Line10Copy2.To   = NewPos + Vector2.new(38, 37)
 
-            E.Line10Copy3.From = NewPos + Vector2.new(35, 33)
-            E.Line10Copy3.To   = NewPos + Vector2.new(33, 37)
+            E.Line10Copy3.From = NewPos + Vector2.new(35, 32)
+            E.Line10Copy3.To   = NewPos + Vector2.new(33, 36)
 
             E.Keybind1Background.Position = NewPos + Vector2.new(350, 284)
             E.Keybind1Text.Position       = NewPos + Vector2.new(400, 291)
 
-            E.Square2Copy.Position = NewPos + Vector2.new(248, 286)
+            E.Square2Copy.Position = NewPos + Vector2.new(249, 285)
 
             E.Text3Copy4.Position = NewPos + Vector2.new(321, 117)
         end
