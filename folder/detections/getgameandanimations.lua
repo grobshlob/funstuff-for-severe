@@ -54,8 +54,7 @@ function getPlayingAnimationTracks(animator)
         count += 1
         local ok3, track = pcall(memory.readu64, node + 0x10)
         if ok3 and track ~= 0 then
-            local ok4, isPlaying = pcall(memory.readu8, track, 0xa18)
-            local ok6, stringptr = pcall(memory.readu64, track, 0xd8)
+            local ok6, stringptr = pcall(memory.readu64, track, 0xd0)
             if ok6 and stringptr > 100000 then
                 local ok5, timePos = pcall(memory.readf32, track, 0xe8)
                 local ok7 , asset = pcall(memory.readstring, stringptr, 0xd8)
