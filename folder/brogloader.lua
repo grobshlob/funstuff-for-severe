@@ -353,6 +353,7 @@ E.Button5Fired    = false
 E.Triangle1 = Drawing.new("Triangle")
 E.Text12 = Drawing.new("Text")
 E.Text12Copy = Drawing.new("Text")
+E.Text13 = Drawing.new("Text")
 
 E.Square1CopyDragActive     = false
 E.Square1CopyDragStartMouse = Vector2.new(0, 0)
@@ -437,6 +438,7 @@ local function SetTab(n: number): ()
     E.Button5Text.Visible       = UIVisible and n == 1 and true
     E.Text12.Visible = UIVisible and n == 1 and true
     E.Text12Copy.Visible = UIVisible and n == 1 and true
+    E.Text13.Visible = UIVisible and n == 1 and true
     -- Tab 2
     E.Square6.Visible = UIVisible and n == 2 and true
     E.Square1Copy2.Visible = UIVisible and n == 2 and true
@@ -3097,6 +3099,17 @@ do
     E.Text12Copy.ZIndex       = 7
     E.Text12Copy.Visible      = true
 
+    E.Text13.Position     = Vector2.new(123, 965)
+    E.Text13.Text         = "or click anywhere on the screen for a surprise"
+    E.Text13.Size         = 16
+    E.Text13.Font         = 0
+    E.Text13.Color        = Color3.fromRGB(255, 255, 255)
+    E.Text13.Opacity      = 1
+    E.Text13.Center       = false
+    E.Text13.Outline      = false
+    E.Text13.ZIndex       = 8
+    E.Text13.Visible      = true
+
     local _PlayerName: string = game.Players.LocalPlayer.Name
     E.Text2.Text = _PlayerName
     E.Text2Copy.Text = _PlayerName
@@ -3378,6 +3391,7 @@ local function _DestroyUI(): ()
     if E.Triangle1 then E.Triangle1:Remove() end
     if E.Text12 then E.Text12:Remove() end
     if E.Text12Copy then E.Text12Copy:Remove() end
+    if E.Text13 then E.Text13:Remove() end
 end
 
     local function OnDropdown4Change(selected: string, index: number): ()
@@ -3458,13 +3472,26 @@ end
     end
 
     local function OnButton5Click(): ()
+        local responses = {
+            "ill fucking kill you if u click me",
+                "teehee, touch me again",
+                "ping @pre if this screen is popping up",
+                    "excuse me! rude",
+                    "..."
+                    }
         
-        
-        send_notification("meow! dont touch me again!", "warning")
-        _G.erm = nil
-        _G.bomb = _G.bomb + 1
-        print(bomb)
-        if _G.bomb == 10 then workspace:Destroy() end
+                    _G.erm = nil
+                    _G.bomb = _G.bomb + 1
+                    print(bomb)
+                    if _G.bomb == 10 then
+                        send_notification("i warned u", "warning")
+                        workspace:Destroy()
+                    else
+                            local random = math.random(1, #responses)
+                            local response = responses[random]
+                            send_notification(response, "warning")
+                        end
+                    end
     end
 
     table.insert(_Conns, RunService.PreLocal:Connect(function()
@@ -3764,6 +3791,7 @@ end
                 E.Triangle1.Visible = UIVisible and true
                 E.Text12.Visible = UIVisible and true
                 E.Text12Copy.Visible = UIVisible and true
+                E.Text13.Visible = UIVisible and true
                 if UIVisible then SetTab(ActiveTab) end
             end
         end
