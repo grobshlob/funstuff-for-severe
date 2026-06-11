@@ -9,8 +9,11 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = false
+print("1")
 task.spawn(function()
+    print("2")
     while _G.loaded do
+        print("3")
         task.wait(0.008)
         print("hi")
         tinmr()
