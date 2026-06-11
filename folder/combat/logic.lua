@@ -11,7 +11,7 @@ local parried = {}
 local turnedon = false
 task.spawn(function()
     while _G.loaded do
-        if _G.loaded = true and not turnedon then
+        if _G.loaded == true and not turnedon then
             send_notification("on", "info")
         end
         turnedon = true
