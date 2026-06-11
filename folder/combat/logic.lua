@@ -12,6 +12,7 @@ _G.loaded = false
 task.spawn(function()
     while _G.loaded do
         task.wait(0.008)
+        print("hi")
         tinmr()
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
