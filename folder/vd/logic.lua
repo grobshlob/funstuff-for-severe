@@ -13,8 +13,8 @@ function getkiller()
   end
   return animator, hpos
 end
-send_notification("script is currently down", "warning")
-task.wait(math.huge)
+--send_notification("script is currently down", "warning")
+--task.wait(math.huge)
 local function getPlayingAnimationTracks()
     local tracks = {}
     local anima = getkiller()
