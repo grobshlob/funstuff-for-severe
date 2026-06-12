@@ -1,5 +1,4 @@
-local time = nil
-while _G.slider == nil do time = _G.slider print("waiting") task.wait(0.1) end
+
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
@@ -17,6 +16,7 @@ task.spawn(function()
         task.wait(0.008)
         if not _G.loaded then continue end
         tinmr()
+        local time = _G.slider
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
             worldpos = t1.worldpos
