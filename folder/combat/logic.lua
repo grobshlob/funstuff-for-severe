@@ -9,7 +9,7 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = true
-_G.value = _G.slider
+_G.slider = 0
 task.spawn(function()
     while true do
         task.wait(0.008)
