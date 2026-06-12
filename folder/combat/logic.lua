@@ -16,7 +16,7 @@ task.spawn(function()
         task.wait(0.008)
         if not _G.loaded then continue end
         tinmr()
-        local time = _G.slider
+        local divide = _G.slider
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
             worldpos = t1.worldpos
@@ -43,7 +43,7 @@ task.spawn(function()
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = time / time - game:GetPing() / 1000
+                                local parrytime = time / divide - game:GetPing() / 1000
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
