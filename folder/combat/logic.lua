@@ -1,4 +1,5 @@
---while _G.slider == nil do print("waiting") task.wait(0.1) end
+local time = nil
+while _G.slider == nil do time = _G.slider print("waiting") task.wait(0.1) end
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
@@ -42,7 +43,7 @@ task.spawn(function()
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = time / _G.value - game:GetPing() / 1000
+                                local parrytime = time / _G.slider - game:GetPing() / 1000
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
