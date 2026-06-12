@@ -1,3 +1,4 @@
+while _G.slider == nil do print("waiting") task.wait(0.1) end
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
@@ -9,7 +10,7 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = false
-print(_G.slider)
+
 task.spawn(function()
     while true do
         task.wait(0.008)
