@@ -8,8 +8,8 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = true
-_G.slider = 0
+_G.loaded = false
+
 task.spawn(function()
     while true do
         task.wait(0.008)
