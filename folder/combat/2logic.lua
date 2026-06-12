@@ -17,6 +17,7 @@ task.spawn(function()
         if not _G.loaded then continue end
         tinmr()
         local divide = _G.slider
+        print(divide)
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
             worldpos = t1.worldpos
