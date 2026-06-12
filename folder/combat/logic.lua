@@ -15,7 +15,7 @@ task.spawn(function()
     while true do
         task.wait(0.008)
         if not _G.loaded then continue end
-        print("hi")
+        --print("hi")
         tinmr()
         local divide = _G.slider
         --print(divide)
