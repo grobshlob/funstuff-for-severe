@@ -19,7 +19,7 @@ local function getPlayingAnimationTracks()
     local tracks = {}
     local anima = getkiller()
     if anima then
-	    local ok, head = pcall(memory.readu64, anima, 0x880)
+	    local ok, head = pcall(memory.readu64, anima, 0x888)
 	    if not ok or head == 0 then return tracks end
 
 	    local ok2, node = pcall(memory.readu64, head)
