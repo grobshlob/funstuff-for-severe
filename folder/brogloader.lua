@@ -226,6 +226,14 @@ E.Checkbox6Background = Drawing.new("Square")
 E.Checkbox6Fill       = Drawing.new("Square")
 E.Checkbox6Label      = Drawing.new("Text")
 E.Checkbox6Checked    = false
+E.Checkbox1Copy4Background = Drawing.new("Square")
+E.Checkbox1Copy4Fill       = Drawing.new("Square")
+E.Checkbox1Copy4Label      = Drawing.new("Text")
+E.Checkbox1Copy4Checked    = true
+E.Checkbox1Copy5Background = Drawing.new("Square")
+E.Checkbox1Copy5Fill       = Drawing.new("Square")
+E.Checkbox1Copy5Label      = Drawing.new("Text")
+E.Checkbox1Copy5Checked    = true
 E.Circle1Copy = Drawing.new("Circle")
 E.Circle1Copy6 = Drawing.new("Circle")
 E.Circle1Copy2 = Drawing.new("Circle")
@@ -394,6 +402,12 @@ local function SetTab(n: number): ()
     E.Checkbox1Copy3Background.Visible = UIVisible and n == 3 and true
     E.Checkbox1Copy3Label.Visible      = UIVisible and n == 3 and true
     E.Checkbox1Copy3Fill.Visible       = UIVisible and n == 3 and E.Checkbox1Copy3Checked
+    E.Checkbox1Copy4Background.Visible = UIVisible and n == 3 and true
+    E.Checkbox1Copy4Label.Visible      = UIVisible and n == 3 and true
+    E.Checkbox1Copy4Fill.Visible       = UIVisible and n == 3 and E.Checkbox1Copy4Checked
+    E.Checkbox1Copy5Background.Visible = UIVisible and n == 3 and true
+    E.Checkbox1Copy5Label.Visible      = UIVisible and n == 3 and true
+    E.Checkbox1Copy5Fill.Visible       = UIVisible and n == 3 and E.Checkbox1Copy5Checked
     E.Circle1Copy3.Visible = UIVisible and n == 3 and true
     E.Circle1Copy4.Visible = UIVisible and n == 3 and true
     E.Line1Copy3.Visible = UIVisible and n == 3 and true
@@ -480,7 +494,7 @@ do
     E.Square1Copy.ZIndex    = -670000000
     E.Square1Copy.Visible   = true
 
-    E.Square6.Position  = Vector2.new(791, 426)
+    E.Square6.Position  = Vector2.new(789, 459)
     E.Square6.Size      = Vector2.new(214, 227)
     E.Square6.Color     = Color3.fromRGB(44, 26, 81)
     E.Square6.Opacity   = 0.50
@@ -491,7 +505,7 @@ do
     E.Square6.Visible   = true
 
     E.Square6Copy.Position  = Vector2.new(804, 427)
-    E.Square6Copy.Size      = Vector2.new(405, 185)
+    E.Square6Copy.Size      = Vector2.new(405, 236)
     E.Square6Copy.Color     = Color3.fromRGB(44, 26, 81)
     E.Square6Copy.Opacity   = 0.50
     E.Square6Copy.Filled    = true
@@ -521,7 +535,7 @@ do
     E.Square6Copy3.Visible   = true
 
     E.Square1Copy7.Position  = Vector2.new(823, 483)
-    E.Square1Copy7.Size      = Vector2.new(177, 104)
+    E.Square1Copy7.Size      = Vector2.new(177, 169)
     E.Square1Copy7.Color     = Color3.fromRGB(46, 0, 138)
     E.Square1Copy7.Opacity   = 0.36
     E.Square1Copy7.Filled    = true
@@ -560,7 +574,7 @@ do
     E.Square1.ZIndex    = 0
     E.Square1.Visible   = true
 
-    E.Square1Copy2.Position  = Vector2.new(791, 426)
+    E.Square1Copy2.Position  = Vector2.new(789, 459)
     E.Square1Copy2.Size      = Vector2.new(214, 227)
     E.Square1Copy2.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1Copy2.Opacity   = 1
@@ -571,7 +585,7 @@ do
     E.Square1Copy2.Visible   = true
 
     E.Square1Copy3.Position  = Vector2.new(804, 427)
-    E.Square1Copy3.Size      = Vector2.new(407, 185)
+    E.Square1Copy3.Size      = Vector2.new(407, 240)
     E.Square1Copy3.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1Copy3.Opacity   = 1
     E.Square1Copy3.Filled    = false
@@ -875,7 +889,7 @@ do
     E.Circle1.ZIndex    = 1
     E.Circle1.Visible   = true
 
-    E.Text1Copy2.Position     = Vector2.new(878, 441)
+    E.Text1Copy2.Position     = Vector2.new(876, 474)
     E.Text1Copy2.Text         = "BROG"
     E.Text1Copy2.Size         = 26
     E.Text1Copy2.Font         = 3
@@ -886,7 +900,7 @@ do
     E.Text1Copy2.ZIndex       = 1
     E.Text1Copy2.Visible      = true
 
-    E.Text1Copy3.Position     = Vector2.new(844, 620)
+    E.Text1Copy3.Position     = Vector2.new(842, 653)
     E.Text1Copy3.Text         = "Combat Warriors"
     E.Text1Copy3.Size         = 17
     E.Text1Copy3.Font         = 0
@@ -897,80 +911,80 @@ do
     E.Text1Copy3.ZIndex       = 1
     E.Text1Copy3.Visible      = true
 
-    E.Line4Copy.From      = Vector2.new(813, 447)
-    E.Line4Copy.To        = Vector2.new(817, 439)
+    E.Line4Copy.From      = Vector2.new(811, 480)
+    E.Line4Copy.To        = Vector2.new(815, 472)
     E.Line4Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line4Copy.Opacity   = 1
     E.Line4Copy.Thickness = 1
     E.Line4Copy.ZIndex    = 1
     E.Line4Copy.Visible   = true
 
-    E.Line5Copy.From      = Vector2.new(817, 439)
-    E.Line5Copy.To        = Vector2.new(821, 446)
+    E.Line5Copy.From      = Vector2.new(815, 472)
+    E.Line5Copy.To        = Vector2.new(819, 479)
     E.Line5Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line5Copy.Opacity   = 1
     E.Line5Copy.Thickness = 1
     E.Line5Copy.ZIndex    = 1
     E.Line5Copy.Visible   = true
 
-    E.Line6Copy.From      = Vector2.new(833, 446)
-    E.Line6Copy.To        = Vector2.new(837, 439)
+    E.Line6Copy.From      = Vector2.new(831, 479)
+    E.Line6Copy.To        = Vector2.new(835, 472)
     E.Line6Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line6Copy.Opacity   = 1
     E.Line6Copy.Thickness = 1
     E.Line6Copy.ZIndex    = 1
     E.Line6Copy.Visible   = true
 
-    E.Line7Copy.From      = Vector2.new(837, 439)
-    E.Line7Copy.To        = Vector2.new(840, 448)
+    E.Line7Copy.From      = Vector2.new(835, 472)
+    E.Line7Copy.To        = Vector2.new(839, 481)
     E.Line7Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line7Copy.Opacity   = 1
     E.Line7Copy.Thickness = 1
     E.Line7Copy.ZIndex    = 1
     E.Line7Copy.Visible   = true
 
-    E.Line8Copy2.From      = Vector2.new(809, 459)
-    E.Line8Copy2.To        = Vector2.new(817, 461)
+    E.Line8Copy2.From      = Vector2.new(807, 492)
+    E.Line8Copy2.To        = Vector2.new(815, 494)
     E.Line8Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8Copy2.Opacity   = 1
     E.Line8Copy2.Thickness = 1
     E.Line8Copy2.ZIndex    = 1
     E.Line8Copy2.Visible   = true
 
-    E.Line8Copy3.From      = Vector2.new(808, 464)
-    E.Line8Copy3.To        = Vector2.new(818, 464)
+    E.Line8Copy3.From      = Vector2.new(806, 497)
+    E.Line8Copy3.To        = Vector2.new(816, 497)
     E.Line8Copy3.Color     = Color3.fromRGB(255, 255, 255)
     E.Line8Copy3.Opacity   = 1
     E.Line8Copy3.Thickness = 1
     E.Line8Copy3.ZIndex    = 1
     E.Line8Copy3.Visible   = true
 
-    E.Line9Copy2.From      = Vector2.new(836, 464)
-    E.Line9Copy2.To        = Vector2.new(845, 466)
+    E.Line9Copy2.From      = Vector2.new(834, 497)
+    E.Line9Copy2.To        = Vector2.new(843, 499)
     E.Line9Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9Copy2.Opacity   = 1
     E.Line9Copy2.Thickness = 1
     E.Line9Copy2.ZIndex    = 1
     E.Line9Copy2.Visible   = true
 
-    E.Line9Copy3.From      = Vector2.new(837, 462)
-    E.Line9Copy3.To        = Vector2.new(845, 460)
+    E.Line9Copy3.From      = Vector2.new(835, 495)
+    E.Line9Copy3.To        = Vector2.new(843, 493)
     E.Line9Copy3.Color     = Color3.fromRGB(255, 255, 255)
     E.Line9Copy3.Opacity   = 1
     E.Line9Copy3.Thickness = 1
     E.Line9Copy3.ZIndex    = 1
     E.Line9Copy3.Visible   = true
 
-    E.Line10.From      = Vector2.new(827, 460)
-    E.Line10.To        = Vector2.new(825, 464)
+    E.Line10.From      = Vector2.new(825, 493)
+    E.Line10.To        = Vector2.new(823, 497)
     E.Line10.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10.Opacity   = 1
     E.Line10.Thickness = 1
     E.Line10.ZIndex    = 1
     E.Line10.Visible   = true
 
-    E.Line10Copy.From      = Vector2.new(827, 460)
-    E.Line10Copy.To        = Vector2.new(830, 465)
+    E.Line10Copy.From      = Vector2.new(825, 493)
+    E.Line10Copy.To        = Vector2.new(828, 498)
     E.Line10Copy.Color     = Color3.fromRGB(255, 255, 255)
     E.Line10Copy.Opacity   = 1
     E.Line10Copy.Thickness = 1
@@ -1182,7 +1196,7 @@ do
     E.Checkbox1Copy2Label.Visible      = true
 
     E.Square1Copy5.Position  = Vector2.new(823, 483)
-    E.Square1Copy5.Size      = Vector2.new(177, 104)
+    E.Square1Copy5.Size      = Vector2.new(177, 170)
     E.Square1Copy5.Color     = Color3.fromRGB(77, 8, 217)
     E.Square1Copy5.Opacity   = 1
     E.Square1Copy5.Filled    = false
@@ -1703,7 +1717,7 @@ do
     E.Text9.ZIndex       = 1
     E.Text9.Visible      = true
 
-    E.Slider1Track.Position  = Vector2.new(834, 574)
+    E.Slider1Track.Position  = Vector2.new(832, 607)
     E.Slider1Track.Size      = Vector2.new(131, 13)
     E.Slider1Track.Color     = Color3.fromRGB(255, 0, 136)
     E.Slider1Track.Opacity   = 0.30
@@ -1711,14 +1725,14 @@ do
     E.Slider1Track.ZIndex    = 1
     E.Slider1Track.Visible   = true
 
-    E.Slider1Fill.Position   = Vector2.new(834, 574)
+    E.Slider1Fill.Position   = Vector2.new(832, 607)
     E.Slider1Fill.Size       = Vector2.new(0, 13)
     E.Slider1Fill.Color      = Color3.fromRGB(255, 0, 136)
     E.Slider1Fill.Filled     = true
     E.Slider1Fill.ZIndex     = 2
     E.Slider1Fill.Visible    = true
 
-    E.Slider1Knob.Position   = Vector2.new(829, 572)
+    E.Slider1Knob.Position   = Vector2.new(827, 605)
     E.Slider1Knob.Size       = Vector2.new(10, 17)
     E.Slider1Knob.Color      = Color3.fromRGB(255, 255, 255)
     E.Slider1Knob.Filled     = true
@@ -1726,7 +1740,7 @@ do
     E.Slider1Knob.ZIndex     = 3
     E.Slider1Knob.Visible    = true
 
-    E.Slider1Label.Position  = Vector2.new(899, 558)
+    E.Slider1Label.Position  = Vector2.new(897, 591)
     E.Slider1Label.Text      = _FmtNum(E.Slider1Value) .. ""
     E.Slider1Label.Size      = 11
     E.Slider1Label.Font      = 0
@@ -1736,7 +1750,7 @@ do
     E.Slider1Label.Visible   = true
     _FitText(E.Slider1Label, 130.75)
 
-    E.Text10.Position     = Vector2.new(858, 535)
+    E.Text10.Position     = Vector2.new(856, 568)
     E.Text10.Text         = "Timing value"
     E.Text10.Size         = 16
     E.Text10.Font         = 0
@@ -1747,7 +1761,7 @@ do
     E.Text10.ZIndex       = 1
     E.Text10.Visible      = true
 
-    E.Text11.Position     = Vector2.new(826, 593)
+    E.Text11.Position     = Vector2.new(824, 626)
     E.Text11.Text         = "late"
     E.Text11.Size         = 11
     E.Text11.Font         = 0
@@ -1758,7 +1772,7 @@ do
     E.Text11.ZIndex       = 1
     E.Text11.Visible      = true
 
-    E.Text11Copy.Position     = Vector2.new(953, 593)
+    E.Text11Copy.Position     = Vector2.new(951, 626)
     E.Text11Copy.Text         = "early"
     E.Text11Copy.Size         = 11
     E.Text11Copy.Font         = 0
@@ -1769,7 +1783,7 @@ do
     E.Text11Copy.ZIndex       = 1
     E.Text11Copy.Visible      = true
 
-    E.Checkbox6Background.Position  = Vector2.new(837, 487)
+    E.Checkbox6Background.Position  = Vector2.new(835, 520)
     E.Checkbox6Background.Size      = Vector2.new(34, 27)
     E.Checkbox6Background.Color     = Color3.fromRGB(171, 6, 183)
     E.Checkbox6Background.Filled    = true
@@ -1777,14 +1791,14 @@ do
     E.Checkbox6Background.ZIndex    = 1
     E.Checkbox6Background.Visible   = true
 
-    E.Checkbox6Fill.Position  = Vector2.new(840, 490)
+    E.Checkbox6Fill.Position  = Vector2.new(838, 523)
     E.Checkbox6Fill.Size      = Vector2.new(28, 21)
     E.Checkbox6Fill.Color     = Color3.fromRGB(212, 0, 255)
     E.Checkbox6Fill.Filled    = true
     E.Checkbox6Fill.ZIndex    = 2
     E.Checkbox6Fill.Visible   = false
 
-    E.Checkbox6Label.Position     = Vector2.new(877, 493)
+    E.Checkbox6Label.Position     = Vector2.new(875, 526)
     E.Checkbox6Label.Text         = "Auto Parry"
     E.Checkbox6Label.Size         = 16
     E.Checkbox6Label.Font         = 2
@@ -1792,6 +1806,56 @@ do
     E.Checkbox6Label.Outline      = false
     E.Checkbox6Label.ZIndex       = 2
     E.Checkbox6Label.Visible      = true
+
+    E.Checkbox1Copy4Background.Position  = Vector2.new(829, 588)
+    E.Checkbox1Copy4Background.Size      = Vector2.new(26, 24)
+    E.Checkbox1Copy4Background.Color     = Color3.fromRGB(92, 79, 191)
+    E.Checkbox1Copy4Background.Filled    = true
+    E.Checkbox1Copy4Background.Thickness = 1
+    E.Checkbox1Copy4Background.ZIndex    = 1
+    E.Checkbox1Copy4Background.Visible   = true
+
+    E.Checkbox1Copy4Fill.Position  = Vector2.new(832, 591)
+    E.Checkbox1Copy4Fill.Size      = Vector2.new(20, 18)
+    E.Checkbox1Copy4Fill.Color     = Color3.fromRGB(219, 0, 161)
+    E.Checkbox1Copy4Fill.Filled    = true
+    E.Checkbox1Copy4Fill.ZIndex    = 2
+    E.Checkbox1Copy4Fill.Visible   = true
+
+    E.Checkbox1Copy4Label.Position     = Vector2.new(861, 592)
+    E.Checkbox1Copy4Label.Text         = "Vault ESP"
+    E.Checkbox1Copy4Label.Size         = 16
+    E.Checkbox1Copy4Label.Font         = 2
+    E.Checkbox1Copy4Label.Color        = Color3.fromRGB(255, 255, 255)
+    E.Checkbox1Copy4Label.Outline      = true
+    E.Checkbox1Copy4Label.OutlineColor = Vector3.new(0, 0, 0)
+    E.Checkbox1Copy4Label.ZIndex       = 2
+    E.Checkbox1Copy4Label.Visible      = true
+
+    E.Checkbox1Copy5Background.Position  = Vector2.new(829, 619)
+    E.Checkbox1Copy5Background.Size      = Vector2.new(26, 24)
+    E.Checkbox1Copy5Background.Color     = Color3.fromRGB(92, 79, 191)
+    E.Checkbox1Copy5Background.Filled    = true
+    E.Checkbox1Copy5Background.Thickness = 1
+    E.Checkbox1Copy5Background.ZIndex    = 1
+    E.Checkbox1Copy5Background.Visible   = true
+
+    E.Checkbox1Copy5Fill.Position  = Vector2.new(832, 622)
+    E.Checkbox1Copy5Fill.Size      = Vector2.new(20, 18)
+    E.Checkbox1Copy5Fill.Color     = Color3.fromRGB(219, 0, 161)
+    E.Checkbox1Copy5Fill.Filled    = true
+    E.Checkbox1Copy5Fill.ZIndex    = 2
+    E.Checkbox1Copy5Fill.Visible   = true
+
+    E.Checkbox1Copy5Label.Position     = Vector2.new(861, 623)
+    E.Checkbox1Copy5Label.Text         = "Pallet ESP"
+    E.Checkbox1Copy5Label.Size         = 16
+    E.Checkbox1Copy5Label.Font         = 2
+    E.Checkbox1Copy5Label.Color        = Color3.fromRGB(255, 255, 255)
+    E.Checkbox1Copy5Label.Outline      = true
+    E.Checkbox1Copy5Label.OutlineColor = Vector3.new(0, 0, 0)
+    E.Checkbox1Copy5Label.ZIndex       = 2
+    E.Checkbox1Copy5Label.Visible      = true
 
     E.Circle1Copy.Position  = Vector2.new(691, 365)
     E.Circle1Copy.Radius    = 3.675981117494274
@@ -1803,7 +1867,7 @@ do
     E.Circle1Copy.ZIndex    = 2
     E.Circle1Copy.Visible   = true
 
-    E.Circle1Copy6.Position  = Vector2.new(833, 453)
+    E.Circle1Copy6.Position  = Vector2.new(831, 486)
     E.Circle1Copy6.Radius    = 3.675981117494274
     E.Circle1Copy6.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1Copy6.Opacity   = 1
@@ -1813,7 +1877,7 @@ do
     E.Circle1Copy6.ZIndex    = 2
     E.Circle1Copy6.Visible   = true
 
-    E.Circle1Copy2.Position  = Vector2.new(821, 453)
+    E.Circle1Copy2.Position  = Vector2.new(819, 486)
     E.Circle1Copy2.Radius    = 3.675981117494274
     E.Circle1Copy2.Color     = Color3.fromRGB(255, 255, 255)
     E.Circle1Copy2.Opacity   = 1
@@ -1893,8 +1957,8 @@ do
     E.Square1Copy13.ZIndex    = 2
     E.Square1Copy13.Visible   = true
 
-    E.Line1Copy2.From      = Vector2.new(802, 473)
-    E.Line1Copy2.To        = Vector2.new(993, 473)
+    E.Line1Copy2.From      = Vector2.new(800, 506)
+    E.Line1Copy2.To        = Vector2.new(991, 506)
     E.Line1Copy2.Color     = Color3.fromRGB(133, 133, 133)
     E.Line1Copy2.Opacity   = 0.33
     E.Line1Copy2.Thickness = 1
@@ -1965,15 +2029,15 @@ do
     E.Line1Copy10.ZIndex    = 3
     E.Line1Copy10.Visible   = true
 
-    E.Line1Copy11.From      = Vector2.new(811, 554)
-    E.Line1Copy11.To        = Vector2.new(992, 554)
+    E.Line1Copy11.From      = Vector2.new(809, 587)
+    E.Line1Copy11.To        = Vector2.new(990, 587)
     E.Line1Copy11.Color     = Color3.fromRGB(133, 133, 133)
     E.Line1Copy11.Opacity   = 0.33
     E.Line1Copy11.Thickness = 1
     E.Line1Copy11.ZIndex    = 3
     E.Line1Copy11.Visible   = true
 
-    E.Button2Background.Position  = Vector2.new(816, 441)
+    E.Button2Background.Position  = Vector2.new(814, 474)
     E.Button2Background.Size      = Vector2.new(23, 23)
     E.Button2Background.Color     = Color3.fromRGB(194, 0, 78)
     E.Button2Background.Filled    = false
@@ -1982,7 +2046,7 @@ do
     E.Button2Background.ZIndex    = 4
     E.Button2Background.Visible   = false
 
-    E.Button2Text.Position     = Vector2.new(827, 444)
+    E.Button2Text.Position     = Vector2.new(826, 477)
     E.Button2Text.Text         = "."
     E.Button2Text.Size         = 16
     E.Button2Text.Font         = 2
@@ -2224,6 +2288,12 @@ local function _DestroyUI(): ()
     if E.Checkbox6Background then E.Checkbox6Background:Remove() end
     if E.Checkbox6Fill then E.Checkbox6Fill:Remove() end
     if E.Checkbox6Label then E.Checkbox6Label:Remove() end
+    if E.Checkbox1Copy4Background then E.Checkbox1Copy4Background:Remove() end
+    if E.Checkbox1Copy4Fill then E.Checkbox1Copy4Fill:Remove() end
+    if E.Checkbox1Copy4Label then E.Checkbox1Copy4Label:Remove() end
+    if E.Checkbox1Copy5Background then E.Checkbox1Copy5Background:Remove() end
+    if E.Checkbox1Copy5Fill then E.Checkbox1Copy5Fill:Remove() end
+    if E.Checkbox1Copy5Label then E.Checkbox1Copy5Label:Remove() end
     if E.Circle1Copy then E.Circle1Copy:Remove() end
     if E.Circle1Copy6 then E.Circle1Copy6:Remove() end
     if E.Circle1Copy2 then E.Circle1Copy2:Remove() end
@@ -2305,6 +2375,14 @@ end
     end
 
     local function OnCheckbox6Toggle(state: boolean): ()
+        
+    end
+
+    local function OnCheckbox1Copy4Toggle(state: boolean): ()
+        
+    end
+
+    local function OnCheckbox1Copy5Toggle(state: boolean): ()
         
     end
 
@@ -2418,6 +2496,24 @@ end
             if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
             and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
                 E.Checkbox6Checked = not E.Checkbox6Checked
+            end
+        end
+
+        if ActiveTab == 3 and LeftClicked then
+            local Pos  = E.Checkbox1Copy4Background.Position
+            local Size = E.Checkbox1Copy4Background.Size
+            if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+            and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                E.Checkbox1Copy4Checked = not E.Checkbox1Copy4Checked
+            end
+        end
+
+        if ActiveTab == 3 and LeftClicked then
+            local Pos  = E.Checkbox1Copy5Background.Position
+            local Size = E.Checkbox1Copy5Background.Size
+            if Mouse.X >= Pos.X and Mouse.X <= Pos.X + Size.X
+            and Mouse.Y >= Pos.Y and Mouse.Y <= Pos.Y + Size.Y then
+                E.Checkbox1Copy5Checked = not E.Checkbox1Copy5Checked
             end
         end
 
@@ -2580,6 +2676,10 @@ end
                 E.Text11Copy.Visible = UIVisible and true
                 E.Checkbox6Background.Visible = UIVisible and true
                 E.Checkbox6Label.Visible      = UIVisible and true
+                E.Checkbox1Copy4Background.Visible = UIVisible and true
+                E.Checkbox1Copy4Label.Visible      = UIVisible and true
+                E.Checkbox1Copy5Background.Visible = UIVisible and true
+                E.Checkbox1Copy5Label.Visible      = UIVisible and true
                 E.Circle1Copy.Visible = UIVisible and true
                 E.Circle1Copy6.Visible = UIVisible and true
                 E.Circle1Copy2.Visible = UIVisible and true
@@ -2870,6 +2970,22 @@ end
                     OnChild = true
                 end
             end
+            do
+                local ChildPos  = E.Checkbox1Copy4Background.Position
+                local ChildSize = E.Checkbox1Copy4Background.Size
+                if Mouse.X >= ChildPos.X and Mouse.X <= ChildPos.X + ChildSize.X
+                and Mouse.Y >= ChildPos.Y and Mouse.Y <= ChildPos.Y + ChildSize.Y then
+                    OnChild = true
+                end
+            end
+            do
+                local ChildPos  = E.Checkbox1Copy5Background.Position
+                local ChildSize = E.Checkbox1Copy5Background.Size
+                if Mouse.X >= ChildPos.X and Mouse.X <= ChildPos.X + ChildSize.X
+                and Mouse.Y >= ChildPos.Y and Mouse.Y <= ChildPos.Y + ChildSize.Y then
+                    OnChild = true
+                end
+            end
             if LeftPressed and not OnChild and (E.Square1Copy3DragActive or OnSquare) then
                 if not E.Square1Copy3DragActive then
                     E.Square1Copy3DragActive     = true
@@ -2966,6 +3082,8 @@ end
         local _prevCheckbox1Copy2: boolean = E.Checkbox1Copy2Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
         local _prevCheckbox1Copy3: boolean = E.Checkbox1Copy3Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
         local _prevCheckbox6: boolean = E.Checkbox6Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy4: boolean = E.Checkbox1Copy4Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
+        local _prevCheckbox1Copy5: boolean = E.Checkbox1Copy5Checked  -- edge-trigger tracker: fire the callback only when the state actually changes
         table.insert(_Conns, RunService.PostLocal:Connect(function()
             if not isrbxactive() then return end
             if E.Dropdown1Fired then
@@ -3046,6 +3164,24 @@ end
                         end
                 end)
             end
+
+            if E.Checkbox1Copy4Checked ~= _prevCheckbox1Copy4 then
+                local state: boolean = E.Checkbox1Copy4Checked
+                _prevCheckbox1Copy4 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.vaultesp = not _G.vaultesp
+                end)
+            end
+
+            if E.Checkbox1Copy5Checked ~= _prevCheckbox1Copy5 then
+                local state: boolean = E.Checkbox1Copy5Checked
+                _prevCheckbox1Copy5 = state
+                task.spawn(function()
+                    local wait = _noopWait
+                    _G.pallet = not _G.pallet
+                end)
+            end
         end))
     end
 
@@ -3063,6 +3199,8 @@ end
         E.Checkbox5Fill.Visible = UIVisible and ActiveTab == 4 and E.Checkbox5Checked
         E.Checkbox1Copy3Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy3Checked
         E.Checkbox6Fill.Visible = UIVisible and ActiveTab == 2 and E.Checkbox6Checked
+        E.Checkbox1Copy4Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy4Checked
+        E.Checkbox1Copy5Fill.Visible = UIVisible and ActiveTab == 3 and E.Checkbox1Copy5Checked
 
         E.Dropdown1Text.Text  = E.Dropdown1Selected
         _FitText(E.Dropdown1Text, 183.52167077241995)
@@ -3237,7 +3375,7 @@ end
             E.Line6Copy.To   = NewPos + Vector2.new(46, 13)
 
             E.Line7Copy.From = NewPos + Vector2.new(46, 13)
-            E.Line7Copy.To   = NewPos + Vector2.new(49, 22)
+            E.Line7Copy.To   = NewPos + Vector2.new(50, 22)
 
             E.Line8Copy2.From = NewPos + Vector2.new(18, 33)
             E.Line8Copy2.To   = NewPos + Vector2.new(26, 35)
@@ -3368,6 +3506,14 @@ end
             E.Checkbox1Copy3Background.Position  = NewPos + Vector2.new(221, 127)
             E.Checkbox1Copy3Fill.Position        = NewPos + Vector2.new(224, 130)
             E.Checkbox1Copy3Label.Position       = NewPos + Vector2.new(253, 131)
+
+            E.Checkbox1Copy4Background.Position  = NewPos + Vector2.new(25, 161)
+            E.Checkbox1Copy4Fill.Position        = NewPos + Vector2.new(28, 164)
+            E.Checkbox1Copy4Label.Position       = NewPos + Vector2.new(57, 165)
+
+            E.Checkbox1Copy5Background.Position  = NewPos + Vector2.new(25, 192)
+            E.Checkbox1Copy5Fill.Position        = NewPos + Vector2.new(28, 195)
+            E.Checkbox1Copy5Label.Position       = NewPos + Vector2.new(57, 196)
 
             E.Square1Copy8.Position = NewPos + Vector2.new(213, 57)
         end
