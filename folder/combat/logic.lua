@@ -10,9 +10,9 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = false
-_G.ap = false
+_G.autop = false
 task.spawn(function()
-    while _G.ap do
+    while _G.autop do
         task.wait(0.008)
         if not _G.loaded then continue end
         --print("hi")
