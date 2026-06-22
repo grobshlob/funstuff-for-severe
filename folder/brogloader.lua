@@ -2334,39 +2334,39 @@ end
     end
 
     local function OnCheckbox1Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox1CopyToggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox1Copy2Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox3Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox3CopyToggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox3Copy2Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox4Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox5Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox1Copy3Toggle(state: boolean): ()
-        
+
     end
 
     local function OnSlider1Change(value: number): ()
@@ -2375,7 +2375,7 @@ end
     end
 
     local function OnCheckbox6Toggle(state: boolean): ()
-        
+
     end
 
     local function OnCheckbox1Copy4Toggle(state: boolean): ()
@@ -3157,7 +3157,7 @@ end
                 _prevCheckbox6 = state
                 task.spawn(function()
                     local wait = _noopWait
-                    _G.autop = not _G.autop
+                    _G.loaded = not _G.loaded
                     if state then
                         send_notification("on", "info")
                     else send_notification("off", "info")
