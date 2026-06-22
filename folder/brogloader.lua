@@ -3157,7 +3157,7 @@ end
                 _prevCheckbox6 = state
                 task.spawn(function()
                     local wait = _noopWait
-                    _G.loaded = not _G.loaded
+                    _G.autop = not _G.autop
                     if state then
                         send_notification("on", "info")
                     else send_notification("off", "info")
