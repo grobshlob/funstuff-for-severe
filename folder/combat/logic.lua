@@ -1,4 +1,3 @@
-
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
@@ -9,12 +8,12 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.autop = false
+_G.loaded = false
 
 task.spawn(function()
     while true do
-        if not _G.autop then continue end
         task.wait(0.008)
+        if not _G.loaded then continue end
         --print("hi")
         tinmr()
         local divide = _G.slider
@@ -22,14 +21,14 @@ task.spawn(function()
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
             worldpos = t1.worldpos
-                
+
             local char = lp.Character
             if not char then continue end
             if not _G.targetAnimator then continue end
-                
+
             local ok, tracks = pcall(getPlayingAnimationTracks, _G.targetAnimator)
             if not ok then continue end
-        
+
             local foundSwingPtr = nil
             for _, t in ipairs(tracks) do
                 if t.assetid and _G.dontignore[t.assetid] and not parried[t.ptr] then
