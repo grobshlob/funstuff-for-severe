@@ -12,7 +12,7 @@ local parried = {}
 _G.loaded = false
 
 task.spawn(function()
-    while true do
+    while _G.ap do
         task.wait(0.008)
         if not _G.loaded then continue end
         --print("hi")
