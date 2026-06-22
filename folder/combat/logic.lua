@@ -10,7 +10,7 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = false
-_G.ap = true
+_G.ap = false
 task.spawn(function()
     while _G.ap do
         task.wait(0.008)
