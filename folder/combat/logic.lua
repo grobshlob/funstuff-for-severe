@@ -9,12 +9,12 @@ local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = false
 _G.autop = false
+
 task.spawn(function()
-    while _G.autop do
+    while true do
+        if not _G.autop then continue end
         task.wait(0.008)
-        if not _G.loaded then continue end
         --print("hi")
         tinmr()
         local divide = _G.slider
