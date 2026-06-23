@@ -26,7 +26,7 @@ window:createtoggle(cw, {
 	Name = "Toggle",
 	Col = 1,
 	Default = false,
-	Callback = function(state) if state then _G.loaded = not _G.loaded end end
+	Callback = function(state) if state then _G.loaded = not _G.loaded send_notification("on", "success") end end
 })
 window:createlabel(cw, "Modify", 2)
 window:createseparator(cw, 2)
