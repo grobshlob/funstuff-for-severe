@@ -1,3 +1,63 @@
+local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
+
+local window = severeui:createwindow({
+    Title = "Brog: Combat Warriors",
+    Version = ";-;",
+    Keybind = "LeftAlt",
+    ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
+    CustomResolution = Vector2.new(350, 160), -- adjust ui resolution
+    DPIScale = _G.dpi, --only use if you have a custom scale set or 4k res, increments of .25
+    
+    DefaultTab = "Main", 
+    TabAlignment = "Center", -- options: "Left", "Center", "Right"
+    
+    DefaultColor = Color3.fromRGB(28, 27, 31),
+    DefaultAccent = Color3.fromRGB(208, 188, 255),
+    DefaultSnowfall = true,
+    DefaultScale = 1.0,
+    DefaultFont = 5 -- all fonts are at the bottom of the script
+})
+
+-- create tabs
+local vd = window:createtab("Main")
+local vdesp = window:createtab("ESP")
+window:createlabel(vd, "Auto Parry")
+window:createseparator(cw, 1)
+window:createtoggle(cw, {
+	Name = "Toggle",
+	Col = 1,
+	Default = true,
+	Callback = function(state) if state then _G.auto = true else _G.auto = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Gens",
+		Col = 1,
+		Default = true,
+		Callback = function(state) if state then _G.genesp = true else _G.genesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Killer",
+		Col = 1,
+		Default = true,
+		Callback = function(state) if state then _G.killesp = true else _G.killesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Windows",
+		Col = 2,
+		Default = true,
+		Callback = function(state) if state then _G.vaultesp = true else _G.vaultesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Pallets",
+		Col = 2,
+		Default = true,
+		Callback = function(state) if state then _G.pallet = true else _G.pallet = false end end
+})
+
+_G.vaultesp = false
+_G.pallet = false
+_G.killesp = false
+_G.genesp = false
 local players = game.Players
 local lp = players.LocalPlayer
 local ws = game.Workspace
@@ -66,8 +126,10 @@ local dontdihgnore = {
 }
 
 local swingPtr = nil
+_G.auto = false
 task.spawn(function()
 	while task.wait(0.016) do
+		if not _G.auto then continue end
 	    local ok, tracks = pcall(getPlayingAnimationTracks)
 	    if not ok then continue end
 		if lp then
@@ -108,8 +170,7 @@ task.spawn(function()
 end)
 local cam = ws.CurrentCamera
 local rs = game.RunService
-_G.killesp = true
-_G.genesp = true
+
 local killerdata = {}
 function getkiller2()
 	killerdata = {}
@@ -161,8 +222,7 @@ local function draw(part1, math1, math2, math3, math4, math5, math6, rgb)
 		table.insert(data, {main = part, pos = partpos, a = A, b = B, c = C, d = D, boxsize = size, color = rgb})
 	end
 end
-_G.vaultesp = true
-_G.pallet = true
+
 function getgens()
 	data = {}
 	local ok2, map = pcall(function() return ws.Map end)
