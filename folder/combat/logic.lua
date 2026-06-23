@@ -6,7 +6,7 @@ local window = severeui:createwindow({
     Keybind = "LeftAlt",
     ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
     CustomResolution = Vector2.new(350, 160), -- adjust ui resolution
-    DPIScale = 1, --only use if you have a custom scale set or 4k res, increments of .25
+    DPIScale = _G.dpi, --only use if you have a custom scale set or 4k res, increments of .25
     
     DefaultTab = "Main", 
     TabAlignment = "Center", -- options: "Left", "Center", "Right"
