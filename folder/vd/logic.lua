@@ -1,7 +1,7 @@
 local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
-print(_G.dpi)
+--print(_G.dpi)
 local window = severeui:createwindow({
-    Title = "Brog: Combat Warriors",
+    Title = "Brog: Violence District",
     Version = ";-;",
     Keybind = "LeftAlt",
     ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
@@ -22,8 +22,8 @@ local window = severeui:createwindow({
 local vd = window:createtab("Main")
 local vdesp = window:createtab("ESP")
 window:createlabel(vd, "Auto Parry")
-window:createseparator(cw, 1)
-window:createtoggle(cw, {
+window:createseparator(vd, 1)
+window:createtoggle(vd, {
 	Name = "Toggle",
 	Col = 1,
 	Default = true,
