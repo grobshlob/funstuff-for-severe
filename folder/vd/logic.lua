@@ -1,5 +1,5 @@
 local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
-
+print(_G.dpi)
 local window = severeui:createwindow({
     Title = "Brog: Combat Warriors",
     Version = ";-;",
