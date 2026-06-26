@@ -42,7 +42,7 @@ end
 
 function getPlayingAnimationTracks(animator)
     local tracks = {}
-    local ok, head = pcall(memory.readu64, animator, 0x888)
+    local ok, head = pcall(memory.readu64, animator, 0x888) --0x9e8
     if not ok or head == 0 then return tracks end
 
     local ok2, node = pcall(memory.readu64, head)
