@@ -214,7 +214,6 @@ local function draw(part1, math1, math2, math3, math4, math5, math6, rgb)
 	local dist = vector.magnitude(mroot.Position - partpos)
 	local hh = math.clamp(math1 / dist, math2, math3)
 	local hw = math.clamp(math4 / dist, math5, math6)
-	if not _G.genesp then vis = false end
 	if vis then
 		local A = Vector2.new(screen.X - hw, screen.Y - hh) 
 		local B = Vector2.new(screen.X + hw, screen.Y - hh) 
