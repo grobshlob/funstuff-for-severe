@@ -204,6 +204,7 @@ end
 local data = {}
 local function draw(part1, math1, math2, math3, math4, math5, math6, rgb)
 	local part = part1
+	if not part:IsA("BasePart") then  continue end
 	local partpos = part.Position
 	local screen, vis = cam:WorldToScreenPoint(partpos)
 	local chara = lp.Character
