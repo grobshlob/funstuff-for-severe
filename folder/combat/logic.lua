@@ -55,7 +55,7 @@ task.spawn(function()
         if not _G.loaded then continue end
         --print("hi")
         tinmr()
-        local divide = _G.slider
+        local divide = _G.slider or 1
         --print(divide)
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
