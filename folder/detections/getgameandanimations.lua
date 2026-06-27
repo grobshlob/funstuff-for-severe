@@ -23,7 +23,8 @@ function tinmr()
             local troot = tchar:FindFirstChild("HumanoidRootPart")
             if troot then
                 if troot:IsA("Part") then
-                    local rpos = troot.Position
+                    local ok, rpos = pcall(function() return troot.Position end)
+                    if not ok then return end
                     local root = char:FindFirstChild("HumanoidRootPart")
                     if not root or not rpos then continue end
                     if getDistance(root.Position, rpos) <= 14 then
