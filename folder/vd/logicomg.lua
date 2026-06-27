@@ -79,7 +79,7 @@ local function getPlayingAnimationTracks()
     local tracks = {}
     local anima = getkiller()
     if anima then
-	    local ok, head = pcall(memory.readu64, anima, 0x888) --0x9e8
+	    local ok, head = pcall(memory.readu64, anima, 0x9e8)
 	    if not ok or head == 0 then return tracks end
 
 	    local ok2, node = pcall(memory.readu64, head)
@@ -204,7 +204,7 @@ end
 local data = {}
 local function draw(part1, math1, math2, math3, math4, math5, math6, rgb)
 	local part = part1
-	if not part:IsA("BasePart") then  continue end
+	if not part:IsA("BasePart") then return end
 	local partpos = part.Position
 	local screen, vis = cam:WorldToScreenPoint(partpos)
 	local chara = lp.Character
