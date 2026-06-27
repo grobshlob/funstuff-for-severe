@@ -21,8 +21,7 @@ function tinmr()
             local char = lp.Character
             if not tchar or not char then continue end
             local troot = tchar:FindFirstChild("HumanoidRootPart")
-            if troot then
-                if troot.ClassName ~= "BasePart" then return end
+            if troot:IsA("BasePart") and troot then
                 local rpos = troot.Position
                 local root = char:FindFirstChild("HumanoidRootPart")
                 if not root or not rpos then continue end
