@@ -21,17 +21,19 @@ function tinmr()
             local char = lp.Character
             if not tchar or not char then continue end
             local troot = tchar:FindFirstChild("HumanoidRootPart")
-            if troot:IsA("BasePart") and troot then
-                local rpos = troot.Position
-                local root = char:FindFirstChild("HumanoidRootPart")
-                if not root or not rpos then continue end
-                if getDistance(root.Position, rpos) <= 14 then
-                    local hum = tchar:FindFirstChild("Humanoid")
-                    local anim = hum:FindFirstChild("Animator")
-                    table.insert(_G.targets, {
-                        worldpos = rpos,
-                        animator = anim
-                    })
+            if troot then
+                if troot:IsA("Part") then
+                    local rpos = troot.Position
+                    local root = char:FindFirstChild("HumanoidRootPart")
+                    if not root or not rpos then continue end
+                    if getDistance(root.Position, rpos) <= 14 then
+                        local hum = tchar:FindFirstChild("Humanoid")
+                        local anim = hum:FindFirstChild("Animator")
+                        table.insert(_G.targets, {
+                            worldpos = rpos,
+                            animator = anim
+                        })
+                    end
                 end
             end
         end
