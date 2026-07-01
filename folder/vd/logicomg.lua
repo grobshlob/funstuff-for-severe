@@ -1,64 +1,59 @@
-
-if _G.oldui then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/hashmkauibuilder"))()
-else
-	local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
-	--print(_G.dpi)
-	local window = severeui:createwindow({
-	    Title = "Brog: Violence District",
-	    Version = ";-;",
-	    Keybind = "LeftAlt",
-	    ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
-	    CustomResolution = Vector2.new(350, 160), -- adjust ui resolution
-	    DPIScale = _G.dpi, --only use if you have a custom scale set or 4k res, increments of .25
-	    
-	    DefaultTab = "Main", 
-	    TabAlignment = "Center", -- options: "Left", "Center", "Right"
-	    
-	    DefaultColor = Color3.fromRGB(28, 27, 31),
-	    DefaultAccent = Color3.fromRGB(208, 188, 255),
-	    DefaultSnowfall = true,
-	    DefaultScale = 1.0,
-	    DefaultFont = 5 -- all fonts are at the bottom of the script
-	})
+local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
+--print(_G.dpi)
+local window = severeui:createwindow({
+	Title = "Brog: Violence District",
+	Version = ";-;",
+	Keybind = "LeftAlt",
+	ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
+	CustomResolution = Vector2.new(350, 160), -- adjust ui resolution
+	DPIScale = _G.dpi, --only use if you have a custom scale set or 4k res, increments of .25
 	
-	-- create tabs
-	local vd = window:createtab("Exploits")
-	local vdesp = window:createtab("ESP")
-	window:createlabel(vd, "Auto Parry")
-	window:createseparator(vd, 1)
-	window:createtoggle(vd, {
-		Name = "Toggle",
+	DefaultTab = "Main", 
+	TabAlignment = "Center", -- options: "Left", "Center", "Right"
+	
+	DefaultColor = Color3.fromRGB(28, 27, 31),
+	DefaultAccent = Color3.fromRGB(208, 188, 255),
+	DefaultSnowfall = true,
+	DefaultScale = 1.0,
+	DefaultFont = 5 -- all fonts are at the bottom of the script
+})
+
+-- create tabs
+local vd = window:createtab("Exploits")
+local vdesp = window:createtab("ESP")
+window:createlabel(vd, "Auto Parry")
+window:createseparator(vd, 1)
+window:createtoggle(vd, {
+	Name = "Toggle",
+	Col = 1,
+	Default = true,
+	Callback = function(state) if state then _G.auto = true else _G.auto = false end end
+})
+
+window:createtoggle(vdesp, {
+		Name = "Gens",
 		Col = 1,
 		Default = true,
-		Callback = function(state) if state then _G.auto = true else _G.auto = false end end
-	})
-	
-	window:createtoggle(vdesp, {
-			Name = "Gens",
-			Col = 1,
-			Default = true,
-			Callback = function(state) if state then _G.genesp = true else _G.genesp = false end end
-	})
-	window:createtoggle(vdesp, {
-			Name = "Killer",
-			Col = 1,
-			Default = true,
-			Callback = function(state) if state then _G.killesp = true else _G.killesp = false end end
-	})
-	window:createtoggle(vdesp, {
-			Name = "Windows",
-			Col = 2,
-			Default = true,
-			Callback = function(state) if state then _G.vaultesp = true else _G.vaultesp = false end end
-	})
-	window:createtoggle(vdesp, {
-			Name = "Pallets",
-			Col = 2,
-			Default = true,
-			Callback = function(state) if state then _G.pallet = true else _G.pallet = false end end
-	})
-end
+		Callback = function(state) if state then _G.genesp = true else _G.genesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Killer",
+		Col = 1,
+		Default = true,
+		Callback = function(state) if state then _G.killesp = true else _G.killesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Windows",
+		Col = 2,
+		Default = true,
+		Callback = function(state) if state then _G.vaultesp = true else _G.vaultesp = false end end
+})
+window:createtoggle(vdesp, {
+		Name = "Pallets",
+		Col = 2,
+		Default = true,
+		Callback = function(state) if state then _G.pallet = true else _G.pallet = false end end
+})
 
 _G.vaultesp = false
 _G.pallet = false
