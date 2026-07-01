@@ -1,6 +1,6 @@
---[[
+
 if _G.oldui then
-	return
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/hashmkauibuilder"))()
 else
 	local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
 	--print(_G.dpi)
@@ -59,11 +59,11 @@ else
 			Callback = function(state) if state then _G.pallet = true else _G.pallet = false end end
 	})
 end
-]]
-_G.vaultesp = true
-_G.pallet = true
-_G.killesp = true
-_G.genesp = true
+
+_G.vaultesp = false
+_G.pallet = false
+_G.killesp = false
+_G.genesp = false
 local players = game.Players
 local lp = players.LocalPlayer
 local ws = game.Workspace
@@ -396,7 +396,7 @@ local function isRotationClose(rotation1, rotation2, threshold)
     return difference <= threshold
 end
 --
-_G.autocomplete = true
+_G.autocomplete = false
 rs.PostData:Connect(function()
 	if _G.autocomplete then
 		if lp.Team.Name == "Spectator" then return end
