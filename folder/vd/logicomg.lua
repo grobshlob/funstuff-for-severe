@@ -29,7 +29,15 @@ window:createtoggle(vd, {
 	Default = true,
 	Callback = function(state) if state then _G.auto = true else _G.auto = false end end
 })
-
+window:createlabel(vd, "Speed", 2)
+window:createseparator(vd, 2)
+window:createslider(vd, {
+	Name = "Vault Speed",
+	Col = 2,
+	Min = 0.1, Max = 10, Default = 1,
+	Step = 0.1,
+	Callback = function(val) game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name):SetAttribute("vaultspeed", val) end
+})
 window:createtoggle(vdesp, {
 		Name = "Gens",
 		Col = 1,
