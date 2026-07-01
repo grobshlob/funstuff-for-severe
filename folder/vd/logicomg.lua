@@ -8,7 +8,7 @@ local window = severeui:createwindow({
 	CustomResolution = Vector2.new(350, 160), -- adjust ui resolution
 	DPIScale = _G.dpi, --only use if you have a custom scale set or 4k res, increments of .25
 	
-	DefaultTab = "Main", 
+	DefaultTab = "Exploits", 
 	TabAlignment = "Center", -- options: "Left", "Center", "Right"
 	
 	DefaultColor = Color3.fromRGB(28, 27, 31),
