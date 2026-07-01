@@ -1,3 +1,4 @@
+--[[
 local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
 --print(_G.dpi)
 local window = severeui:createwindow({
@@ -19,7 +20,7 @@ local window = severeui:createwindow({
 })
 
 -- create tabs
-local vd = window:createtab("Main")
+local vd = window:createtab("Exploits")
 local vdesp = window:createtab("ESP")
 window:createlabel(vd, "Auto Parry")
 window:createseparator(vd, 1)
@@ -29,6 +30,7 @@ window:createtoggle(vd, {
 	Default = true,
 	Callback = function(state) if state then _G.auto = true else _G.auto = false end end
 })
+
 window:createtoggle(vdesp, {
 		Name = "Gens",
 		Col = 1,
@@ -53,11 +55,11 @@ window:createtoggle(vdesp, {
 		Default = true,
 		Callback = function(state) if state then _G.pallet = true else _G.pallet = false end end
 })
-
-_G.vaultesp = false
-_G.pallet = false
-_G.killesp = false
-_G.genesp = false
+]]
+_G.vaultesp = true
+_G.pallet = true
+_G.killesp = true
+_G.genesp = true
 local players = game.Players
 local lp = players.LocalPlayer
 local ws = game.Workspace
@@ -170,7 +172,33 @@ task.spawn(function()
 end)
 local cam = ws.CurrentCamera
 local rs = game.RunService
-
+local function draw(part, color, opacity, color2)
+	local point = PointInstance.new(part)
+	local sq = Drawing.new("Square")
+	sq.Color = color2 or color
+	sq.Opacity = opacity or 1
+	sq.Visible = true
+	sq.Filled = false
+	sq.Thickness = 1.85
+	local insq = Drawing.new("Square")
+	insq.Color = color2 or color
+	insq.Opacity = 0.25
+	insq.Visible = true
+	insq.Filled = true
+	local config = {
+		[sq] = {
+			Link = part,
+			Size = UDim2.fromScale(1, 1),
+			AnchorPoint = Vector2.new(0.5, 0.5)
+		},
+		[insq] = {
+			Link = part,
+			Size = UDim2.fromScale(1, 1),
+			AnchorPoint = Vector2.new(0.5, 0.5)
+		}
+	}
+	Drawing.attach(config)
+end
 local killerdata = {}
 function getkiller2()
 	killerdata = {}
@@ -180,105 +208,136 @@ function getkiller2()
 				if p.Name ~= lp.Name and p.Team.Name == "Killer" and lp.Team.Name ~= "Spectator" then
 					local killerchar = p.Character
 					local hrp = killerchar.HumanoidRootPart
-					local hrppos = hrp.Position
-					local screen, visk = cam:WorldToScreenPoint(hrppos)
-					local chara = lp.Character
-					local mroot = chara.HumanoidRootPart
-					local dist = vector.magnitude(mroot.Position - hrppos)
-					local hh = math.clamp(1750/ dist, 18, 100)
-					local hw = math.clamp(1000 / dist, 10, 45)
-					if visk then
-						local A = Vector2.new(screen.X - hw, screen.Y - hh) 
-						local B = Vector2.new(screen.X + hw, screen.Y - hh) 
-						local C = Vector2.new(screen.X + hw, screen.Y + hh) 
-						local D = Vector2.new(screen.X - hw, screen.Y + hh)
-						table.insert(killerdata, {root = hrp, rootpos = hrppos, a = A, b = B, c = C, d = D, boxsize = size})
-					end
+					draw(killerchar, Color3.fromRGB(255, 0, 0), 1)
 				end
 			end
-		end
-		
+		end	
 	end
-	return killerdata
 end
 local data = {}
-local function draw(part1, math1, math2, math3, math4, math5, math6, rgb)
-	local part = part1
-	if not part:IsA("BasePart") then return end
-	local partpos = part.Position
-	local screen, vis = cam:WorldToScreenPoint(partpos)
-	local chara = lp.Character
-	if not chara then return end
-	local mroot = chara.HumanoidRootPart
-	if not mroot then return end
-	local dist = vector.magnitude(mroot.Position - partpos)
-	local hh = math.clamp(math1 / dist, math2, math3)
-	local hw = math.clamp(math4 / dist, math5, math6)
-	if vis then
-		local A = Vector2.new(screen.X - hw, screen.Y - hh) 
-		local B = Vector2.new(screen.X + hw, screen.Y - hh) 
-		local C = Vector2.new(screen.X + hw, screen.Y + hh) 
-		local D = Vector2.new(screen.X - hw, screen.Y + hh)
-		table.insert(data, {main = part, pos = partpos, a = A, b = B, c = C, d = D, boxsize = size, color = rgb})
+local pfind = false
+local wfind = false
+local drawn = false
+local function checkmap()
+	local map = ws.Map
+	if #map:GetChildren() <= 0 then
+		drawn = false
+		return false 
 	end
 end
-
 function getgens()
 	data = {}
 	local ok2, map = pcall(function() return ws.Map end)
+	if lp.Team.Name == "Spectator" then return end
 	for _, v in pairs(map:GetChildren()) do
-		if string.find(v.Name, "Gen") and _G.genesp then
-			local folder = v
-			if folder then
-				if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" and lp.Team.Name ~= "Killer" then
-					for _, v in pairs(folder:GetChildren()) do
-						local repair = v:GetAttribute("RepairProgress")
-						local progress = tonumber(repair)
-						if progress < 100 then
-							draw(v.HitBox, 1500, 13, 80, 1750, 20, 150, Color3.fromRGB(118, 0, 118))
-						elseif progress >= 100 then
-							draw(v.HitBox, 1500, 13, 80, 1750, 20, 150, Color3.fromRGB(34, 139, 34))
+		if string.find(v.Name, "Model") then
+			if _G.pallet then
+				for _, b in pairs(v:GetChildren()) do
+					if string.find(b.Name, "Palletwrong") then
+						for _, pparts in pairs(b:GetChildren()) do
+							if pparts.Name == "PrimaryPartPallet" then
+								draw(pparts, Color3.fromRGB(250, 200, 152))
+							end
 						end
 					end
 				end
 			end
 		end
-		if string.find(v.Name, "Vault") and _G.vaultesp then
+		if v.ClassName == "Folder" then
+			for _, b in pairs(v:GetChildren()) do
+				if string.find(b.Name, "Window") then
+					for _, n in pairs(b:GetChildren()) do
+						if n.Name == "Bottom" then
+							draw(n, Color3.fromRGB(252, 248, 237))
+						end
+					end
+				end
+				if string.find(b.Name, "Model") then
+					for _, n in pairs(b:GetChildren()) do
+						if string.find(n.Name, "Window") then
+							for _, wpart in pairs(n:GetChildren()) do
+								if wpart.Name == "Bottom" then
+									draw(wpart, Color3.fromRGB(252, 248, 237))
+								end
+							end
+						end
+						if string.find(n.Name, "Palletwrong") then
+							for _, ppart in pairs(n:GetChildren()) do
+								if ppart.Name == "PrimaryPartPallet" then
+									draw(ppart, Color3.fromRGB(250, 200, 152))
+								end
+							end
+						end
+					end
+				end
+				if string.find(b.Name, "Nature") then
+					for _, n in pairs(b:GetChildren()) do
+						if string.find(n.Name, "Palletwrong") then
+							for _, ppart in pairs(n:GetChildren()) do
+								if ppart.Name == "PrimaryPartPallet" then
+									draw(ppart, Color3.fromRGB(250, 200, 152))
+								end
+							end
+						end
+					end
+				end		
+			end
+		end				
+		if string.find(v.Name, "Gen") and _G.genesp then
 			local folder = v
 			if folder then
-				if #folder:GetChildren() > 0 and lp.Team.Name ~= "Spectator" then
-					for _, windows in pairs(folder:GetChildren()) do
-						draw(windows:FindFirstChild("Bottom"), 1250, 9, 20, 750, 15, 30, Color3.fromRGB(252,248,237))
+				if #folder:GetChildren() > 0 and lp.Team.Name ~= "" then
+					for _, v in pairs(folder:GetChildren()) do
+						if v:FindFirstChild("GeneratorBody") then
+							local repair = v:GetAttribute("RepairProgress")
+							local progress = tonumber(repair)
+							if progress < 100 then
+								draw(v:FindFirstChild("GeneratorBody"), Color3.fromRGB(118, 0, 118))
+							elseif progress >= 100 then
+								draw(v:FindFirstChild("GeneratorBody"), Color3.fromRGB(34, 139, 34))
+							end
+						else print("not found?")
+						end
 					end
 				end
 			end
-		elseif string.find(v.Name, "Window") and _G.vaultesp and lp.Team.Name ~= "Spectator" then
+		end
+		if string.find(v.Name, "Vault") and _G.vaultesp and not wfind then
+			local folder = v
+			if folder then
+				if #folder:GetChildren() > 0 then
+					for _, windows in pairs(folder:GetChildren()) do
+						draw(windows:FindFirstChild("Bottom"), Color3.fromRGB(252, 248, 237))
+					end
+				end
+			end
+		elseif string.find(v.Name, "Window") and _G.vaultesp and not wfind then
 			local window = v
 			for _, b in pairs(window:GetChildren()) do
 				if b.Name == "Bottom" then
-					draw(b, 1250, 9, 20, 3000, 15, 30, Color3.fromRGB(252,248,237))
+					draw(b, Color3.fromRGB(252, 248, 237))
 				end
 			end
 		end
-		if string.find(v.Name, "Pallets") and _G.pallet and v.Name ~= "Palletwrong" and lp.Team.Name ~= "Spectator" then
+		if string.find(v.Name, "Pallets") and _G.pallet and v.Name ~= "Palletwrong" and not pfind then
 			if v then
 				if #v:GetChildren() > 0 then
 					for _, pals in pairs(v:GetChildren()) do
 						if pals:FindFirstChild("HumanoidRootPart") then 
-							draw(pals.HumanoidRootPart, 1500, 15, 60, 1500, 15, 60, Color3.fromRGB(250, 200, 152))
+							draw(pals.HumanoidRootPart, Color3.fromRGB(250, 200, 152))
 						end
 					end
 				end
 			end
-		elseif string.find(v.Name, "Palletwrong") and _G.pallet and lp.Team.Name ~= "Spectator" then
+		elseif string.find(v.Name, "Palletwrong") and _G.pallet and not pfind then
 			for _, p in pairs(v:GetChildren()) do
 				if p.Name == "HumanoidRootPart" then
-					draw(p, 2500, 20, 60, 1500, 20, 60, Color3.fromRGB(250, 200, 152))
+					draw(p, Color3.fromRGB(250, 200, 152))
 				end
 			end
 		end
 	end
-	return data
+	drawn = true
 end
 
 --ai
@@ -333,17 +392,6 @@ local function isRotationClose(rotation1, rotation2, threshold)
     return difference <= threshold
 end
 --
-rs.Render:Connect(function()
-	local data = getgens()
-	for _, i in pairs(data) do
-		local check = i.main
-		if check then
-			local position = i.pos
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, i.color, 0.4)
-			DrawingImmediate.Quad(i.a, i.b, i.c, i.d, i.color, 1)
-		end
-	end
-end)
 _G.autocomplete = true
 rs.PostData:Connect(function()
 	if _G.autocomplete then
@@ -370,14 +418,11 @@ rs.PostData:Connect(function()
 		end
 	end
 end)
-rs.Render:Connect(function()		
-	local killerdata = getkiller2()
-	for _, i in pairs(killerdata) do
-		local check = i.root
-		if check then
-			local position = i.genpart
-			DrawingImmediate.FilledQuad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 0.4)
-			DrawingImmediate.Quad(i.a, i.b, i.c, i.d, Color3.fromRGB(235, 0, 0), 1)
+task.spawn(function() 
+	while task.wait(1) do
+		if not checkmap() and not drawn then
+			getgens()
+			getkiller2()
 		end
 	end
 end)
