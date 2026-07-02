@@ -4,6 +4,7 @@ local DrawingAttach = Drawing.attach
 local PointNew = PointInstance.new
 local drawnParts = {} 
 local y = 1
+--ai,  it would only draw it on one dog tag
 local function findAllDogBases()
     local bases = {}
     local ignore = ws:FindFirstChild("Ignore")
@@ -20,6 +21,7 @@ local function findAllDogBases()
     end
     return bases
 end
+--
 function findmuzzle()
 	for _, c in pairs(cam:GetChildren()) do
 		if c.ClassName == "Model" then
