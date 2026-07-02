@@ -109,6 +109,7 @@ end
 --thank you ai
 function decode(game)
     local decodedJSON = data -- This is your array of animation objects
+    _G.anims = decodedJSON
     print(game)
     for _, entry in pairs(decodedJSON) do
         -- Check if the entry has the required fields
@@ -131,7 +132,6 @@ function decode(game)
                     ignore[fullId] = true
                 else
                     dontignore[fullId] = true
-                    table.insert(names, animName)
                 end
             end
         end
