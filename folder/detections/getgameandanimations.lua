@@ -90,7 +90,7 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/combatwarriors.json")
     end)
     if ok_body then body = result end
-else pid == 128736949265057
+elseif pid == 128736949265057
     local ok_body, result = pcall(function()
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/gakuran/gakurananims.json")
     end)
