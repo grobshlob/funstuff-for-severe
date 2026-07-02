@@ -131,6 +131,7 @@ function decode(game)
                     ignore[fullId] = true
                 else
                     dontignore[fullId] = true
+                    table.insert(names, animName)
                 end
             end
         end
