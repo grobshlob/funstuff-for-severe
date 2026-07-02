@@ -12,7 +12,7 @@ _G.targets = {}
 function getDistance(a, b)
     return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
 end
-names = {}
+_G.anims = {}
 function tinmr()
     table.clear(_G.targets)
     for _, v in pairs(players:GetChildren()) do
