@@ -90,6 +90,11 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/combatwarriors.json")
     end)
     if ok_body then body = result end
+else pid == 128736949265057
+    local ok_body, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/gakuran/gakurananims.json")
+    end)
+    if ok_body then body = result end
 end
 local ok_decode = false
 if body then
@@ -104,7 +109,7 @@ end
 --thank you ai
 function decode(game)
     local decodedJSON = data -- This is your array of animation objects
-    print("game: Combat Warriors")
+    print(game)
     for _, entry in pairs(decodedJSON) do
         -- Check if the entry has the required fields
         if type(entry) == "table" and entry.Name and entry.AnimationId then
@@ -117,6 +122,12 @@ function decode(game)
                    animName:find("Idle") or animName:find("Parr") or animName:find("Core") or 
                    animName:find("Gk") or animName:find("Walk") or animName:find("Run") or animName:find("Camera") or animName:find("Glory") or animName:find("Block") or animName:find("Startup") or animName:find("Inspect") or animName:find("GK") or animName:find("Sprint") or animName:find("Status") or animName:find("Effect") or animName:find("Viewport") or animName:find("Stomp") then
                     
+                    ignore[fullId] = true
+                else
+                    dontignore[fullId] = true
+                end
+            elseif game == "gakuran" then
+                if animName:find("Block") or animName:find("Guard") or animName:find("EHit") then
                     ignore[fullId] = true
                 else
                     dontignore[fullId] = true
