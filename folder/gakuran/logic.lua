@@ -43,19 +43,20 @@ task.spawn(function()
 end)
 --send_notification("script is currently down", "warning")
 --task.wait(math.huge)
+_G.debug = true
 local lp = game.Players.LocalPlayer
 _G.swingPtr = nil
 local time = 0
 local parried = {}
-_G.loaded = false
+_G.loaded = true
 
 task.spawn(function()
     while true do
         task.wait(0.008)
-        if not _G.loaded then continue end
+        
         --print("hi")
         tinmr()
-        local divide = _G.slider or 1
+        local divide = _G.slider or 3
         --print(divide)
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
@@ -89,7 +90,7 @@ task.spawn(function()
                                 	task.wait(parrytime)
                                 end
                                 keypress(0x46) 
-                                task.wait(0.01) 
+                                task.wait(0.3) 
                                 keyrelease(0x46)
                                 task.wait(0.8)
                                  _G.swingPtr = nil
