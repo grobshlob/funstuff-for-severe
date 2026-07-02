@@ -1,7 +1,7 @@
---[[local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
+local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
 
 local window = severeui:createwindow({
-    Title = "Brog: Combat Warriors",
+    Title = "Brog: Gakuran",
     Version = ";-;",
     Keybind = "LeftAlt",
     ConfigFolder = "hiimbrog", -- this is what the folder in workspace will be named, this is where your configs save
@@ -36,10 +36,10 @@ window:createslider(cw, {
 	Min = 0.1, Max = 10, Default = 0.31415,
 	Step = 0.1,
 	Callback = function(val) _G.slider = val end
-})]]
+})
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimation.lua"))()
 end)
 --send_notification("script is currently down", "warning")
 --task.wait(math.huge)
@@ -73,6 +73,19 @@ task.spawn(function()
             for _, t in ipairs(tracks) do
                 if t.assetid and _G.dontignore[t.assetid] and not parried[t.ptr] then
                     time = tostring(t.timePosition)
+					parry, dodge = false, false
+					for _, stuff in pairs(_G.anims) do
+						if stuff.AnimationId == t.assetid then
+							print(stuff.Name)
+							if stuff.Name == "M2" then
+								 dodge = true
+								 break
+							else
+								parry = true
+								break
+							end
+						end
+					end
                     foundSwingPtr = t.ptr
                     if _G.debug then
                         print("Detected non-ignored anim: " .. tostring(t.assetid))
@@ -89,9 +102,15 @@ task.spawn(function()
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
                                 end
-                                keypress(0x46) 
-                                task.wait(0.3) 
-                                keyrelease(0x46)
+								if parry then
+	                                keypress(0x46) 
+	                                task.wait(0.3) 
+	                                keyrelease(0x46)
+								elseif dodge then
+									keypress(0x51) 
+	                                task.wait(0.05) 
+	                                keyrelease(0x51)
+								end
                                 task.wait(0.8)
                                  _G.swingPtr = nil
                                 parried[t.ptr] = nil
