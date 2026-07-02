@@ -3,4 +3,6 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/logic.lua"))()
 elseif pid == 93978595733734 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/vd/logicomg.lua"))()
+elseif pid == 128736949265057 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/gakuran/logic.lua"))()
 end
