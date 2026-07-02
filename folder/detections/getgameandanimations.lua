@@ -147,6 +147,8 @@ function decode(game)
 end
 if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594569228 then
     decode("cw")
+elseif ok_decode and pid == 128736949265057 then
+    decode("gakuran")
 else
     warn("Failed to decode JSON body. Send this to brog: " .. game.PlaceId)
 end
