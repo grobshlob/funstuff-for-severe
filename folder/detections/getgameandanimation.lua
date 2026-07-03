@@ -9,9 +9,7 @@ _G.target = nil
 _G.targetAnimator = nil
 _G.swingPtr = nil
 _G.targets = {}
-function getDistance(a, b)
-    return math.sqrt((a.X - b.X)^2 + (a.Y - b.Y)^2 + (a.Z - b.Z)^2)
-end
+
 _G.anims = {}
 function tinmr()
     table.clear(_G.targets)
@@ -21,13 +19,17 @@ function tinmr()
             local char = lp.Character
             if not tchar or not char then continue end
             local troot = tchar:FindFirstChild("HumanoidRootPart")
-            if troot then
+            if troot and not whitelist[troot] then
                 if troot:IsA("Part") then
+                    local head = tchar:FindFirstChild("Head")
                     local ok, rpos = pcall(function() return troot.Position end)
                     if not ok then return end
                     local root = char:FindFirstChild("HumanoidRootPart")
                     if not root or not rpos then continue end
-                    if getDistance(root.Position, rpos) <= 14 then
+                    local dist = vector.magnitude(root.Position - rpos)
+                    local ndist = vector.normalize(dist)
+                    local dot = vector.dot(head.CFrame.LookVector, ndist)
+                    if dist <= 14 and (dot >= 0.8 and dot <= 1) then
                         local hum = tchar:FindFirstChild("Humanoid")
                         local anim = hum:FindFirstChild("Animator")
                         table.insert(_G.targets, {
