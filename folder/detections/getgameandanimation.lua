@@ -19,7 +19,7 @@ function tinmr()
             local char = lp.Character
             if not tchar or not char then continue end
             local troot = tchar:FindFirstChild("HumanoidRootPart")
-            if troot and not whitelist[troot] then
+            if troot then
                 if troot:IsA("Part") then
                     local head = tchar:FindFirstChild("Head")
                     local ok, rpos = pcall(function() return troot.Position end)
