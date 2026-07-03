@@ -1,4 +1,4 @@
---[[local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
+local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
 
 local window = severeui:createwindow({
     Title = "Brog: Gakuran",
@@ -36,7 +36,7 @@ window:createslider(cw, {
 	Min = 0.1, Max = 10, Default = 0.31415,
 	Step = 0.1,
 	Callback = function(val) _G.slider = val end
-})]]
+})
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
