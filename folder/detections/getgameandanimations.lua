@@ -22,7 +22,7 @@ function tinmr()
             if troot then
                 if troot:IsA("Part") then
                     local head = tchar:FindFirstChild("Head")
-                    print(head.Name)
+                    --print(head.Name)
                     if not head then continue end
                     local ok, rpos = pcall(function() return troot.Position end)
                     if not ok then return end
