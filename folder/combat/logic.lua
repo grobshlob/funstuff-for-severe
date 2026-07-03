@@ -51,7 +51,7 @@ _G.loaded = false
 
 task.spawn(function()
     while true do
-        task.wait(0.008)
+        task.wait(0.03)
         if not _G.loaded then continue end
         --print("hi")
         tinmr()
@@ -79,7 +79,7 @@ task.spawn(function()
                     if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
                         parried[t.ptr] = true
                         local root = char:FindFirstChild("HumanoidRootPart") 
-                        if root and worldpos and getDistance(root.Position, worldpos) <= 14 then
+                        if root and worldpos and vector.magnitude(root.Position - worldpos) <= 14 then
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
