@@ -34,7 +34,8 @@ function tinmr()
                         local anim = hum:FindFirstChild("Animator")
                         table.insert(_G.targets, {
                             worldpos = rpos,
-                            animator = anim
+                            animator = anim,
+                            chara = tchar
                         })
                     end
                 end
