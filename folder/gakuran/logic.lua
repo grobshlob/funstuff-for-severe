@@ -39,7 +39,7 @@ window:createslider(cw, {
 })
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimation.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
 end)
 --send_notification("script is currently down", "warning")
 --task.wait(math.huge)
@@ -77,7 +77,7 @@ task.spawn(function()
 					for _, stuff in pairs(_G.anims) do
 						if stuff.AnimationId == t.assetid then
 							print(stuff.Name)
-							if stuff.Name == "M2" then
+							if stuff.Name == "M2" and not string.find(stuff.Name, "Success") then
 								 dodge = true
 								 break
 							else
@@ -93,7 +93,7 @@ task.spawn(function()
                     if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
                         parried[t.ptr] = true
                         local root = char:FindFirstChild("HumanoidRootPart") 
-                        if root and worldpos and getDistance(root.Position, worldpos) <= 14 then
+                        if root and worldpos and vector.magnitude(root.Position - worldpos) <= 14 then
                             _G.swingPtr = foundSwingPtr
                             task.spawn(function()                   
                                 print("swing started!")
