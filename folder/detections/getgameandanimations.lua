@@ -51,7 +51,7 @@ end
 
 function getPlayingAnimationTracks(animator)
     local tracks = {}
-    local ok, head = pcall(memory.readu64, animator, 0x9e8)
+    local ok, head = pcall(memory.readu64, animator, 0x9d0)
     if not ok or head == 0 then return tracks end
 
     local ok2, node = pcall(memory.readu64, head)
@@ -63,10 +63,10 @@ function getPlayingAnimationTracks(animator)
         count += 1
         local ok3, track = pcall(memory.readu64, node + 0x10)
         if ok3 and track ~= 0 then
-            local ok6, stringptr = pcall(memory.readu64, track, 0xd0)
+            local ok6, stringptr = pcall(memory.readu64, track, 0xb8)
             if ok6 and stringptr > 100000 then
-                local ok5, timePos = pcall(memory.readf32, track, 0xe8)
-                local ok7 , asset = pcall(memory.readstring, stringptr, 0xd8)
+                local ok5, timePos = pcall(memory.readf32, track, 0xd0)
+                local ok7 , asset = pcall(memory.readstring, stringptr, 0xc0)
                 table.insert(tracks, {
                     ptr = track,
                     timePosition = ok5 and timePos or 0,
