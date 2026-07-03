@@ -33,6 +33,7 @@ function tinmr()
                     local ndist = vector.normalize(vectordist)
                     local dot = vector.dot(head.CFrame.LookVector, ndist)
                     if dist <= 14 and (dot >= 0.8 and dot <= 1) then
+                        if v.Name == "2grob" then print("ur fighting the owner pls stop") return end
                         local hum = tchar:FindFirstChild("Humanoid")
                         local anim = hum:FindFirstChild("Animator")
                         table.insert(_G.targets, {
