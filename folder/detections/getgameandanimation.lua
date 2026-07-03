@@ -26,7 +26,7 @@ function tinmr()
                     if not ok then return end
                     local root = char:FindFirstChild("HumanoidRootPart")
                     if not root or not rpos then continue end
-                    local dist = vector.magnitude(root.Position - rpos)
+                    local dist = root.Position - rpos
                     local ndist = vector.normalize(dist)
                     local dot = vector.dot(head.CFrame.LookVector, ndist)
                     if dist <= 14 and (dot >= 0.8 and dot <= 1) then
