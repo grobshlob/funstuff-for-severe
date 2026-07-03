@@ -1,4 +1,4 @@
-local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
+--[[local severeui = loadstring(game:HttpGet("https://raw.githubusercontent.com/okdude42/ui-lib/refs/heads/main/SevereLib.lua"))()
 
 local window = severeui:createwindow({
     Title = "Brog: Gakuran",
@@ -36,7 +36,7 @@ window:createslider(cw, {
 	Min = 0.1, Max = 10, Default = 0.31415,
 	Step = 0.1,
 	Callback = function(val) _G.slider = val end
-})
+})]]
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
@@ -52,11 +52,11 @@ _G.loaded = true
 
 task.spawn(function()
     while true do
-        task.wait(0.008)
+        task.wait(0.04)
         
         --print("hi")
         tinmr()
-        local divide = _G.slider or 3
+        local divide = _G.slider or 1
         --print(divide)
         for _, t1 in pairs(_G.targets) do
             _G.targetAnimator = t1.animator
@@ -90,14 +90,18 @@ task.spawn(function()
                     if _G.debug then
                         print("Detected non-ignored anim: " .. tostring(t.assetid))
                     end
-                    if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr then 
+                    if foundSwingPtr ~= nil and foundSwingPtr ~= _G.swingPtr and not parried[t.ptr] then 
                         parried[t.ptr] = true
                         local root = char:FindFirstChild("HumanoidRootPart") 
                         if root and worldpos and vector.magnitude(root.Position - worldpos) <= 14 then
                             _G.swingPtr = foundSwingPtr
+                            local parrytime = time / divide - game:GetPing() / 1000
+                            print(parrytime)
+                            --if parrytime < 0.06 then continue end
                             task.spawn(function()                   
                                 print("swing started!")
-                                local parrytime = time / divide - game:GetPing() / 1000
+                                --if t.timePosition < 0.08 then continue end
+                               -- local parrytime = time / divide - game:GetPing() / 1000
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
