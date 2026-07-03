@@ -38,7 +38,8 @@ function tinmr()
                         table.insert(_G.targets, {
                             worldpos = rpos,
                             animator = anim,
-                            chara = tchar
+                            chara = tchar,
+                            name = v.Name
                         })
                     end
                 end
