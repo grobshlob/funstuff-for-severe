@@ -29,7 +29,7 @@ function tinmr()
                     local dist = vector.magnitude(root.Position - rpos)
                     local vectordist = root.Position - rpos
                     local ndist = vector.normalize(vectordist)
-                    local dot = vector.dot(head.CFrame.LookVector, ndist)
+                    local dot = vector.dot(troot.CFrame.LookVector, ndist)
                     if dist <= 14 and (dot >= 0.8 and dot <= 1) then
                         local hum = tchar:FindFirstChild("Humanoid")
                         local anim = hum:FindFirstChild("Animator")
