@@ -64,8 +64,8 @@ local function draw(part, color, thickness)
     insq.Opacity = 0.5
     
     DrawingAttach({
-        [sq] = { Link = point, Size = UDim2.fromScale(5, 10), AnchorPoint = Vector2.new(0.5, 0.5) },
-        [insq] = { Link = point, Size = UDim2.fromScale(5, 10), AnchorPoint = Vector2.new(0.5, 0.5) }
+        [sq] = { Link = point, Size = UDim2.fromScale(5, 10), AnchorPoint = Vector2.new(0.5, 1.5) },
+        [insq] = { Link = point, Size = UDim2.fromScale(5, 10), AnchorPoint = Vector2.new(0.5, 1.5) }
     })
 end
 task.spawn(function()
@@ -95,14 +95,15 @@ task.spawn(function()
 				}
 				task.wait(2)
 				cfg:Destroy()
+				line:Remove()
 			end)
 		end
 		local targets = findAllDogBases()
+		if not targets then continue end
 		for _, part in ipairs(targets) do
-			if not drawnParts[part] then
+			if drawnParts[part] then continue end
   			draw(part, Color3.fromRGB(118, 0, 118), 3)
   			drawnParts[part] = true
-      end
 		end
 	end
 end)
