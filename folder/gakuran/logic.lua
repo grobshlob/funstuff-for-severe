@@ -77,8 +77,9 @@ task.spawn(function()
 					for _, stuff in pairs(_G.anims) do
 						if stuff.AnimationId == t.assetid then
 							print(stuff.Name)
-							if stuff.Name == "M2" and not string.find(stuff.Name, "Success") then
+							if string.find(stuff.Name, "M2") then
 								 dodge = true
+								 parry = false
 								 break
 							else
 								parry = true
