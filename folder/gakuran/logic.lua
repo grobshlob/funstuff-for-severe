@@ -107,14 +107,14 @@ task.spawn(function()
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
                                 end
-								if parry then
-	                                keypress(0x46) 
+								if dodge then
+	                                keypress(0x51) 
+	                                task.wait(0.1) 
+	                                keyrelease(0x51)
+								else
+									keypress(0x46) 
 	                                task.wait(0.3) 
 	                                keyrelease(0x46)
-								elseif dodge then
-									keypress(0x51) 
-	                                task.wait(0.05) 
-	                                keyrelease(0x51)
 								end
                                 task.wait(0.8)
                                  _G.swingPtr = nil
