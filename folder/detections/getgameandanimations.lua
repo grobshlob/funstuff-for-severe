@@ -50,9 +50,10 @@ function tinmr()
     return worldpos
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
-
+_G.current = {}
 function getPlayingAnimationTracks(animator)
     local tracks = {}
+    table.clear(_G.current)
     local ok, head = pcall(memory.readu64, animator, 0x9d0)
     if not ok or head == 0 then return tracks end
 
@@ -66,14 +67,20 @@ function getPlayingAnimationTracks(animator)
         local ok3, track = pcall(memory.readu64, node + 0x10)
         if ok3 and track ~= 0 then
             local ok6, stringptr = pcall(memory.readu64, track, 0xb8)
+            local ok4, playing = pcall(memory.readu8, track, 0xa40)
             if ok6 and stringptr > 100000 then
                 local ok5, timePos = pcall(memory.readf32, track, 0xd0)
                 local ok7 , asset = pcall(memory.readstring, stringptr, 0xc0)
-                table.insert(tracks, {
-                    ptr = track,
-                    timePosition = ok5 and timePos or 0,
-                    assetid = ok7 and asset,
-                })
+                if playing == 1 then
+                    _G.current[asset] = true
+                    table.insert(tracks, {
+                        ptr = track,
+                        timePosition = ok5 and timePos or 0,
+                        assetid = ok7 and asset,
+                    })
+                else
+                    _G.current[asset] = nil
+                end
             end
         end
         local ok6, next = pcall(memory.readu64, node)
@@ -161,4 +168,3 @@ elseif ok_decode and pid == 128736949265057 then
 else
     warn("Failed to decode JSON body. Send this to brog: " .. game.PlaceId)
 end
-
