@@ -39,7 +39,7 @@ window:createslider(cw, {
 })
 task.spawn(function()
     --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/waiting.lua"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
+    --loadstring(game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/detections/getgameandanimations.lua"))()
 end)
 --send_notification("script is currently down", "warning")
 --task.wait(math.huge)
@@ -49,7 +49,7 @@ _G.swingPtr = nil
 local time = 0
 local parried = {}
 _G.loaded = true
-
+local scheduled = {}
 task.spawn(function()
     while true do
         task.wait(0.04)
@@ -64,6 +64,10 @@ task.spawn(function()
 
             local char = lp.Character
             if not char then continue end
+            local wschar = workspace.Players:FindFirstChild(lp.Name)
+
+            if not wschar then continue end
+            local attri = wschar:GetAttribute("EvasiveCooldownRemaining")
             if not _G.targetAnimator then continue end
 
             local ok, tracks = pcall(getPlayingAnimationTracks, _G.targetAnimator)
@@ -77,11 +81,13 @@ task.spawn(function()
 					for _, stuff in pairs(_G.anims) do
 						if stuff.AnimationId == t.assetid then
 							print(stuff.Name)
-							if string.find(stuff.Name, "M2") then
+							if string.find(stuff.Name, "M2") and not attri then
+								 --print("m2 found")
 								 dodge = true
 								 parry = false
 								 break
 							else
+							    --print("m1 found")
 								parry = true
 								break
 							end
@@ -97,16 +103,21 @@ task.spawn(function()
                         if root and worldpos and vector.magnitude(root.Position - worldpos) <= 14 then
                             _G.swingPtr = foundSwingPtr
                             local parrytime = time / divide - game:GetPing() / 1000
-                            print(parrytime)
+                            --print(parrytime)
                             --if parrytime < 0.06 then continue end
+                            if scheduled[t.assetid] then continue end
                             task.spawn(function()                   
                                 print("swing started!")
+                                scheduled[t.assetid] = true
+
                                 --if t.timePosition < 0.08 then continue end
                                -- local parrytime = time / divide - game:GetPing() / 1000
+                               if attri then parrytime = parrytime + 0.335 end
                                 if _G.debug then print(parrytime) end
                                 if parrytime >= 0 then
                                 	task.wait(parrytime)
                                 end
+								--print(dodge, "DODGE", parry, "PARRY")
 								if dodge then
 	                                keypress(0x51) 
 	                                task.wait(0.1) 
@@ -116,9 +127,10 @@ task.spawn(function()
 	                                task.wait(0.3) 
 	                                keyrelease(0x46)
 								end
-                                task.wait(0.8)
+                                repeat task.wait(0.075) until _G.current[t.assetid] == nil
                                  _G.swingPtr = nil
                                 parried[t.ptr] = nil
+                                scheduled[t.assetid] = nil
                             end)
                         end
                     end 
