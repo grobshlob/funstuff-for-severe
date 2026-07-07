@@ -40,10 +40,10 @@ function skid11()
                         local skid26 = skid15:FindFirstChild("Humanoid")
                         local skid27 = skid26:FindFirstChild("Animator")
                         table.insert(_G.skid9, {
-                            worldpos = skid20,
-                            animator = skid27,
-                            chara = skid15,
-                            name = skid14.Name
+                            skid69 = skid20,
+                            skid70 = skid27,
+                            skid71 = skid15,
+                            skid72 = skid14.Name
                         })
                     end
                 end
@@ -74,9 +74,9 @@ function skid29(skid30)
                 if skid42 == 1 then
                     _G.skid28[skid46] = true
                     table.insert(skid31, {
-                        ptr = skid38,
-                        timePosition = skid43 and skid44 or 0,
-                        assetid = skid45 and skid46,
+                        skid73 = skid38,
+                        skid74 = skid43 and skid44 or 0,
+                        skid75 = skid45 and skid46,
                     })
                 else
                     _G.skid28[skid46] = nil
