@@ -46,7 +46,7 @@ function findgui()
     return side 
 end 
 
-local positionOffset, sizeOffset = getoffset() 
+local positionOffset, sizeOffset = 248, 256 
 
 function lane1notes(whichside) 
     local lanes = { Lane1 = {}, Lane2 = {}, Lane3 = {}, Lane4 = {} }
