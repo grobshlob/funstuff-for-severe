@@ -14,7 +14,7 @@ _G.anims = {}
 function tinmr()
     table.clear(_G.targets)
     for _, v in pairs(players:GetChildren()) do
-        if v ~= lp then
+        if v ~= lp and v.ClassName == "Player" then
             local tchar = v.Character
             local char = lp.Character
             if not tchar or not char then continue end
