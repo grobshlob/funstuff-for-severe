@@ -105,11 +105,6 @@ if pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594
         return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/combatwarriors.json")
     end)
     if ok_body then body = result end
-elseif pid == 128736949265057 then
-    local ok_body, result = pcall(function()
-        return game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/gakuran/gakurananims.json")
-    end)
-    if ok_body then body = result end
 end
 local ok_decode = false
 if body then
@@ -163,8 +158,6 @@ function decode(game)
 end
 if ok_decode and pid == 4282985734 or pid == 11979315221 or pid == 11979319180 or pid == 18594569228 then
     decode("cw")
-elseif ok_decode and pid == 128736949265057 then
-    decode("gakuran")
 else
     warn("Failed to decode JSON body. Send this to brog: " .. game.PlaceId)
 end
