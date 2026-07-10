@@ -2747,7 +2747,7 @@ do
 
     RunService.PreLocal:Connect(function()
         if not isrbxactive() then return end  -- skip input when Roblox unfocused
-        local Mouse: Vector2       = UserInputService:GetMouseLocation()
+        local Mouse: Vector2       = UserInputService:GetMouseLocation() * _G.dpi
         local LeftPressed: boolean = isleftpressed()
         local LeftClicked: boolean = LeftPressed and not PrevLeftPressed
 
@@ -3406,7 +3406,7 @@ return t end)()
 
     RunService.PreLocal:Connect(function()
         if not isrbxactive() then return end  -- skip per-frame work when unfocused
-        local Mouse: Vector2 = UserInputService:GetMouseLocation()
+        local Mouse: Vector2 = UserInputService:GetMouseLocation() * _G.dpi
 
         E.Dropdown1Text.Text  = E.Dropdown1Selected
         _FitText(E.Dropdown1Text, 122)
