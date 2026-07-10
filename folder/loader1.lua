@@ -2905,10 +2905,16 @@ do
 local lp = pl.LocalPlayer
 local t = {}
 for _, p in pairs(pl:GetChildren()) do
-    if p.Name ~= lp.Name then 
-	if vector.magnitude(p.Character.HumanoidRootPart.Position - lp.Character.HumanoidRootPart.Position) <= 100 then
-		t[#t+1] = p.Name 
-	end
+    if p.Name ~= lp.Name then
+		local char = p.Character
+		local lpchar = lp.Character
+		if not char or not lpchar then continue end
+		local part = char:FindFirstChild("HumanoidRootPart")
+		local lppart = lpchar:FindFirstChild("HumanoidRootPart")
+		if not part or not lppart then continue end
+		if vector.magnitude(part.Position - lppart.Position) <= 75 then
+			t[#t+1] = p.Name 
+		end
     end
 end
 return t end)()
@@ -2947,10 +2953,16 @@ return t end)()
 local lp = pl.LocalPlayer
 local t = {}
 for _, p in pairs(pl:GetChildren()) do
-    if p.Name ~= lp.Name then 
-	if vector.magnitude(p.Character.HumanoidRootPart.Position - lp.Character.HumanoidRootPart.Position) <= 100 then
-		t[#t+1] = p.Name 
-	end
+    if p.Name ~= lp.Name then
+		local char = p.Character
+		local lpchar = lp.Character
+		if not char or not lpchar then continue end
+		local part = char:FindFirstChild("HumanoidRootPart")
+		local lppart = lpchar:FindFirstChild("HumanoidRootPart")
+		if not part or not lppart then continue end
+		if vector.magnitude(part.Position - lppart.Position) <= 75 then
+			t[#t+1] = p.Name 
+		end
     end
 end
 return t end)()
