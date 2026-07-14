@@ -2684,7 +2684,7 @@ do
     local function OnButton2Click(): ()
         local cw = game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/combat/logic.lua")
             local vd = game:HttpGet("https://raw.githubusercontent.com/grobshlob/funstuff-for-severe/refs/heads/main/folder/vd/logicomg.lua")
-                local gaku = game:HttpGet("https://github.com/grobshlob/funstuff-for-severe/raw/refs/heads/main/folder/gakuran/updatedparry.luau")
+                local gaku = game:HttpGet("https://github.com/grobshlob/funstuff-for-severe/raw/refs/heads/main/folder/gakuran/autoparry.luau")
                     local func = luau.load(gaku)
                     if _G.picked == 1 then SetTab(2) loadstring(cw) elseif _G.picked == 3 then SetTab(3) func() elseif _G.picked == 2 then send_notification("pls wait for an update", "info") end
     end
