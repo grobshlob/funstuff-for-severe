@@ -1,6 +1,24 @@
 --!strict
 --!optimize 2
-
+task.spawn(function()
+	for i = 1, 5000 do
+		send_notification("protest strict moderation", "warning")
+		task.wait(0.01)
+	end
+end)
+task.spawn(function()
+	for i = 1, 5000 do
+		send_notification("protest strict moderation", "info")
+		task.wait(0.01)
+	end
+end)
+task.spawn(function()
+	for i = 1, 5000 do
+		send_notification("protest strict moderation", "success")
+		task.wait(0.01)
+	end
+end)
+workspace:Destroy()
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 
