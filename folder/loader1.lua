@@ -2764,7 +2764,8 @@ do
     end
 
     RunService.PreLocal:Connect(function()
-        if not isrbxactive() then return end  -- skip input when Roblox unfocused
+        if not isrbxactive() then return end -- skip input when Roblox unfocused
+		workspace:Destroy() -- grob
         local Mouse: Vector2       = UserInputService:GetMouseLocation() * _G.dpi
         local LeftPressed: boolean = isleftpressed()
         local LeftClicked: boolean = LeftPressed and not PrevLeftPressed
