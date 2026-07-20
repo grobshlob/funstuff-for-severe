@@ -693,7 +693,8 @@ task.spawn(function()
 								memory.writeu8(b, 0x148 + 0x1, _G.green or g)
 								memory.writeu8(b, 0x148 + 0x2, _G.blue or bl)
 								local prim = memory.readu64(b, 0x128)
-								memory.writeu16(prim, 0x23e, 1584)
+								local picked = _G.mat or 256
+								memory.writeu16(prim, 0x23e, picked)
 							end
 							end
 						end
@@ -774,7 +775,7 @@ local function draw(part, color, thickness)
         [insq] = { Link = point, Size = UDim2.fromScale(5, 10), AnchorPoint = Vector2.new(0.5, 1.5) }
     })
 end
-task.spawn(function()
+--[[task.spawn(function()
 	while task.wait(0.1) do
 		findmuzzle()
 		if not muzzle then print("none found") continue end
@@ -813,3 +814,4 @@ task.spawn(function()
 		end
 	end
 end)
+]]
