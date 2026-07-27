@@ -35,8 +35,9 @@ function tinmr()
     end
 end
 --thank you hashmka i skidded your method because ai couldnt figure it out
+local tracks = {}
 local function getsounds(soundmaker)
-    _G.tracks = {}
+    table.clear(tracks)
     for _, v in pairs(soundmaker:GetDescendants()) do
     	if v:IsA("Sound") then
     		local play = memory.readu8(v, 0x154)
