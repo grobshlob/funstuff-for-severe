@@ -50,7 +50,7 @@ game.RunService.RenderUnrestricted:Connect(function()
 		if age <= 2 then
 			local spos_muzzle, vis1 = cam:WorldToScreenPoint(stuff.pos)
 			local spos_end, vis2 = cam:WorldToScreenPoint(stuff.new)
-			if not vis1 and vis2 then return end
+			if not vis1 or vis2 then return end
 			DrawingImmediate.Line(spos_muzzle, spos_end, Color3.fromRGB(118, 0, 118), 0.5, 5, 5)
 			
 		else
